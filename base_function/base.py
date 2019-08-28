@@ -1,0 +1,96 @@
+import pytest
+from base_function.driver import Driver
+from config.config import *
+import re
+from time import sleep
+
+class Base():
+
+    def __init__(self, driver):
+        self.d = driver
+
+
+    #根据app包名操作app
+    def useApp(self, packagename, action):
+        '''
+        :param packagename: 应用包名
+        :param action: 动作
+        :return:
+        '''
+        if action == 'start':
+            self.d.app_start(packagename)
+        elif action == 'stop':
+            self.d.app_stop(packagename)
+        elif action == 'clear':
+            self.d.app_clear(packagename)
+
+
+    # 根据元素名称进行点击操作
+    def clickByElement(self, element, logtext):
+        '''
+        :param element: 元素名称，可根据resource、xpath及Text进行判断并点击
+        :param logtext: 打印log的文案
+        :return:
+        '''
+        if str(element).startswith("com"):
+            self.d(resourceId=element).click()
+        elif re.findall("//", str(element)):
+            self.d.xpath(element).click()
+        else:
+            self.d(text=element).click()
+        logging.info("点击元素:{}".format(logtext))
+
+
+    # 查找元素，判断元素存在
+    def elementIsExit(self, element, timeout = 5):
+        '''
+        :param element: 元素名称
+        :param timeout: 超时时间
+        :return: 返回查找结果True or False
+        '''
+        isExit = False
+        while timeout > 0:
+            # 获取到当前页面的hierarchy
+            page_xml = self.d.dump_hierarchy()
+            # 判断元素是否存在于hierarchy中
+            if re.findall(element, page_xml):
+                isExit = True
+                logging.info('查询到元素： {}'.format(element))
+                break
+            else:
+                timeout -= 1
+                sleep(1)
+        if isExit == False:
+            logging.info('未找到元素，元素名称为: {}'.format(element))
+        return isExit
+
+
+
+    # 当元素未找到时，直接断言失败，跳过该用例
+    def assertFalse(self, element):
+        '''
+        :param element: 元素名称
+        :return:
+        '''
+        assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)
+
+
+
+    # 断言元素是否存在
+    def assertTrue(self, element, mark = True, timeout = 5):
+        '''
+        :param element: 元素名称
+        :param timeout: 超时时间
+        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False
+        :return:
+        '''
+        if mark:
+            assert self.elementIsExit(element, timeout) == True, "断言元素存在失败，元素名称为： {}".format(element)
+            logging.info("已找到元素，断言成功，元素名称为： {}".format(element))
+        else:
+            assert self.elementIsExit(element, timeout) == False, "断言元素不存在失败，元素名称为： {}".format(element)
+            logging.info("元素已不存在，断言成功，元素名称为： {}".format(element))
+
+
+
+

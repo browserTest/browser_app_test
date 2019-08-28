@@ -1,0 +1,9 @@
+[2019-08-27 17:58:07] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
+[2019-08-27 17:58:09] INFO [home_init: test_HomePage.py, 23] 
+[2019-08-27 17:58:09] INFO [home_init: test_HomePage.py, 24] ****开始执行用例****
+[2019-08-27 17:58:14] INFO [elementIsExit: base.py, 58] 查询到元素： com.android.browser:id/menu_more
+[2019-08-27 17:58:15] INFO [clickByElement: base.py, 41] 点击元素:more菜单
+[2019-08-27 17:58:16] INFO [elementIsExit: base.py, 58] 查询到元素： com.android.browser:id/tip
+[2019-08-27 17:58:16] INFO [assertTrue: base.py, 89] 已找到元素，断言成功，元素名称为： com.android.browser:id/tip
+[2019-08-27 17:58:16] INFO [home_init: test_HomePage.py, 28] ****用例执行结束****
+[2019-08-27 17:58:16] INFO [home_init: test_HomePage.py, 29] 

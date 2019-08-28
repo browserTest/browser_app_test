@@ -1,0 +1,8 @@
+[32mINFO    [0m root:conftest.py:27 ————————————开始执行自动化测试——————————————————
+[32mINFO    [0m root:driver.py:11 成功连接到设备：'172.18.8.122'
+[32mINFO    [0m root:driver.py:11 成功连接到设备：'172.18.8.122'
+[32mINFO    [0m root:test_HomePage.py:23 
+[32mINFO    [0m root:test_HomePage.py:24 ****开始执行用例****
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:662 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048A7E80>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed')': /shell
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:662 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048C31D0>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed')': /shell
+[33mWARNING [0m urllib3.connectionpool:connectionpool.py:662 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000000048C3390>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed')': /shell

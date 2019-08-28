@@ -1,0 +1,41 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "browser.browser_test",
+    "children" : [ {
+      "name" : "test_HomePage",
+      "children" : [ {
+        "name" : "TestHomePage",
+        "children" : [ {
+          "name" : "test002MyCollection",
+          "uid" : "2cc92ca3c72676d6",
+          "parentUid" : "a9b3f5b3984d189bc04497edb863427f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1566898978187,
+            "stop" : 1566898994318,
+            "duration" : 16131
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "test001HomePage",
+          "uid" : "1274cc6b5b080143",
+          "parentUid" : "a9b3f5b3984d189bc04497edb863427f",
+          "status" : "failed",
+          "time" : {
+            "start" : 1566899692293,
+            "stop" : 1566899700852,
+            "duration" : 8559
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a9b3f5b3984d189bc04497edb863427f"
+      } ],
+      "uid" : "1a32dfbc7654233a27c2f31a7e5783a4"
+    } ],
+    "uid" : "49d8c00481a1f35b0be243417f9ae6dc"
+  } ]
+}

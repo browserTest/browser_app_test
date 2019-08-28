@@ -1,0 +1,6 @@
+[32mINFO    [0m root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+[32mINFO    [0m root:test_HomePage.py:23 
+[32mINFO    [0m root:test_HomePage.py:24 ****开始执行用例****
+[32mINFO    [0m root:base.py:64 未找到元素，元素名称为: com.android.browser:id/menu_more111
+[32mINFO    [0m root:test_HomePage.py:28 ****用例执行结束****
+[32mINFO    [0m root:test_HomePage.py:29
