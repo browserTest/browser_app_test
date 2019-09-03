@@ -38,7 +38,18 @@ class Base():
             self.d.xpath(element).click()
         else:
             self.d(text=element).click()
-        logging.info("点击元素:{}".format(logtext))
+        logging.info("点击元素: {}".format(logtext))
+
+
+    # 根据元素id及text组合进行点击操作
+    def clickByElementIdAndText(self, id, text, logtext):
+        '''
+        :param id: 元素id
+        :param text: 元素text
+        :return:
+        '''
+        self.d(resourceId=id, text= text).click()
+        logging.info("点击元素： {}".format(logtext))
 
 
     # 查找元素，判断元素存在

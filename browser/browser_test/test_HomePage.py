@@ -29,10 +29,10 @@ class TestHomePage():
         logging.info("")
 
 
-    @allure.story('测试小红点不存在')
-    def test001HomePage(self, home_init):
-        self.home.clickMore()
-        self.base.assertTrue(HOME_MORE_TIP, timeout = 5)
+    # @allure.story('测试小红点不存在')
+    # def test001HomePage(self, home_init):
+    #     self.home.clickMore()
+    #     self.base.assertTrue(HOME_MORE_TIP, timeout = 5)
 
 
     # @allure.story('测试正常进入到我的收藏页面')

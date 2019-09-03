@@ -7,7 +7,11 @@
 # 首页地址栏中more菜单按钮
 HOME_MORE = 'com.android.browser:id/menu_more'
 
-
 # 首页more菜单小红点
 HOME_MORE_TIP = 'com.android.browser:id/tip'
 
+# 首页导航栏统一ID
+HOME_BUSINESS_ID = 'com.android.browser:id/business_view_title'
+
+# 首页导航栏-》更多
+HOME_BUSINESS_MORE_TEXT = '更多'
