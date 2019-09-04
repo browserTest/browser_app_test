@@ -46,8 +46,8 @@ JHS_PAGE = '鞋包饰品'
 TONGCHEN = '同城'
 TONGCHEN_PAGE = '同城服务'
 
-# 星座及其详情页面
-XINGZUO = '星座'
-XINGZUO_PAGE = 'sohu-logo-d'
+# 找房子及其详情页面
+FINDHOUSE = '找房子'
+FINDHOUSE_PAGE = '房产'
 
 

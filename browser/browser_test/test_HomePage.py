@@ -11,7 +11,7 @@ from browser.browser_element.MyCollection import *
 
 
 
-@allure.feature("测试首页")
+@allure.feature("测试资讯流页面")
 @pytest.mark.usefixtures("driver_setup")
 class TestHomePage():
 
@@ -29,10 +29,21 @@ class TestHomePage():
         logging.info("")
 
 
-    # @allure.story('测试小红点不存在')
-    # def test001HomePage(self, home_init):
-    #     self.home.clickMore()
-    #     self.base.assertTrue(HOME_MORE_TIP, timeout = 5)
+    @allure.story('测试资讯流页面存在相应text')
+    def test001HomePage(self, home_init):
+        '''
+        1、点击地址栏more按钮
+        2、点击back
+        3、向下滑动页面进入到资讯流列表页
+        4、向下滑动查找text
+        '''
+        self.home.clickMore()
+        # sleep(2)
+        self.pubmethod.clickBack()
+        self.pubmethod.scrollPage(2)
+        # self.pubmethod.clickHome()
+        # self.pubmethod.scrollPageToElement('火爆动作片，话没说几句就开打，下手凶狠，血战到底')
+        self.base.assertTrue('火爆动作片，话没说几句就开打，下手凶狠，血战到底', timeout = 5)
 
 
     # @allure.story('测试正常进入到我的收藏页面')

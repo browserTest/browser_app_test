@@ -1,10 +1,13 @@
 import logging
-import os
+import os,time
 
 
 
 
 """获取相关文件目录"""
+
+# 获取当前时间
+now_time = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
 
 # 获取当前config配置文件的目录及上一级目录
 dir_config = os.path.dirname(os.path.abspath(__file__))
@@ -19,8 +22,8 @@ dir_screenshot = os.path.join(dir_all, 'screenshot')
 
 # 获取原始报告目录及最终报告
 dir_report = os.path.join(dir_all, 'report')
-dir_report_xml = os.path.join(dir_report, 'xml')
-dir_report_html = os.path.join(dir_report, 'html')
+dir_report_xml = os.path.join(dir_report, 'xml_{}'.format(now_time))
+dir_report_html = os.path.join(dir_report, 'html_{}'.format(now_time))
 
 
 """配置log相关信息"""

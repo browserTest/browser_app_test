@@ -10,7 +10,7 @@ class Base():
         self.d = driver
 
 
-    #根据app包名操作app
+    # 根据app包名操作app
     def useApp(self, packagename, action):
         '''
         :param packagename: 应用包名
@@ -23,6 +23,19 @@ class Base():
             self.d.app_stop(packagename)
         elif action == 'clear':
             self.d.app_clear(packagename)
+        logging.info("{}： {}".format(action, packagename))
+
+    # 对手机硬件进行操作
+    def usePhone(self, action):
+        '''
+        :param action: 操作动作
+        :return:
+        '''
+        if action == 'home':
+            self.d.press('home')
+        elif action == 'back':
+            self.d.press('back')
+        logging.info("对设备进行操作，操作动作为： {}".format(action))
 
 
     # 根据元素名称进行点击操作
@@ -50,6 +63,33 @@ class Base():
         '''
         self.d(resourceId=id, text= text).click()
         logging.info("点击元素： {}".format(logtext))
+
+
+    # 向下滑动页面
+    def scroll(self, num = 1):
+        '''
+        :param num: 滑动次数，默认为1次
+        :return:
+        '''
+        for i in range(num):
+            self.d(scrollable=True).scroll(steps=100)
+            sleep(1)
+        logging.info("滑动页面： {}次".format(num))
+
+
+
+    # 向下滑动页面到指定元素位置
+    def scrollToElement(self, element):
+        '''
+        :param element: 元素名称，仅使用id或text识别，默认不查找元素，仅滑动页面
+        :return:
+        '''
+        if str(element).startswith("com"):
+            self.d(scrollable=True).scroll.to(resourceId=element)
+        else:
+            self.d(scrollable=True).scroll.to(text=element)
+        logging.info('滑动查找元素： {}'.format(element))
+
 
 
     # 查找元素，判断元素存在

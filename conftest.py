@@ -1,5 +1,5 @@
 
-import pytest,time,allure,subprocess
+import pytest,time,allure,subprocess,uiautomator2
 from config.config import *
 from base_function.driver import Driver
 from allure_commons.types import AttachmentType
@@ -12,7 +12,7 @@ def pytest_addoption(parser):
     :param parser:
     :return:
     """
-    parser.addoption("--cmdopt",  default="172.18.8.122", help="手机的IP地址")
+    parser.addoption("--cmdopt",  default="172.18.8.52", help="手机的IP地址")
 
 @pytest.fixture
 def cmdopt(request):
@@ -23,11 +23,19 @@ def cmdopt(request):
 @pytest.fixture()
 def driver_setup(request, cmdopt):
     logging.info('————————————开始执行自动化测试——————————————————')
-
     # 获取到driver对象
     global driver1
     driver1 = Driver().driver_init(cmdopt)
     request.instance.driver = Driver().driver_init(cmdopt)
+    # 启动监听器
+    driver1.watchers.watched = True
+    browser_watcher()
+
+
+# 定义监听器
+def browser_watcher():
+    driver1.watcher("始终允许").when(text='始终允许').click()
+    driver1.watcher("允许").when(text='允许').click()
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
@@ -54,8 +62,7 @@ def screen():
     :return:
     '''
     try:
-        fail_time = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-        fail_pic = str(fail_time) + "_error.jpg"
+        fail_pic = str(now_time) + "_error.jpg"
         pic_name = os.path.join(dir_screenshot, fail_pic)
         driver1.screenshot("{}".format(pic_name))
         logging.info('截图:{}'.format(pic_name))
@@ -64,6 +71,8 @@ def screen():
         return file_info
     except Exception as e:
         logging.info("截图失败!:{}".format(e))
+
+
 
 
 
