@@ -37,11 +37,3 @@ class PubMethod(Base):
         self.base.usePhone('back')
 
 
-    # 滑动页面,默认滑动一次
-    def scrollPage(self, num = 1):
-        self.base.scroll(num)
-
-
-    # 滑动页面到指定元素
-    def scrollPageToElement(self, element):
-        self.base.scrollToElement(element)

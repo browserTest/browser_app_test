@@ -24,3 +24,20 @@ class HomePage(Base):
             self.base.clickByElement(HOME_MORE, '浏览器首页more菜单')
         else:
             self.assertFalse(HOME_MORE)
+
+    # 点击工具栏中home菜单
+    def clickHome(self):
+        if self.base.elementIsExit(HOME_HOME):
+            self.base.clickByElement(HOME_HOME, '浏览器首页home菜单')
+        else:
+            self.assertFalse(HOME_HOME)
+
+
+    # 根据传参确认是否需要点击home按钮
+    def clickHomeOnPage(self, page):
+        if page == HOME_PAGE and self.base.elementIsExit(COLLECTION_FOLDER):
+            self.clickHome()
+        elif page == MYCOLLECTION and self.base.elementIsExit(HOME_CAMERA):
+            self.clickHome()
+        else:
+            pass

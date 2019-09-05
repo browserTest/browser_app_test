@@ -15,8 +15,8 @@ from browser.browser_element.MyCollection import *
 @pytest.mark.usefixtures("driver_setup")
 class TestHomePage():
 
-    @pytest.fixture()
-    def home_init(self, scope="function"):
+    @pytest.fixture(scope="function")
+    def home_init(self):
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod = PubMethod(self.driver)

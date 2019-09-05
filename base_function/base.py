@@ -25,7 +25,8 @@ class Base():
             self.d.app_clear(packagename)
         logging.info("{}： {}".format(action, packagename))
 
-    # 对手机硬件进行操作
+
+    # 对手机硬件进行home、back操作
     def usePhone(self, action):
         '''
         :param action: 操作动作
@@ -36,6 +37,18 @@ class Base():
         elif action == 'back':
             self.d.press('back')
         logging.info("对设备进行操作，操作动作为： {}".format(action))
+
+
+    # 根据当前屏幕显示结果确认手机是否需要先解锁
+    def unlock(self):
+        '''
+        :param action: 操作动作
+        :return:
+        '''
+        if not self.d.info.get('screenOn'):
+            self.d.unlock()
+            sleep(1)
+            logging.info("解锁手机")
 
 
     # 根据元素名称进行点击操作

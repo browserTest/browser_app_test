@@ -1,9 +1,28 @@
-[2019-08-27 17:58:07] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
-[2019-08-27 17:58:09] INFO [home_init: test_HomePage.py, 23] 
-[2019-08-27 17:58:09] INFO [home_init: test_HomePage.py, 24] ****开始执行用例****
-[2019-08-27 17:58:14] INFO [elementIsExit: base.py, 58] 查询到元素： com.android.browser:id/menu_more
-[2019-08-27 17:58:15] INFO [clickByElement: base.py, 41] 点击元素:more菜单
-[2019-08-27 17:58:16] INFO [elementIsExit: base.py, 58] 查询到元素： com.android.browser:id/tip
-[2019-08-27 17:58:16] INFO [assertTrue: base.py, 89] 已找到元素，断言成功，元素名称为： com.android.browser:id/tip
-[2019-08-27 17:58:16] INFO [home_init: test_HomePage.py, 28] ****用例执行结束****
-[2019-08-27 17:58:16] INFO [home_init: test_HomePage.py, 29] 
+[2019-09-05 16:10:11] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
+[2019-09-05 16:10:14] INFO [home_init: test_MorePage.py, 24] 
+[2019-09-05 16:10:14] INFO [home_init: test_MorePage.py, 25] ****开始执行用例****
+[2019-09-05 16:10:14] INFO [useApp: base.py, 26] stop： com.android.browser
+[2019-09-05 16:10:17] INFO [useApp: base.py, 26] start： com.android.browser
+[2019-09-05 16:10:20] INFO [elementIsExit: base.py, 122] 查询到元素： 已保存网页
+[2019-09-05 16:10:21] INFO [elementIsExit: base.py, 122] 查询到元素： com.android.browser:id/home
+[2019-09-05 16:10:21] INFO [clickByElement: base.py, 67] 点击元素: 浏览器首页home菜单
+[2019-09-05 16:10:22] INFO [elementIsExit: base.py, 122] 查询到元素： 更多
+[2019-09-05 16:10:23] INFO [clickByElementIdAndText: base.py, 78] 点击元素： 导航栏-》更多
+[2019-09-05 16:10:29] INFO [elementIsExit: base.py, 128] 未找到元素，元素名称为: 头条
+[2019-09-05 16:10:31] INFO [screen: conftest.py, 68] 截图:D:\browser_dwliuc\screenshot\20190905161011_error.jpg
+[2019-09-05 16:10:31] INFO [home_init: test_MorePage.py, 31] ****用例执行结束****
+[2019-09-05 16:10:31] INFO [home_init: test_MorePage.py, 32] 
+[2019-09-05 16:10:31] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
+[2019-09-05 16:10:34] INFO [home_init: test_MorePage.py, 24] 
+[2019-09-05 16:10:34] INFO [home_init: test_MorePage.py, 25] ****开始执行用例****
+[2019-09-05 16:10:34] INFO [useApp: base.py, 26] stop： com.android.browser
+[2019-09-05 16:10:38] INFO [useApp: base.py, 26] start： com.android.browser
+[2019-09-05 16:10:49] INFO [elementIsExit: base.py, 128] 未找到元素，元素名称为: 已保存网页
+[2019-09-05 16:10:50] INFO [elementIsExit: base.py, 122] 查询到元素： 更多
+[2019-09-05 16:10:50] INFO [clickByElementIdAndText: base.py, 78] 点击元素： 导航栏-》更多
+[2019-09-05 16:10:52] INFO [elementIsExit: base.py, 122] 查询到元素： 小视频
+[2019-09-05 16:10:52] INFO [clickByElement: base.py, 67] 点击元素: 网址导航-》小视频
+[2019-09-05 16:10:54] INFO [elementIsExit: base.py, 122] 查询到元素： J_news_list
+[2019-09-05 16:10:54] INFO [assertTrue: base.py, 153] 已找到元素，断言成功，元素名称为： J_news_list
+[2019-09-05 16:10:54] INFO [home_init: test_MorePage.py, 31] ****用例执行结束****
+[2019-09-05 16:10:54] INFO [home_init: test_MorePage.py, 32] 
