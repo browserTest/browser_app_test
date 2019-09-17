@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "魅族浏览器网址导航页面测试",
+    "children" : [ {
+      "name" : "测试网址导航页面搜狐跳转",
+      "children" : [ {
+        "name" : "test003MorePage",
+        "uid" : "bd8d80f923ad5882",
+        "parentUid" : "7fd8861618072d178593b000b0965506",
+        "status" : "broken",
+        "time" : {
+          "start" : 1568103671825,
+          "stop" : 1568103671825,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fd8861618072d178593b000b0965506"
+    } ],
+    "uid" : "6d2b2be7d34cef424020a406a0787f0f"
+  } ]
+}

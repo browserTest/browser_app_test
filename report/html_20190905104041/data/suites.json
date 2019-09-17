@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "browser.browser_test",
+    "children" : [ {
+      "name" : "test_MorePage",
+      "children" : [ {
+        "name" : "TestMorePage",
+        "children" : [ {
+          "name" : "test003MorePage",
+          "uid" : "6c874f4c4420ef8",
+          "parentUid" : "98acc717bedbde7f0da435991756b542",
+          "status" : "passed",
+          "time" : {
+            "start" : 1567651249919,
+            "stop" : 1567651269671,
+            "duration" : 19752
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "98acc717bedbde7f0da435991756b542"
+      } ],
+      "uid" : "a440e04be7aa90d95d60999e20795404"
+    } ],
+    "uid" : "49d8c00481a1f35b0be243417f9ae6dc"
+  } ]
+}

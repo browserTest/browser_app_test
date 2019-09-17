@@ -1,0 +1,22 @@
+{
+  "cc3df0b98d81f05b2d6a755ea1338699" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4037d5ee7d11f0de",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 火爆动作片，话没说几句就开打，下手凶狠，血战到底",
+      "time" : {
+        "start" : 1567590285069,
+        "stop" : 1567590337269,
+        "duration" : 52200
+      }
+    } ]
+  }
+}

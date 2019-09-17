@@ -1,0 +1,7 @@
+"Status","Name","Duration in ms","Description"
+"failed","browser.browser_test.test_HomePage.TestHomePage#test001HomePage","14688","
+        1、点击地址栏more按钮
+        2、点击back
+        3、向下滑动页面进入到资讯流列表页
+        4、向下滑动查找text
+        "

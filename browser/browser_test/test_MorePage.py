@@ -16,7 +16,7 @@ from browser.browser_element.More import *
 class TestMorePage():
 
     @pytest.fixture()
-    def home_init(self, scope="function"):
+    def more_init(self, scope="function"):
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod = PubMethod(self.driver)
@@ -33,7 +33,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面头条跳转')
     @pytest.mark.P0
-    def test001MorePage(self, home_init):
+    def test001MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"头条"
@@ -51,7 +51,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面小视频跳转')
     @pytest.mark.P0
-    def test002MorePage(self, home_init):
+    def test002MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"小视频"
@@ -66,7 +66,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面搜狐跳转')
     @pytest.mark.P1
-    def test003MorePage(self, home_init):
+    def test003MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"搜狐"
@@ -81,7 +81,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面漫画跳转')
     @pytest.mark.P1
-    def test004MorePage(self, home_init):
+    def test004MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"漫画"
@@ -96,7 +96,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面小说跳转')
     @pytest.mark.P1
-    def test005MorePage(self, home_init):
+    def test005MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"小说"
@@ -111,7 +111,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面钱包跳转')
     @pytest.mark.P1
-    def test006MorePage(self, home_init):
+    def test006MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"钱包"
@@ -126,7 +126,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面搞笑跳转')
     @pytest.mark.P1
-    def test007MorePage(self, home_init):
+    def test007MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"搞笑"
@@ -141,7 +141,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面京东跳转')
     @pytest.mark.P1
-    def test008MorePage(self, home_init):
+    def test008MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"京东"
@@ -156,7 +156,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面中文跳转')
     @pytest.mark.P1
-    def test009MorePage(self, home_init):
+    def test009MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"中文"
@@ -171,7 +171,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面聚划算跳转')
     @pytest.mark.P1
-    def test010MorePage(self, home_init):
+    def test010MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"聚划算"
@@ -186,7 +186,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面同城跳转')
     @pytest.mark.P1
-    def test011MorePage(self, home_init):
+    def test011MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"同城"
@@ -201,7 +201,7 @@ class TestMorePage():
 
     @allure.story('测试网址导航页面星座跳转')
     @pytest.mark.P1
-    def test012MorePage(self, home_init):
+    def test012MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"找房子"

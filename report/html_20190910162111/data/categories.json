@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "uiautomator2.exceptions.JsonRpcError: -32601 Method not found: <method not found> data: , method: runWatchersOnWindowsChange",
+      "children" : [ {
+        "name" : "test003MorePage",
+        "uid" : "bd8d80f923ad5882",
+        "parentUid" : "839df2d1aea09f657414a07178c18a1f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1568103671825,
+          "stop" : 1568103671825,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "839df2d1aea09f657414a07178c18a1f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

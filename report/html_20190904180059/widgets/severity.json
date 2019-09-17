@@ -1,0 +1,121 @@
+[ {
+  "uid" : "5ba5840d91c3375b",
+  "name" : "test004MorePage",
+  "time" : {
+    "start" : 1567591334093,
+    "stop" : 1567591353043,
+    "duration" : 18950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6d9e8f1f05abd2f",
+  "name" : "test001MorePage",
+  "time" : {
+    "start" : 1567591267491,
+    "stop" : 1567591281405,
+    "duration" : 13914
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b0c9ab25091eb79",
+  "name" : "test010MorePage",
+  "time" : {
+    "start" : 1567591454499,
+    "stop" : 1567591474814,
+    "duration" : 20315
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3551b274acc7f9d5",
+  "name" : "test006MorePage",
+  "time" : {
+    "start" : 1567591377297,
+    "stop" : 1567591381653,
+    "duration" : 4356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e183527df464dc3e",
+  "name" : "test002MorePage",
+  "time" : {
+    "start" : 1567591289335,
+    "stop" : 1567591303053,
+    "duration" : 13718
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fedf432d2ab66c5a",
+  "name" : "test005MorePage",
+  "time" : {
+    "start" : 1567591361063,
+    "stop" : 1567591369495,
+    "duration" : 8432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ebca4226250ec8f",
+  "name" : "test008MorePage",
+  "time" : {
+    "start" : 1567591401128,
+    "stop" : 1567591423115,
+    "duration" : 21987
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3837b1d82576c74",
+  "name" : "test003MorePage",
+  "time" : {
+    "start" : 1567591311116,
+    "stop" : 1567591325997,
+    "duration" : 14881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ee19ec71990b404",
+  "name" : "test011MorePage",
+  "time" : {
+    "start" : 1567591484070,
+    "stop" : 1567591498007,
+    "duration" : 13937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d855c84a75c80b3",
+  "name" : "test007MorePage",
+  "time" : {
+    "start" : 1567591389656,
+    "stop" : 1567591393160,
+    "duration" : 3504
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "68da53a197424f9f",
+  "name" : "test012MorePage",
+  "time" : {
+    "start" : 1567591505770,
+    "stop" : 1567591514104,
+    "duration" : 8334
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dc1e38221981fe2",
+  "name" : "test009MorePage",
+  "time" : {
+    "start" : 1567591432316,
+    "stop" : 1567591447007,
+    "duration" : 14691
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

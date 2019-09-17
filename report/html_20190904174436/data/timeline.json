@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "EF-LIUDAWEI2",
+    "children" : [ {
+      "name" : "5932-MainThread",
+      "children" : [ {
+        "name" : "test001HomePage",
+        "uid" : "4037d5ee7d11f0de",
+        "parentUid" : "f21a2d640a7505e12c88b957b33beb41",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567590285069,
+          "stop" : 1567590337269,
+          "duration" : 52200
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f21a2d640a7505e12c88b957b33beb41"
+    } ],
+    "uid" : "052243059ca13bdb8d54bd7ac19c462d"
+  } ]
+}

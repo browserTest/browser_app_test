@@ -1,0 +1,236 @@
+{
+  "dcab8fefe0f52e26a22c1aaa201f7957" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea2341b082ccb5f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588475155,
+        "stop" : 1567588478508,
+        "duration" : 3353
+      }
+    } ]
+  },
+  "9347f73df920b68f4a34bea7fbc4e751" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78a7381b9be39aa0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588392789,
+        "stop" : 1567588407963,
+        "duration" : 15174
+      }
+    } ]
+  },
+  "b7772b3a0249fa0ecdbbf8f7d9b4c792" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2c50e755bc076841",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588441072,
+        "stop" : 1567588450410,
+        "duration" : 9338
+      }
+    } ]
+  },
+  "5f0720568cb0a4c311f2c915dea694dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "846b5e0221eebcc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588458411,
+        "stop" : 1567588467475,
+        "duration" : 9064
+      }
+    } ]
+  },
+  "bad1d22c6004d13c413338d1fe71fba7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a07ce838f8bd93d4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+      "time" : {
+        "start" : 1567588534060,
+        "stop" : 1567588550085,
+        "duration" : 16025
+      }
+    } ]
+  },
+  "870dd8ec841c46a9aa26fb99199d2b5c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79ae673437e6a677",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588558538,
+        "stop" : 1567588573629,
+        "duration" : 15091
+      }
+    } ]
+  },
+  "059d9b825e21304963cbbbaf0e893b07" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77fa5bfcee1621e1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： J_news_list",
+      "time" : {
+        "start" : 1567588368836,
+        "stop" : 1567588384175,
+        "duration" : 15339
+      }
+    } ]
+  },
+  "491d0f7733f5cb4b5bf0fae7ae417662" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6795c00bcc53a40c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567588581588,
+        "stop" : 1567588589488,
+        "duration" : 7900
+      }
+    } ]
+  },
+  "6887e64e74fc8f7d7c01812d3ebe910d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "32602e1552073506",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： J_top_menu",
+      "time" : {
+        "start" : 1567588345322,
+        "stop" : 1567588360436,
+        "duration" : 15114
+      }
+    } ]
+  },
+  "d4a31b433c144077a6dbb74c087327c6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "77ef70ef6d86506a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+      "time" : {
+        "start" : 1567588486135,
+        "stop" : 1567588501565,
+        "duration" : 15430
+      }
+    } ]
+  },
+  "05f534e537ba930b838c4c60941e4b56" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "247b93d637203e46",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 发现漫画",
+      "time" : {
+        "start" : 1567588416344,
+        "stop" : 1567588432255,
+        "duration" : 15911
+      }
+    } ]
+  },
+  "eab51f7bd77d927633e0100d2ee25a61" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc2d07bd893dca99",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 书架",
+      "time" : {
+        "start" : 1567588510118,
+        "stop" : 1567588525521,
+        "duration" : 15403
+      }
+    } ]
+  }
+}

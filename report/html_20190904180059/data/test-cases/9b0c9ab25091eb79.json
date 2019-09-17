@@ -1,0 +1,154 @@
+{
+  "uid" : "9b0c9ab25091eb79",
+  "name" : "test010MorePage",
+  "fullName" : "browser.browser_test.test_MorePage.TestMorePage#test010MorePage",
+  "historyId" : "bad1d22c6004d13c413338d1fe71fba7",
+  "time" : {
+    "start" : 1567591454499,
+    "stop" : 1567591474814,
+    "duration" : 20315
+  },
+  "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、在浏览器首页点击导航栏中&quot;更多&quot;按钮，进入到浏览器网址导航页面\n    2、点击&quot;聚划算&quot;\n    3、断言是否跳转到&quot;聚划算&quot;页面\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+  "statusTrace" : "self = <test_MorePage.TestMorePage object at 0x00000000048BE358>\nhome_init = None\n\n    @allure.story('测试网址导航页面聚划算跳转')\n    def test010MorePage(self, home_init):\n        '''\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n    \n        '''\n        # 点击导航栏-》更多\n        self.home.clickBusinessMore()\n        # 点击网址导航-》聚划算\n        self.more.clickDaoHang(JHS)\n>       self.base.assertTrue(JHS_PAGE, timeout=15)\n\nbrowser\\browser_test\\test_MorePage.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x00000000048FDA90>, element = '鞋包饰品'\nmark = True, timeout = 15\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品\n\nbase_function\\base.py:139: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1567591449229,
+      "stop" : 1567591454498,
+      "duration" : 5269
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1567591447035,
+      "stop" : 1567591449229,
+      "duration" : 2194
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1567591447035,
+      "stop" : 1567591447035,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+    "statusTrace" : "self = <test_MorePage.TestMorePage object at 0x00000000048BE358>\nhome_init = None\n\n    @allure.story('测试网址导航页面聚划算跳转')\n    def test010MorePage(self, home_init):\n        '''\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n    \n        '''\n        # 点击导航栏-》更多\n        self.home.clickBusinessMore()\n        # 点击网址导航-》聚划算\n        self.more.clickDaoHang(JHS)\n>       self.base.assertTrue(JHS_PAGE, timeout=15)\n\nbrowser\\browser_test\\test_MorePage.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x00000000048FDA90>, element = '鞋包饰品'\nmark = True, timeout = 15\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品\n\nbase_function\\base.py:139: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "afeb62832a1e6760",
+      "name" : "失败截图",
+      "source" : "afeb62832a1e6760.jpg",
+      "type" : "image/jpg",
+      "size" : 39124
+    }, {
+      "uid" : "4935de4c72c51cb3",
+      "name" : "log",
+      "source" : "4935de4c72c51cb3.txt",
+      "type" : "text/plain",
+      "size" : 751
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1567591475521,
+      "stop" : 1567591475521,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器网址导航页面测试"
+  }, {
+    "name" : "story",
+    "value" : "测试网址导航页面聚划算跳转"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_MorePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMorePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "13120-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_MorePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9b0c9ab25091eb79.json",
+  "parameterValues" : [ ]
+}

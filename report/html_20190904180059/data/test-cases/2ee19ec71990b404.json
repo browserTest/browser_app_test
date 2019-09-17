@@ -1,0 +1,140 @@
+{
+  "uid" : "2ee19ec71990b404",
+  "name" : "test011MorePage",
+  "fullName" : "browser.browser_test.test_MorePage.TestMorePage#test011MorePage",
+  "historyId" : "870dd8ec841c46a9aa26fb99199d2b5c",
+  "time" : {
+    "start" : 1567591484070,
+    "stop" : 1567591498007,
+    "duration" : 13937
+  },
+  "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"同城\"\n        3、断言是否跳转到\"同城\"页面\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、在浏览器首页点击导航栏中&quot;更多&quot;按钮，进入到浏览器网址导航页面\n    2、点击&quot;同城&quot;\n    3、断言是否跳转到&quot;同城&quot;页面\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1567591475695,
+      "stop" : 1567591478487,
+      "duration" : 2792
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1567591478488,
+      "stop" : 1567591484069,
+      "duration" : 5581
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1567591475695,
+      "stop" : 1567591475695,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"同城\"\n        3、断言是否跳转到\"同城\"页面\n\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "732d80488558487e",
+      "name" : "log",
+      "source" : "732d80488558487e.txt",
+      "type" : "text/plain",
+      "size" : 820
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1567591498008,
+      "stop" : 1567591498009,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器网址导航页面测试"
+  }, {
+    "name" : "story",
+    "value" : "测试网址导航页面同城跳转"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_MorePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMorePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "13120-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_MorePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ee19ec71990b404.json",
+  "parameterValues" : [ ]
+}

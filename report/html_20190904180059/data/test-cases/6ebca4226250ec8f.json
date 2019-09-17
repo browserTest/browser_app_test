@@ -1,0 +1,154 @@
+{
+  "uid" : "6ebca4226250ec8f",
+  "name" : "test008MorePage",
+  "fullName" : "browser.browser_test.test_MorePage.TestMorePage#test008MorePage",
+  "historyId" : "d4a31b433c144077a6dbb74c087327c6",
+  "time" : {
+    "start" : 1567591401128,
+    "stop" : 1567591423115,
+    "duration" : 21987
+  },
+  "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"京东\"\n        3、断言是否跳转到\"京东\"页面\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、在浏览器首页点击导航栏中&quot;更多&quot;按钮，进入到浏览器网址导航页面\n    2、点击&quot;京东&quot;\n    3、断言是否跳转到&quot;京东&quot;页面\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+  "statusTrace" : "self = <test_MorePage.TestMorePage object at 0x0000000004908D30>\nhome_init = None\n\n    @allure.story('测试网址导航页面京东跳转')\n    def test008MorePage(self, home_init):\n        '''\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"京东\"\n        3、断言是否跳转到\"京东\"页面\n    \n        '''\n        # 点击导航栏-》更多\n        self.home.clickBusinessMore()\n        # 点击网址导航-》京东\n        self.more.clickDaoHang(JD)\n>       self.base.assertTrue(JD_PAGE, timeout=15)\n\nbrowser\\browser_test\\test_MorePage.py:143: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x000000000490DDD8>\nelement = 'com.jingdong.app.mall:id/h3', mark = True, timeout = 15\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3\n\nbase_function\\base.py:139: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1567591393262,
+      "stop" : 1567591395859,
+      "duration" : 2597
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1567591393262,
+      "stop" : 1567591393262,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1567591395859,
+      "stop" : 1567591401127,
+      "duration" : 5268
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"京东\"\n        3、断言是否跳转到\"京东\"页面\n\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+    "statusTrace" : "self = <test_MorePage.TestMorePage object at 0x0000000004908D30>\nhome_init = None\n\n    @allure.story('测试网址导航页面京东跳转')\n    def test008MorePage(self, home_init):\n        '''\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"京东\"\n        3、断言是否跳转到\"京东\"页面\n    \n        '''\n        # 点击导航栏-》更多\n        self.home.clickBusinessMore()\n        # 点击网址导航-》京东\n        self.more.clickDaoHang(JD)\n>       self.base.assertTrue(JD_PAGE, timeout=15)\n\nbrowser\\browser_test\\test_MorePage.py:143: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x000000000490DDD8>\nelement = 'com.jingdong.app.mall:id/h3', mark = True, timeout = 15\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3\n\nbase_function\\base.py:139: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "41462a581976d3cb",
+      "name" : "失败截图",
+      "source" : "41462a581976d3cb.jpg",
+      "type" : "image/jpg",
+      "size" : 722143
+    }, {
+      "uid" : "90f5973b48ede9e4",
+      "name" : "log",
+      "source" : "90f5973b48ede9e4.txt",
+      "type" : "text/plain",
+      "size" : 760
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1567591424586,
+      "stop" : 1567591424586,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器网址导航页面测试"
+  }, {
+    "name" : "story",
+    "value" : "测试网址导航页面京东跳转"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_MorePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMorePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "13120-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_MorePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6ebca4226250ec8f.json",
+  "parameterValues" : [ ]
+}

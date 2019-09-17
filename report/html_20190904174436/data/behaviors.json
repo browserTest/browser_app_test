@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试资讯流页面",
+    "children" : [ {
+      "name" : "测试资讯流页面存在相应text",
+      "children" : [ {
+        "name" : "test001HomePage",
+        "uid" : "4037d5ee7d11f0de",
+        "parentUid" : "ed3839943eef09734e6a7e90333c4fec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567590285069,
+          "stop" : 1567590337269,
+          "duration" : 52200
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ed3839943eef09734e6a7e90333c4fec"
+    } ],
+    "uid" : "394c972b525035c7c8d550e5c052048d"
+  } ]
+}

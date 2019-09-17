@@ -1,0 +1,12 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_HomePage.py:23 
+INFO     root:test_HomePage.py:24 ****开始执行用例****
+INFO     root:base.py:26 stop： com.android.browser
+INFO     root:base.py:26 start： com.android.browser
+INFO     root:base.py:109 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:54 点击元素: 浏览器首页more菜单
+INFO     root:base.py:38 对设备进行操作，操作动作为： back
+INFO     root:base.py:77 滑动页面： 2次
+INFO     root:base.py:115 未找到元素，元素名称为: 火爆动作片，话没说几句就开打，下手凶狠，血战到底
+INFO     root:test_HomePage.py:28 ****用例执行结束****
+INFO     root:test_HomePage.py:29

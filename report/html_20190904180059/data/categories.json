@@ -1,0 +1,41 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+      "children" : [ {
+        "name" : "test008MorePage",
+        "uid" : "6ebca4226250ec8f",
+        "parentUid" : "899286d0a5dd9346a1670ea7e3dceb2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567591401128,
+          "stop" : 1567591423115,
+          "duration" : 21987
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "899286d0a5dd9346a1670ea7e3dceb2c"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+      "children" : [ {
+        "name" : "test010MorePage",
+        "uid" : "9b0c9ab25091eb79",
+        "parentUid" : "baba534a122c3898f634a628f1730ea3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567591454499,
+          "stop" : 1567591474814,
+          "duration" : 20315
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baba534a122c3898f634a628f1730ea3"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

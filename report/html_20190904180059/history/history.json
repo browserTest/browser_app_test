@@ -1,0 +1,232 @@
+{
+  "dcab8fefe0f52e26a22c1aaa201f7957" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8d855c84a75c80b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591389656,
+        "stop" : 1567591393160,
+        "duration" : 3504
+      }
+    } ]
+  },
+  "9347f73df920b68f4a34bea7fbc4e751" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b3837b1d82576c74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591311116,
+        "stop" : 1567591325997,
+        "duration" : 14881
+      }
+    } ]
+  },
+  "b7772b3a0249fa0ecdbbf8f7d9b4c792" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fedf432d2ab66c5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591361063,
+        "stop" : 1567591369495,
+        "duration" : 8432
+      }
+    } ]
+  },
+  "5f0720568cb0a4c311f2c915dea694dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3551b274acc7f9d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591377297,
+        "stop" : 1567591381653,
+        "duration" : 4356
+      }
+    } ]
+  },
+  "bad1d22c6004d13c413338d1fe71fba7" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9b0c9ab25091eb79",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+      "time" : {
+        "start" : 1567591454499,
+        "stop" : 1567591474814,
+        "duration" : 20315
+      }
+    } ]
+  },
+  "870dd8ec841c46a9aa26fb99199d2b5c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ee19ec71990b404",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591484070,
+        "stop" : 1567591498007,
+        "duration" : 13937
+      }
+    } ]
+  },
+  "491d0f7733f5cb4b5bf0fae7ae417662" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68da53a197424f9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591505770,
+        "stop" : 1567591514104,
+        "duration" : 8334
+      }
+    } ]
+  },
+  "059d9b825e21304963cbbbaf0e893b07" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e183527df464dc3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591289335,
+        "stop" : 1567591303053,
+        "duration" : 13718
+      }
+    } ]
+  },
+  "6887e64e74fc8f7d7c01812d3ebe910d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6d9e8f1f05abd2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591267491,
+        "stop" : 1567591281405,
+        "duration" : 13914
+      }
+    } ]
+  },
+  "d4a31b433c144077a6dbb74c087327c6" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ebca4226250ec8f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+      "time" : {
+        "start" : 1567591401128,
+        "stop" : 1567591423115,
+        "duration" : 21987
+      }
+    } ]
+  },
+  "05f534e537ba930b838c4c60941e4b56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5ba5840d91c3375b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591334093,
+        "stop" : 1567591353043,
+        "duration" : 18950
+      }
+    } ]
+  },
+  "eab51f7bd77d927633e0100d2ee25a61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3dc1e38221981fe2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1567591432316,
+        "stop" : 1567591447007,
+        "duration" : 14691
+      }
+    } ]
+  }
+}

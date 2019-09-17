@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 火爆动作片，话没说几句就开打，下手凶狠，血战到底",
+      "children" : [ {
+        "name" : "test001HomePage",
+        "uid" : "47a86a2512191148",
+        "parentUid" : "6b37012bde91d7360d138420a8243194",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567590472565,
+          "stop" : 1567590487253,
+          "duration" : 14688
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b37012bde91d7360d138420a8243194"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

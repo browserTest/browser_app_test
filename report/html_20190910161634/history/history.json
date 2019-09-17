@@ -1,0 +1,22 @@
+{
+  "9347f73df920b68f4a34bea7fbc4e751" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d4373252215ea67",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.JsonRpcError: -32601 Method not found: <method not found> data: , method: runWatchersOnWindowsChange",
+      "time" : {
+        "start" : 1568103397593,
+        "stop" : 1568103397593,
+        "duration" : 0
+      }
+    } ]
+  }
+}

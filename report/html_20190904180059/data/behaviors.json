@@ -1,0 +1,201 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "魅族浏览器网址导航页面测试",
+    "children" : [ {
+      "name" : "测试网址导航页面头条跳转",
+      "children" : [ {
+        "name" : "test001MorePage",
+        "uid" : "f6d9e8f1f05abd2f",
+        "parentUid" : "fe0d42b26f38d9d2bf5d3a87ca737dab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591267491,
+          "stop" : 1567591281405,
+          "duration" : 13914
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fe0d42b26f38d9d2bf5d3a87ca737dab"
+    }, {
+      "name" : "测试网址导航页面小视频跳转",
+      "children" : [ {
+        "name" : "test002MorePage",
+        "uid" : "e183527df464dc3e",
+        "parentUid" : "1aade5d9733e9f8492ac13c3c82ef0fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591289335,
+          "stop" : 1567591303053,
+          "duration" : 13718
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1aade5d9733e9f8492ac13c3c82ef0fb"
+    }, {
+      "name" : "测试网址导航页面搜狐跳转",
+      "children" : [ {
+        "name" : "test003MorePage",
+        "uid" : "b3837b1d82576c74",
+        "parentUid" : "7fd8861618072d178593b000b0965506",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591311116,
+          "stop" : 1567591325997,
+          "duration" : 14881
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fd8861618072d178593b000b0965506"
+    }, {
+      "name" : "测试网址导航页面漫画跳转",
+      "children" : [ {
+        "name" : "test004MorePage",
+        "uid" : "5ba5840d91c3375b",
+        "parentUid" : "49deb93c1f5c126b0447c662398e22ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591334093,
+          "stop" : 1567591353043,
+          "duration" : 18950
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49deb93c1f5c126b0447c662398e22ba"
+    }, {
+      "name" : "测试网址导航页面小说跳转",
+      "children" : [ {
+        "name" : "test005MorePage",
+        "uid" : "fedf432d2ab66c5a",
+        "parentUid" : "1aec03639a2dccc9c92804c81c5723fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591361063,
+          "stop" : 1567591369495,
+          "duration" : 8432
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1aec03639a2dccc9c92804c81c5723fd"
+    }, {
+      "name" : "测试网址导航页面钱包跳转",
+      "children" : [ {
+        "name" : "test006MorePage",
+        "uid" : "3551b274acc7f9d5",
+        "parentUid" : "ef792e4a9412cfd88948f37ae4b3c9d3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591377297,
+          "stop" : 1567591381653,
+          "duration" : 4356
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ef792e4a9412cfd88948f37ae4b3c9d3"
+    }, {
+      "name" : "测试网址导航页面搞笑跳转",
+      "children" : [ {
+        "name" : "test007MorePage",
+        "uid" : "8d855c84a75c80b3",
+        "parentUid" : "35ca0ff98d13d4c1e73f59a7bc656325",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591389656,
+          "stop" : 1567591393160,
+          "duration" : 3504
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35ca0ff98d13d4c1e73f59a7bc656325"
+    }, {
+      "name" : "测试网址导航页面京东跳转",
+      "children" : [ {
+        "name" : "test008MorePage",
+        "uid" : "6ebca4226250ec8f",
+        "parentUid" : "9f8e66fc7119ef215ee5907947f01885",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567591401128,
+          "stop" : 1567591423115,
+          "duration" : 21987
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f8e66fc7119ef215ee5907947f01885"
+    }, {
+      "name" : "测试网址导航页面中文跳转",
+      "children" : [ {
+        "name" : "test009MorePage",
+        "uid" : "3dc1e38221981fe2",
+        "parentUid" : "2d895ef99b220383b9179bc25dc4a94a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591432316,
+          "stop" : 1567591447007,
+          "duration" : 14691
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2d895ef99b220383b9179bc25dc4a94a"
+    }, {
+      "name" : "测试网址导航页面聚划算跳转",
+      "children" : [ {
+        "name" : "test010MorePage",
+        "uid" : "9b0c9ab25091eb79",
+        "parentUid" : "59494a059898185456cc3fdce9bed254",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567591454499,
+          "stop" : 1567591474814,
+          "duration" : 20315
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "59494a059898185456cc3fdce9bed254"
+    }, {
+      "name" : "测试网址导航页面同城跳转",
+      "children" : [ {
+        "name" : "test011MorePage",
+        "uid" : "2ee19ec71990b404",
+        "parentUid" : "5efe90b031cee4928524333177a93b30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591484070,
+          "stop" : 1567591498007,
+          "duration" : 13937
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5efe90b031cee4928524333177a93b30"
+    }, {
+      "name" : "测试网址导航页面星座跳转",
+      "children" : [ {
+        "name" : "test012MorePage",
+        "uid" : "68da53a197424f9f",
+        "parentUid" : "7515d3d82576e7fe32d4950c6f1943b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1567591505770,
+          "stop" : 1567591514104,
+          "duration" : 8334
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7515d3d82576e7fe32d4950c6f1943b1"
+    } ],
+    "uid" : "6d2b2be7d34cef424020a406a0787f0f"
+  } ]
+}

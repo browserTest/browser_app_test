@@ -1,0 +1,12 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_MorePage.py:24 
+INFO     root:test_MorePage.py:25 ****开始执行用例****
+INFO     root:base.py:26 stop 应用，应用包名为： com.android.browser
+INFO     root:base.py:26 start 应用，应用包名为： com.android.browser
+INFO     root:base.py:109 查询到元素： 更多
+INFO     root:base.py:65 点击元素： 导航栏-》更多
+INFO     root:base.py:109 查询到元素： 头条
+INFO     root:base.py:54 点击元素: 网址导航-》头条
+INFO     root:base.py:115 未找到元素，元素名称为: J_top_menu
+INFO     root:test_MorePage.py:29 ****用例执行结束****
+INFO     root:test_MorePage.py:30

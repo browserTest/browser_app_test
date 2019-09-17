@@ -1,0 +1,105 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： J_top_menu",
+      "children" : [ {
+        "name" : "test001MorePage",
+        "uid" : "32602e1552073506",
+        "parentUid" : "c25c3a11b05df1701290d8419bb8c878",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588345322,
+          "stop" : 1567588360436,
+          "duration" : 15114
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c25c3a11b05df1701290d8419bb8c878"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： J_news_list",
+      "children" : [ {
+        "name" : "test002MorePage",
+        "uid" : "77fa5bfcee1621e1",
+        "parentUid" : "1e8774b91e6ac98918891f9c910bfc39",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588368836,
+          "stop" : 1567588384175,
+          "duration" : 15339
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1e8774b91e6ac98918891f9c910bfc39"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 发现漫画",
+      "children" : [ {
+        "name" : "test004MorePage",
+        "uid" : "247b93d637203e46",
+        "parentUid" : "36266728621b543a4a14ae050af2bf12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588416344,
+          "stop" : 1567588432255,
+          "duration" : 15911
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "36266728621b543a4a14ae050af2bf12"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.jingdong.app.mall:id/h3",
+      "children" : [ {
+        "name" : "test008MorePage",
+        "uid" : "77ef70ef6d86506a",
+        "parentUid" : "899286d0a5dd9346a1670ea7e3dceb2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588486135,
+          "stop" : 1567588501565,
+          "duration" : 15430
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "899286d0a5dd9346a1670ea7e3dceb2c"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 书架",
+      "children" : [ {
+        "name" : "test009MorePage",
+        "uid" : "cc2d07bd893dca99",
+        "parentUid" : "b6b7b874f99a5746f3bfb09e8d277349",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588510118,
+          "stop" : 1567588525521,
+          "duration" : 15403
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6b7b874f99a5746f3bfb09e8d277349"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 鞋包饰品",
+      "children" : [ {
+        "name" : "test010MorePage",
+        "uid" : "a07ce838f8bd93d4",
+        "parentUid" : "baba534a122c3898f634a628f1730ea3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1567588534060,
+          "stop" : 1567588550085,
+          "duration" : 16025
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baba534a122c3898f634a628f1730ea3"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
