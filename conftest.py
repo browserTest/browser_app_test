@@ -28,8 +28,8 @@ def driver_setup(request, cmdopt):
     driver1 = Driver().driver_init(cmdopt)
     request.instance.driver = Driver().driver_init(cmdopt)
     # 启动监听器
-    driver1.watchers.watched = True
-    browser_watcher()
+    # driver1.watchers.watched = True
+    # browser_watcher()
 
 
 # 定义监听器

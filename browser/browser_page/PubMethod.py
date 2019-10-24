@@ -36,4 +36,16 @@ class PubMethod(Base):
         sleep(1)
         self.base.usePhone('back')
 
+    # 点击隐私弹窗同意按钮——LYX
+    def clickPrivacyAgree(self):
+        if self.base.elementIsExit(PRIVACY_AGREE_BUTTUN):
+            self.base.clickByElement(PRIVACY_AGREE_BUTTUN, '隐私弹窗同意按钮')
+        else:
+            self.assertFalse(PRIVACY_AGREE_BUTTUN)
 
+    # 点击隐私弹窗不同意按钮——LYX
+    def clickPrivacyDisagree(self):
+        if self.base.elementIsExit(PRIVACY_DISAGREE_BUTTUN):
+            self.base.clickByElement(PRIVACY_DISAGREE_BUTTUN, '隐私弹窗不同意按钮')
+        else:
+            self.assertFalse(PRIVACY_DISAGREE_BUTTUN)
