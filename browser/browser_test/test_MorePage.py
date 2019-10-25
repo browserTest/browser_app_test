@@ -25,6 +25,7 @@ class TestMorePage():
         logging.info("****开始执行用例****")
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
+        # self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         yield
         logging.info("****用例执行结束****")

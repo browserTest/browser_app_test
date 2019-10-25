@@ -31,7 +31,7 @@ class TestHomePage():
 
     @allure.story('测试资讯流页面存在相应text')
     def test001HomePage(self, home_init):
-        '''
+        '''+
         1、点击地址栏more按钮
         2、点击back
         3、向下滑动页面进入到资讯流列表页
