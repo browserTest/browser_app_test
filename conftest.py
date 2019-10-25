@@ -12,7 +12,7 @@ def pytest_addoption(parser):
     :param parser:
     :return:
     """
-    parser.addoption("--cmdopt",  default="172.18.8.52", help="手机的IP地址")
+    parser.addoption("--cmdopt",  default="172.18.8.76", help="手机的IP地址")
 
 @pytest.fixture
 def cmdopt(request):
