@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="add03a85-99c4-42f9-a8cc-8fcf52958faa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshot/generalocr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot/test.png" afterDir="false" />
+    <list default="true" id="add03a85-99c4-42f9-a8cc-8fcf52958faa" name="Default Changelist" comment="更改output">
+      <change afterPath="$PROJECT_DIR$/screenshot/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/browser_dwliuc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/browser_dwliuc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/browser_test/test_MorePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser/browser_test/test_MorePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/output.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,63 +15,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_TestHomePage_TestHomePage_test_login.coverage" NAME="pytest for TestHomePage.TestHomePage.test_login Coverage Results" MODIFIED="1565863353368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$tencentOCR.coverage" NAME="tencentOCR Coverage Results" MODIFIED="1568275267409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$base.coverage" NAME="base Coverage Results" MODIFIED="1565776776439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$PubMethod.coverage" NAME="PubMethod Coverage Results" MODIFIED="1567583106424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_page" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$pytest_in_test_HomePage_py.coverage" NAME="pytest in test_HomePage.py Coverage Results" MODIFIED="1567654418713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$config.coverage" NAME="config Coverage Results" MODIFIED="1565763797695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_driver_py.coverage" NAME="pytest in test_driver.py Coverage Results" MODIFIED="1565767492844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_base_py.coverage" NAME="pytest in TestHomePage.py Coverage Results" MODIFIED="1565860996893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$pytest_for_test_HomePage_TestHomePage_test001HomePage.coverage" NAME="pytest for test_HomePage.TestHomePage.test001HomePage Coverage Results" MODIFIED="1567584776877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_py.coverage" NAME="pytest in test.py Coverage Results" MODIFIED="1565850604423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_home_Test.coverage" NAME="pytest for test_home.Test Coverage Results" MODIFIED="1565855079881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$run.coverage" NAME="run Coverage Results" MODIFIED="1568103671240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$ddd.coverage" NAME="ddd Coverage Results" MODIFIED="1565939825078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$baiduOCR.coverage" NAME="baiduOCR Coverage Results" MODIFIED="1568701342143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_TestHomePage_py.coverage" NAME="pytest in TestHomePage.py Coverage Results" MODIFIED="1566544626666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_base_test.coverage" NAME="pytest for test_base.test Coverage Results" MODIFIED="1565771349728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1565859679778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_Test_aaa.coverage" NAME="pytest for test.Test_aaa Coverage Results" MODIFIED="1565850591993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_TestHomePage_TestHomePage.coverage" NAME="pytest for TestHomePage.TestHomePage Coverage Results" MODIFIED="1566531480029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_base_Test_Base_test.coverage" NAME="pytest for test_base.Test_Base.test Coverage Results" MODIFIED="1565774334842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
     <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_home_Test_test_home_search.coverage" NAME="pytest for test_home.Test.test_home_search Coverage Results" MODIFIED="1565851471838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$111.coverage" NAME="111 Coverage Results" MODIFIED="1568259455367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pytest_uiautomator2$driver.coverage" NAME="driver Coverage Results" MODIFIED="1565856929860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_base_test.coverage" NAME="pytest for test_base.test Coverage Results" MODIFIED="1565771349728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_TestHomePage_py.coverage" NAME="pytest in TestHomePage.py Coverage Results" MODIFIED="1566544626666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_base_Test_Base_test.coverage" NAME="pytest for test_base.Test_Base.test Coverage Results" MODIFIED="1565774334842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_TestHomePage_TestHomePage.coverage" NAME="pytest for TestHomePage.TestHomePage Coverage Results" MODIFIED="1566531480029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/browser_app_test$pytest_in_test_HomePage_py.coverage" NAME="pytest in test_HomePage.py Coverage Results" MODIFIED="1568103626724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
     <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_base_Test_Base.coverage" NAME="pytest for test_base.Test_Base Coverage Results" MODIFIED="1565772950755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
-    <SUITE FILE_PATH="coverage/browser_dwliuc$pytest_for_test_HomePage_TestHomePage.coverage" NAME="pytest for test_HomePage.TestHomePage Coverage Results" MODIFIED="1567654871788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/browser_app_test$run.coverage" NAME="run Coverage Results" MODIFIED="1568109424681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_home_Test.coverage" NAME="pytest for test_home.Test Coverage Results" MODIFIED="1565855079881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/browser_app_test2$run.coverage" NAME="run Coverage Results" MODIFIED="1571992058626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$config.coverage" NAME="config Coverage Results" MODIFIED="1565763797695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$base.coverage" NAME="base Coverage Results" MODIFIED="1565776776439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$driver.coverage" NAME="driver Coverage Results" MODIFIED="1565856929860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/browser_app_test2$pytest_for_test_NegativeScreenPage_TestHomePage_test001NegativeScreenPage.coverage" NAME="pytest for test_NegativeScreenPage.TestHomePage.test001NegativeScreenPage Coverage Results" MODIFIED="1571922825391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/browser_app_test$pytest_in_test_MorePage_py.coverage" NAME="pytest in test_MorePage.py Coverage Results" MODIFIED="1568103167831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1565859679778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_driver_py.coverage" NAME="pytest in test_driver.py Coverage Results" MODIFIED="1565767492844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/browser_app_test$pytest_for_test_MorePage_TestMorePage.coverage" NAME="pytest for test_MorePage.TestMorePage Coverage Results" MODIFIED="1568103204913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/browser_app_test2$pytest_for_test_NegativeScreenPage_TestNegativePage.coverage" NAME="pytest for test_NegativeScreenPage.TestNegativePage Coverage Results" MODIFIED="1571923981852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_py.coverage" NAME="pytest in test.py Coverage Results" MODIFIED="1565850604423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_test_Test_aaa.coverage" NAME="pytest for test.Test_aaa Coverage Results" MODIFIED="1565850591993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_for_TestHomePage_TestHomePage_test_login.coverage" NAME="pytest for TestHomePage.TestHomePage.test_login Coverage Results" MODIFIED="1565863353368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/browser/browser_test" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$ddd.coverage" NAME="ddd Coverage Results" MODIFIED="1565939825078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/browser_dwliuc$pytest_in_test_HomePage_py.coverage" NAME="pytest in test_HomePage.py Coverage Results" MODIFIED="1566786274549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
+    <SUITE FILE_PATH="coverage/pytest_uiautomator2$pytest_in_test_base_py.coverage" NAME="pytest in TestHomePage.py Coverage Results" MODIFIED="1565860996893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base_function" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#15#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base_function/baiduOCR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browser/browser_test/test_HomePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="414">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="36" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -81,46 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshot/111.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/hmac.py">
+        <entry file="file://$PROJECT_DIR$/browser/browser_test/test_NegativeScreenPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base_function/driver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshot/test.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/output.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base_function/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="344">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -128,13 +67,82 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/browser_page/NegativeScreenPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/browser_page/AddToHomePage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/browser/browser_element/AddToHome.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browser/browser_test/test_MorePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="-320">
+              <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base_function/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="80" column="31" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/browser_page/PubMethod.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="967">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="e#15#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,11 +156,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>home_init</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -179,21 +182,17 @@
     </favorite-branches>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/browser/browser_element/MyCollection.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_element/PubElement.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_element/Home.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_page/PubMethod.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/browser/browser_page/HomePage.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/base_function/base.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/base_function/driver.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_test/test_HomePage.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/base_function/baiduOCR.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/browser/browser_page/PubMethod.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/browser/browser_element/PubElement.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/browser/browser_element/MyCollection.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/config/config.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/conftest.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/run.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_element/More.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_page/MorePage.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/browser/browser_test/test_MorePage.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/config/config.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/browser/browser_element/Home.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/base_function/driver.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/browser/browser_test/test_HomePage.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -204,7 +203,6 @@
         <option value="$PROJECT_DIR$/base_function/test_base.py" />
         <option value="$PROJECT_DIR$/browser/browser_test/test_base.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/browser/browser_test/test.py" />
         <option value="$PROJECT_DIR$/browser/browser_test/conftest.py" />
         <option value="$PROJECT_DIR$/browser/browser_test/test_home.py" />
         <option value="$PROJECT_DIR$/browser/browser_page/conftest.py" />
@@ -212,36 +210,34 @@
         <option value="$PROJECT_DIR$/browser/browser_constant/home_constant.py" />
         <option value="$PROJECT_DIR$/browser/browser_constant/PubElement.py" />
         <option value="$PROJECT_DIR$/ddd.py" />
+        <option value="$PROJECT_DIR$/browser/browser_page/HomePage.py" />
+        <option value="$PROJECT_DIR$/browser/browser_element/MyCollection.py" />
         <option value="$PROJECT_DIR$/browser/browser_element/PubElement.py" />
         <option value="$PROJECT_DIR$/browser/browser_test/TestHomePage.py" />
         <option value="$PROJECT_DIR$/logs/output.log" />
-        <option value="$PROJECT_DIR$/base_function/send_email.py" />
-        <option value="$PROJECT_DIR$/browser/browser_element/MorePage.py" />
-        <option value="$PROJECT_DIR$/browser/browser_page/MorePage.py" />
-        <option value="$PROJECT_DIR$/base_function/driver.py" />
-        <option value="$PROJECT_DIR$/browser/browser_element/More.py" />
         <option value="$PROJECT_DIR$/config/config.py" />
-        <option value="$PROJECT_DIR$/browser/browser_test/test_HomePage.py" />
-        <option value="$PROJECT_DIR$/browser/browser_page/PubMethod.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/base_function/base.py" />
         <option value="$PROJECT_DIR$/browser/browser_element/Home.py" />
-        <option value="$PROJECT_DIR$/browser/browser_element/MyCollection.py" />
-        <option value="$PROJECT_DIR$/browser/browser_page/HomePage.py" />
+        <option value="$PROJECT_DIR$/browser/browser_test/test_HomePage.py" />
+        <option value="$PROJECT_DIR$/base_function/driver.py" />
         <option value="$PROJECT_DIR$/browser/browser_test/test_MorePage.py" />
+        <option value="$PROJECT_DIR$/browser/browser_element/NegativeScreen.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/browser/browser_element/test.py" />
+        <option value="$PROJECT_DIR$/browser/browser_test/test.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/py_aiplat_demo/SDK/apiutil.py" />
-        <option value="$PROJECT_DIR$/111.py" />
-        <option value="$PROJECT_DIR$/base_function/tencentOCR.py" />
-        <option value="$PROJECT_DIR$/base_function/baiduOCR.py" />
+        <option value="$PROJECT_DIR$/browser/browser_page/PubMethod.py" />
+        <option value="$PROJECT_DIR$/browser/browser_test/test_NegativeScreenPage.py" />
+        <option value="$PROJECT_DIR$/browser/browser_page/NegativeScreenPage.py" />
+        <option value="$PROJECT_DIR$/base_function/base.py" />
+        <option value="$PROJECT_DIR$/browser/browser_page/AddToHomePage.py" />
+        <option value="$PROJECT_DIR$/browser/browser_element/AddToHome.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="359" />
-    <option name="y" value="75" />
-    <option name="width" value="1243" />
-    <option name="height" value="762" />
+    <option name="x" value="336" />
+    <option name="width" value="1491" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -249,52 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="base_function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="browser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="browser" type="462c0819:PsiDirectoryNode" />
-              <item name="browser_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="browser_dwliuc" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="browser_dwliuc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -316,26 +266,80 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name=".pytest_cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="base_function" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="browser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="browser" type="462c0819:PsiDirectoryNode" />
+              <item name="browser_element" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="browser" type="462c0819:PsiDirectoryNode" />
+              <item name="browser_page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="browser" type="462c0819:PsiDirectoryNode" />
+              <item name="browser_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="browser_app_test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="browser_app_test2" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/python/browser_api_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\browser_app_test2\browser\browser_page" />
+      <recent name="E:\browser_app_test2\browser\browser_element" />
+      <recent name="E:\browser_app_test2\browser\browser_test" />
+      <recent name="D:\pytest_uiautomator2\browser\browser_test" />
+      <recent name="D:\pytest_uiautomator2\browser\browser_page" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pytest_uiautomator2" />
       <recent name="D:\pytest_uiautomator2\browser\browser_test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\browser_dwliuc\screenshot" />
-      <recent name="D:\browser_dwliuc" />
-      <recent name="D:\pytest_uiautomator2\browser\browser_test" />
-      <recent name="D:\pytest_uiautomator2\browser\browser_page" />
-      <recent name="D:\pytest_uiautomator2\browser\browser_element" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,51 +354,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.baiduOCR">
-    <configuration name="111" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="browser_dwliuc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/111.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="baiduOCR" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="browser_dwliuc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base_function" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base_function/baiduOCR.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.run">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="browser_dwliuc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -409,28 +369,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tencentOCR" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="browser_dwliuc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base_function" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\browser_dwliuc\base_function\baiduOCR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -455,23 +393,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for browser.browser_test.test_home" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="pytest_uiautomator2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base_function" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;browser.browser_test.test_home&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_HomePage.TestHomePage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_MorePage.TestMorePage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="browser_dwliuc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -483,17 +405,65 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_HomePage.TestHomePage&quot;" />
+      <option name="_new_target" value="&quot;test_MorePage.TestMorePage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_NegativeScreenPage.TestHomePage.test001NegativeScreenPage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="browser_dwliuc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/browser/browser_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_NegativeScreenPage.TestHomePage.test001NegativeScreenPage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_NegativeScreenPage.TestNegativePage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="browser_dwliuc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/browser/browser_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_NegativeScreenPage.TestNegativePage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_HomePage.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="browser_dwliuc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base_function" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/browser/browser_test/test_HomePage.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.baiduOCR" />
-        <item itemvalue="Python.tencentOCR" />
-        <item itemvalue="Python.111" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.pytest for test_HomePage.TestHomePage" />
+        <item itemvalue="Python tests.pytest for test_NegativeScreenPage.TestNegativePage" />
+        <item itemvalue="Python tests.pytest for test_NegativeScreenPage.TestHomePage.test001NegativeScreenPage" />
+        <item itemvalue="Python tests.pytest in test_HomePage.py" />
+        <item itemvalue="Python tests.pytest for test_MorePage.TestMorePage" />
       </list>
     </recent_temporary>
   </component>
@@ -509,7 +479,17 @@
       <updated>1565753065593</updated>
       <workItem from="1565753086637" duration="98683000" />
       <workItem from="1566546310058" duration="1417000" />
-      <workItem from="1566550292426" duration="128965000" />
+      <workItem from="1566550292426" duration="39988000" />
+      <workItem from="1568096587331" duration="897000" />
+      <workItem from="1568103052670" duration="2655000" />
+      <workItem from="1568105845293" duration="722000" />
+      <workItem from="1568107303633" duration="3748000" />
+      <workItem from="1568633724607" duration="1860000" />
+      <workItem from="1571107309148" duration="633000" />
+      <workItem from="1571817994847" duration="3038000" />
+      <workItem from="1571915595699" duration="9496000" />
+      <workItem from="1571925115011" duration="1480000" />
+      <workItem from="1571978570965" duration="6517000" />
     </task>
     <task id="LOCAL-00001" summary="更改output">
       <created>1566203313376</created>
@@ -595,71 +575,57 @@
       <option name="project" value="LOCAL" />
       <updated>1566268373682</updated>
     </task>
-    <task id="LOCAL-00013" summary="1、增加网址导航页面相关导航跳转用例&#10;2、增加用例执行文件&#10;3、增加根据id及text同时定位元素">
-      <created>1567504183493</created>
+    <task id="LOCAL-00013" summary="增加负一屏添加图标用例">
+      <created>1571992494685</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1567504183493</updated>
+      <updated>1571992494685</updated>
     </task>
-    <task id="LOCAL-00014" summary="1、增加滑动页面、按压home、back等公共方法&#10;2、增加测试步骤在报告中体现&#10;3、报告增加时间戳，保留之前已有报告&#10;4、增加监听器">
-      <created>1567591096871</created>
+    <task id="LOCAL-00014" summary="更改output">
+      <created>1571992614191</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1567591096871</updated>
+      <updated>1571992614191</updated>
     </task>
-    <task id="LOCAL-00015" summary="1、封装手机解锁方法">
-      <created>1567672041343</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1567672041343</updated>
-    </task>
-    <task id="LOCAL-00016" summary="增加文字识别公共类">
-      <created>1568701674981</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1568701674981</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.04 at 16h 23m 38s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_in_TestHomePage_py - 2019.08.23 at 15h 14m 27s.xml">
+      <configuration name="pytest in TestHomePage.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.04 at 16h 44m 10s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_in_TestHomePage_py - 2019.08.23 at 15h 17m 21s.xml">
+      <configuration name="pytest in TestHomePage.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.04 at 16h 44m 24s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.04 at 16h 45m 44s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.04 at 16h 53m 48s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_HomePage_py - 2019.09.05 at 11h 33m 39s.xml">
+    <history-entry file="pytest_in_test_HomePage_py - 2019.08.26 at 10h 24m 35s.xml">
       <configuration name="pytest in test_HomePage.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.05 at 11h 34m 18s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_in_test_MorePage_py - 2019.09.10 at 16h 13m 00s.xml">
+      <configuration name="pytest in test_MorePage.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.05 at 11h 35m 36s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_for_test_MorePage_TestMorePage - 2019.09.10 at 16h 13m 53s.xml">
+      <configuration name="pytest for test_MorePage.TestMorePage" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.05 at 11h 40m 38s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_in_test_HomePage_py - 2019.09.10 at 16h 15m 20s.xml">
+      <configuration name="pytest in test_HomePage.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_HomePage_TestHomePage - 2019.09.05 at 11h 41m 15s.xml">
-      <configuration name="pytest for test_HomePage.TestHomePage" configurationId="tests" />
+    <history-entry file="pytest_in_test_HomePage_py - 2019.09.10 at 16h 19m 18s.xml">
+      <configuration name="pytest in test_HomePage.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_HomePage_py - 2019.09.10 at 16h 20m 37s.xml">
+      <configuration name="pytest in test_HomePage.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_NegativeScreenPage_TestHomePage_test001NegativeScreenPage - 2019.10.24 at 21h 13m 50s.xml">
+      <configuration name="pytest for test_NegativeScreenPage.TestHomePage.test001NegativeScreenPage" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_NegativeScreenPage_TestNegativePage - 2019.10.24 at 21h 33m 05s.xml">
+      <configuration name="pytest for test_NegativeScreenPage.TestNegativePage" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229065000" />
+    <option name="totallyTimeSpent" value="171134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,21 +640,21 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990403" visible="true" weight="0.15458423" />
+      <window_info id="Structure" order="1" sideWeight="0.5019157" side_tool="true" weight="0.1684435" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31419286" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.12242687" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25568798" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.34561214" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" visible="true" weight="0.30227518" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2524377" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31060606" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -696,6 +662,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990403" visible="true" weight="0.15458423" />
+      <window_info id="Structure" order="1" sideWeight="0.5019157" side_tool="true" weight="0.1684435" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.12242687" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25893825" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.24918744" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31060606" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -746,18 +735,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="再次更改output" />
     <MESSAGE value="更改output2232" />
-    <MESSAGE value="更改output" />
     <MESSAGE value="11111111111" />
     <MESSAGE value="testest" />
     <MESSAGE value="444444" />
     <MESSAGE value="111111111111111" />
     <MESSAGE value="aaaaaaaaaaaa" />
     <MESSAGE value=" 测试提交信息" />
-    <MESSAGE value="1、增加网址导航页面相关导航跳转用例&#10;2、增加用例执行文件&#10;3、增加根据id及text同时定位元素" />
-    <MESSAGE value="1、增加滑动页面、按压home、back等公共方法&#10;2、增加测试步骤在报告中体现&#10;3、报告增加时间戳，保留之前已有报告&#10;4、增加监听器" />
-    <MESSAGE value="1、封装手机解锁方法" />
-    <MESSAGE value="增加文字识别公共类" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加文字识别公共类" />
+    <MESSAGE value="增加负一屏添加图标用例" />
+    <MESSAGE value="更改output" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改output" />
   </component>
   <component name="WindowStateProjectService">
     <state width="200" height="166" key="Git.Branch.Popup" />
@@ -765,285 +751,260 @@
     <state width="200" height="166" key="Git.Branch.Popup@1920.1080" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826151140_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826151109_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826145354_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826144932_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826144653_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826155257_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826155822_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/allure_commons/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/allure_commons/_allure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826161104_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826161150_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826165524_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826174321_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826160537_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826160227_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826160909_error.jpg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190826160033_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base_function/send_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828180258_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828180111_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828175745_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828172822_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828181350_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828180624_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/20190828180318_error.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_element/PubElement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_element/More.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_page/PubMethod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_element/MyCollection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_element/Home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_page/HomePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browser/browser_page/MorePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="e#1#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="14" selection-start-line="20" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/output.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/hmac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_aiplat_demo/demo/test_aai_wxasrs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_aiplat_demo/demo/test_nlp_texttrans.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_aiplat_demo/data/generalocr.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py_aiplat_demo/SDK/apiutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="e#23#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/generalocr.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/111.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="154" column="31" lean-forward="true" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
-          <folding>
-            <element signature="e#105#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot/111.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/encoder.py" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826114248_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826114033_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/browser/browser_test/failures" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826151907_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826151604_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826151140_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826151109_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826145354_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826144932_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826144653_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826155257_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826155822_error.jpg" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/allure_commons/logger.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/allure_commons/_allure.py" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826161104_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826161150_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826165524_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826174321_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826160537_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826160227_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826160909_error.jpg.jpg" />
+    <entry file="file://$PROJECT_DIR$/screenshot/20190826160033_error.jpg" />
+    <entry file="file://$PROJECT_DIR$/report/html/index.html" />
     <entry file="file://$PROJECT_DIR$/base_function/driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="253">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base_function/base.py">
+    <entry file="file://$PROJECT_DIR$/logs/output.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot/20190910162027_error.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python/install/Lib/site-packages/_pytest/assertion/rewrite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/html_20191024213316/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/AddToHome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/Home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/More.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/MyCollection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/PubElement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/NegativeScreen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/AddToHomePage1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="e#19#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/NegativeScreenPage1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/HomePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/MorePage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="42" />
           <folding>
-            <element signature="e#15#39#0" expanded="true" />
+            <element signature="e#1#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base_function/baiduOCR.py">
+    <entry file="file://$PROJECT_DIR$/browser/browser_test/test_NegativeScreenPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="114">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#1#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/browser/browser_test/test_HomePage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="414">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="36" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/PubMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="967">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/browser/browser_test/test_MorePage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-320">
+          <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#15#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/NegativeScreenPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_test/test_NegativeScreenPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base_function/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_page/AddToHomePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/browser_element/AddToHome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
         </state>
       </provider>
     </entry>

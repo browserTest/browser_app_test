@@ -13,3 +13,4 @@ class AddToHomePage(Base):
             self.base.clickByElementIdAndText(CHOICE_ADD_TO_XPATH, '负一屏精选页面添加按钮')
         else:
             self.assertFalse(CHOICE_ADD_TO_XPATH)
+
