@@ -171,6 +171,13 @@ class Base():
             assert self.elementIsExit(element, timeout) == False, "断言元素不存在失败，元素名称为： {}".format(element)
             logging.info("元素已不存在，断言成功，元素名称为： {}".format(element))
 
+    # 提取搜索框文本
+    def clickObtain(self):
+        aaa=self.d(resourceId="com.android.browser:id/url").get_text()
+        print(aaa)
 
-
+    # 提取搜索结果搜索框文本
+    def clickObtain2(self):
+        bbb=self.d(resourceId="com.android.browser:id/url").get_text()
+        print(bbb)
 
