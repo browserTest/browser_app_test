@@ -173,18 +173,19 @@ class Base():
 
 
     # 提取元素文本    ---wmw
-    def elementText(self,element):
+    def elementText(self,element,logtext):
         '''
         :param element: 元素名称，可根据resource、xpath进行判断并提取元素文本
-        :return: 返回元素文本
+        :param logtext: 打印log的文案
+        :return:
         '''
-        #text = self.d(resourceId=element).get_text()
-        #return text
         if str(element).startswith("com"):
             text = self.d(resourceId=element).get_text()
+            logging.info("提取元素文本: {}".format(logtext))
             return text
         elif re.findall("//", str(element)):
-            text = self.d(resourceId=element).get_text()
+            text = self.d.xpath(element).get_text()
+            logging.info("提取元素文本: {}".format(logtext))
             return text
 
 

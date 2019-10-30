@@ -48,7 +48,7 @@ class SearchPanelPage(Base):
 
     # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
-        return self.base.elementText(SEARCHPANEL_HOTWORDS)
+        return self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
 
     # 点击清空    ---wmw
     def clickEmpty(self):
