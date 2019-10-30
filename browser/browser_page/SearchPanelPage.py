@@ -10,21 +10,21 @@ class SearchPanelPage(Base):
     def __init__(self, driver):
         self.base = Base(driver)
 
-    # 点击搜索按钮
+    # 点击搜索按钮   ---wmw
     def clickSearch(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCH):
             self.base.clickByElement(SEARCHPANEL_SEARCH, "搜索")
         else:
             self.assertFalse(SEARCHPANEL_SEARCH)
 
-    # 点击搜索历史热词(默认点击第一个)
+    # 点击搜索历史热词(默认点击第一个)   ---wmw
     def clickSearchHistory(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCHHISTORY):
             self.base.clickByElement(SEARCHPANEL_SEARCHHISTORY, "搜索历史热词")
         else:
             self.assertFalse(SEARCHPANEL_SEARCHHISTORY)
 
-    # 点击换一换
+    # 点击换一换   ---wmw
     def clickAnotherChange(self):
         if self.base.elementIsExit(SEARCHPANEL_ANOTHERCHANGE):
             self.base.clickByElement(SEARCHPANEL_ANOTHERCHANGE, "换一换")
@@ -33,11 +33,11 @@ class SearchPanelPage(Base):
 
 
 
-    # 获取第一个搜索热词
+    # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
         return self.base.elementText(SEARCHPANEL_HOTWORDS)
 
-    # 点击清空
+    # 点击清空    ---wmw
     def clickEmpty(self):
         if self.base.elementIsExit(SEARCHPANEL_EMPTY):
             self.base.clickByElement(SEARCHPANEL_EMPTY, "清空")

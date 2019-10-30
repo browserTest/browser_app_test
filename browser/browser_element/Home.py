@@ -30,7 +30,5 @@ HOME_TOOL = 'com.android.browser:id/setting'
 # 首页底部资讯按钮Information    ---wmw
 HOME_INFORMATION = 'com.android.browser:id/refresh'
 
-
-HOME_ADVERTISEMENT = '//*[@resource-id="com.android.browser:id/news_sdk_recycle_view"]/android.widget.FrameLayout[1]'
-
+# 首页搜索框   ---wmw
 HOME_SEARCH = 'com.android.browser:id/search_bar_url_container'

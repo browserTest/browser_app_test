@@ -33,8 +33,7 @@ class TestSearchPanelPage():
         logging.info("****用例执行结束****")
         logging.info("")
 
-
-
+    # ---wmw
     @allure.story('测试搜索框')
     def test001SearchPanelPage(self, Search_init):
         '''
@@ -48,6 +47,7 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearch()
         self.base.clickObtain2()
 
+    # ---wmw
     @allure.story('测试历史面板热词是否正常跳转')
     def test002SearchPanelPage(self, Search_init):
         '''
@@ -58,6 +58,7 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearchHistory()
         #self.base.assertTrue()
 
+    # ---wmw
     @allure.story('测试换一换')
     def test003SearchPanelPage(self, Search_init):
         '''
@@ -69,7 +70,7 @@ class TestSearchPanelPage():
         '''
         self.home.clickHomeSearch()
         Panel=self.searchpanel.clickHotWords()
-        self.searchpanel.clickEmpty()
+        #self.searchpanel.clickEmpty()
         self.searchpanel.clickAnotherChange()
         self.base.assertTrue(Panel,False,timeout=15)
 
