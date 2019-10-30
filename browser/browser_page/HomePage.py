@@ -41,3 +41,10 @@ class HomePage(Base):
             self.clickHome()
         else:
             pass
+
+    # 点击搜索框
+    def clickHomeSearch(self):
+        if self.base.elementIsExit(HOME_SEARCH):
+            self.base.clickByElement(HOME_SEARCH, '浏览器搜索框')
+        else:
+            self.assertFalse(HOME_SEARCH)

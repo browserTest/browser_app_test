@@ -20,7 +20,7 @@ from browser.browser_element.MyCollection import *
 class TestSearchPanelPage():
 
     @pytest.fixture(scope="function")
-    def home_init(self):
+    def Search_init(self):
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod= PubMethod(self.driver)
@@ -36,7 +36,7 @@ class TestSearchPanelPage():
 
 
     @allure.story('测试搜索框')
-    def test001SearchPanelPage(self, home_init):
+    def test001SearchPanelPage(self, Search_init):
         '''
         1、点击首页搜索框
         2、提取搜索框文本
@@ -49,22 +49,28 @@ class TestSearchPanelPage():
         self.base.clickObtain2()
 
     @allure.story('测试历史面板热词是否正常跳转')
-    def test002SearchPanelPage(self, home_init):
+    def test002SearchPanelPage(self, Search_init):
         '''
         1、点击首页搜索框
         2、点击历史面板热词(默认第一个)
         '''
         self.home.clickHomeSearch()
         self.searchpanel.clickSearchHistory()
+        #self.base.assertTrue()
 
     @allure.story('测试换一换')
-    def test003SearchPanelPage(self, home_init):
+    def test003SearchPanelPage(self, Search_init):
         '''
         1、点击首页搜索框
-        2、点击换一换
+        2、获取第一个搜索热词
+        3、点击清空（确保热词与搜索历史没有相同内容）
+        4、点击换一换
+        5、断言第一个搜索热词是否不存在
         '''
         self.home.clickHomeSearch()
+        Panel=self.searchpanel.clickHotWords()
+        self.searchpanel.clickEmpty()
         self.searchpanel.clickAnotherChange()
-
+        self.base.assertTrue(Panel,False,timeout=15)
 
 

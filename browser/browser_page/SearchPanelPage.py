@@ -1,6 +1,7 @@
 import pytest
 from base_function.base import Base
 from browser.browser_element.SearchPanel import *
+from base_function.driver import Driver
 from browser.browser_element.PubElement import *
 from browser.browser_element.MyCollection import *
 
@@ -29,4 +30,17 @@ class SearchPanelPage(Base):
             self.base.clickByElement(SEARCHPANEL_ANOTHERCHANGE, "换一换")
         else:
             self.assertFalse(SEARCHPANEL_ANOTHERCHANGE)
+
+
+
+    # 获取第一个搜索热词
+    def clickHotWords(self):
+        return self.base.elementText(SEARCHPANEL_HOTWORDS)
+
+    # 点击清空
+    def clickEmpty(self):
+        if self.base.elementIsExit(SEARCHPANEL_EMPTY):
+            self.base.clickByElement(SEARCHPANEL_EMPTY, "清空")
+        else:
+            self.assertFalse(SEARCHPANEL_EMPTY)
 

@@ -171,13 +171,20 @@ class Base():
             assert self.elementIsExit(element, timeout) == False, "断言元素不存在失败，元素名称为： {}".format(element)
             logging.info("元素已不存在，断言成功，元素名称为： {}".format(element))
 
-    # 提取搜索框文本
-    def clickObtain(self):
-        aaa=self.d(resourceId="com.android.browser:id/url").get_text()
-        print(aaa)
 
-    # 提取搜索结果搜索框文本
-    def clickObtain2(self):
-        bbb=self.d(resourceId="com.android.browser:id/url").get_text()
-        print(bbb)
+    # 提取元素文本
+    def elementText(self,element):
+        #text = self.d(resourceId=element).get_text()
+        #return text
 
+
+        if str(element).startswith("com"):
+            text = self.d(resourceId=element).get_text()
+            return text
+        elif re.findall("//", str(element)):
+            text = self.d(resourceId=element).get_text()
+            return text
+        else:
+            text = self.d(resourceId=element).get_text()
+            return text
+        logging.info("点击元素: {}".format(logtext))
