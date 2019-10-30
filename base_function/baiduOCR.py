@@ -36,8 +36,8 @@ if __name__=="__main__":
     API_KEY='ejTp8Xd1ZTUGjnO1WkRoWFWE'
     SECRET_KEY='MPapr5pwGlYBu5GHZXjYxnGmOekDd2QB'
     obj = baiduApi(APP_ID,API_KEY,SECRET_KEY)
-    imageFile=r'D:\browser_dwliuc\screenshot\111.png'
+    imageFile=r'D:\browser_dwliuc\screenshot\test.png'
     result = obj.getWordFromImage(imageFile)
     for word in result['words_result']:
         print(word['words'])
-    # print(result)
+    print(result)

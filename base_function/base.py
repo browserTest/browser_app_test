@@ -103,7 +103,7 @@ class Base():
     # 向下滑动页面到指定元素位置
     def scrollToElement(self, element):
         '''
-        :param element: 元素名称，仅使用id或text识别，默认不查找元素，仅滑动页面
+        :param element: 元素名称，仅使用id或text识别
         :return:
         '''
         if str(element).startswith("com"):
@@ -143,6 +143,7 @@ class Base():
         if isExit == False:
             logging.info('未找到元素，元素名称为: {}'.format(element))
         return isExit
+
 
 
 
