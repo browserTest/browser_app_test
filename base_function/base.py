@@ -172,22 +172,21 @@ class Base():
             logging.info("元素已不存在，断言成功，元素名称为： {}".format(element))
 
 
-    # 提取元素文本
+    # 提取元素文本    ---wmw
     def elementText(self,element):
+        '''
+        :param element: 元素名称，可根据resource、xpath进行判断并提取元素文本
+        :return: 返回元素文本
+        '''
         #text = self.d(resourceId=element).get_text()
         #return text
-
-
         if str(element).startswith("com"):
             text = self.d(resourceId=element).get_text()
             return text
         elif re.findall("//", str(element)):
             text = self.d(resourceId=element).get_text()
             return text
-        else:
-            text = self.d(resourceId=element).get_text()
-            return text
-        logging.info("点击元素: {}".format(logtext))
+
 
     # 根据元素名称进行长按操作——LYX
     def long_clickByElement(self, element, logtext):
