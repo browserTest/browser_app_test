@@ -213,3 +213,23 @@ class Base():
         '''
         self.d(resourceId=id, text= text).long_click()
         logging.info("点击元素： {}".format(logtext))
+
+
+    # 断言元素是否存在,存在则点击
+    def assertTrue333(self, element,timeout = 5):
+        isExit = False
+        while timeout > 0:
+            # 获取到当前页面的hierarchy
+            page_xml = self.d.dump_hierarchy()
+            # 判断元素是否存在于hierarchy中
+            if re.findall(element, page_xml):
+                isExit = True
+                self.d(resourceId=id).long_click()
+                logging.info('查询到元素： {}'.format(element))
+                break
+            else:
+                timeout -= 1
+                sleep(1)
+        if isExit == False:
+            logging.info('未找到元素，元素名称为: {}'.format(element))
+        return isExit

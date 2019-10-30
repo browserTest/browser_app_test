@@ -15,7 +15,7 @@ from browser.browser_element.MyCollection import *
 
 
 
-@allure.feature("测试资讯流页面")
+@allure.feature("测试搜索页面")
 @pytest.mark.usefixtures("driver_setup")
 class TestSearchPanelPage():
 
