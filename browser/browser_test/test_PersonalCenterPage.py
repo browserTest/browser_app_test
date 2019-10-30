@@ -6,9 +6,8 @@ from browser.browser_page.PubMethod import PubMethod
 from browser.browser_element.PubElement import *
 from base_function.base import Base
 from browser.browser_element.Home import *
-from browser.browser_element.ToolbarPanel import *
+from browser.browser_page.SearchPanelPage import *
 from browser.browser_page.HomePage import *
-from browser.browser_page.ToolbarPanelPage import *
 from browser.browser_page.PersonalCenterPage import *
 import allure
 from browser.browser_element.MyCollection import *
@@ -17,7 +16,7 @@ from browser.browser_element.MyCollection import *
 
 
 
-@allure.feature("²âÊÔ¸öÈËÖĞĞÄÒ³Ãæ")
+@allure.feature("æµ‹è¯•ä¸ªäººä¸­å¿ƒé¡µé¢")
 @pytest.mark.usefixtures("driver_setup")
 class TestPersonalCenterPage():
 
@@ -26,24 +25,20 @@ class TestPersonalCenterPage():
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod= PubMethod(self.driver)
-        self.toolbarpanel = ToolbarPanelPage(self.driver)
         self.personalcenter = PersonalCenterPage(self.driver)
         logging.info("")
-        logging.info("****¿ªÊ¼Ö´ĞĞÓÃÀı****")
+        logging.info("****å¼€å§‹æ‰§è¡Œç”¨ä¾‹****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         yield
-        logging.info("****ÓÃÀıÖ´ĞĞ½áÊø****")
+        logging.info("****ç”¨ä¾‹æ‰§è¡Œç»“æŸ****")
         logging.info("")
 
-
-
-    @allure.story('²âÊÔ¸öÈËÖĞĞÄÕËºÅµÇÂ¼Ò³')
+    # ---wmw
+    @allure.story('æµ‹è¯•ä¸ªäººä¸­å¿ƒè´¦å·ç™»å½•é¡µ')
     def test001PersonalCenterPage(self, PersonalCenter_init):
 
         self.home.clickMore()
         self.toolbarpanel.clickFlymeme()
-        # ²éÕÒÎ´µÇÂ¼ÊÇ·ñ´æÔÚ
-        self.base.assertTrue333('Î´µÇÂ¼')
-
-
+        # æŸ¥æ‰¾æœªç™»å½•æ˜¯å¦å­˜åœ¨
+        self.base.assertTrue333('æœªç™»å½•')
