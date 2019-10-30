@@ -49,3 +49,17 @@ class PubMethod(Base):
             self.base.clickByElement(PRIVACY_DISAGREE_BUTTUN, '隐私弹窗不同意按钮')
         else:
             self.assertFalse(PRIVACY_DISAGREE_BUTTUN)
+
+    # 点击权限弹窗拒绝按钮——LYX
+    def clickPermissionDisagree(self):
+        if self.base.elementIsExit(PERMISSION_DISAGREE_BUTTUN):
+            self.base.clickByElement(PERMISSION_DISAGREE_BUTTUN, '权限弹窗拒绝按钮')
+        else:
+            self.assertFalse(PERMISSION_DISAGREE_BUTTUN)
+
+    # 点击权限弹窗允许按钮——LYX
+    def clickPermissionAgree(self):
+        if self.base.elementIsExit(PERMISSION_AGREE_BUTTON):
+            self.base.clickByElement(PERMISSION_AGREE_BUTTON, '权限弹窗允许按钮')
+        else:
+            self.assertFalse(PERMISSION_AGREE_BUTTON)

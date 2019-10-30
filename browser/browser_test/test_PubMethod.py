@@ -37,9 +37,9 @@ class TestPubMethod():
         2、点击“同意”，弹出权限窗口
         '''
 
-        # 清除数据后首次进入浏览器
+        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
         self.pubmethod.clickPrivacyAgree()
-        self.base.assertTrue(PERMISSION_TITLE, timeout=15)
+        self.base.assertTrue(PERMISSION_TITLE, timeout=5)
 
     @allure.story('测试隐私弹窗不同意按钮')
     def test002PrivacyDisagree(self, pubMethod_init):
@@ -48,7 +48,34 @@ class TestPubMethod():
         2、点击“不同意”，退出
         '''
 
-        # 清除数据后首次进入浏览器
+        # 清除数据后首次进入浏览器，点击隐私弹窗不同意按钮
         self.pubmethod.clickPrivacyDisagree()
-        self.base.assertTrue(LAUNCHER_ID, timeout=15)
+        self.base.assertTrue(LAUNCHER_ID, timeout=5)
 
+    @allure.story('测试权限弹窗拒绝按钮')
+    def test003PermissionDisagree(self, pubMethod_init):
+        '''
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“同意”，弹出权限窗口
+        3、点击权限弹窗“拒绝”按钮
+        '''
+
+        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
+        self.pubmethod.clickPrivacyAgree()
+        # 点击权限弹窗“拒绝”按钮，进入浏览器
+        self.pubmethod.clickPermissionDisagree()
+        self.base.assertTrue(HOME_PAGE, timeout=5)
+
+    @allure.story('测试权限弹窗允许按钮')
+    def test004PermissionAgree(self, pubMethod_init):
+        '''
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“同意”，弹出权限窗口
+        3、点击权限弹窗“始终允许”按钮
+        '''
+
+        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
+        self.pubmethod.clickPrivacyAgree()
+        # 点击权限弹窗“始终允许”按钮，进入浏览器
+        self.pubmethod.clickPermissionAgree()
+        self.base.assertTrue(HOME_PAGE, timeout=5)

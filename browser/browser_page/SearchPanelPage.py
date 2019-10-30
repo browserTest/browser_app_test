@@ -31,6 +31,19 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_ANOTHERCHANGE)
 
+    # 点击输入框工具条前缀词“www.”——LYX
+    def clickInputPanelPrefixes(self):
+        if self.base.elementIsExit(INPUTPANEL_PROMPT):
+            self.base.clickByElement(INPUTPANEL_PROMPT, "换一换")
+        else:
+            self.assertFalse(INPUTPANEL_PROMPT)
+
+    # 长按地址栏中的“www.”——LYX
+    def long_clickSearchPanel(self):
+        if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+            self.base.long_clickByElement(SEARCHPANEL_WEBSITE, "地址栏文字www")
+        else:
+            self.assertFalse(SEARCHPANEL_WEBSITE)
 
 
     # 获取第一个搜索热词

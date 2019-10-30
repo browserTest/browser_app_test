@@ -188,3 +188,28 @@ class Base():
             text = self.d(resourceId=element).get_text()
             return text
         logging.info("点击元素: {}".format(logtext))
+
+    # 根据元素名称进行长按操作——LYX
+    def long_clickByElement(self, element, logtext):
+        '''
+        :param element: 元素名称，可根据resource、坐标及Text进行判断并长按
+        :param logtext: 打印log的文案
+        :return:
+        '''
+        if str(element).startswith("com"):
+            self.d(resourceId=element).long_click()
+        elif type(element) == tuple:
+            self.d.long_click(element[0],element[1])
+        else:
+            self.d(text=element).long_click()
+        logging.info("长按元素: {}".format(logtext))
+
+    # 根据元素id及text组合进行长按操作——LYX
+    def long_clickByElementIdAndText(self, id, text, logtext):
+        '''
+        :param id: 元素id
+        :param text: 元素text
+        :return:
+        '''
+        self.d(resourceId=id, text= text).long_click()
+        logging.info("点击元素： {}".format(logtext))

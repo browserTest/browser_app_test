@@ -56,7 +56,6 @@ class TestSearchPanelPage():
         '''
         self.home.clickHomeSearch()
         self.searchpanel.clickSearchHistory()
-        #self.base.assertTrue()
 
     @allure.story('测试换一换')
     def test003SearchPanelPage(self, Search_init):
@@ -72,5 +71,19 @@ class TestSearchPanelPage():
         self.searchpanel.clickEmpty()
         self.searchpanel.clickAnotherChange()
         self.base.assertTrue(Panel,False,timeout=15)
+
+    @allure.story('搜索页顶部地址栏输入，选中文字')
+    def test004SearchPanelPage(self, Search_init):
+        '''
+        1、点击首页搜索框
+        2、点击输入框工具条前缀词“www.”
+        3、长按并选中地址栏中的“www.”
+        '''
+        # 点击首页搜索框
+        self.home.clickHomeSearch()
+        # 点击输入框工具条前缀词“www.”
+        self.searchpanel.clickInputPanelPrefixes()
+        # 长按地址栏
+        self.searchpanel.long_clickSearchPanel()
 
 

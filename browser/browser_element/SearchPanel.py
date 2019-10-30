@@ -19,3 +19,12 @@ SEARCHPANEL_HOTWORDS = 'com.android.browser:id/suggestion_hot_word_item1'
 
 # 清空empty
 SEARCHPANEL_EMPTY = 'com.android.browser:id/suggestion_text_right'
+
+# 搜索页输入法顶部工具条，“www.”前缀词 ——LYX
+INPUTPANEL_PROMPT = 'www.'
+
+# 搜索页地址栏——LYX
+SEARCHPANEL_WEBSITE = 'com.android.browser:id/url'
+
+# 地址栏中的“www”——LYX
+SEARCHPANEL_WWW = 'www.'
