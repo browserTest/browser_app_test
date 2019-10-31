@@ -45,6 +45,13 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_WEBSITE)
 
+    # 拖动输入框中的工具条——LYX
+    def swipe_InputPanel(self):
+        if self.base.elementIsExit(INPUTPANEL_SWIPE):
+            self.base.swipeByElement(INPUTPANEL_SWIPE, "left","向左拖动工具条",200)
+        else:
+            self.assertFalse(INPUTPANEL_SWIPE)
+
 
     # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
@@ -57,3 +64,23 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_EMPTY)
 
+    # 点击搜索框——LYX
+    def clickSearchPanel(self):
+        if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+            self.base.clickByElement(SEARCHPANEL_WEBSITE, "搜索框")
+        else:
+            self.assertFalse(SEARCHPANEL_WEBSITE)
+
+    # 点击搜索框联想词——LYX
+    def clickAutomatedWord(self):
+        if self.base.elementIsExit(AUTOMATED_WORD):
+            self.base.clickByElement(AUTOMATED_WORD, "搜索框联想词")
+        else:
+            self.assertFalse(AUTOMATED_WORD)
+
+    # 点击地址栏清空按钮——LYX
+    def clearSearchPanel(self):
+        if self.base.elementIsExit(SEARCHPANEL_CLEAR):
+            self.base.clickByElement(SEARCHPANEL_CLEAR, "地址栏清空按钮")
+        else:
+            self.assertFalse(SEARCHPANEL_CLEAR)

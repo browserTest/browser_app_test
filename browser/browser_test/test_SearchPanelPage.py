@@ -79,12 +79,28 @@ class TestSearchPanelPage():
         1、点击首页搜索框
         2、点击输入框工具条前缀词“www.”
         3、长按并选中地址栏中的“www.”
+        4、点击搜索框联想词，并打开网址
+        5、点击地址栏，清空地址，显示搜索历史
         '''
         # 点击首页搜索框
         self.home.clickHomeSearch()
         # 点击输入框工具条前缀词“www.”
         self.searchpanel.clickInputPanelPrefixes()
-        # 长按地址栏
-        self.searchpanel.long_clickSearchPanel()
+        # 拖动输入框工具条，选中地址栏文字
+        self.searchpanel.swipe_InputPanel()
+        # 点击搜索框，弹框消失
+        self.searchpanel.clickSearchPanel()
+        # 点击搜索框联想词
+        self.searchpanel.clickAutomatedWord()
+        # 判断是否正常打开flyme官网
+        self.base.assertTrue(FLYME_WEBSITE)
+        # 点击搜索框，清空地址
+        self.searchpanel.clickSearchPanel()
+        self.searchpanel.clearSearchPanel()
+        # 判断搜索历史是否存在
+        self.base.assertTrue(SEARCHHISTORY)
+
+
+
 
 
