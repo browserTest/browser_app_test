@@ -10,13 +10,13 @@ class PersonalCenterPage(Base):
     def __init__(self, driver):
         self.base = Base(driver)
 
-    # µã»÷¸öÈËÖĞĞÄÒ³--ÎÒµÄÕËºÅÍ¼±ê
+    # ç‚¹å‡»ä¸ªäººä¸­å¿ƒé¡µ--æˆ‘çš„è´¦å·å›¾æ ‡
     def clickFlymemeA(self):
         if self.base.elementIsExit(FLYME_ME_A):
-            self.base.clickByElement(FLYME_ME_A, "ÎÒµÄÕËºÅÍ¼±ê")
+            self.base.clickByElement(FLYME_ME_A, "æˆ‘çš„è´¦å·å›¾æ ‡")
         else:
             self.assertFalse(FLYME_ME_A)
 
-    # »ñÈ¡¸öÈËÖĞĞÄÎ´µÇÂ¼ÎÄ±¾
+    # è·å–ä¸ªäººä¸­å¿ƒæœªç™»å½•æ–‡æœ¬
     def clickNotLoggedIn(self):
         return self.base.elementText(PERSONAL_CENTER_NOT_LOGGED_IN)

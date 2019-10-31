@@ -1,10 +1,10 @@
 '''
-    ¸öÈËÖĞĞÄÒ³Ãæ³£Á¿
+    ä¸ªäººä¸­å¿ƒé¡µé¢å¸¸é‡
 '''
 
-# ÎÒµÄÕËºÅÍ¼±ê
+# æˆ‘çš„è´¦å·å›¾æ ‡
 FLYME_ME_A = 'com.android.browser:id/user_center_info_portrait'
 
-# Î´µÇÂ¼ÎÄ°¸
+# æœªç™»å½•æ–‡æ¡ˆ
 # Not logged in
 PERSONAL_CENTER_NOT_LOGGED_IN = 'com.android.browser:id/user_center_info_no_login'
