@@ -84,3 +84,10 @@ class SearchPanelPage(Base):
             self.base.clickByElement(SEARCHPANEL_CLEAR, "地址栏清空按钮")
         else:
             self.assertFalse(SEARCHPANEL_CLEAR)
+
+    # 地址栏输入百度——LYX
+    def inputBaidu(self):
+        if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+            self.base.elementSetText(SEARCHPANEL_WEBSITE, "m.baidu.com","地址栏清空按钮")
+        else:
+            self.assertFalse(SEARCHPANEL_WEBSITE)

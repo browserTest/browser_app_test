@@ -99,6 +99,8 @@ class TestSearchPanelPage():
         self.searchpanel.clearSearchPanel()
         # 判断搜索历史是否存在
         self.base.assertTrue(SEARCHHISTORY)
+        self.searchpanel.clickSearchPanel()
+        self.searchpanel.inputBaidu()
 
 
 
