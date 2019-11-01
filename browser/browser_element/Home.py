@@ -39,3 +39,7 @@ HOME_ANJUKE = '安居客'
 # 首页导航栏-》同城————LCM
 HOME_TONGCHNEG = '同城'
 
+
+
+# 资讯流广告Advertisement  ---wmw
+HOME_ADVERTISEMENT = '//*[@resource-id="com.android.browser:id/news_sdk_recycle_view"]/android.widget.FrameLayout[1]'

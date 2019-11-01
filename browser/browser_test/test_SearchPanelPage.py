@@ -35,7 +35,8 @@ class TestSearchPanelPage():
         logging.info("****用例执行结束****")
         logging.info("")
 
-    # ---wmw
+
+    # ---wmw  未完成
     @allure.story('测试搜索框')
     def test001SearchPanelPage(self, Search_init):
         '''
@@ -46,10 +47,12 @@ class TestSearchPanelPage():
         '''
         self.home.clickHomeSearch()
         self.base.clickObtain()
-        self.searchpanel.clickSearch()
+        self.searchpanel.clickSearchInto()
         self.base.clickObtain2()
 
-    # ---wmw
+
+
+    # ---wmw  未完成
     @allure.story('测试历史面板热词是否正常跳转')
     def test002SearchPanelPage(self, Search_init):
         '''
@@ -121,8 +124,6 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearchInto()
         # 判断顶部地址栏是否展开
         self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )
-
-
 
 
 

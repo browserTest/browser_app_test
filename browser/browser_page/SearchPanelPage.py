@@ -10,13 +10,6 @@ class SearchPanelPage(Base):
     def __init__(self, driver):
         self.base = Base(driver)
 
-    # 点击搜索按钮   ---wmw
-    def clickSearch(self):
-        if self.base.elementIsExit(SEARCHPANEL_SEARCH):
-            self.base.clickByElement(SEARCHPANEL_SEARCH, "搜索")
-        else:
-            self.assertFalse(SEARCHPANEL_SEARCH)
-
     # 点击搜索历史热词(默认点击第一个)   ---wmw
     def clickSearchHistory(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCHHISTORY):
@@ -99,9 +92,19 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_WEBSITE)
 
-    # 点击搜索框右侧的进入按钮——LYX
+    # 点击搜索框右侧的搜索/进入按钮——LYX
     def clickSearchInto(self):
         if self.base.elementIsExit(SEARCHPANEL_OPEN):
             self.base.clickByElement(SEARCHPANEL_OPEN,"搜索框右侧进入按钮")
         else:
             self.assertFalse(SEARCHPANEL_OPEN)
+
+    # 搜索框输入m.80txt.com  --wmw
+    def inputNumber(self):
+        if self.base.elementIsExit(SEARCHPANEL_TEXT):
+            self.base.elementSetText(SEARCHPANEL_TEXT, "m.80txt.com" ,"搜索框输入m.80txt.com")
+        else:
+            self.assertFalse(SEARCHPANEL_TEXT)
+
+
+

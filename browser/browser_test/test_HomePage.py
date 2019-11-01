@@ -52,6 +52,20 @@ class TestHomePage():
     #     self.base.assertTrue("dkjkdsjfksdkfslkfsfs")
 
 
+    @allure.story('测试资讯流广告')
+    def test002HomePage(self, home_init):
+
+        #点击资讯
+        self.home.clickInformation()
+
+        self.home.clickInformation()
+        sleep(5)
+        self.base.scrollToElement('广告')
+        #self.base.clickByElement('广告')
+        self.home.clickAdvertisement()
+
+
+
 
 
 
