@@ -31,7 +31,7 @@ class TestReadPage():
         logging.info("")
 
 
-    @allure.story('测试权限弹窗允许按钮')
+    @allure.story('测试阅读模式')
     def test001ReadPage(self, ReadPage_init):
         '''
         1、清除数据后首次打开浏览器，弹出隐私政策窗口
