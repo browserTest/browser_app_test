@@ -39,10 +39,13 @@ class WindowsTabPage(Base):
     # 滑动多窗口
     def scrollToWindowsTab(self):
         if self.base.elementIsExit(CLOSE_WINDOWS_TAB):
-            # 滑动浏览多窗口的次数
-            self.base.scrollWindowsTabAction(2)
+            # 滑动浏览多窗口
+            self.base.swipe('left')
+            self.base.swipe('right')
+            self.base.swipe('left')
         else:
             self.assertFalse(CLOSE_WINDOWS_TAB)
+
 
 
     # 打开多窗口tab中的页面
@@ -68,21 +71,14 @@ class WindowsTabPage(Base):
     def closeOneWindowsTab(self):
         # 判断多窗口的数量
         if self.base.elementIsExit(WINDOWS_TAB_NUM):
-            self.base.scrollWindowsTabAction(WINDOWS_POSITION,2)
+            self.base.scrollWindowsTab(WINDOWS_POSITION,WINDOWS_POSITION_AFTER,2)
         else:
             self.assertFalse(WINDOWS_TAB_NUM)
-
-    # # 长按底部 menu_more 按钮，显示X按钮
-    # def longPressMenuMore(self):
-    #     if self.base.elementIsExit(HOME_MORE):
-    #         self.base.long_clickByElement(HOME_MORE,'长按底部 menu_more 按钮,显示X按钮')
-    #     else:
-    #         self.assertFalse(HOME_MORE)
 
     # 长按底部 menu_more 按钮，显示X按钮，点击X按钮关闭多窗口
     def longPressCloseWindowsTab(self):
         if self.base.elementIsExit(WINDOWS_TAB_NUM):
-            self.base.scrollWindowsTabAction(PRESS_MENUMORE_CLOSEWINDOWS, '点击长按menu_more显示的X按钮，关闭当前窗口')
+            self.base.scrollWindowsTab(PRESS_MENUMORE_CLOSEWINDOWS, '点击长按menu_more显示的X按钮，关闭当前窗口')
         else:
             self.assertFalse(WINDOWS_TAB_NUM)
 
