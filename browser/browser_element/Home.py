@@ -36,6 +36,6 @@ HOME_SEARCH = 'com.android.browser:id/search_bar_url_container'
 # 首页导航栏-》安居客————LCM
 HOME_ANJUKE = '安居客'
 
-# 首页导航栏-》搜索————LCM
-HOME_SEARCH = '搜索'
+# 首页导航栏-》同城————LCM
+HOME_TONGCHNEG = '同城'
 

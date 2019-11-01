@@ -45,7 +45,7 @@ class TestQuitPage():
         7、打开浏览器，点击导航网站-》更多
         8、断言页面中的漫画
         '''
-        self.more.clickDaoHang(HOME_SEARCH)
+        self.more.clickDaoHang(HOME_TONGCHNEG)
         self.windowstab.clickWindowsTab()
         self.windowstab.newWindowsTab()
         self.windowstab.openWindowsTabPage()
@@ -73,7 +73,7 @@ class TestQuitPage():
         '''
         self.home.clickHome()
 
-        self.more.clickDaoHang(HOME_SEARCH)
+        self.more.clickDaoHang(HOME_TONGCHNEG)
         self.windowstab.clickWindowsTab()
         self.windowstab.newWindowsTab()
         self.windowstab.openWindowsTabPage()
