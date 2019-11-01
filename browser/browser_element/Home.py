@@ -23,6 +23,8 @@ HOME_BUSINESS_MORE_TEXT = '更多'
 # 首页相机按钮
 HOME_CAMERA = 'com.android.browser:id/qr_code'
 
+# 首页文章ID
+ARTICLE_ID = 'com.android.browser:id/news_sdk_recycle_item_text_title'
 
 # 首页底部工具栏面板--》设置    ---wmw
 HOME_TOOL = 'com.android.browser:id/setting'

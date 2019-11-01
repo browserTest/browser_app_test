@@ -81,15 +81,17 @@ class Base():
         self.d(resourceId=id, text= text).click()
         logging.info("点击元素： {}".format(logtext))
 
-    # 根据元素id及text组合进行点击操作
-    def clickByElementIdAndText(self, className, text, logtext):
+
+    # 根据元素className及text组合进行点击操作
+    def clickByElementClassNameAndText(self, className, text, logtext, instance=1):
         '''
         :param id: 元素id
         :param text: 元素text
         :return:
         '''
-        self.d(className=className, text= text).click()
+        self.d(className=className, text= text, instance= instance).click()
         logging.info("点击元素： {}".format(logtext))
+
 
     # 向下滑动页面
     def scroll(self, num = 1):
@@ -115,6 +117,7 @@ class Base():
         else:
             self.d(scrollable=True).scroll.to(text=element)
         logging.info('滑动查找元素： {}'.format(element))
+
 
     # 左右滑动页面
     def swipe(self, direction):
