@@ -48,3 +48,17 @@ class HomePage(Base):
             self.base.clickByElement(HOME_SEARCH,'首页搜索框')
         else:
             self.assertFalse(HOME_SEARCH)
+
+    # 点击资讯information   ----wmw
+    def clickInformation(self):
+        if self.base.elementIsExit(HOME_INFORMATION):
+            self.base.clickByElement(HOME_INFORMATION,'资讯')
+        else:
+            self.assertFalse(HOME_INFORMATION)
+
+    # 点击资讯广告   ----wmw
+    def clickAdvertisement(self):
+        if self.base.elementIsExit(HOME_ADVERTISEMENT):
+            self.base.clickByElement(HOME_ADVERTISEMENT,'资讯流广告')
+        else:
+            self.assertFalse(HOME_ADVERTISEMENT)
