@@ -16,4 +16,4 @@ class ToolBarPanelPage(Base):
             self.base.clickByElement(element, "工具面板-》{}".format(element))
         else:
             self.base.assertFalse(element)
-            
+

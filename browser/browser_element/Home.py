@@ -32,3 +32,10 @@ HOME_INFORMATION = 'com.android.browser:id/refresh'
 
 # 首页搜索框   ---wmw
 HOME_SEARCH = 'com.android.browser:id/search_bar_url_container'
+
+# 首页导航栏-》安居客————LCM
+HOME_ANJUKE = '安居客'
+
+# 首页导航栏-》同城————LCM
+HOME_TONGCHNEG = '同城'
+
