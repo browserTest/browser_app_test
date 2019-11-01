@@ -3,6 +3,7 @@ from base_function.driver import Driver
 from config.config import *
 import re
 from time import sleep
+from browser.browser_element.WindowsTabElement import *
 
 class Base():
 
@@ -62,6 +63,9 @@ class Base():
             self.d(resourceId=element).click()
         elif re.findall("//", str(element)):
             self.d.xpath(element).click()
+        # 新增tuple判断————LCM
+        elif type(element) == tuple:
+            self.d.click(element[0], element[1])
         else:
             self.d(text=element).click()
         logging.info("点击元素: {}".format(logtext))
@@ -189,20 +193,33 @@ class Base():
             logging.info("提取元素文本: {}".format(logtext))
             return text
 
+    # 输入文本——LYX
+    def elementSetText(self,element,text,logtext):
+        '''
+        :param element: 元素名称，可根据resource、xpath进行判断并设置文本
+        :param logtext: 打印log的文案
+        :return:
+        '''
+        if str(element).startswith("com"):
+            text = self.d(resourceId=element).set_text(text)
+        elif re.findall("//", str(element)):
+            text = self.d.xpath(element).set_text(text)
+            logging.info("提取元素文本: {}".format(logtext))
+
 
     # 根据元素名称进行长按操作——LYX
-    def long_clickByElement(self, element, logtext):
+    def long_clickByElement(self, element, logtext,duration=5):
         '''
         :param element: 元素名称，可根据resource、坐标及Text进行判断并长按
         :param logtext: 打印log的文案
         :return:
         '''
         if str(element).startswith("com"):
-            self.d(resourceId=element).long_click()
+            self.d(resourceId=element).long_click(duration)
         elif type(element) == tuple:
-            self.d.long_click(element[0],element[1])
+            self.d.long_click(element[0],element[1],duration)
         else:
-            self.d(text=element).long_click()
+            self.d(text=element).long_click(duration)
         logging.info("长按元素: {}".format(logtext))
 
     # 根据元素id及text组合进行长按操作——LYX
@@ -214,3 +231,46 @@ class Base():
         '''
         self.d(resourceId=id, text= text).long_click()
         logging.info("点击元素： {}".format(logtext))
+
+
+    # 根据元素名称拖动控件——LYX
+    def swipeByElement(self, element, direction,logtext,steps=20):
+        '''
+        :param element: 元素名称，可根据resource、坐标及Text进行判断并拖动
+        :param logtext: 打印log的文案
+        :return:
+        '''
+        if str(element).startswith("com"):
+            self.d(resourceId=element).swipe(direction,steps)
+        elif re.findall("//", str(element)):
+            self.d.xpath(element).swipe(direction,steps)
+        else:
+            self.d(text=element).swipe(direction,steps)
+        logging.info("长按元素: {}".format(logtext))
+
+
+    # 多窗口页面滑动操作————LCM
+    def scrollWindowsTabAction(self,element,num = 1):
+        '''
+        :param element:滑动多窗口及删除多窗口位置操作
+        :param num:多窗口浏览页向上滑动的次数，默认为1次
+        :return:
+        '''
+        if str(element).startswith('com'):
+            for i in range(num):
+                # 多窗口浏览上滑，删除窗口
+                # self.d(resourceId=element).drag_to(element[0], duration=0.05)
+                self.d(resourceId=element).drag_to(WINDOWS_POSITION_AFTER[0],WINDOWS_POSITION_AFTER[1], duration=0.05)
+        elif type(element) == tuple:
+            # 底部工具栏长按menu_more,点击X删除多窗口
+            self.d.swipe(element[0],element[1],element[2],element[3])
+        else:
+            for j in range(num):
+                # 水平向左滑动页面
+                self.d(scrollable=True).scroll.horiz.backward(steps=150)
+                sleep(3)
+                # 水平向右滑动页面
+                self.d(scrollable=True).scroll.horiz.forward(steps=100)
+                sleep(3)
+        logging.info("滑动操作多窗口页面： {}次".format(num))
+

@@ -28,3 +28,18 @@ SEARCHPANEL_WEBSITE = 'com.android.browser:id/url'
 
 # 地址栏中的“www”——LYX
 SEARCHPANEL_WWW = 'www.'
+
+# 输入框工具条——LYX
+INPUTPANEL_SWIPE = 'com.android.browser:id/keyboard_top_view_seek_bar_fake_progress'
+
+# 搜索框联想词——LYX
+AUTOMATED_WORD = 'Flyme官网'
+
+# Flyme官网-首页——LYX
+FLYME_WEBSITE = 'Flyme官网-首页'
+
+# 地址栏清空按钮——LYX
+SEARCHPANEL_CLEAR = 'com.android.browser:id/clear'
+
+# 搜索历史——LYX
+SEARCHHISTORY = '搜索历史'
