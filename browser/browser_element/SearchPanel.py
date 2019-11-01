@@ -43,3 +43,12 @@ SEARCHPANEL_CLEAR = 'com.android.browser:id/clear'
 
 # 搜索历史——LYX
 SEARCHHISTORY = '搜索历史'
+
+# 清空搜索历史——LYX
+CLEARSEARCHHISTORY = '清空'
+
+# 搜索框右侧进入按钮——LYX
+SEARCHPANEL_OPEN = 'com.android.browser:id/right_txt_blue'
+
+# 顶部地址栏展开时的刷新按钮——LYX
+ADDRESS_CONTAINER_REFRESH = 'com.android.browser:id/bt_refresh'

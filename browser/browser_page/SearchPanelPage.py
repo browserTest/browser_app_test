@@ -85,9 +85,23 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_CLEAR)
 
+    # 点击清空搜索历史——LYX
+    def clearSearchHistory(self):
+        if self.base.elementIsExit(CLEARSEARCHHISTORY):
+            self.base.clickByElement(CLEARSEARCHHISTORY, "地址栏清空按钮")
+        else:
+            self.assertFalse(CLEARSEARCHHISTORY)
+
     # 地址栏输入百度——LYX
     def inputBaidu(self):
         if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
             self.base.elementSetText(SEARCHPANEL_WEBSITE, "m.baidu.com","地址栏清空按钮")
         else:
             self.assertFalse(SEARCHPANEL_WEBSITE)
+
+    # 点击搜索框右侧的进入按钮——LYX
+    def clickSearchInto(self):
+        if self.base.elementIsExit(SEARCHPANEL_OPEN):
+            self.base.clickByElement(SEARCHPANEL_OPEN,"搜索框右侧进入按钮")
+        else:
+            self.assertFalse(SEARCHPANEL_OPEN)
