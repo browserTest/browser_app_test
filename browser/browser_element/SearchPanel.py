@@ -2,6 +2,8 @@
 搜索面板相关常量
 
 """
+# 搜索
+SEARCHPANEL_SEARCH = 'com.android.browser:id/right_txt_blue'
 
 # 换一换Another change  ---wmw
 SEARCHPANEL_ANOTHERCHANGE = 'com.android.browser:id/tv_change'
@@ -51,4 +53,5 @@ SEARCHPANEL_OPEN = 'com.android.browser:id/right_txt_blue'
 # 顶部地址栏展开时的刷新按钮——LYX
 ADDRESS_CONTAINER_REFRESH = 'com.android.browser:id/bt_refresh'
 
-
+# 百度首页logo——LYX
+BAIDU_LOGO = '//*[@resource-id="logo"]'

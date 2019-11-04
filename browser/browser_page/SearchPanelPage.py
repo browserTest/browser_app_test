@@ -27,7 +27,7 @@ class SearchPanelPage(Base):
     # 点击输入框工具条前缀词“www.”——LYX
     def clickInputPanelPrefixes(self):
         if self.base.elementIsExit(INPUTPANEL_PROMPT):
-            self.base.clickByElement(INPUTPANEL_PROMPT, "换一换")
+            self.base.clickByElement(INPUTPANEL_PROMPT, "输入框前缀词www.")
         else:
             self.assertFalse(INPUTPANEL_PROMPT)
 

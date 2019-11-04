@@ -20,7 +20,7 @@ from browser.browser_element.MyCollection import *
 class TestSearchPanelPage():
 
     @pytest.fixture(scope="function")
-    def Search_init(self):
+    def search_init(self):
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod= PubMethod(self.driver)
@@ -38,7 +38,7 @@ class TestSearchPanelPage():
 
     # ---wmw  未完成
     @allure.story('测试搜索框')
-    def test001SearchPanelPage(self, Search_init):
+    def test001SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、提取搜索框文本
@@ -54,7 +54,7 @@ class TestSearchPanelPage():
 
     # ---wmw  未完成
     @allure.story('测试历史面板热词是否正常跳转')
-    def test002SearchPanelPage(self, Search_init):
+    def test002SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、点击历史面板热词(默认第一个)
@@ -64,7 +64,7 @@ class TestSearchPanelPage():
 
     # ---wmw
     @allure.story('测试换一换')
-    def test003SearchPanelPage(self, Search_init):
+    def test003SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、获取第一个搜索热词
@@ -79,7 +79,7 @@ class TestSearchPanelPage():
         self.base.assertTrue(Panel,False,timeout=15)
 
     @allure.story('搜索页顶部地址栏输入，选中文字')
-    def test004SearchPanelPage(self, Search_init):
+    def test004SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、点击输入框工具条前缀词“www.”
@@ -110,7 +110,7 @@ class TestSearchPanelPage():
         self.base.assertTrue(SEARCHHISTORY,False)
 
     @allure.story('打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史')
-    def test005SearchPanelPage(self, Search_init):
+    def test005SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框，输入百度网址
         2、打开百度首页，滑动页面
@@ -124,6 +124,9 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearchInto()
         # 判断顶部地址栏是否展开
         self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )
+        # 向上滑动页面
+        self.base.swipe('up')
+
 
 
 

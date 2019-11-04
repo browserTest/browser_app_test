@@ -199,6 +199,7 @@ class Base():
     def elementSetText(self,element,text,logtext):
         '''
         :param element: 元素名称，可根据resource、xpath进行判断并设置文本
+        :param text:所输入的文本
         :param logtext: 打印log的文案
         :return:
         '''
@@ -206,7 +207,7 @@ class Base():
             text = self.d(resourceId=element).set_text(text)
         elif re.findall("//", str(element)):
             text = self.d.xpath(element).set_text(text)
-            logging.info("提取元素文本: {}".format(logtext))
+        logging.info("输入文本: {}".format(logtext))
 
 
     # 根据元素名称进行长按操作——LYX
@@ -214,6 +215,7 @@ class Base():
         '''
         :param element: 元素名称，可根据resource、坐标及Text进行判断并长按
         :param logtext: 打印log的文案
+        :param duration：长按的时长
         :return:
         '''
         if str(element).startswith("com"):
@@ -229,17 +231,20 @@ class Base():
         '''
         :param id: 元素id
         :param text: 元素text
+        :param logtext: 打印log的文案
         :return:
         '''
         self.d(resourceId=id, text= text).long_click()
-        logging.info("点击元素： {}".format(logtext))
+        logging.info("长按元素： {}".format(logtext))
 
 
     # 根据元素名称拖动控件——LYX
     def swipeByElement(self, element, direction,logtext,steps=20):
         '''
         :param element: 元素名称，可根据resource、坐标及Text进行判断并拖动
+        :param direction: 拖动的方向
         :param logtext: 打印log的文案
+        :param steps：1 steps大概 5ms
         :return:
         '''
         if str(element).startswith("com"):
@@ -248,7 +253,7 @@ class Base():
             self.d.xpath(element).swipe(direction,steps)
         else:
             self.d(text=element).swipe(direction,steps)
-        logging.info("长按元素: {}".format(logtext))
+        logging.info("拖动元素: {}".format(logtext))
 
 
     # 根据多个元素从一个位置滑动至另一个位置————LCM
