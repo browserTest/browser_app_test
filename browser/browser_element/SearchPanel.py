@@ -53,5 +53,14 @@ SEARCHPANEL_OPEN = 'com.android.browser:id/right_txt_blue'
 # 顶部地址栏展开时的刷新按钮——LYX
 ADDRESS_CONTAINER_REFRESH = 'com.android.browser:id/bt_refresh'
 
+# 百度网址——LYX
+BAIDU_WEBSITE = 'm.baidu.com'
+
 # 百度首页logo——LYX
-BAIDU_LOGO = '//*[@resource-id="logo"]'
+BAIDU_LOGO = '百度一下,你就知道'
+
+# 百度页收起的地址栏
+WEBSITE_PACKUP = 'com.android.browser:id/address_container'
+
+# 搜索历史删除弹框
+DELETESEARCHHISTORY = '删除'

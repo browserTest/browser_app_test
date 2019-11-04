@@ -124,8 +124,21 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearchInto()
         # 判断顶部地址栏是否展开
         self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )
-        # 向上滑动页面
-        self.base.swipe('up')
+        # 向上滑动页面,收起顶部地址栏
+        self.searchpanel.swipeBaidu()
+        self.base.assertTrue(ADDRESS_CONTAINER_REFRESH,False)
+        # 点击并清空地址栏，判断搜索历史是否存在
+        self.searchpanel.clickwebsite()
+        self.searchpanel.clearSearchPanel()
+        self.base.assertTrue(SEARCHHISTORY)
+        # 长按搜索历史中的百度网址
+        self.searchpanel.long_clickSearchHistory()
+        self.base.assertTrue(DELETESEARCHHISTORY)
+        # 点击删除按钮
+        self.searchpanel.delete_SearchHistory()
+        self.base.assertTrue(DELETESEARCHHISTORY,False)
+
+
 
 
 

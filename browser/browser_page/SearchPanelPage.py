@@ -88,7 +88,7 @@ class SearchPanelPage(Base):
     # 地址栏输入百度——LYX
     def inputBaidu(self):
         if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
-            self.base.elementSetText(SEARCHPANEL_WEBSITE, "m.baidu.com","地址栏清空按钮")
+            self.base.elementSetText(SEARCHPANEL_WEBSITE, "m.baidu.com","百度网址")
         else:
             self.assertFalse(SEARCHPANEL_WEBSITE)
 
@@ -106,5 +106,31 @@ class SearchPanelPage(Base):
         else:
             self.assertFalse(SEARCHPANEL_TEXT)
 
+    # 滑动百度页面——LYX
+    def swipeBaidu(self):
+        if self.base.elementIsExit(BAIDU_LOGO):
+            self.base.swipeByElement(BAIDU_LOGO,'up','滑动百度页面')
+        else:
+            self.assertFalse(BAIDU_LOGO)
 
+    # 点击搜索框——LYX
+    def clickwebsite(self):
+        if self.base.elementIsExit(WEBSITE_PACKUP):
+            self.base.clickByElement(WEBSITE_PACKUP, "百度页面收起的地址栏")
+        else:
+            self.assertFalse(WEBSITE_PACKUP)
+
+    # 长按搜索历史中的百度网址——LYX
+    def long_clickSearchHistory(self):
+        if self.base.elementIsExit(BAIDU_WEBSITE):
+            self.base.long_clickByElement(BAIDU_WEBSITE, "搜索历史中的百度网址")
+        else:
+            self.assertFalse(BAIDU_WEBSITE)
+
+    # 点击搜索历史中的删除按钮——LYX
+    def delete_SearchHistory(self):
+        if self.base.elementIsExit(DELETESEARCHHISTORY):
+            self.base.clickByElement(DELETESEARCHHISTORY,"搜索历史中的删除按钮")
+        else:
+            self.base.assertFalse(DELETESEARCHHISTORY)
 
