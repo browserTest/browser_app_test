@@ -81,15 +81,17 @@ class Base():
         self.d(resourceId=id, text= text).click()
         logging.info("点击元素： {}".format(logtext))
 
-    # 根据元素id及text组合进行点击操作
-    def clickByElementIdAndText(self, className, text, logtext):
+
+    # 根据元素className及text组合进行点击操作
+    def clickByElementClassNameAndText(self, className, text, logtext, instance=1):
         '''
         :param id: 元素id
         :param text: 元素text
         :return:
         '''
-        self.d(className=className, text= text).click()
+        self.d(className=className, text= text, instance= instance).click()
         logging.info("点击元素： {}".format(logtext))
+
 
     # 向下滑动页面
     def scroll(self, num = 1):
@@ -115,6 +117,7 @@ class Base():
         else:
             self.d(scrollable=True).scroll.to(text=element)
         logging.info('滑动查找元素： {}'.format(element))
+
 
     # 左右滑动页面
     def swipe(self, direction):
@@ -249,29 +252,23 @@ class Base():
         logging.info("长按元素: {}".format(logtext))
 
 
-    # 多窗口页面滑动操作————LCM
-    def scrollWindowsTabAction(self,element,num = 1):
+    # 根据多个元素从一个位置滑动至另一个位置————LCM
+    def scrollWindowsTab(self,element,element1,num = 1):
         '''
         :param element:滑动多窗口及删除多窗口位置操作
         :param num:多窗口浏览页向上滑动的次数，默认为1次
         :return:
         '''
-        if str(element).startswith('com'):
-            for i in range(num):
+        for i in range(num):
+            if str(element).startswith('com'):
                 # 多窗口浏览上滑，删除窗口
-                # self.d(resourceId=element).drag_to(element[0], duration=0.05)
-                self.d(resourceId=element).drag_to(WINDOWS_POSITION_AFTER[0],WINDOWS_POSITION_AFTER[1], duration=0.05)
-        elif type(element) == tuple:
-            # 底部工具栏长按menu_more,点击X删除多窗口
-            self.d.swipe(element[0],element[1],element[2],element[3])
-        else:
-            for j in range(num):
-                # 水平向左滑动页面
-                self.d(scrollable=True).scroll.horiz.backward(steps=150)
-                sleep(3)
-                # 水平向右滑动页面
-                self.d(scrollable=True).scroll.horiz.forward(steps=100)
-                sleep(3)
+                self.d(resourceId=element).drag_to(element1[0],element1[1],duration=0.05)
+
+            elif type(element) == tuple:
+                # 底部工具栏长按menu_more,点击X删除多窗口
+                self.d.swipe(element[0],element[1],element[2],element[3])
+            else:
+                pass
         logging.info("滑动操作多窗口页面： {}次".format(num))
 
 

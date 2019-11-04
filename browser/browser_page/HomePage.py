@@ -37,7 +37,7 @@ class HomePage(Base):
     def clickHomeOnPage(self, page):
         if page == HOME_PAGE and self.base.elementIsExit(COLLECTION_FOLDER):
             self.clickHome()
-        elif page == MYCOLLECTION and self.base.elementIsExit(HOME_CAMERA):
+        elif page == MYCOLLECTION and self.base.elementIsExit(ARTICLE_ID):
             self.clickHome()
         else:
             pass

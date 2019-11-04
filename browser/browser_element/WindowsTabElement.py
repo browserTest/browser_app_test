@@ -21,7 +21,7 @@ CLOSE_WINDOWS_TAB = 'com.android.browser:id/text_close_all_tab'
 WINDOWS_POSITION = 'com.android.browser:id/thumbnail_bg'
 
 # 多窗口从固定位置上滑到的位置
-WINDOWS_POSITION_AFTER = 365, 159
+WINDOWS_POSITION_AFTER = (0.511, 0.072)
 
 # 长按 menu_more 图标的位置，拖动到显示X按钮后滑动的位置
 PRESS_MENUMORE_CLOSEWINDOWS = 444, 2009,507, 1766
