@@ -71,14 +71,14 @@ class WindowsTabPage(Base):
     def closeOneWindowsTab(self):
         # 判断多窗口的数量
         if self.base.elementIsExit(WINDOWS_TAB_NUM):
-            self.base.scrollWindowsTab(WINDOWS_POSITION,WINDOWS_POSITION_AFTER,2)
+            self.base.dragByElement(WINDOWS_POSITION,WINDOWS_POSITION_AFTER,2)
         else:
             self.assertFalse(WINDOWS_TAB_NUM)
 
     # 长按底部 menu_more 按钮，显示X按钮，点击X按钮关闭多窗口
     def longPressCloseWindowsTab(self):
         if self.base.elementIsExit(WINDOWS_TAB_NUM):
-            self.base.scrollWindowsTab(PRESS_MENUMORE_CLOSEWINDOWS, '点击长按menu_more显示的X按钮，关闭当前窗口')
+            self.base.swipeByElement(PRESS_MENUMORE_CLOSEWINDOWS, '点击长按menu_more显示的X按钮，关闭当前窗口')
         else:
             self.assertFalse(WINDOWS_TAB_NUM)
 
