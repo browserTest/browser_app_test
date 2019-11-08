@@ -45,3 +45,18 @@ HOME_TONGCHNEG = '同城'
 
 # 资讯流广告Advertisement  ---wmw
 HOME_ADVERTISEMENT = '//*[@resource-id="com.android.browser:id/news_sdk_recycle_view"]/android.widget.FrameLayout[1]'
+
+# 安居客首页，“新房”入口——LYX
+NEWHOUSE = '新房'
+
+# 屏幕边缘右滑坐标——LYX
+RIGHTSWIPE_COORDINATE = 0.004, 0.548, 0.351, 0.548
+
+# 屏幕边缘左滑坐标——LYX
+LEFTSWIPE_COORDINATE = 0.995, 0.536, 0.628, 0.533
+
+# 安居客首页搜索框——LYX
+ANJUKE_SEARCH = '挑好房，上安居客'
+
+# 安居客新房页面搜索框——LYX
+NEWHOUSE_SEARCH = '请输入楼盘名称或地址'

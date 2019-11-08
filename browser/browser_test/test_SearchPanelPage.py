@@ -1,15 +1,12 @@
 from base_function.driver import *
 import pytest
 from config.config import *
-from browser.browser_page.HomePage import HomePage
+
 from browser.browser_page.PubMethod import PubMethod
-from browser.browser_element.PubElement import *
-from base_function.base import Base
-from browser.browser_element.Home import *
 from browser.browser_page.SearchPanelPage import *
 from browser.browser_page.HomePage import *
 import allure
-from browser.browser_element.MyCollection import *
+
 
 
 
@@ -115,7 +112,7 @@ class TestSearchPanelPage():
         1、点击首页搜索框，输入百度网址
         2、打开百度首页，滑动页面
         3、检查顶部地址栏是否展开
-        4、检查搜索历史
+        4、检查搜索历史,长按删除
         '''
         # 点击首页搜索框
         self.home.clickHomeSearch()
@@ -138,6 +135,20 @@ class TestSearchPanelPage():
         self.searchpanel.delete_SearchHistory()
         self.base.assertTrue(DELETESEARCHHISTORY,False)
 
+    @allure.story('搜索框输入主题美化地址，检查外部应用跳转是否正常')
+    def test006SearchPanelPage(self, search_init):
+        '''
+
+        1、点击首页搜索框，输入主题美化地址
+        2、弹出跳转提示，点击允许，跳转至主题美化APP
+        '''
+        # 点击首页搜索框
+        self.home.clickHomeSearch()
+        # 输入百度地址,进入百度首页
+        self.searchpanel.inputCustomize()
+        self.searchpanel.clickSearchInto()
+        self.searchpanel.skipCustomize()
+        self.base.assertTrue(CUSTOMIZE)
 
 
 

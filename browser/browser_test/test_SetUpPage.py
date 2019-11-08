@@ -55,19 +55,19 @@ class TestSetUpPage():
         self.pubmethod.clickBack()
         # 断言页面魅族头条是否存在
         self.base.assertTrue(SETUP_MEIZU_HEADLINES)
-'''
-        # 点击简版显示--更多
-        self.setup.clickSetUpMore()
-        # 提取资讯流页面第一个文章的文本信息
-        Text = self.zixuninformationelement.clickText(0)
-        # 点击工具栏资讯刷新页面 
-        self.home.clickInformation()
-        #断言页面是否存刷新成功
-        self.base.assertTrue(Text)
-        # 点击第一篇文章
-        self.zixuninformationelement.clickOneArticle(0)
-        # 断言是否正常打开文章详情页
-'''
+        #
+        # # 点击简版显示--更多
+        # self.setup.clickSetUpMore()
+        # # 提取资讯流页面第一个文章的文本信息
+        # Text = self.zixuninformationelement.clickText(0)
+        # # 点击工具栏资讯刷新页面
+        # self.home.clickInformation()
+        # #断言页面是否存刷新成功
+        # self.base.assertTrue(Text)
+        # # 点击第一篇文章
+        # self.zixuninformationelement.clickOneArticle(0)
+        # # 断言是否正常打开文章详情页
+
 
     # ---wmw
     @allure.story('测试设置清除浏览器')

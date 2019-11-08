@@ -64,3 +64,12 @@ WEBSITE_PACKUP = 'com.android.browser:id/address_container'
 
 # 搜索历史删除弹框
 DELETESEARCHHISTORY = '删除'
+
+# 主题美化跳转地址——LYX
+CUSTOMIZE_ADDRESS = 'customizecenter://com.meizu.customizecenter.CustomizeCenterActivity'
+
+# 外部应用跳转提示，允许按钮——LYX
+CUSTOMIZE_SKIP = 'com.android.browser:id/mz_action_text'
+
+# 主题美化首页——LYX
+CUSTOMIZE = '主题'

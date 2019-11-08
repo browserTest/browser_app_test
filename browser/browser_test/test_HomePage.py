@@ -8,6 +8,7 @@ from base_function.base import Base
 from browser.browser_element.Home import *
 import allure
 from browser.browser_element.MyCollection import *
+from browser.browser_page.SharePage import *
 
 
 
@@ -20,10 +21,12 @@ class TestHomePage():
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod = PubMethod(self.driver)
+        self.share = SharePage(self.driver)
         logging.info("")
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -63,6 +66,23 @@ class TestHomePage():
         self.base.scrollToElement('广告')
         #self.base.clickByElement('广告')
         self.home.clickAdvertisement()
+
+    @allure.story('测试前进后退')
+    def test003HomePage(self, home_init):
+        '''
+        1、打开首页导航栏的安居客网址
+        2、点击安居客首页的“新房”
+        3、手势后退至安居客首页，再手势前进至“新房”页面
+        '''
+        self.share.clickAnjuke()
+        self.home.clickNewHouse()
+        self.home.right_swipe()
+        assert ANJUKE_SEARCH
+        self.home.left_swipe()
+        assert NEWHOUSE_SEARCH
+
+
+
 
 
 

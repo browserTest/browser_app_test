@@ -41,7 +41,7 @@ class SearchPanelPage(Base):
     # 拖动输入框中的工具条——LYX
     def swipe_InputPanel(self):
         if self.base.elementIsExit(INPUTPANEL_SWIPE):
-            self.base.swipeByElement(INPUTPANEL_SWIPE, "left","向左拖动工具条",200)
+            self.base.swipeByElement(INPUTPANEL_SWIPE, "向左拖动工具条","left",200)
         else:
             self.assertFalse(INPUTPANEL_SWIPE)
 
@@ -109,11 +109,11 @@ class SearchPanelPage(Base):
     # 滑动百度页面——LYX
     def swipeBaidu(self):
         if self.base.elementIsExit(BAIDU_LOGO):
-            self.base.swipeByElement(BAIDU_LOGO,'up','滑动百度页面')
+            self.base.swipeByElement(BAIDU_LOGO,'滑动百度页面','up')
         else:
             self.assertFalse(BAIDU_LOGO)
 
-    # 点击搜索框——LYX
+    # 点击百度页面收起的地址栏——LYX
     def clickwebsite(self):
         if self.base.elementIsExit(WEBSITE_PACKUP):
             self.base.clickByElement(WEBSITE_PACKUP, "百度页面收起的地址栏")
@@ -134,3 +134,16 @@ class SearchPanelPage(Base):
         else:
             self.base.assertFalse(DELETESEARCHHISTORY)
 
+    # 地址栏输入主题美化跳转地址——LYX
+    def inputCustomize(self):
+        if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+            self.base.elementSetText(SEARCHPANEL_WEBSITE, CUSTOMIZE_ADDRESS,"百度网址")
+        else:
+            self.assertFalse(SEARCHPANEL_WEBSITE)
+
+    # 点击主题美化跳转提示，允许按钮——LYX
+    def skipCustomize(self):
+        if self.base.elementIsExit(CUSTOMIZE_SKIP,2):
+            self.base.clickByElement(CUSTOMIZE_SKIP,"允许跳转至主题美化")
+        else:
+            self.base.assertFalse(CUSTOMIZE_SKIP)
