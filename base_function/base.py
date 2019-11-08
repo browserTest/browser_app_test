@@ -277,7 +277,6 @@ class Base():
     # 根据元素id位于第几个进行点击操作——wmw
     def clickByElementIdAndInstance(self, id, logtext,instance):
         '''
-
         :param id: 元素ID
         :param logtext: 打印log的文案
         :param instance: 位于第几个
@@ -285,8 +284,3 @@ class Base():
         '''
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
-
-
-
-
-
