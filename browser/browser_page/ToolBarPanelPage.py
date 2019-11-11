@@ -1,5 +1,6 @@
 from base_function.base import Base
 from browser.browser_element.ToolbarPanel import *
+from browser.browser_page.HomePage import *
 
 
 
@@ -8,6 +9,7 @@ class ToolBarPanelPage(Base):
 
     def __init__(self, driver):
         self.base = Base(driver)
+        self.home = HomePage(driver)
 
     # 点击底部工具栏的位置
     def clickToolsPanel(self ,element):
@@ -34,3 +36,12 @@ class ToolBarPanelPage(Base):
             self.base.clickByElement(SET_UP, "设置")
         else:
             self.assertFalse(SET_UP)
+
+    # 清空历史 -- LJX
+    def cleanHistory(self):
+        self.home.clickMore()
+        self.clickToolsPanel(CLEAN_UP_HISTORY)
+        self.clickToolsPanel(CLEAN_UP)
+
+
+

@@ -19,6 +19,8 @@ class NegativeScreenPage(Base):
     def deleteBookmark(self, element):
         if self.base.elementIsExit(element):
             self.base.long_clickByElement(element, '负一屏"{}"书签'.format(element), 1)
+            self.assertFalse(element)
             self.base.clickByElement(DELETE_TEXT, '删除按钮')
+            self.assertFalse(DELETE_TEXT)
 
 

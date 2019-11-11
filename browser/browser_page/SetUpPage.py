@@ -1,5 +1,9 @@
+import pytest
 from base_function.base import Base
 from browser.browser_element.SetUp import *
+from base_function.driver import Driver
+from browser.browser_element.PubElement import *
+from browser.browser_element.MyCollection import *
 from browser.browser_element.SearchPanel import *
 
 class SetUpPage(Base):

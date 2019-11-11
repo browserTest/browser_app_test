@@ -285,3 +285,14 @@ class Base():
         '''
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
+
+    # 增加公共监听
+    def browserWatcher(self):
+        self.d.watchers.run()
+        self.d.watcher("始终允许").when(text='始终允许').click()
+        logging.info("监听到'始终允许'，点击元素： '始终允许'")
+        self.d.watcher("允许").when(text='允许').click()
+        logging.info("监听到'始终允许'，点击元素： '允许'")
+
+
+
