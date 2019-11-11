@@ -1,4 +1,3 @@
-import down as down
 from base_function.base import *
 from browser.browser_element.ZiXunInformationElement import *
 
@@ -47,7 +46,7 @@ class ZiXunInformationPage(Base):
     def clickOpenZiXunArticle(self):
         if self.base.elementIsExit(ZIXUN_ARTICLE_TITLE):
             self.base.clickByElement(ZIXUN_ARTICLE_TITLE,'在资讯流列表点击资讯文章、视频连播页进入详情页')
-            if self.base.elementIsExit(AA):
+            if self.base.elementIsExit(ZIXUN_PAGE_MOREMENU):
                 self.base.assertTrue(ZIXUN_PAGE_BACK)
             else:
                 self.base.assertTrue(ZIXUN_PAGE_VIDEO)

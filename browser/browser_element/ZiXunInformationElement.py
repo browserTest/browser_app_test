@@ -23,7 +23,8 @@ ZIXUN_REFRESH_NOTICE_TEXT = '上次看到这里，点击刷新'
 
 # 资讯文章详情页的返回按钮
 ZIXUN_PAGE_BACK = 'com.android.browser:id/bt_zixun_back'
-AA = 'com.android.browser:id/moremenu'
+# 文章右上角菜单按钮
+ZIXUN_PAGE_MOREMENU = 'com.android.browser:id/moremenu'
 # 视频连播页的更多负反馈按钮
 ZIXUN_PAGE_VIDEO = 'com.android.browser:id/more_btn'
 
