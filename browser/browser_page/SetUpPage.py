@@ -1,9 +1,5 @@
-import pytest
 from base_function.base import Base
 from browser.browser_element.SetUp import *
-from base_function.driver import Driver
-from browser.browser_element.PubElement import *
-from browser.browser_element.MyCollection import *
 from browser.browser_element.SearchPanel import *
 
 class SetUpPage(Base):
@@ -17,8 +13,6 @@ class SetUpPage(Base):
             self.base.clickByElementIdAndInstance(SETUP_ID, "魅族头条设置",instance)
         else:
             self.assertFalse(SETUP_ID)
-
-
 
     # 点击简版显示   ---wmw
     def clickSimple(self):
@@ -47,7 +41,7 @@ class SetUpPage(Base):
         if self.base.elementIsExit(SETUP_COOKIES):
             self.base.clickByElement(SETUP_COOKIES, "Cookies")
         else:
-            self.assertFalse(SETUP_CLEAR_COOKIES)
+            self.assertFalse(SETUP_COOKIES)
 
     # 点击清除浏览数据--账号密码    ---wmw
     def clickAccountsAndPasswords(self):
@@ -104,3 +98,50 @@ class SetUpPage(Base):
             self.base.elementSetText(SEARCHPANEL_TEXT,'www.baidu.com', "搜索框输入百度")
         else:
             self.assertFalse(SEARCHPANEL_TEXT)
+
+    # 点击广告屏蔽   ---wmw
+    def clickBlockAds(self,instance):
+        if self.base.elementIsExit(SETUP_ID):
+            self.base.clickByElementIdAndInstance(SETUP_ID, "广告屏蔽",instance)
+        else:
+            self.assertFalse(SETUP_ID)
+
+    # 点击恢复默认设置   ---wmw
+    def clickResetToDefault(self,instance):
+        if self.base.elementIsExit(SETUP_ID):
+            self.base.clickByElementIdAndInstance(SETUP_ID, "恢复默认设置",instance)
+        else:
+            self.assertFalse(SETUP_ID)
+
+
+    # 点击恢复默认设置---恢复    --wmw
+    def clickReset(self):
+        if self.base.elementIsExit(SETUP_RESET):
+            self.base.clickByElement(SETUP_RESET, "恢复")
+        else:
+            self.assertFalse(SETUP_RESET)
+
+    # 获取开关状态    ---wmw
+    def clickSwitch(self):
+        return self.base.elementText(SETUP_SWITCH, "开关状态")
+
+    # 点击精选内容推送  ---wmw
+    def clickSwipeLeftRight(self,instance):
+        if self.base.elementIsExit(SETUP_ID):
+            self.base.clickByElementIdAndInstance(SETUP_ID, "精选内容推送",instance)
+        else:
+            self.assertFalse(SETUP_ID)
+
+    # 点击锁定竖屏   ---wmw
+    def clickLockingVerticalScreen(self,instance):
+        if self.base.elementIsExit(SETUP_ID):
+            self.base.clickByElementIdAndInstance(SETUP_ID, "锁定竖屏",instance)
+        else:
+            self.assertFalse(SETUP_ID)
+
+    # 点击允许   ---wmw
+    def clickAllow(self):
+        if self.base.elementIsExit(SETUP_ALLOW):
+            self.base.clickByElement(SETUP_ALLOW, "允许")
+        else:
+            self.assertFalse(SETUP_ALLOW)

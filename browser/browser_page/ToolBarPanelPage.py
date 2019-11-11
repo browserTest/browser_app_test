@@ -1,6 +1,4 @@
 from base_function.base import Base
-import pytest
-from base_function.driver import Driver
 from browser.browser_element.ToolbarPanel import *
 
 
@@ -23,12 +21,12 @@ class ToolBarPanelPage(Base):
             self.base.assertFalse(element)
             
 
-    # 点击我的图标  --wmw
-    def clickFlyme_me(self):
-        if self.base.elementIsExit(FLYME_ME):
-            self.base.clickByElement(FLYME_ME, "我的图标")
+    # 点击我的图标 ---wmw
+    def clickFlymeme(self):
+        if self.base.elementIsExit(SET_UP):
+            self.base.clickByElement(FLYME_ME, '我的图标')
         else:
-            self.assertFalse(FLYME_ME)
+            self.assertFalse(SET_UP)
 
     # 点击设置  --wmw
     def clickSetUp(self):

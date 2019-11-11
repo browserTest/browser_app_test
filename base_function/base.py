@@ -170,6 +170,7 @@ class Base():
         :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False
         :return:
         '''
+        sleep(2)
         if mark:
             assert self.elementIsExit(element, timeout) == True, "断言元素存在失败，元素名称为： {}".format(element)
             logging.info("已找到元素，断言成功，元素名称为： {}".format(element))

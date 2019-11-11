@@ -9,7 +9,7 @@ SEARCHPANEL_SEARCH = 'com.android.browser:id/right_txt_blue'
 SEARCHPANEL_ANOTHERCHANGE = 'com.android.browser:id/tv_change'
 
 #搜索历史热词Search history    wmw
-SEARCHPANEL_SEARCHHISTORY = 'com.android.browser:id/suggestion_item_layout'
+SEARCHPANEL_SEARCHHISTORY = 'com.android.browser:id/suggestion_hot_word_item1'
 
 # 搜索框提取文本    ---wmw
 SEARCHPANEL_TEXT = 'com.android.browser:id/url'
