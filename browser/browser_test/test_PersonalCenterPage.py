@@ -45,21 +45,22 @@ class TestPersonalCenterPage():
         self.personalcenter.clickFlymemeB()
         self.base.assertTrue(PERSONAL_CENTER_REGISTER)
 
-        # 输入密码
-        self.personalcenter.inputPassWord()
-        # 点击登录
-        self.personalcenter.clickLoggenIn()
-
-    # ---wmw  --未写完
+    # ---wmw  --未完成
     @allure.story('测试个人中心账号，进入评论详情，检查页面显示是否正常')
     def test002PersonalCenterPage(self, personalCenter_init):
         '''
         1、点击工具菜单
         2、点击工具面板--我的图标
-        3、点击我的消息
+        3、判断账号是否登陆
+        4、点击我的消息
+        5、默认点击第一条消息
         '''
         self.home.clickMore()
         self.toolbarpanel.clickFlymeme()
+        self.personalcenter.elementIsLandFlymeme()
+        # 此处有bug，为了确保当前页面账号更新已登陆成功，故多点几次我的消息
+        self.personalcenter.clickMyMessages()
+        self.personalcenter.clickMyMessages()
         self.personalcenter.clickMyMessages()
         self.personalcenter.clickPraisedMyMessages()
 

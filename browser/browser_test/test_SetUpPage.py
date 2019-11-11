@@ -50,7 +50,6 @@ class TestSetUpPage():
         self.pubmethod.clickBack()
         # 断言页面魅族头条是否存在
         self.base.assertTrue(SETUP_MEIZU_HEADLINES)
-
         # 点击简版显示--更多
         self.setup.clickSetUpMore()
         # 提取资讯流页面第一个文章的文本信息
@@ -64,8 +63,6 @@ class TestSetUpPage():
         self.zixuninformation.clickOpenZiXunArticle()
         # 断言是否正常打开
         self.base.assertTrue(ZIXUN_PAGE_MOREMENU)
-        # 点击mback
-        self.pubmethod.clickBack()
 
 
     # ---wmw
@@ -178,9 +175,9 @@ class TestSetUpPage():
         self.toolbarpanel.clickSetUp()
         # 点击广告屏蔽
         self.setup.clickBlockAds(0)
-        BeforeBlockAdsText = self.setup.clickSwitch()
-        BeforeLockingVerticalScreen = self.setup.clickSwitch()
-        BeforeSwipeLeftRight = self.setup.clickSwitch()
+        BeforeBlockAdsText = self.setup.obtainSwitch()
+        BeforeLockingVerticalScreen = self.setup.obtainSwitch()
+        BeforeSwipeLeftRight = self.setup.obtainSwitch()
         # 点击锁定竖屏
         self.setup.clickLockingVerticalScreen(4)
         # 点击精选内容推送
@@ -195,9 +192,9 @@ class TestSetUpPage():
         self.home.clickMore()
         # 点击设置
         self.toolbarpanel.clickSetUp()
-        AfterBlockAdsText = self.setup.clickSwitch()
-        AfterLockingVerticalScreen = self.setup.clickSwitch()
-        AfterSwipeLeftRight = self.setup.clickSwitch()
+        AfterBlockAdsText = self.setup.obtainSwitch()
+        AfterLockingVerticalScreen = self.setup.obtainSwitch()
+        AfterSwipeLeftRight = self.setup.obtainSwitch()
         # 判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
         assert BeforeBlockAdsText != AfterBlockAdsText
         assert BeforeLockingVerticalScreen != AfterLockingVerticalScreen

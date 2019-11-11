@@ -8,11 +8,11 @@ class ReadPage(Base):
 
 
     # 阅读模式-点击小说三寸人间  --wmw
-    def clickSCRJ(self):
-        if self.base.elementIsExit(READ_SCRJ):
-            self.base.clickByElement(READ_SCRJ, "点击小说三寸人间")
+    def clickBook(self):
+        if self.base.elementIsExit(READ_BOOK):
+            self.base.clickByElement(READ_BOOK, "点击小说封面")
         else:
-            self.assertFalse(READ_SCRJ)
+            self.assertFalse(READ_BOOK)
 
     # 阅读模式-点击开始阅读  --wmw
     def clickRead(self):

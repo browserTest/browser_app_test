@@ -60,8 +60,8 @@ class TestReadPage():
         self.searchpanel.inputNumber()
         # 点击搜索
         self.searchpanel.clickSearchInto()
-        # 点击小说三村人间
-        self.read.clickSCRJ()
+        # 点击小说封面
+        self.read.clickBook()
         # 点击开始阅读
         self.read.clickRead()
         # 点击章节

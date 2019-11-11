@@ -29,6 +29,18 @@ class PersonalCenterPage(Base):
         else:
             self.assertFalse(PERSONAL_CENTER_FLYME_ME_A)
 
+    # 判断账号是否登陆，未登录则登录账号 ---wmw
+    def elementIsLandFlymeme(self):
+        # 判断页面是否存在未登录
+        if self.base.elementIsExit(PERSONAL_CENTER_NOT_LOGGED_IN):
+            self.base.clickByElement(PERSONAL_CENTER_FLYME_ME_A, '我的账号图标')
+            # 输入密码
+            self.inputPassWord()
+            # 点击登录
+            self.clickLoggenIn()
+        else:
+            return
+
     # 点击赞了我的消息 ---wmw
     def clickPraisedMyMessages(self):
         if self.base.elementIsExit(PERSONAL_CENTER_MY_MESSAGES_A):
