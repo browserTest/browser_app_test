@@ -1,3 +1,5 @@
+from time import sleep
+
 from base_function.base import Base
 from browser.browser_element.AddToHome import *
 
@@ -11,6 +13,7 @@ class AddToHomePage(Base):
     def clickAddToHomeWebsite(self, element_text):
         if self.base.elementIsExit(element_text):
             self.base.clickByElementIdAndText(BOOKMARK_ID, element_text, '添加到主页"{}"网站'.format(element_text))
+            sleep(1)
         else:
             self.assertFalse(element_text)
 

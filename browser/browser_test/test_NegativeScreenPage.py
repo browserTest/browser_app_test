@@ -1,9 +1,5 @@
 import allure
-import pytest
-from base_function.base import *
-from browser.browser_element.CollectionAndHistory import MYCOLLECTION
 from browser.browser_page.AddToHomePage import *
-from browser.browser_page.HomePage import *
 from browser.browser_page.NegativeScreenPage import *
 from browser.browser_page.PubMethod import *
 from browser.browser_element.AddToHome import *
@@ -65,7 +61,7 @@ class TestNegativePage():
         self.home.clickHomeOnPage(MYCOLLECTION)
         self.negativescreen.deleteBookmark(IFENG_SIMPLIFIED)
         self.negativescreen.clickAddTo()
-        self.addtohome.clickAddToHomeClassify()
+        self.addtohome.clickAddToHomeTab(CLASSFICATION_TEXT)
         self.addtohome.clickAddToHomeTab(INFORMATION_TEXT)
         # 对"凤凰网"书签点击"添加"，点击"凤凰网"进入网页
         self.addtohome.clickAddToHome(1)
@@ -127,7 +123,6 @@ class TestNegativePage():
         self.addtohome.clickAddToHomeTab(ADD_TO_TEXT)
         # 断言是否进入"百度一下"网页
         self.base.assertTrue(BAIDU_SEARCH, timeout=3)
-
 
 
 

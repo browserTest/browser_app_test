@@ -2,7 +2,7 @@ import pytest
 from base_function.base import Base
 from browser.browser_element.Home import *
 from browser.browser_element.PubElement import *
-from browser.browser_element.MyCollection import *
+from browser.browser_element.CollectionAndHistory import *
 from time import sleep
 
 

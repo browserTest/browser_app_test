@@ -7,7 +7,7 @@ from browser.browser_element.PubElement import *
 from base_function.base import Base
 from browser.browser_element.Home import *
 import allure
-from browser.browser_element.MyCollection import *
+from browser.browser_element.CollectionAndHistory import *
 from browser.browser_page.SharePage import *
 
 
@@ -34,7 +34,7 @@ class TestHomePage():
 
     @allure.story('测试资讯流页面存在相应text')
     def test001HomePage(self, home_init):
-        '''+
+        '''
         1、点击地址栏more按钮
         2、点击back
         3、向下滑动页面进入到资讯流列表页

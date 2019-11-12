@@ -3,7 +3,7 @@ from base_function.base import Base
 from browser.browser_element.ToolbarPanel import *
 from base_function.driver import Driver
 from browser.browser_element.PubElement import *
-from browser.browser_element.MyCollection import *
+from browser.browser_element.CollectionAndHistory import *
 from browser.browser_element.PersonalCenter import *
 from browser.browser_element.SearchPanel import *
 
