@@ -16,7 +16,7 @@ class CollectionAndHistoryPage(Base):
         self.searchpanel = SearchPanelPage(driver)
         self.base = Base(driver)
 
-    # 判断是否存在历史数据，不存在则造一条“百度一下”数据-LJX
+    # 判断历史是否有数据，没有则造一条“百度一下”数据-LJX
     def makeHistory(self):
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(HISTORY)
@@ -27,6 +27,7 @@ class CollectionAndHistoryPage(Base):
             self.home.clickHomeSearch()
             self.base.elementSetText(SEARCHPANEL_WEBSITE, 'm.baidu.com', '搜索框输入"m.baidu.com"')
             self.searchpanel.clickSearchInto()
+            sleep(2)
             # 返回上一层
             self.pubmethod.clickBack()
         else:
