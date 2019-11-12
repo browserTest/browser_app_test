@@ -77,9 +77,9 @@ class TestHomePage():
         self.share.clickAnjuke()
         self.home.clickNewHouse()
         self.home.right_swipe()
-        assert ANJUKE_SEARCH
+        self.base.assertTrue(ANJUKE_SEARCH)
         self.home.left_swipe()
-        assert NEWHOUSE_SEARCH
+        self.base.assertTrue(NEWHOUSE_SEARCH)
 
 
 

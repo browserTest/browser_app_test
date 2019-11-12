@@ -1,22 +1,21 @@
-[2019-10-24 19:58:31] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
-[2019-10-24 19:58:33] INFO [pubMethod_init: test_PubMethod.py, 24] 
-[2019-10-24 19:58:33] INFO [pubMethod_init: test_PubMethod.py, 25] ****开始执行用例****
-[2019-10-24 19:58:33] INFO [useApp: base.py, 26] clear： com.android.browser
-[2019-10-24 19:58:36] INFO [useApp: base.py, 26] start： com.android.browser
-[2019-10-24 19:58:38] INFO [elementIsExit: base.py, 122] 查询到元素： 同意
-[2019-10-24 19:58:39] INFO [clickByElement: base.py, 67] 点击元素: 隐私弹窗同意按钮
-[2019-10-24 19:58:39] INFO [elementIsExit: base.py, 122] 查询到元素： 浏览器申请以下权限
-[2019-10-24 19:58:39] INFO [assertTrue: base.py, 153] 已找到元素，断言成功，元素名称为： 浏览器申请以下权限
-[2019-10-24 19:58:39] INFO [pubMethod_init: test_PubMethod.py, 29] ****用例执行结束****
-[2019-10-24 19:58:39] INFO [pubMethod_init: test_PubMethod.py, 30] 
-[2019-10-24 19:58:39] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
-[2019-10-24 19:58:41] INFO [pubMethod_init: test_PubMethod.py, 24] 
-[2019-10-24 19:58:41] INFO [pubMethod_init: test_PubMethod.py, 25] ****开始执行用例****
-[2019-10-24 19:58:41] INFO [useApp: base.py, 26] clear： com.android.browser
-[2019-10-24 19:58:44] INFO [useApp: base.py, 26] start： com.android.browser
-[2019-10-24 19:58:46] INFO [elementIsExit: base.py, 122] 查询到元素： 不同意
-[2019-10-24 19:58:47] INFO [clickByElement: base.py, 67] 点击元素: 隐私弹窗不同意按钮
-[2019-10-24 19:58:48] INFO [elementIsExit: base.py, 122] 查询到元素： com.meizu.flyme.launcher:id/app_icon
-[2019-10-24 19:58:48] INFO [assertTrue: base.py, 153] 已找到元素，断言成功，元素名称为： com.meizu.flyme.launcher:id/app_icon
-[2019-10-24 19:58:48] INFO [pubMethod_init: test_PubMethod.py, 29] ****用例执行结束****
-[2019-10-24 19:58:48] INFO [pubMethod_init: test_PubMethod.py, 30] 
+[2019-11-12 14:16:38] INFO [driver_setup: conftest.py, 25] ————————————开始执行自动化测试——————————————————
+[2019-11-12 14:16:40] INFO [search_init: test_SearchPanelPage.py, 25] 
+[2019-11-12 14:16:40] INFO [search_init: test_SearchPanelPage.py, 26] ****开始执行用例****
+[2019-11-12 14:16:41] INFO [useApp: base.py, 27] stop： com.android.browser
+[2019-11-12 14:16:43] INFO [useApp: base.py, 27] start： com.android.browser
+[2019-11-12 14:16:45] WARNING [__retry_internal: api.py, 40] uiautomator2.GatewayError(gateway error, time used 0.0s), retrying in 3.0 seconds...
+[2019-11-12 14:17:00] INFO [elementIsExit: base.py, 144] 查询到元素： com.android.browser:id/home
+[2019-11-12 14:17:01] INFO [clickByElement: base.py, 70] 点击元素: 浏览器首页home菜单
+[2019-11-12 14:17:08] INFO [elementIsExit: base.py, 150] 未找到元素，元素名称为: 已保存网页
+[2019-11-12 14:17:09] INFO [elementIsExit: base.py, 144] 查询到元素： com.android.browser:id/search_bar_url_container
+[2019-11-12 14:17:09] INFO [clickByElement: base.py, 70] 点击元素: 首页搜索框
+[2019-11-12 14:17:11] INFO [elementIsExit: base.py, 144] 查询到元素： com.android.browser:id/url
+[2019-11-12 14:17:11] INFO [elementSetText: base.py, 209] 输入文本: 百度网址
+[2019-11-12 14:17:12] INFO [elementIsExit: base.py, 144] 查询到元素： com.android.browser:id/right_txt_blue
+[2019-11-12 14:17:12] INFO [clickByElement: base.py, 70] 点击元素: 搜索框右侧进入按钮
+[2019-11-12 14:17:14] INFO [elementIsExit: base.py, 144] 查询到元素： com.android.browser:id/mz_action_text
+[2019-11-12 14:17:15] INFO [clickByElement: base.py, 70] 点击元素: 允许跳转至主题美化
+[2019-11-12 14:17:17] INFO [elementIsExit: base.py, 144] 查询到元素： 主题
+[2019-11-12 14:17:17] INFO [assertTrue: base.py, 175] 已找到元素，断言成功，元素名称为： 主题
+[2019-11-12 14:17:17] INFO [search_init: test_SearchPanelPage.py, 32] ****用例执行结束****
+[2019-11-12 14:17:17] INFO [search_init: test_SearchPanelPage.py, 33] 
