@@ -215,7 +215,7 @@ class Base():
         '''
         :param element: 元素名称，可根据resource、坐标及Text进行判断并长按
         :param logtext: 打印log的文案
-        :param duration：长按的时长
+        :param duration：长按的时长，单位秒
         :return:
         '''
         if str(element).startswith("com"):
