@@ -180,6 +180,21 @@ class Base():
             assert self.elementIsExit(element, timeout) == False, "断言元素不存在失败，元素名称为： {}".format(element)
             logging.info("元素已不存在，断言成功，元素名称为： {}".format(element))
 
+    # 断言元素是否相等————LCM
+    def assertEqual(self, element, element1,mark = True, timeout = 5):
+        '''
+        :param element: 元素名称
+        :param element1: 元素名称1
+        :param mark: 判断两个元素是否相等，如果相等，默认为True，不相等，则必须传False
+        :param timeout: 超时时间
+        :return:
+        '''
+        if mark:
+            assert element == element1, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
+            logging.info("元素相等，断言成功，元素名称为： {}{}".format(element,element1))
+        else:
+            assert element != element1, "断言元素不相等失败，元素名称为： {}{}".format(element,element1)
+            logging.info("元素不相等，断言成功，元素名称为： {}{}".format(element,element1))
 
     # 提取元素文本    ---wmw
     def elementText(self,element,logtext):
@@ -259,7 +274,8 @@ class Base():
             self.d(text=element).swipe(direction,steps)
         logging.info("拖动元素: {}".format(logtext))
 
-    # 根据多个元素从一个位置滑动至另一个位置————LCM
+
+    # 将元素从一个位置滑动至另一个位置————LCM
     def dragByElement(self, element, element1, num=1):
         '''
         :param element: 元素名称，可根据resource进行判断并拖动
@@ -269,11 +285,10 @@ class Base():
         '''
         for i in range(num):
             if str(element).startswith('com'):
-                # 多窗口浏览上滑，删除窗口
                 self.d(resourceId=element).drag_to(element1[0], element1[1], duration=0.05)
             else:
                 pass
-        logging.info("滑动操作多窗口页面： {}次".format(num))
+        logging.info("选择一个位置拖拽到另一个位置： {}次".format(num))
 
 
 
