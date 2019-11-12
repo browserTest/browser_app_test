@@ -72,4 +72,4 @@ CUSTOMIZE_ADDRESS = 'customizecenter://com.meizu.customizecenter.CustomizeCenter
 CUSTOMIZE_SKIP = 'com.android.browser:id/mz_action_text'
 
 # 主题美化首页——LYX
-CUSTOMIZE = '主题'
+CUSTOMIZE = 'com.meizu.customizecenter:id/mc_search_edit'
