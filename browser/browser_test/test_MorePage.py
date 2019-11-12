@@ -33,7 +33,7 @@ class TestMorePage():
 
 
     @allure.story('测试网址导航页面头条跳转')
-    @pytest.mark.P0
+    @pytest.mark.P3
     def test001MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
@@ -47,7 +47,7 @@ class TestMorePage():
         self.home.clickBusinessMore()
         # 点击网址导航-》头条
         self.more.clickDaoHang(TOUTIAO)
-        self.base.assertTrue(TOUTIAO_PAGE, timeout = 15)
+        self.base.assertTrue(TOUTIAO_PAGE)
 
 
     @allure.story('测试网址导航页面小视频跳转')

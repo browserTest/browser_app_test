@@ -8,6 +8,10 @@
 BROWSER_PACKAGE_NAME = 'com.android.browser'
 
 
+# 访问网页或资讯详情页所显示的进度条
+BROWSER_PROGRESS = 'com.android.browser:id/progress'
+
+
 #桌面图标元素launcher——LYX
 LAUNCHER_ID = 'com.meizu.flyme.launcher:id/app_icon'
 

@@ -4,6 +4,7 @@ from config.config import *
 import re
 from time import sleep
 from browser.browser_element.WindowsTabElement import *
+from aip import AipOcr
 
 class Base():
 
@@ -40,6 +41,7 @@ class Base():
         logging.info("对设备进行操作，操作动作为： {}".format(action))
 
 
+
     # 根据当前屏幕显示结果确认手机是否需要先解锁
     def unlock(self):
         '''
@@ -55,7 +57,7 @@ class Base():
     # 根据元素名称进行点击操作
     def clickByElement(self, element, logtext):
         '''
-        :param element: 元素名称，可根据resource、xpath、tuple及Text进行判断并点击
+        :param element: 元素名称，可根据resource、xpath及Text进行判断并点击
         :param logtext: 打印log的文案
         :return:
         '''
@@ -108,7 +110,7 @@ class Base():
     # 向下滑动页面到指定元素位置
     def scrollToElement(self, element):
         '''
-        :param element: 元素名称，仅使用id或text识别，默认不查找元素，仅滑动页面
+        :param element: 元素名称，仅使用id或text识别
         :return:
         '''
         if str(element).startswith("com"):
@@ -286,13 +288,49 @@ class Base():
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
 
+
     # 增加公共监听
     def browserWatcher(self):
-        self.d.watchers.run()
+        # self.d.watchers.run()
         self.d.watcher("始终允许").when(text='始终允许').click()
-        logging.info("监听到'始终允许'，点击元素： '始终允许'")
         self.d.watcher("允许").when(text='允许').click()
-        logging.info("监听到'始终允许'，点击元素： '允许'")
+
+    # 二进制读取图片
+    def readImage(self, imageFile):
+        with open(imageFile, 'rb') as fp:
+            return fp.read()
+
+
+    # 图片识别返回文字
+    def baiduOcr(self):
+        # 增加图片名称和地址
+        pic = str(now_time) + "图片识别.jpg"
+        pic_name = os.path.join(dir_screenshot, pic)
+
+        # 拼接接口参数,接口api参数详解（https://cloud.baidu.com/doc/OCR/OCR-API/26.5C.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E-3.html#.E8.AF.B7.E6.B1.82.E8.AF.B4.E6.98.8E）
+        options = {}
+        options["recognize_granularity"] = "big"
+        options["detect_direction"] = "false"
+        options["vertexes_location"] = "false"
+        options["probability"] = "false"
+
+        # 传对应的参数进行实例化
+        self.client = AipOcr('17235264' , 'ejTp8Xd1ZTUGjnO1WkRoWFWE', 'MPapr5pwGlYBu5GHZXjYxnGmOekDd2QB')
+
+        # 实时截图，截图存放在screenshot目录下
+        screenshot = self.d.screenshot("{}".format(pic_name))
+        logging.info('截图后进行图片识别:{}'.format(pic_name))
+        image = self.readImage(screenshot)
+
+        # 获取图片文字识别后的返回结果
+        result = self.client.accurate(image, options)
+        for word in result['words_result']:
+            return word['words']
+
+
+
+
+
 
 
 
