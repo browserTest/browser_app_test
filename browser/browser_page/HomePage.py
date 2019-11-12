@@ -3,7 +3,7 @@ from base_function.base import Base
 from browser.browser_element.Home import *
 from browser.browser_element.PubElement import *
 from browser.browser_element.MyCollection import *
-
+from time import sleep
 
 
 class HomePage(Base):
@@ -62,3 +62,20 @@ class HomePage(Base):
             self.base.clickByElement(HOME_ADVERTISEMENT,'资讯流广告')
         else:
             self.assertFalse(HOME_ADVERTISEMENT)
+
+    # 点击安居客首页新房入口——LYX
+    def clickNewHouse(self):
+        if self.base.elementIsExit(NEWHOUSE):
+            self.base.clickByElement(NEWHOUSE,'安居客首页新房入口')
+        else:
+            self.assertFalse(NEWHOUSE)
+
+    # 从屏幕边缘右滑手势后退——LYX
+    def right_swipe(self):
+        sleep(1)
+        self.base.swipeByElement(RIGHTSWIPE_COORDINATE,"屏幕边缘右滑")
+
+    # 从屏幕边缘左滑手势前进——LYX
+    def left_swipe(self):
+        sleep(1)
+        self.base.swipeByElement(LEFTSWIPE_COORDINATE,"屏幕边缘左滑")

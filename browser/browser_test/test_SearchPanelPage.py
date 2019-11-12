@@ -1,15 +1,9 @@
-from base_function.driver import *
-import pytest
 from config.config import *
-from browser.browser_page.HomePage import HomePage
 from browser.browser_page.PubMethod import PubMethod
-from browser.browser_element.PubElement import *
-from base_function.base import Base
-from browser.browser_element.Home import *
 from browser.browser_page.SearchPanelPage import *
 from browser.browser_page.HomePage import *
 import allure
-from browser.browser_element.MyCollection import *
+
 
 
 
@@ -20,7 +14,7 @@ from browser.browser_element.MyCollection import *
 class TestSearchPanelPage():
 
     @pytest.fixture(scope="function")
-    def Search_init(self):
+    def search_init(self):
         self.base = Base(self.driver)
         self.home = HomePage(self.driver)
         self.pubmethod= PubMethod(self.driver)
@@ -36,50 +30,51 @@ class TestSearchPanelPage():
         logging.info("")
 
 
-    # ---wmw  未完成
+    # ---wmw
     @allure.story('测试搜索框')
-    def test001SearchPanelPage(self, Search_init):
+    def test001SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、提取搜索框文本
         3、点击搜索按钮
-        4、提取结果页搜索框文本
+        4、断言页面是否正常跳转到对应的搜索结果页
         '''
         self.home.clickHomeSearch()
-        self.base.clickObtain()
+        SearchText = self.searchpanel.clickSearchText()
         self.searchpanel.clickSearchInto()
-        self.base.clickObtain2()
+        self.base.assertTrue(SearchText)
 
 
-
-    # ---wmw  未完成
+    # ---wmw
     @allure.story('测试历史面板热词是否正常跳转')
-    def test002SearchPanelPage(self, Search_init):
+    def test002SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
-        2、点击历史面板热词(默认第一个)
+        2、获取第一个热词文本
+        3、点击历史面板热词(默认第一个)
+        4、断言页面是否打开正确
         '''
         self.home.clickHomeSearch()
+        OneSearchHistory = self.searchpanel.clickHotWords()
         self.searchpanel.clickSearchHistory()
+        self.base.assertTrue(OneSearchHistory)
 
     # ---wmw
     @allure.story('测试换一换')
-    def test003SearchPanelPage(self, Search_init):
+    def test003SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、获取第一个搜索热词
-        3、点击清空（确保热词与搜索历史没有相同内容）
-        4、点击换一换
-        5、断言第一个搜索热词是否不存在
+        3、点击换一换
+        4、断言第一个搜索热词是否不存在
         '''
         self.home.clickHomeSearch()
-        Panel=self.searchpanel.clickHotWords()
-        #self.searchpanel.clickEmpty()
+        Panel = self.searchpanel.clickHotWords()
         self.searchpanel.clickAnotherChange()
         self.base.assertTrue(Panel,False,timeout=15)
 
     @allure.story('搜索页顶部地址栏输入，选中文字')
-    def test004SearchPanelPage(self, Search_init):
+    def test004SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、点击输入框工具条前缀词“www.”
@@ -110,12 +105,12 @@ class TestSearchPanelPage():
         self.base.assertTrue(SEARCHHISTORY,False)
 
     @allure.story('打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史')
-    def test005SearchPanelPage(self, Search_init):
+    def test005SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框，输入百度网址
         2、打开百度首页，滑动页面
         3、检查顶部地址栏是否展开
-        4、检查搜索历史
+        4、检查搜索历史,长按删除
         '''
         # 点击首页搜索框
         self.home.clickHomeSearch()
@@ -124,6 +119,36 @@ class TestSearchPanelPage():
         self.searchpanel.clickSearchInto()
         # 判断顶部地址栏是否展开
         self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )
+        # 向上滑动页面,收起顶部地址栏
+        self.searchpanel.swipeBaidu()
+        self.base.assertTrue(ADDRESS_CONTAINER_REFRESH,False)
+        # 点击并清空地址栏，判断搜索历史是否存在
+        self.searchpanel.clickwebsite()
+        self.searchpanel.clearSearchPanel()
+        self.base.assertTrue(SEARCHHISTORY)
+        # 长按搜索历史中的百度网址
+        self.searchpanel.long_clickSearchHistory()
+        self.base.assertTrue(DELETESEARCHHISTORY)
+        # 点击删除按钮
+        self.searchpanel.delete_SearchHistory()
+        self.base.assertTrue(DELETESEARCHHISTORY,False)
+
+    @allure.story('搜索框输入主题美化地址，检查外部应用跳转是否正常')
+    def test006SearchPanelPage(self, search_init):
+        '''
+
+        1、点击首页搜索框，输入主题美化地址
+        2、弹出跳转提示，点击允许，跳转至主题美化APP
+        '''
+        # 点击首页搜索框
+        self.home.clickHomeSearch()
+        # 输入百度地址,进入百度首页
+        self.searchpanel.inputCustomize()
+        self.searchpanel.clickSearchInto()
+        self.searchpanel.skipCustomize()
+        self.base.assertTrue(CUSTOMIZE)
+
+
 
 
 

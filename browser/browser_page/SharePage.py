@@ -12,10 +12,10 @@ class SharePage(Base):
 
     # 点击导航网站中的”安居客“，进入网站—————LCM
     def clickAnjuke(self):
-        if self.base.clickByElementIdAndText(HOME_BUSINESS_ID):
+        if self.base.elementIsExit(HOME_ANJUKE):
             self.base.clickByElement(HOME_ANJUKE, '点击浏览器首页安居客网站')
         else:
-            self.assertFalse(HOME_BUSINESS_ID)
+            self.assertFalse(HOME_ANJUKE)
 
     # 在网页中点击分享按钮————LCM
     def clickWebPageShare(self):

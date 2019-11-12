@@ -55,7 +55,7 @@ class Base():
     # 根据元素名称进行点击操作
     def clickByElement(self, element, logtext):
         '''
-        :param element: 元素名称，可根据resource、xpath及Text进行判断并点击
+        :param element: 元素名称，可根据resource、xpath、tuple及Text进行判断并点击
         :param logtext: 打印log的文案
         :return:
         '''
@@ -63,7 +63,6 @@ class Base():
             self.d(resourceId=element).click()
         elif re.findall("//", str(element)):
             self.d.xpath(element).click()
-        # 新增tuple判断————LCM
         elif type(element) == tuple:
             self.d.click(element[0], element[1])
         else:
@@ -172,6 +171,7 @@ class Base():
         :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False
         :return:
         '''
+        #sleep(2)
         if mark:
             assert self.elementIsExit(element, timeout) == True, "断言元素存在失败，元素名称为： {}".format(element)
             logging.info("已找到元素，断言成功，元素名称为： {}".format(element))
@@ -200,6 +200,7 @@ class Base():
     def elementSetText(self,element,text,logtext):
         '''
         :param element: 元素名称，可根据resource、xpath进行判断并设置文本
+        :param text:所输入的文本
         :param logtext: 打印log的文案
         :return:
         '''
@@ -207,7 +208,7 @@ class Base():
             text = self.d(resourceId=element).set_text(text)
         elif re.findall("//", str(element)):
             text = self.d.xpath(element).set_text(text)
-            logging.info("提取元素文本: {}".format(logtext))
+        logging.info("输入文本: {}".format(logtext))
 
 
     # 根据元素名称进行长按操作——LYX
@@ -215,6 +216,7 @@ class Base():
         '''
         :param element: 元素名称，可根据resource、坐标及Text进行判断并长按
         :param logtext: 打印log的文案
+        :param duration：长按的时长
         :return:
         '''
         if str(element).startswith("com"):
@@ -230,52 +232,53 @@ class Base():
         '''
         :param id: 元素id
         :param text: 元素text
+        :param logtext: 打印log的文案
         :return:
         '''
         self.d(resourceId=id, text= text).long_click()
-        logging.info("点击元素： {}".format(logtext))
+        logging.info("长按元素： {}".format(logtext))
 
 
     # 根据元素名称拖动控件——LYX
-    def swipeByElement(self, element, direction,logtext,steps=20):
+    def swipeByElement(self, element, logtext,direction="up",steps=20):
         '''
-        :param element: 元素名称，可根据resource、坐标及Text进行判断并拖动
+        :param element: 元素名称，可根据resource、坐标、元组（坐标）及Text进行判断并拖动
+        :param direction: 拖动的方向
         :param logtext: 打印log的文案
+        :param steps：1 steps大概 5ms
         :return:
         '''
         if str(element).startswith("com"):
             self.d(resourceId=element).swipe(direction,steps)
         elif re.findall("//", str(element)):
             self.d.xpath(element).swipe(direction,steps)
+        elif type(element) == tuple:
+            self.d.swipe(element[0], element[1], element[2], element[3])
         else:
             self.d(text=element).swipe(direction,steps)
-        logging.info("长按元素: {}".format(logtext))
-
+        logging.info("拖动元素: {}".format(logtext))
 
     # 根据多个元素从一个位置滑动至另一个位置————LCM
-    def scrollWindowsTab(self,element,element1,num = 1):
+    def dragByElement(self, element, element1, num=1):
         '''
-        :param element:滑动多窗口及删除多窗口位置操作
-        :param num:多窗口浏览页向上滑动的次数，默认为1次
+        :param element: 元素名称，可根据resource进行判断并拖动
+        :param element1:元素坐标位置
+        :param num:拖动的次数
         :return:
         '''
         for i in range(num):
             if str(element).startswith('com'):
                 # 多窗口浏览上滑，删除窗口
-                self.d(resourceId=element).drag_to(element1[0],element1[1],duration=0.05)
-
-            elif type(element) == tuple:
-                # 底部工具栏长按menu_more,点击X删除多窗口
-                self.d.swipe(element[0],element[1],element[2],element[3])
+                self.d(resourceId=element).drag_to(element1[0], element1[1], duration=0.05)
             else:
                 pass
         logging.info("滑动操作多窗口页面： {}次".format(num))
 
 
+
     # 根据元素id位于第几个进行点击操作——wmw
     def clickByElementIdAndInstance(self, id, logtext,instance):
         '''
-
         :param id: 元素ID
         :param logtext: 打印log的文案
         :param instance: 位于第几个
@@ -283,6 +286,14 @@ class Base():
         '''
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
+
+    # 增加公共监听
+    def browserWatcher(self):
+        self.d.watchers.run()
+        self.d.watcher("始终允许").when(text='始终允许').click()
+        logging.info("监听到'始终允许'，点击元素： '始终允许'")
+        self.d.watcher("允许").when(text='允许').click()
+        logging.info("监听到'始终允许'，点击元素： '允许'")
 
 
 

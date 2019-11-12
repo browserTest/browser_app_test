@@ -1,8 +1,4 @@
 import allure
-
-from browser.browser_element.ToolbarPanel import *
-
-from browser.browser_element.ToolbarPanel import *
 from browser.browser_page.HomePage import *
 from browser.browser_page.PubMethod import *
 from browser.browser_page.ToolBarPanelPage import *
@@ -14,7 +10,7 @@ from browser.browser_page.WindowsTabPage import *
 class TestQuitPage():
 
     @pytest.fixture()
-    def other_init(self, scope="function"):
+    def quit_init(self, scope="function"):
         self.base = Base(self.driver)
         self.more = MorePage(self.driver)
         self.home = HomePage(self.driver)
@@ -26,7 +22,8 @@ class TestQuitPage():
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-
+        self.home.clickHome()
+        self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -34,7 +31,7 @@ class TestQuitPage():
 
     # 点击menu_more按钮，点击退出  ——LCM
     @allure.story('测试点击底部工具栏，点击退出按钮，再打开浏览器访问网页正常')
-    def test001QuitOpenBrowser(self, other_init):
+    def test001QuitOpenBrowser(self, quit_init):
         '''
         1、进入浏览器，点击导航网站-》搜索
         2、点击多窗口
@@ -59,7 +56,7 @@ class TestQuitPage():
 
     # 点击menu_more按钮，点击退出  ——LCM
     @allure.story('测试点击底部工具栏，点击退出按钮，再打开浏览器，查看多窗口只有一个')
-    def test002QuitOpenBrowser(self, other_init):
+    def test002QuitOpenBrowser(self, quit_init):
         '''
         1、进入浏览器，点击Home按钮返回首页
         2、点击导航网站-》搜索
@@ -71,8 +68,6 @@ class TestQuitPage():
         8、打开浏览器
         9、断言多窗口数量
         '''
-        self.home.clickHome()
-
         self.more.clickDaoHang(HOME_TONGCHNEG)
         self.windowstab.clickWindowsTab()
         self.windowstab.newWindowsTab()

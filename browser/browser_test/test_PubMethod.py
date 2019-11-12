@@ -7,7 +7,7 @@ from browser.browser_element.PubElement import *
 from base_function.base import Base
 from browser.browser_element.Home import *
 import allure
-from browser.browser_element.MyCollection import *
+from browser.browser_element.CollectionAndHistory import *
 
 
 

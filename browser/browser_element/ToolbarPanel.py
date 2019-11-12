@@ -10,3 +10,15 @@ FLYME_ME = '//*[@resource-id="com.android.browser:id/menu_container"]/android.wi
 
 # 设置   ---wmw
 SET_UP = 'com.android.browser:id/setting'
+
+# 设置-》清空历史 ——LJX
+CLEAN_UP_HISTORY = '清空历史'
+
+# 设置-》清空历史-》弹框“清空”——LJX
+CLEAN_UP = '清空'
+
+# 设置-》清空历史-》弹框“取消”——LJX
+CLEAN_UP_CANCEL = '取消'
+
+# 设置-》历史——LJX
+HISTORY = '历史'
