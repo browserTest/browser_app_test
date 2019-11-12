@@ -1,7 +1,4 @@
-from base_function.driver import *
-import pytest
 from config.config import *
-
 from browser.browser_page.PubMethod import PubMethod
 from browser.browser_page.SearchPanelPage import *
 from browser.browser_page.HomePage import *
@@ -33,31 +30,34 @@ class TestSearchPanelPage():
         logging.info("")
 
 
-    # ---wmw  未完成
+    # ---wmw
     @allure.story('测试搜索框')
     def test001SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
         2、提取搜索框文本
         3、点击搜索按钮
-        4、提取结果页搜索框文本
+        4、断言页面是否正常跳转到对应的搜索结果页
         '''
         self.home.clickHomeSearch()
-        self.base.clickObtain()
+        SearchText = self.searchpanel.clickSearchText()
         self.searchpanel.clickSearchInto()
-        self.base.clickObtain2()
+        self.base.assertTrue(SearchText)
 
 
-
-    # ---wmw  未完成
+    # ---wmw
     @allure.story('测试历史面板热词是否正常跳转')
     def test002SearchPanelPage(self, search_init):
         '''
         1、点击首页搜索框
-        2、点击历史面板热词(默认第一个)
+        2、获取第一个热词文本
+        3、点击历史面板热词(默认第一个)
+        4、断言页面是否打开正确
         '''
         self.home.clickHomeSearch()
+        OneSearchHistory = self.searchpanel.clickHotWords()
         self.searchpanel.clickSearchHistory()
+        self.base.assertTrue(OneSearchHistory)
 
     # ---wmw
     @allure.story('测试换一换')
@@ -65,13 +65,11 @@ class TestSearchPanelPage():
         '''
         1、点击首页搜索框
         2、获取第一个搜索热词
-        3、点击清空（确保热词与搜索历史没有相同内容）
-        4、点击换一换
-        5、断言第一个搜索热词是否不存在
+        3、点击换一换
+        4、断言第一个搜索热词是否不存在
         '''
         self.home.clickHomeSearch()
-        Panel=self.searchpanel.clickHotWords()
-        #self.searchpanel.clickEmpty()
+        Panel = self.searchpanel.clickHotWords()
         self.searchpanel.clickAnotherChange()
         self.base.assertTrue(Panel,False,timeout=15)
 

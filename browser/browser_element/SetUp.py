@@ -7,7 +7,7 @@ SETUP_ID = 'com.android.browser:id/mc_item_container'
 
 
 # 简版显示   ---wmw
-SETUP_SIMPLE = '//*[@text="简版显示"]'
+SETUP_SIMPLE = '简版显示'
 
 # 简版显示--更多  ---wmw
 SETUP_MORE = 'com.android.browser:id/textView_zixun_card_title_more'
@@ -30,5 +30,21 @@ SETUP_CLEAR_DATA = 'com.android.browser:id/clear_button'
 # 完成按钮   ---wmw
 SETUP_DONE = '完成'
 
-# 点击百度   ---wmw
+# 百度   ---wmw
 SETUP_BAIDU = '百度'
+
+# 恢复默认设置--恢复   ---wmw
+SETUP_RESET = '恢复'
+
+# 恢复默认设置 ---wmw
+SETUP_RESET_TEXT = '恢复默认设置'
+
+# 开关ID(广告屏蔽，手势前进后退等)   ---wmw
+SETUP_SWITCH = 'com.android.browser:id/switch_button'
+
+# 允许   ---wmw
+SETUP_ALLOW = '允许'
+
+
+# 地理位置权限Geography --wmw
+GEOGRAPHY = '地理位置权限'

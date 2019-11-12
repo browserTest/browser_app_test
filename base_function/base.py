@@ -170,6 +170,7 @@ class Base():
         :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False
         :return:
         '''
+        #sleep(2)
         if mark:
             assert self.elementIsExit(element, timeout) == True, "断言元素存在失败，元素名称为： {}".format(element)
             logging.info("已找到元素，断言成功，元素名称为： {}".format(element))
@@ -277,7 +278,6 @@ class Base():
     # 根据元素id位于第几个进行点击操作——wmw
     def clickByElementIdAndInstance(self, id, logtext,instance):
         '''
-
         :param id: 元素ID
         :param logtext: 打印log的文案
         :param instance: 位于第几个
@@ -286,7 +286,13 @@ class Base():
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
 
-
+    # 增加公共监听
+    def browserWatcher(self):
+        self.d.watchers.run()
+        self.d.watcher("始终允许").when(text='始终允许').click()
+        logging.info("监听到'始终允许'，点击元素： '始终允许'")
+        self.d.watcher("允许").when(text='允许').click()
+        logging.info("监听到'始终允许'，点击元素： '允许'")
 
 
 
