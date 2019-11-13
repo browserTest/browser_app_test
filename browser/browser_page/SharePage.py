@@ -2,7 +2,6 @@
 from base_function.base import Base
 from browser.browser_element.Home import *
 from browser.browser_element.ShareElement import *
-from browser.browser_element.ZiXunInformationElement import *
 
 
 class SharePage(Base):
@@ -25,12 +24,6 @@ class SharePage(Base):
         else:
             self.assertFalse(SHARE_ID)
 
-    # 在资讯文章中点击分享按钮————LCM
-    def clickZiXunPageShare(self):
-        if self.base.elementIsExit(ZIXUN_PAGE_BACK):
-            self.base.clickByElement(ZIXUN_SHARE_PAGR, '点击资讯文章详情页总的分享按钮')
-        else:
-            self.assertFalse(ZIXUN_PAGE_BACK)
 
     # 在分享面板中点击便签————LCM
     def clickNotes(self):
