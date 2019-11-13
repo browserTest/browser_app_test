@@ -318,6 +318,7 @@ class Base():
 
     # 图片识别返回文字
     def baiduOcr(self):
+        text = []
         # 增加图片名称和地址
         pic = str(now_time) + "图片识别.jpg"
         pic_name = os.path.join(dir_screenshot, pic)
@@ -340,7 +341,8 @@ class Base():
         # 获取图片文字识别后的返回结果
         result = self.client.accurate(image, options)
         for word in result['words_result']:
-            return word['words']
+            text.append(word['words'])
+        return text
 
 
 
