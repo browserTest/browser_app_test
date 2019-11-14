@@ -3,6 +3,7 @@ from base_function.base import Base
 from browser.browser_element.PubElement import *
 from time import sleep
 from config.config import *
+from fuzzywuzzy import fuzz, process
 
 
 class PubMethod(Base):
@@ -63,3 +64,17 @@ class PubMethod(Base):
             self.base.clickByElement(PERMISSION_AGREE_BUTTON, '权限弹窗允许按钮')
         else:
             self.assertFalse(PERMISSION_AGREE_BUTTON)
+
+    # 获取百度文字识别 API 识别并提取图片中文字————LCM
+    def getBaiduApiText(self,element,conditions):
+        if self.base.elementIsExit(element):
+            sleep(2)
+            text = self.base.baiduOcr()
+            textTitle = ""
+            for i in range(len(text)):
+                if i == conditions :
+                    var = ''.join(text[i])
+                    var1 = ''.join(text[i+1])
+                    var2 = ''.join(text[i+2])
+                    textTitle = textTitle.join(var + var1 + var2)
+                    return textTitle

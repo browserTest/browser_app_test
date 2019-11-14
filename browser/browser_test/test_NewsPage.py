@@ -130,22 +130,26 @@ class TestNewsPage():
 
 
     @allure.story('测试下拉刷新资讯流列表，更新资讯内容，打开任意文章，文章加载正常')
-    def test005RefreshNewsInfoOpenArticle(self,news_init):
+    def test005RefreshNewsOpenArticle(self,news_init):
         '''
         1、打开浏览器,在首页点击“资讯”按钮进入资讯流列表
         2、点击“倒三角”进入频道管理页面
         3、点击“健康”频道打开，进入资讯流列表
         4、下拉刷新资讯流列表内容
-        4、点击打开资讯流列表的资讯文章详情
-        5、断言文章详情页顶部返回按钮是否存在
-        6、mback返回上一级页面
+        4、获取列表中的文章标题文字信息
+        5、点击打开资讯流列表的资讯文章详情
+        6、根据百度文字识别 API 识别并获取图片中文字
+        7、断言文章标题和文章详情页的文字的匹配度
         '''
         self.home.clickInformation()
         self.news.clickNewsTriangle()
         self.news.clickNewsChannel(NEWS_CHANNEL_HEALTH)
         self.news.dropScrollNews()
+        beforetitle = self.news.getNewsArticleTitle()
         self.news.clickOpenNewsArticle()
-        self.base.assertTrue(NEWS_PAGE_MOREMENU)
+        aftertitle = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU,2)
+        self.base.assertEqual(beforetitle,aftertitle,False)
+
 
 
 
