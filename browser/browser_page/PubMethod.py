@@ -67,6 +67,11 @@ class PubMethod(Base):
 
     # 获取百度文字识别 API 识别并提取图片中文字————LCM
     def getBaiduApiText(self,element,conditions):
+        '''
+        :param element: 判断页面存在的元素
+        :param conditions: 提取文字的条件
+        :return: 返回提取的文字信息
+        '''
         if self.base.elementIsExit(element):
             sleep(2)
             text = self.base.baiduOcr()

@@ -1,21 +1,151 @@
-[2019-11-12 14:16:38] INFO [driver_setup: conftest.py, 25] â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”å¼€å§‹æ‰§è¡Œè‡ªåŠ¨åŒ–æµ‹è¯•â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
-[2019-11-12 14:16:40] INFO [search_init: test_SearchPanelPage.py, 25] 
-[2019-11-12 14:16:40] INFO [search_init: test_SearchPanelPage.py, 26] ****å¼€å§‹æ‰§è¡Œç”¨ä¾‹****
-[2019-11-12 14:16:41] INFO [useApp: base.py, 27] stopï¼š com.android.browser
-[2019-11-12 14:16:43] INFO [useApp: base.py, 27] startï¼š com.android.browser
-[2019-11-12 14:16:45] WARNING [__retry_internal: api.py, 40] uiautomator2.GatewayError(gateway error, time used 0.0s), retrying in 3.0 seconds...
-[2019-11-12 14:17:00] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š com.android.browser:id/home
-[2019-11-12 14:17:01] INFO [clickByElement: base.py, 70] ç‚¹å‡»å…ƒç´ : æµè§ˆå™¨é¦–é¡µhomeèœå•
-[2019-11-12 14:17:08] INFO [elementIsExit: base.py, 150] æœªæ‰¾åˆ°å…ƒç´ ï¼Œå…ƒç´ åç§°ä¸º: å·²ä¿å­˜ç½‘é¡µ
-[2019-11-12 14:17:09] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š com.android.browser:id/search_bar_url_container
-[2019-11-12 14:17:09] INFO [clickByElement: base.py, 70] ç‚¹å‡»å…ƒç´ : é¦–é¡µæœç´¢æ¡†
-[2019-11-12 14:17:11] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š com.android.browser:id/url
-[2019-11-12 14:17:11] INFO [elementSetText: base.py, 209] è¾“å…¥æ–‡æœ¬: ç™¾åº¦ç½‘å€
-[2019-11-12 14:17:12] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š com.android.browser:id/right_txt_blue
-[2019-11-12 14:17:12] INFO [clickByElement: base.py, 70] ç‚¹å‡»å…ƒç´ : æœç´¢æ¡†å³ä¾§è¿›å…¥æŒ‰é’®
-[2019-11-12 14:17:14] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š com.android.browser:id/mz_action_text
-[2019-11-12 14:17:15] INFO [clickByElement: base.py, 70] ç‚¹å‡»å…ƒç´ : å…è®¸è·³è½¬è‡³ä¸»é¢˜ç¾åŒ–
-[2019-11-12 14:17:17] INFO [elementIsExit: base.py, 144] æŸ¥è¯¢åˆ°å…ƒç´ ï¼š ä¸»é¢˜
-[2019-11-12 14:17:17] INFO [assertTrue: base.py, 175] å·²æ‰¾åˆ°å…ƒç´ ï¼Œæ–­è¨€æˆåŠŸï¼Œå…ƒç´ åç§°ä¸ºï¼š ä¸»é¢˜
-[2019-11-12 14:17:17] INFO [search_init: test_SearchPanelPage.py, 32] ****ç”¨ä¾‹æ‰§è¡Œç»“æŸ****
-[2019-11-12 14:17:17] INFO [search_init: test_SearchPanelPage.py, 33] 
+[2019-11-14 14:34:38] INFO [driver_setup: conftest.py, 25] ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿ªÊ¼Ö´ĞĞ×Ô¶¯»¯²âÊÔ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[2019-11-14 14:34:40] INFO [news_init: test_NewsPage.py, 21] 
+[2019-11-14 14:34:40] INFO [news_init: test_NewsPage.py, 22] ****¿ªÊ¼Ö´ĞĞÓÃÀı****
+[2019-11-14 14:34:40] INFO [useApp: base.py, 29] stop£º com.android.browser
+[2019-11-14 14:34:43] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:34:45] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:34:46] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:34:48] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÒÑ±£´æÍøÒ³
+[2019-11-14 14:34:48] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:34:49] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:34:49] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/refresh
+[2019-11-14 14:34:50] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶
+[2019-11-14 14:34:50] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:34:50] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:34:51] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ×ÊÑ¶
+[2019-11-14 14:34:53] INFO [dragByElement: base.py, 296] Ñ¡ÔñÒ»¸öÎ»ÖÃÍÏ×§µ½ÁíÒ»¸öÎ»ÖÃ£º 2´Î
+[2019-11-14 14:34:53] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:34:53] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:34:53] INFO [assertEqual: base.py, 199] ÔªËØÆ¥Åä£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º ÍõÖØÑô²¢·ÇÌìÏÂÎŞµĞ£¬ ÓĞÈıÈËÃ»²Î¼Ó»ªÉ½ÂÛ½££¬ ·ñÔò½á¾Ö»á´ó²»Ò»Ñù Ô¤¼ÆÔÚ11ÔÂ£¬ Ï²ÈµÖ¦Í·½Ğ£¬ ÇóµÃÒöÔµÉÏÉÏÇ©£¬ Ï²½áÁ¼ÔµÏ²ÍÑµ¥µÄÉúĞ¤
+[2019-11-14 14:34:54] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Í·Ìõ
+[2019-11-14 14:35:02] INFO [scrollToElement: base.py, 121] »¬¶¯²éÕÒÔªËØ£º ÉÏ´Î¿´µ½ÕâÀï£¬µã»÷Ë¢ĞÂ
+[2019-11-14 14:35:02] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÉÏ´Î¿´µ½ÕâÀï£¬µã»÷Ë¢ĞÂ
+[2019-11-14 14:35:03] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: µã»÷Ë¢ĞÂÌáÊ¾Óï¡°ÉÏ´Î¿´µ½ÕâÀï£¬µã»÷Ë¢ĞÂ¡±£¬Ë¢ĞÂ×ÊÑ¶Á÷ÄÚÈİ
+[2019-11-14 14:35:05] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:35:05] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:35:07] INFO [assertEqual: base.py, 199] ÔªËØÆ¥Åä£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º Ô¤¼ÆÔÚ11ÔÂ£¬ Ï²ÈµÖ¦Í·½Ğ£¬ ÇóµÃÒöÔµÉÏÉÏÇ©£¬ Ï²½áÁ¼ÔµÏ²ÍÑµ¥µÄÉúĞ¤ ¸ãĞ¦ÔË¶¯»á£º ¿ìÀ´¿´¿´Ñ§Ğ£ÔË¶¯»á£¬ÄÇĞ©¸ãĞ¦¶º±ÈµÄÍ¬Ñ§£¬È«ÊÇÈË²Å
+[2019-11-14 14:35:08] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ×ÊÑ¶
+[2019-11-14 14:35:24] INFO [scroll: base.py, 107] »¬¶¯Ò³Ãæ£º 5´Î
+[2019-11-14 14:35:24] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:35:25] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:35:25] INFO [assertEqual: base.py, 199] ÔªËØÆ¥Åä£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º ¸ãĞ¦ÔË¶¯»á£º ¿ìÀ´¿´¿´Ñ§Ğ£ÔË¶¯»á£¬ÄÇĞ©¸ãĞ¦¶º±ÈµÄÍ¬Ñ§£¬È«ÊÇÈË²Å Ô¤¼ÆÔÚ11ÔÂ£¬ Ï²ÈµÖ¦Í·½Ğ£¬ ÇóµÃÒöÔµÉÏÉÏÇ©£¬ Ï²½áÁ¼ÔµÏ²ÍÑµ¥µÄÉúĞ¤
+[2019-11-14 14:35:25] INFO [news_init: test_NewsPage.py, 29] ****ÓÃÀıÖ´ĞĞ½áÊø****
+[2019-11-14 14:35:25] INFO [news_init: test_NewsPage.py, 30] 
+[2019-11-14 14:35:25] INFO [driver_setup: conftest.py, 25] ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿ªÊ¼Ö´ĞĞ×Ô¶¯»¯²âÊÔ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[2019-11-14 14:35:27] INFO [news_init: test_NewsPage.py, 21] 
+[2019-11-14 14:35:27] INFO [news_init: test_NewsPage.py, 22] ****¿ªÊ¼Ö´ĞĞÓÃÀı****
+[2019-11-14 14:35:27] INFO [useApp: base.py, 29] stop£º com.android.browser
+[2019-11-14 14:35:30] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:35:33] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:35:34] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:35:34] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÒÑ±£´æÍøÒ³
+[2019-11-14 14:35:34] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:35:35] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:35:35] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/refresh
+[2019-11-14 14:35:36] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶
+[2019-11-14 14:35:37] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/expend_view
+[2019-11-14 14:35:38] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶Á÷ÁĞ±íµã»÷¡°µ¹Èı½Ç¡±·ûºÅ£¬½øÈëÆµµÀ¹ÜÀíÒ³Ãæ
+[2019-11-14 14:35:39] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_added
+[2019-11-14 14:35:40] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬Ñ¡Ôñµã»÷¡°ÆµµÀ¡±£¬½øÈë×ÊÑ¶Á÷ÁĞ±í
+[2019-11-14 14:35:42] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÃÀÅ®Í¼¼¯
+[2019-11-14 14:35:42] INFO [assertTrue: base.py, 179] ÒÑÕÒµ½ÔªËØ£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º ÃÀÅ®Í¼¼¯
+[2019-11-14 14:35:43] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÃÀÅ®
+[2019-11-14 14:35:43] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÔÚÃÀÅ®ÆµµÀÁĞ±íÖĞ£¬µã»÷±êÇ©£¬½øÈë±êÇ©ÏêÇéÒ³
+[2019-11-14 14:35:44] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_view
+[2019-11-14 14:35:44] INFO [assertTrue: base.py, 179] ÒÑÕÒµ½ÔªËØ£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º com.android.browser:id/news_sdk_recycle_view
+[2019-11-14 14:35:45] INFO [usePhone: base.py, 42] ¶ÔÉè±¸½øĞĞ²Ù×÷£¬²Ù×÷¶¯×÷Îª£º back
+[2019-11-14 14:35:46] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ×ÊÑ¶
+[2019-11-14 14:35:49] INFO [scroll: base.py, 107] »¬¶¯Ò³Ãæ£º 1´Î
+[2019-11-14 14:35:49] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÃÀÅ®
+[2019-11-14 14:35:50] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÔÚÃÀÅ®ÆµµÀÁĞ±íÖĞ£¬µã»÷Í¼Æ¬£¬½øÈëÍ¼Æ¬ÏêÇéÒ³
+[2019-11-14 14:35:52] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/mz_toolbar_nav_button
+[2019-11-14 14:35:52] INFO [assertTrue: base.py, 179] ÒÑÕÒµ½ÔªËØ£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º com.android.browser:id/mz_toolbar_nav_button
+[2019-11-14 14:35:52] INFO [news_init: test_NewsPage.py, 29] ****ÓÃÀıÖ´ĞĞ½áÊø****
+[2019-11-14 14:35:52] INFO [news_init: test_NewsPage.py, 30] 
+[2019-11-14 14:35:52] INFO [driver_setup: conftest.py, 25] ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿ªÊ¼Ö´ĞĞ×Ô¶¯»¯²âÊÔ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[2019-11-14 14:35:54] INFO [news_init: test_NewsPage.py, 21] 
+[2019-11-14 14:35:54] INFO [news_init: test_NewsPage.py, 22] ****¿ªÊ¼Ö´ĞĞÓÃÀı****
+[2019-11-14 14:35:54] INFO [useApp: base.py, 29] stop£º com.android.browser
+[2019-11-14 14:35:57] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:36:00] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:01] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:01] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÒÑ±£´æÍøÒ³
+[2019-11-14 14:36:01] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:02] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:03] INFO [useApp: base.py, 29] clear£º com.android.browser
+[2019-11-14 14:36:06] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:36:08] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Í¬Òâ
+[2019-11-14 14:36:09] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÒşË½µ¯´°Í¬Òâ°´Å¥
+[2019-11-14 14:36:09] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Ê¼ÖÕÔÊĞí
+[2019-11-14 14:36:09] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: È¨ÏŞµ¯´°ÔÊĞí°´Å¥
+[2019-11-14 14:36:14] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/refresh
+[2019-11-14 14:36:15] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶
+[2019-11-14 14:36:16] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/expend_view
+[2019-11-14 14:36:17] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶Á÷ÁĞ±íµã»÷¡°µ¹Èı½Ç¡±·ûºÅ£¬½øÈëÆµµÀ¹ÜÀíÒ³Ãæ
+[2019-11-14 14:36:17] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_added
+[2019-11-14 14:36:22] INFO [long_clickByElement: base.py, 249] ³¤°´ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬³¤°´¡°Í·Ìõ¡±ÆµµÀÄÚÈİ£¬ÏÔÊ¾¡°X¡±°´Å¥
+[2019-11-14 14:36:23] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Í·Ìõ
+[2019-11-14 14:36:23] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: µã»÷"X"°´Å¥£¬½øĞĞ"É¾³ı"ÎÄÕÂ/ÆµµÀ
+[2019-11-14 14:36:24] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: µã»÷"X"°´Å¥£¬½øĞĞ"É¾³ı"ÎÄÕÂ/ÆµµÀ
+[2019-11-14 14:36:25] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_added
+[2019-11-14 14:36:25] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬µã»÷ÎÒµÄÆµµÀµÄ"Íê³É"°´Å¥
+[2019-11-14 14:36:26] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_un_added
+[2019-11-14 14:36:26] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬½øĞĞ"Ìí¼Ó"ÆµµÀ
+[2019-11-14 14:36:27] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_un_added
+[2019-11-14 14:36:28] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬½øĞĞ"Ìí¼Ó"ÆµµÀ
+[2019-11-14 14:36:28] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_added
+[2019-11-14 14:36:29] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬Ñ¡Ôñµã»÷¡°ÆµµÀ¡±£¬½øÈë×ÊÑ¶Á÷ÁĞ±í
+[2019-11-14 14:36:31] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_short_video_item_more
+[2019-11-14 14:36:31] INFO [assertTrue: base.py, 179] ÒÑÕÒµ½ÔªËØ£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º com.android.browser:id/news_sdk_short_video_item_more
+[2019-11-14 14:36:31] INFO [news_init: test_NewsPage.py, 29] ****ÓÃÀıÖ´ĞĞ½áÊø****
+[2019-11-14 14:36:31] INFO [news_init: test_NewsPage.py, 30] 
+[2019-11-14 14:36:31] INFO [driver_setup: conftest.py, 25] ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿ªÊ¼Ö´ĞĞ×Ô¶¯»¯²âÊÔ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[2019-11-14 14:36:33] INFO [news_init: test_NewsPage.py, 21] 
+[2019-11-14 14:36:33] INFO [news_init: test_NewsPage.py, 22] ****¿ªÊ¼Ö´ĞĞÓÃÀı****
+[2019-11-14 14:36:33] INFO [useApp: base.py, 29] stop£º com.android.browser
+[2019-11-14 14:36:37] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:36:40] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:40] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:40] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÒÑ±£´æÍøÒ³
+[2019-11-14 14:36:41] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:41] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:42] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/refresh
+[2019-11-14 14:36:42] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶
+[2019-11-14 14:36:42] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:36:43] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:36:43] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Í·Ìõ
+[2019-11-14 14:36:43] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: µã»÷"X"°´Å¥£¬½øĞĞ"É¾³ı"ÎÄÕÂ/ÆµµÀ
+[2019-11-14 14:36:44] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º Í·Ìõ
+[2019-11-14 14:36:44] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: µã»÷"X"°´Å¥£¬½øĞĞ"É¾³ı"ÎÄÕÂ/ÆµµÀ
+[2019-11-14 14:36:44] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:36:45] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:36:45] INFO [assertEqual: base.py, 199] ÔªËØÆ¥Åä£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º 15-18ÈÕ£¬ Ã·ÖİĞËÄşÅ©ÌØ²úÆ·½«ÁÁÏà¶Ô¿Ú°ï·öÇø¹ãÖİÌìºÓ ÃÏ¾²æµÔÚ¹¬Íâ£¬ËıÊÇÈçºÎÖªµÀÕç‹ÖÓĞË½ÇéµÄ£¿ÕæÊÇĞÄÏ¸Èç·¢
+[2019-11-14 14:36:45] INFO [news_init: test_NewsPage.py, 29] ****ÓÃÀıÖ´ĞĞ½áÊø****
+[2019-11-14 14:36:45] INFO [news_init: test_NewsPage.py, 30] 
+[2019-11-14 14:36:45] INFO [driver_setup: conftest.py, 25] ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¿ªÊ¼Ö´ĞĞ×Ô¶¯»¯²âÊÔ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+[2019-11-14 14:36:47] INFO [news_init: test_NewsPage.py, 21] 
+[2019-11-14 14:36:47] INFO [news_init: test_NewsPage.py, 22] ****¿ªÊ¼Ö´ĞĞÓÃÀı****
+[2019-11-14 14:36:47] INFO [useApp: base.py, 29] stop£º com.android.browser
+[2019-11-14 14:36:50] INFO [useApp: base.py, 29] start£º com.android.browser
+[2019-11-14 14:36:53] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:53] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:55] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ÒÑ±£´æÍøÒ³
+[2019-11-14 14:36:55] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/home
+[2019-11-14 14:36:56] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ä¯ÀÀÆ÷Ê×Ò³home²Ëµ¥
+[2019-11-14 14:36:56] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/refresh
+[2019-11-14 14:36:57] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶
+[2019-11-14 14:36:58] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/expend_view
+[2019-11-14 14:36:59] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ×ÊÑ¶Á÷ÁĞ±íµã»÷¡°µ¹Èı½Ç¡±·ûºÅ£¬½øÈëÆµµÀ¹ÜÀíÒ³Ãæ
+[2019-11-14 14:37:01] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_channel_grid_view_added
+[2019-11-14 14:37:01] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÎÒµÄÆµµÀ¹ÜÀíÒ³Ãæ£¬Ñ¡Ôñµã»÷¡°ÆµµÀ¡±£¬½øÈë×ÊÑ¶Á÷ÁĞ±í
+[2019-11-14 14:37:03] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º ×ÊÑ¶
+[2019-11-14 14:37:06] INFO [dragByElement: base.py, 296] Ñ¡ÔñÒ»¸öÎ»ÖÃÍÏ×§µ½ÁíÒ»¸öÎ»ÖÃ£º 2´Î
+[2019-11-14 14:37:06] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:37:06] INFO [elementText: base.py, 213] ÌáÈ¡ÔªËØÎÄ±¾: »ñÈ¡×ÊÑ¶Á÷ÁĞ±íµÄÎÄÕÂ±êÌâÄÚÈİ
+[2019-11-14 14:37:07] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/news_sdk_recycle_item_text_title
+[2019-11-14 14:37:07] INFO [clickByElement: base.py, 73] µã»÷ÔªËØ: ÔÚ×ÊÑ¶Á÷ÁĞ±íµã»÷×ÊÑ¶ÎÄÕÂ¡¢ÊÓÆµÁ¬²¥Ò³½øÈëÏêÇéÒ³
+[2019-11-14 14:37:08] INFO [elementIsExit: base.py, 147] ²éÑ¯µ½ÔªËØ£º com.android.browser:id/moremenu
+[2019-11-14 14:37:20] INFO [baiduOcr: base.py, 343] ½ØÍ¼ºó½øĞĞÍ¼Æ¬Ê¶±ğ:e:\test\pythontest\browser_app_test\screenshot\20191114143438Í¼Æ¬Ê¶±ğ.jpg
+[2019-11-14 14:37:22] INFO [assertEqual: base.py, 199] ÔªËØÆ¥Åä£¬¶ÏÑÔ³É¹¦£¬ÔªËØÃû³ÆÎª£º Ã¿ÌìÏ´Í·»¹ÊÇ»áÍ·ÓÍÍ·Æ¤Ñ÷£¬Ô­À´ÊÇÏ´Í··½Ê½´íÁË£¡ Ã¿ÌìÏ´Í·»¹ÊÇ»áÊÔÊÔĞÂµÄ¹¤¾ßÃæ°åÔ­À´ÊÇÏ´Í··½Ê½´íÁË!ÀóÖÂ11/1414:23:10
+[2019-11-14 14:37:22] INFO [news_init: test_NewsPage.py, 29] ****ÓÃÀıÖ´ĞĞ½áÊø****
+[2019-11-14 14:37:22] INFO [news_init: test_NewsPage.py, 30] 
