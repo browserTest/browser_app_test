@@ -151,6 +151,36 @@ class TestNewsPage():
         self.base.assertEqual(beforetitle,aftertitle,True)
 
 
+    #  ---wmw
+    @allure.story('测试资讯广告')
+    def test006NewsAdvertisement(self, news_init):
+        '''
+        1、点击资讯按钮进入资讯流列表，并刷新资讯
+        2、上滑页面，点击X按钮，删除广告，并断言是否存在
+        3、点击安装，并打开应用，若已安装则直接打开
+        '''
+        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.clickPrivacyAgree()
+        self.pubmethod.clickPermissionAgree()
+        # 点击资讯按钮进入资讯流列表
+        self.home.clickInformation()
+        # 点击“倒三角”进入频道管理页面
+        self.news.clickNewsTriangle()
+        # 点击“视频”频道打开，进入资讯流列表
+        self.news.clickNewsChannel(NEWS_CHANNEL_VIDEO)
+        # 上滑页面
+        self.news.SlideUp()
+        # 点击 X 按钮，删除广告
+        self.news.clickNewsAdvertisementDelete()
+        # 点击不感兴趣
+        self.news.clickNewsAdvertisementUninterested()
+        sleep(4)
+        # 断言页面是否存在广告
+        self.base.assertTrue(NEWS_ADVERTISEMENT, False, timeout=15)
+        self.base.scrollToElement(NEWS_ADVERTISEMENT)
+        # 点击打开或安装
+        self.news.clickNewsAdvertisementOpenOrInstall()
 
 
 

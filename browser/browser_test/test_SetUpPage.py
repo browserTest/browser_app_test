@@ -3,7 +3,7 @@ from browser.browser_page.SetUpPage import *
 from browser.browser_page.HomePage import *
 from browser.browser_page.ToolBarPanelPage import *
 from browser.browser_page.SearchPanelPage import *
-from browser.browser_page.ZiXunInformationPage import *
+from browser.browser_page.NewsPage import *
 import allure
 
 
@@ -23,7 +23,7 @@ class TestSetUpPage():
         self.searchpanel = SearchPanelPage(self.driver)
         self.toolbarpanel = ToolBarPanelPage(self.driver)
         self.setup = SetUpPage(self.driver)
-        self.zixuninformation = ZiXunInformationPage(self.driver)
+        self.news = NewsPage(self.driver)
         logging.info("")
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
@@ -62,7 +62,7 @@ class TestSetUpPage():
         # 打开资讯文章
         self.zixuninformation.clickOpenZiXunArticle()
         # 断言是否正常打开
-        self.base.assertTrue(ZIXUN_PAGE_MOREMENU)
+        #self.base.assertTrue()
 
 
     # ---wmw
@@ -113,7 +113,6 @@ class TestSetUpPage():
         self.base.assertTrue(GEOGRAPHY)
         # 点击允许
         self.setup.clickAllow()
-        # self.pubmethod.clickBack()
 
     # ---wmw
     @allure.story('测试切换搜索引擎')
@@ -196,9 +195,10 @@ class TestSetUpPage():
         AfterLockingVerticalScreen = self.setup.obtainSwitch()
         AfterSwipeLeftRight = self.setup.obtainSwitch()
         # 判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
-        assert BeforeBlockAdsText != AfterBlockAdsText
-        assert BeforeLockingVerticalScreen != AfterLockingVerticalScreen
-        assert BeforeSwipeLeftRight != AfterSwipeLeftRight
+        self.base.assertEqual(BeforeBlockAdsText,AfterBlockAdsText,False)
+        self.base.assertEqual(BeforeLockingVerticalScreen, AfterLockingVerticalScreen, False)
+        self.base.assertEqual(BeforeSwipeLeftRight, AfterSwipeLeftRight, False)
+
 
 
 

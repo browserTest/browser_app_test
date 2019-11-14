@@ -34,6 +34,24 @@ NEWS_ARTICLE_DELETE = 'com.android.browser:id/news_sdk_recycle_item_btn_delete'
 # 点击不感兴趣
 NEWS_DISLIKE = 'com.android.browser:id/news_sdk_layout_dislike'
 
+# 广告   --wmw
+NEWS_ADVERTISEMENT = '广告'
+
+# 广告X按钮  ---wmw
+NEWS_ADVERTISEMENT_DELETE = '//*[@resource-id="com.android.browser:id/news_sdk_recycle_view"]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.ImageView[1]'
+
+# 广告-不感兴趣Uninterested  ---wmw
+NEWS_ADVERTISEMENT_UNINTERESTED = '//android.widget.FrameLayout[2]'
+
+# 根据位置向上滑动页面   ---wmw
+NEWS_ADVERTISEMENT_POSITION_X = 0,1629,0,878
+
+# 打开   ---wmw
+NEWS_ADVERTISEMENT_OPEN = '打开'
+
+# 安装   ---wmw
+NEWS_ADVERTISEMENT_INSTALL = '安装'
+
 '''频道管理相关常量'''
 # 频道管理倒三角ID
 NEWS_TRIANGLE = 'com.android.browser:id/expend_view'
