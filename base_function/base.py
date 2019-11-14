@@ -5,7 +5,6 @@ import re
 from time import sleep
 from browser.browser_element.WindowsTabElement import *
 from aip import AipOcr
-from fuzzywuzzy import process
 
 class Base():
 
@@ -186,20 +185,17 @@ class Base():
         '''
         :param element: 元素名称
         :param element1: 元素名称1
-        :param mark: 判断两个元素是否相等，如果相等，默认为True，不相等，则必须传False
+        :param mark: 判断两个元素是否相等，如果为True（默认），则需要判断元素相等、包含的情况；若传False，则判断两个元素不相等
         :param timeout: 超时时间
         :return:
         '''
         if mark:
             if element == element1:
-                assert element == element1, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
-                logging.info("元素相等，断言成功，元素名称为： {}{}".format(element,element1))
-            elif process.extract(element, element1, limit=50) :
-                # 从列表List中找出前50与element最相似的句子
-                assert process.extract(element, element1, limit=50), "断言元素不匹配，断言失败，元素名称为： {} {}".format(element, element1)
-                logging.info("元素匹配，断言成功，元素名称为： {} {}".format(element, element1))
-            else:
-                pass
+                assert True, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
+                logging.info("元素相等，断言成功，元素名称为： {} {}".format(element,element1))
+            elif element in element1:
+                assert True, "断言元素不包含失败，元素名称为： {} {}".format(element, element1)
+                logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
         else:
             assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))

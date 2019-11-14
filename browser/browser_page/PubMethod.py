@@ -3,7 +3,7 @@ from base_function.base import Base
 from browser.browser_element.PubElement import *
 from time import sleep
 from config.config import *
-from fuzzywuzzy import fuzz, process
+import re
 
 
 class PubMethod(Base):
@@ -66,20 +66,20 @@ class PubMethod(Base):
             self.assertFalse(PERMISSION_AGREE_BUTTON)
 
     # 获取百度文字识别 API 识别并提取图片中文字————LCM
-    def getBaiduApiText(self,element,conditions):
+    def getBaiduApiText(self,element):
         '''
-        :param element: 判断页面存在的元素
-        :param conditions: 提取文字的条件
-        :return: 返回提取的文字信息
+        :param element: 判断当前页面存在的元素
+        :return: 返回去掉符号的文字
         '''
         if self.base.elementIsExit(element):
             sleep(2)
             text = self.base.baiduOcr()
             textTitle = ""
             for i in range(len(text)):
-                if i == conditions :
-                    var = ''.join(text[i])
-                    var1 = ''.join(text[i+1])
-                    var2 = ''.join(text[i+2])
-                    textTitle = textTitle.join(var + var1 + var2)
-                    return textTitle
+                # 去掉符号
+                strText = re.sub('\W+', '', text[i])
+                # 字符串拼接
+                textTitle = ''.join(textTitle + strText)
+            return textTitle
+        else:
+            self.assertFalse(element)

@@ -39,14 +39,17 @@ class NewsPage(Base):
     # 获取资讯流列表的文章标题内容————LCM
     def getNewsArticleTitle(self):
         if self.base.elementIsExit(NEWS_ARTICLE_TITLE):
-            return self.base.elementText(NEWS_ARTICLE_TITLE,'获取资讯流列表的文章标题内容')
+            strText = self.base.elementText(NEWS_ARTICLE_TITLE, '获取资讯流列表的文章标题内容')
+            strTitle = re.sub('\W+', '', strText)
+            return strTitle
         else:
             self.assertFalse(NEWS_ARTICLE_TITLE)
+
 
     # 点击资讯文章进入资讯文章详情页————LCM
     def clickOpenNewsArticle(self):
         if self.base.elementIsExit(NEWS_ARTICLE_TITLE):
-            self.base.clickByElement(NEWS_ARTICLE_TITLE,'在资讯流列表点击资讯文章、视频连播页进入详情页')
+            self.base.clickByElement(NEWS_ARTICLE_TITLE,'在资讯流列表点击资讯文章进入详情页')
 
         else:
             self.assertFalse(NEWS_ARTICLE_TITLE)

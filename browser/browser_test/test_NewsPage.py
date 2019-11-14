@@ -147,8 +147,8 @@ class TestNewsPage():
         self.news.dropScrollNews()
         beforetitle = self.news.getNewsArticleTitle()
         self.news.clickOpenNewsArticle()
-        aftertitle = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU,2)
-        self.base.assertEqual(beforetitle,aftertitle,False)
+        aftertitle = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU)
+        self.base.assertEqual(beforetitle,aftertitle,True)
 
 
 
