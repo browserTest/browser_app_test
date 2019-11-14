@@ -191,12 +191,15 @@ class Base():
         :return:
         '''
         if mark:
-            assert element == element1, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
-            logging.info("元素相等，断言成功，元素名称为： {}{}".format(element,element1))
-        # 从列表List中找出前50与element最相似的句子
-        elif process.extract(element, element1, limit=50) :
-            assert process.extract(element, element1, limit=50), "断言元素不匹配，断言失败，元素名称为： {} {}".format(element, element1)
-            logging.info("元素匹配，断言成功，元素名称为： {} {}".format(element, element1))
+            if element == element1:
+                assert element == element1, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
+                logging.info("元素相等，断言成功，元素名称为： {}{}".format(element,element1))
+            elif process.extract(element, element1, limit=50) :
+                # 从列表List中找出前50与element最相似的句子
+                assert process.extract(element, element1, limit=50), "断言元素不匹配，断言失败，元素名称为： {} {}".format(element, element1)
+                logging.info("元素匹配，断言成功，元素名称为： {} {}".format(element, element1))
+            else:
+                pass
         else:
             assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
