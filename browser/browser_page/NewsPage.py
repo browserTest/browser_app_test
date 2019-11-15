@@ -55,6 +55,45 @@ class NewsPage(Base):
             self.assertFalse(NEWS_ARTICLE_TITLE)
 
 
+
+    # 向上滑动页面  ---wmw
+    def SlideUp(self):
+        if self.base.elementIsExit(NEWS_VIDEO_NO_INTERESTED):
+            self.base.swipeByElement(NEWS_ADVERTISEMENT_POSITION_X,"向上滑动页面")
+        else:
+            self.assertFalse(NEWS_VIDEO_NO_INTERESTED)
+
+
+    # 点击广告X按钮---wmw
+    def clickNewsAdvertisementDelete(self):
+        if self.base.elementIsExit(NEWS_ADVERTISEMENT):
+            self.base.clickByElement(NEWS_ADVERTISEMENT_DELETE,"点击广告X按钮")
+        else:
+            self.assertFalse(NEWS_ADVERTISEMENT)
+
+
+    # 点击广告--不感兴趣   ---wmw
+    def clickNewsAdvertisementUninterested(self):
+         self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
+
+
+    # 点击打开或安装按钮---wmw
+    def clickNewsAdvertisementOpenOrInstall(self):
+        # 判断页面是否存在广告
+        if self.base.elementIsExit(NEWS_ADVERTISEMENT):
+            # 判断页面是否存在打开
+            if self.base.elementIsExit(NEWS_ADVERTISEMENT_OPEN):
+                self.base.clickByElement(NEWS_ADVERTISEMENT_OPEN, '点击打开')
+            else:
+                # 向下滑动找到安装,并点击安装
+                self.base.scrollToElement(NEWS_ADVERTISEMENT)
+                self.base.clickByElement(NEWS_ADVERTISEMENT_INSTALL, '点击安装')
+                sleep(40)
+                self.base.clickByElement(NEWS_ADVERTISEMENT_OPEN, '点击打开')
+        else:
+            self.assertFalse(NEWS_ADVERTISEMENT)
+
+
     # 在资讯列表点击倒三角，进入频道管理页面
     def clickNewsTriangle(self):
         if self.base.elementIsExit(NEWS_TRIANGLE):
