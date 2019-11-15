@@ -45,6 +45,8 @@ SETUP_SWITCH = 'com.android.browser:id/switch_button'
 # 允许   ---wmw
 SETUP_ALLOW = '允许'
 
-
 # 地理位置权限Geography --wmw
 GEOGRAPHY = '地理位置权限'
+
+# 点击360 ————LCM
+SETUP_360 = '360'

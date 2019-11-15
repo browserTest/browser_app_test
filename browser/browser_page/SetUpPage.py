@@ -3,7 +3,6 @@ from base_function.base import Base
 from browser.browser_element.SetUp import *
 from base_function.driver import Driver
 from browser.browser_element.PubElement import *
-from browser.browser_element.MyCollection import *
 from browser.browser_element.SearchPanel import *
 
 class SetUpPage(Base):
@@ -158,3 +157,10 @@ class SetUpPage(Base):
             self.base.clickByElement(SETUP_ALLOW, "允许")
         else:
             self.assertFalse(SETUP_ALLOW)
+
+    # 点击360 ————LCM
+    def click360(self):
+        if self.base.elementIsExit(SETUP_360):
+            self.base.clickByElement(SETUP_360, "360")
+        else:
+            self.assertFalse(SETUP_360)
