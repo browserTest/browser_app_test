@@ -9,11 +9,11 @@ class NegativeScreenPage(Base):
         self.base = Base(driver)
 
     # 点击负一屏添加按钮-LJX
-    def clickAddTo(self):
-        if self.base.elementIsExit(NAGATIVE_SCREEN_ADD_TEXT):
-            self.base.clickByElement(NAGATIVE_SCREEN_ADD_TEXT, '浏览器负一屏添加按钮')
+    def clickAddTo(self, element):
+        if self.base.elementIsExit(element):
+            self.base.clickByElement(element, '浏览器负一屏的{}'.format(element))
         else:
-            self.assertFalse(NAGATIVE_SCREEN_ADD_TEXT)
+            self.assertFalse(element)
 
     # 删除负一屏书签-LJX
     def deleteBookmark(self, element):

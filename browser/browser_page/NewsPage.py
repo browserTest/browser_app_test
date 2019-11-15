@@ -166,4 +166,20 @@ class NewsPage(Base):
             self.assertFalse(NEWS_MY_CHANNEL_ADDED)
 
 
+    # 获取资讯详情页的文章标题 -- LJX
+    def getArticleDetailsTitle(self):
+        if self.base.elementIsExit(ARTICLE_DETAILS_TOP):
+            strText = self.base.elementText(ARTICLE_DETAILS_TITLE, '获取资讯详情页的文章标题')
+            return strText
+        else:
+            self.assertFalse(ARTICLE_DETAILS_TOP)
+
+    # 资讯详情页点击收藏按钮 -- LJX
+    def clickArticleCollectPosition(self):
+        if self.base.elementIsExit(ARTICLE_DETAILS_TOP):
+            self.base.clickByElement(ARTICLE_COLLECT_POSITION, '资讯详情页收藏按钮相对坐标')
+        else:
+            self.assertFalse(ARTICLE_DETAILS_TOP)
+
+
 
