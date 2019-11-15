@@ -99,6 +99,16 @@ NEWS_BEAUTY_GIRL_BACK = 'com.android.browser:id/mz_toolbar_nav_button'
 # 断言打开视频频道后，页面中是否显示更多的负反馈按钮
 NEWS_VIDEO_NO_INTERESTED = 'com.android.browser:id/news_sdk_short_video_item_more'
 
+'''资讯详情页相关常量'''
+# 资讯详情页顶部定制栏
+ARTICLE_DETAILS_TOP = 'com.android.browser:id/zixun_web_titlebar_id'
+
+# 资讯详情页顶部定制栏
+ARTICLE_DETAILS_TITLE = '//*[@resource-id="header"]/android.view.View[1]'
+
+# 资讯详情页收藏按钮相对坐标
+ARTICLE_COLLECT_POSITION = (0.797, 0.929)
+
 
 
 

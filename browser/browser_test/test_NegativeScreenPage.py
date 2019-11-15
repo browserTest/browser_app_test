@@ -39,7 +39,7 @@ class TestNegativePage():
         # 进入负一屏，删除"hao123"书签，点击“添加”，进入精选页
         self.home.clickHomeOnPage(MYCOLLECTION)
         self.negativescreen.deleteBookmark(HAO123)
-        self.negativescreen.clickAddTo()
+        self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
         # 在精选页面对"hao123"书签点击"添加"，点击"hao123"进入网页
         self.addtohome.clickAddToHome(2)
         self.addtohome.clickAddToHomeWebsite(HAO123)
@@ -60,7 +60,7 @@ class TestNegativePage():
         # 进入负一屏，删除"凤凰网"书签，进入分类-》资讯头条
         self.home.clickHomeOnPage(MYCOLLECTION)
         self.negativescreen.deleteBookmark(IFENG_SIMPLIFIED)
-        self.negativescreen.clickAddTo()
+        self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
         self.addtohome.clickAddToHomeTab(CLASSFICATION_TEXT)
         self.addtohome.clickAddToHomeTab(INFORMATION_TEXT)
         # 对"凤凰网"书签点击"添加"，点击"凤凰网"进入网页
@@ -92,7 +92,7 @@ class TestNegativePage():
         # 返回上一层到负一屏
         self.pubmethod.clickBack()
         # 在负一屏点击"添加"
-        self.negativescreen.clickAddTo()
+        self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
         # 进入历史
         self.addtohome.clickAddToHomeTab(HISTORY_TEXT)
         # 断言是否存在"百度一下"网页
@@ -112,7 +112,7 @@ class TestNegativePage():
         # 进入负一屏
         self.home.clickHomeOnPage(MYCOLLECTION)
         # 在负一屏点击"添加"
-        self.negativescreen.clickAddTo()
+        self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
         # 进入自定义
         self.addtohome.clickAddToHomeTab(DIY_TEXT)
         # 点击网址
