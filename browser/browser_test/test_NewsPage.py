@@ -177,7 +177,7 @@ class TestNewsPage():
         self.news.clickNewsAdvertisementUninterested()
         sleep(4)
         # 断言页面是否存在广告
-        self.base.assertTrue(NEWS_ADVERTISEMENT, False, timeout=15)
+        self.base.assertTrue(NEWS_ADVERTISEMENT, False)
         self.base.scrollToElement(NEWS_ADVERTISEMENT)
         # 点击打开或安装
         self.news.clickNewsAdvertisementOpenOrInstall()

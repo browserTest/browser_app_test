@@ -74,12 +74,8 @@ class PubMethod(Base):
         if self.base.elementIsExit(element):
             sleep(2)
             text = self.base.baiduOcr()
-            textTitle = ""
-            for i in range(len(text)):
-                # 去掉符号
-                strText = re.sub('\W+', '', text[i])
-                # 字符串拼接
-                textTitle = ''.join(textTitle + strText)
-            return textTitle
+            textTitle = ' '.join(text)
+            strText = re.sub('\W+', '', textTitle)
+            return strText
         else:
             self.assertFalse(element)
