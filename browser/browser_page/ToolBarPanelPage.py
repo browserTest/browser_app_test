@@ -37,7 +37,7 @@ class ToolBarPanelPage(Base):
         else:
             self.assertFalse(SET_UP)
 
-    # 清空历史 -- LJX
+    # 清空历史 —— LJX
     def cleanHistory(self):
         self.home.clickMore()
         self.clickToolsPanel(CLEAN_UP_HISTORY)

@@ -16,7 +16,7 @@ class CollectionAndHistoryPage(Base):
         self.searchpanel = SearchPanelPage(driver)
         self.base = Base(driver)
 
-    # 判断历史是否有数据，没有则造一条“百度一下”数据 -- LJX
+    # 判断历史是否有数据，没有则造一条“百度一下”数据 —— LJX
     def makeHistory(self):
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(HISTORY)
@@ -34,7 +34,7 @@ class CollectionAndHistoryPage(Base):
             # 返回上一层
             self.pubmethod.clickBack()
 
-    # 获取我的收藏第1条记录的标题 -- LJX
+    # 获取我的收藏第1条记录的标题 —— LJX
     def getCollectionTitle(self):
         if self.base.elementIsExit(COLLECTION_ID):
             strText = self.base.elementText(COLLECTION_ID, '获取资讯详情页的文章标题')
@@ -42,9 +42,23 @@ class CollectionAndHistoryPage(Base):
         else:
             self.assertFalse(COLLECTION_ID)
 
-    # 我的收藏页面点击元素 -- LJX
+    # 我的收藏页面点击元素 —— LJX
     def clickCollection(self, element):
         if self.base.elementIsExit(element):
-            self.base.clickByElement(element, '浏览器我的收藏页面的{}'.format(element))
+            self.base.clickByElement(element, '我的收藏页面的{}'.format(element))
+        else:
+            self.assertFalse(element)
+
+    # 在添加收藏页面点击元素 —— LJX
+    def clickAddCollectFolder(self, element):
+        if self.base.elementIsExit(element):
+            self.base.clickByElement(element, '添加收藏页面的{}'.format(element))
+        else:
+            self.assertFalse(element)
+
+    # 新增收藏文件夹输入框填写文本 —— LJX
+    def inputCollectFolderName(self, element):
+        if self.base.elementIsExit(element):
+            self.base.elementSetText(element, "自动化测试", "自动化测试")
         else:
             self.assertFalse(element)

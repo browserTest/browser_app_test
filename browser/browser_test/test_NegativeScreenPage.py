@@ -28,7 +28,7 @@ class TestNegativePage():
         logging.info("****用例执行结束****")
         logging.info("")
 
-    @allure.story('测试负一屏-》精选页打开网站、添加书签')
+    @allure.story('测试负一屏-》精选页打开网站、添加书签 —— LJX')
     @pytest.mark.P1
     def test001AddToHomeWebsite(self, negative_init):
         '''
@@ -49,7 +49,7 @@ class TestNegativePage():
         self.pubmethod.clickBack()
         self.base.assertTrue(HAO123, timeout=3)
 
-    @allure.story('测试负一屏-》分类页打开网站、添加书签')
+    @allure.story('测试负一屏-》分类页打开网站、添加书签 —— LJX')
     @pytest.mark.P1
     def test002AddToHomeWebsite(self, negative_init):
         '''
@@ -72,8 +72,8 @@ class TestNegativePage():
         self.pubmethod.clickBack()
         self.base.assertTrue(IFENG_SIMPLIFIED, timeout=3)
 
-    @allure.story('测试负一屏-》历史页打开网站、添加书签')
-    @pytest.mark.P0
+    @allure.story('测试负一屏-》历史页打开网站、添加书签 —— LJX')
+    @pytest.mark.P1
     def test003AddToHomeWebsite(self, negative_init):
         '''
         1、进入负一屏，删除“百度一下”书签
@@ -104,8 +104,8 @@ class TestNegativePage():
         # 断言是否进入"百度一下"网页
         self.base.assertTrue(BAIDU_TEXT, timeout=3)
 
-    @allure.story('测试负一屏-》自定义页打开网站')
-    @pytest.mark.P0
+    @allure.story('测试负一屏-》自定义页打开网站 —— LJX')
+    @pytest.mark.P1
     def test004AddToHomeWebsite(self, negative_init):
         # 清空历史数据
         self.toolbarpanel.cleanHistory()

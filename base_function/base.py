@@ -86,8 +86,10 @@ class Base():
     # 根据元素className及text组合进行点击操作
     def clickByElementClassNameAndText(self, className, text, logtext, instance=1):
         '''
-        :param id: 元素id
-        :param text: 元素text
+        :param className: 传入className元素
+        :param text: 传入text元素
+        :param logtext: 打印log的文案
+        :param instance: 第几位
         :return:
         '''
         self.d(className=className, text= text, instance= instance).click()

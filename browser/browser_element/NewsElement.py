@@ -103,7 +103,7 @@ NEWS_VIDEO_NO_INTERESTED = 'com.android.browser:id/news_sdk_short_video_item_mor
 # 资讯详情页顶部定制栏
 ARTICLE_DETAILS_TOP = 'com.android.browser:id/zixun_web_titlebar_id'
 
-# 资讯详情页顶部定制栏
+# 资讯详情页标题
 ARTICLE_DETAILS_TITLE = '//*[@resource-id="header"]/android.view.View[1]'
 
 # 资讯详情页收藏按钮相对坐标
