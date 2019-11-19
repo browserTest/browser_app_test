@@ -86,8 +86,9 @@ class TestNegativePage():
         sleep(3)
         # 获取文章详情页的标题
         ArticleDetailsTitle = self.news.getNewsArticleTitle()
-        self.news.clickOpenNewsArticle()
+        print('-----------------------------------')
         print(ArticleDetailsTitle)
+        self.news.clickOpenNewsArticle()
         self.news.clickArticleCollectPosition()
         # 返回上一层，进入我的收藏
         self.pubmethod.clickBack()
@@ -106,9 +107,9 @@ class TestNegativePage():
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
         CollectionTitle = self.collectionandhistory.getCollectionTitle()
         print(CollectionTitle)
-        self.base.assertEqual(ArticleDetailsTitle, CollectionTitle, True)
+        self.base.assertEqual(ArticleDetailsTitle, CollectionTitle, False)
 
-    @allure.story('打开网页-添加收藏-编辑-新建收藏文件夹-收藏进去-收藏夹打开该收藏正常 —— LJX')
+    @allure.story('打开网页-添加收藏-编辑-新建收藏文件夹-收藏进去-能改的都改一遍-收藏夹打开该收藏正常 —— LJX')
     @pytest.mark.P1
     def test004CollectWebToFolder(self, collectionAndHistory_init):
         '''
@@ -116,6 +117,8 @@ class TestNegativePage():
         2、添加收藏，编辑收藏文件夹，新增一个文件夹，并选择添加到该文件夹下
         3、进入收藏夹该新增文件夹下，断言是否存在1条记录
         '''
+        # 先删除“自动化测试”文件夹
+        self.collectionandhistory.deleteCollectFolder()
         self.home.clickHomeSearch()
         self.searchpanel.clickSearchInto()
         self.home.clickMore()
@@ -126,14 +129,23 @@ class TestNegativePage():
         self.collectionandhistory.inputCollectFolderName(NEW_FOLDER_NAME_ID)
         self.collectionandhistory.clickAddCollectFolder(NEW_FOLDER_CONFIRM)
         self.collectionandhistory.clickAddCollectFolder(COLLECT_NEW_FOLDER_NAME)
-        self.collectionandhistory.clickAddCollectFolder(COLLECT_CONFIRM_ID)
+        self.collectionandhistory.setText(ADD_COLLECT_URL, COLLECT_NAME)
+        self.collectionandhistory.setText(ADD_COLLECT_ADDRESS, COLLECT_URL)
+        self.collectionandhistory.clickAddCollectFolder(DELETE_CONFIRM)
         # 等待2秒，"已添加到收藏"toast提示消失后才能定位到其它元素
         sleep(2)
         # 进入收藏夹新建的文件夹下，断言是否存在数据
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
         self.collectionandhistory.clickCollection(COLLECT_NEW_FOLDER_NAME)
-        self.base.assertTrue(COLLECT_FOLDER_EMPTY, False)
+        self.base.assertTrue(COLLECT_NAME)
+        self.collectionandhistory.clickCollection(COLLECT_NAME)
+        self.base.assertTrue(BAIDU_HOME)
+
+
+
+
+
 
 
 

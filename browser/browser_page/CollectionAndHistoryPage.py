@@ -62,3 +62,33 @@ class CollectionAndHistoryPage(Base):
             self.base.elementSetText(element, "自动化测试", "自动化测试")
         else:
             self.assertFalse(element)
+
+    # 删除“自动化测试”收藏文件夹
+    def deleteCollectFolder(self):
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        if self.base.elementIsExit(COLLECT_NEW_FOLDER_NAME):
+            self.base.long_clickByElement(COLLECT_NEW_FOLDER_NAME, '"自动化测试"收藏文件夹', 1)
+            if self.base.elementIsExit(DELETE_FOLDER):
+                self.base.clickByElement(DELETE_FOLDER, '删除文件夹')
+                if self.base.elementIsExit(DELETE_CONFIRM):
+                    self.base.clickByElement(DELETE_CONFIRM, '确定')
+                    self.pubmethod.clickBack()
+                else:
+                    self.assertFalse(DELETE_CONFIRM)
+            else:
+                self.assertFalse(DELETE_FOLDER)
+        else:
+            self.pubmethod.clickBack()
+
+    def setText(self, element, text):
+        if self.base.elementIsExit(element):
+            # self.base.clickByElement(element, '添加收藏页面的{}'.format(element))
+            # self.base.long_clickByElement(element, '添加收藏页面的{}'.format(element), 1)
+            self.base.elementSetText(element, text, text)
+            sleep(1)
+        else:
+            self.assertFalse(element)
+
+
+

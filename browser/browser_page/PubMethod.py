@@ -66,7 +66,7 @@ class PubMethod(Base):
             self.assertFalse(PERMISSION_AGREE_BUTTON)
 
     # 获取百度文字识别 API 识别并提取图片中文字————LCM
-    def getBaiduApiText(self,element):
+    def getBaiduApiText(self, element):
         '''
         :param element: 判断当前页面存在的元素
         :return: 返回去掉符号的文字

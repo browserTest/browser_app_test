@@ -34,5 +34,26 @@ COLLECT_CONFIRM_ID = 'com.android.browser:id/menu_more'
 # 收藏文件夹没有收藏内容时显示的"暂无收藏"ID —— LJX
 COLLECT_FOLDER_EMPTY = 'com.android.browser:id/empty_title'
 
+# 长按文件夹-》弹框“删除文件夹”文案 —— LJX
+DELETE_FOLDER = '删除文件夹'
+
+# 长按文件夹-》删除文件夹-》确定按钮 —— LJX
+DELETE_CONFIRM = '确定'
+
+# 添加收藏的网址名称ID —— LJX
+ADD_COLLECT_ADDRESS = 'com.android.browser:id/address'
+
+# 添加收藏的网址URL —— LJX
+ADD_COLLECT_URL = 'com.android.browser:id/title'
+
+# 添加收藏的URL —— LJX
+COLLECT_URL = 'm.baidu.com'
+
+# 添加收藏的名称 —— LJX
+COLLECT_NAME = '百度一下'
+
+# 添加收藏的名称 —— LJX
+BAIDU_HOME = '百度一下,你就知道'
+
 
 
