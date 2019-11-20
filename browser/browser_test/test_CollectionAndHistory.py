@@ -7,6 +7,7 @@ from browser.browser_page.PubMethod import *
 from browser.browser_page.SearchPanelPage import *
 from browser.browser_page.ToolBarPanelPage import *
 from browser.browser_page.NewsPage import *
+from browser.browser_page.WindowsTabPage import *
 
 
 @allure.feature("测试收藏/历史相关功能")
@@ -24,6 +25,7 @@ class TestNegativePage():
         self.toolbarpanel = ToolBarPanelPage(self.driver)
         self.collectionandhistory = CollectionAndHistoryPage(self.driver)
         self.news = NewsPage(self.driver)
+        self.windowstab = WindowsTabPage(self.driver)
         logging.info("")
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
@@ -202,7 +204,7 @@ class TestNegativePage():
 
     @allure.story('我的收藏-长按多个-删除，检查是否正常删除 —— LJX')
     @pytest.mark.P1
-    def test006DeleteCollectionMore(self, collectionAndHistory_init):
+    def test007DeleteCollectionMore(self, collectionAndHistory_init):
         '''
         1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在
         '''
@@ -218,7 +220,7 @@ class TestNegativePage():
 
     @allure.story('历史-长按1个-删除，检查是否正常删除 —— LJX')
     @pytest.mark.P1
-    def test007DeleteHistoryOne(self, collectionAndHistory_init):
+    def test008DeleteHistoryOne(self, collectionAndHistory_init):
         '''
         1、进入历史，长按1条记录，删除，断言被删除记录不存在
         '''
@@ -235,7 +237,7 @@ class TestNegativePage():
 
     @allure.story('历史-长按多个-删除，检查是否正常删除 —— LJX')
     @pytest.mark.P1
-    def test008DeleteHistoryMore(self, collectionAndHistory_init):
+    def test009DeleteHistoryMore(self, collectionAndHistory_init):
         '''
         1、进入历史，长按多条记录，删除，断言被删除记录不存在
         '''
@@ -252,7 +254,7 @@ class TestNegativePage():
 
     @allure.story('我的收藏-长按单个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX')
     @pytest.mark.P1
-    def test009AddToDeskOne(self, collectionAndHistory_init):
+    def test10AddToDeskOne(self, collectionAndHistory_init):
         '''
         1、进入收藏夹，长按1条记录，发送到桌面，断言桌面存在记录
         '''
@@ -271,7 +273,7 @@ class TestNegativePage():
 
     @allure.story('我的收藏-长按多个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX')
     @pytest.mark.P1
-    def test010AddToDeskMore(self, collectionAndHistory_init):
+    def test011AddToDeskMore(self, collectionAndHistory_init):
         '''
         1、进入收藏夹，长按1条记录，发送到桌面，断言桌面存在记录
         '''
@@ -287,6 +289,38 @@ class TestNegativePage():
         self.base.assertTrue(CollectionTitle, True, timeout=3)
         self.base.clickByElement(CollectionTitle, '发送到桌面的收藏')
         self.base.assertTrue(CollectionTitle, True, timeout=3)
+
+    @allure.story('我的收藏-长按单个-新窗口打开，检查是否成功添加至桌面且正常打开 —— LJX')
+    @pytest.mark.P1
+    def test12NewWindowOpenOne(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按1条记录，新窗口打开，断言正常打开且新窗口数量增加
+        '''
+        # 收藏一个网页到收藏夹
+        self.home.clickHomeSearch()
+        hotSearchWord = self.searchpanel.clickHotWords()
+        self.searchpanel.clickSearchHistory()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+        self.collectionandhistory.clickAddCollectFolder(ADD_TO_COLLECTION)
+        # 返回上一层，重新添加收藏
+        self.pubmethod.clickBack()
+        sleep(1)
+        # 获取当前多窗口数量
+        winNumBefore = self.windowstab.getWindowsNum()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        CollectionTitle = self.collectionandhistory.getCollectionTitle()
+        print(CollectionTitle)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID)
+        self.collectionandhistory.clickCollectNewWindowOpen()
+        # 新窗口打开后到窗口数量
+        winNumAfter = self.windowstab.getWindowsNum()
+        self.base.assertEqual(winNumBefore, winNumAfter, False, timeout=3)
+        self.base.assertTrue(hotSearchWord, timeout=3)
+
+
+
 
 
 

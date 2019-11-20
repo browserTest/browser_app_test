@@ -71,6 +71,13 @@ class CollectionAndHistoryPage(Base):
         else:
             self.assertFalse(MULTI_CHOICE)
 
+    # 我的收藏页点击发送至桌面按钮 —— LJX
+    def clickCollectNewWindowOpen(self):
+        if self.base.elementIsExit(MULTI_CHOICE):
+            self.base.clickByElement(COLLECT_NEW_WINDOW, '“新窗口打开”相对坐标')
+        else:
+            self.assertFalse(MULTI_CHOICE)
+
     # 在添加收藏页面点击元素 —— LJX
     def clickAddCollectFolder(self, element):
         if self.base.elementIsExit(element):
