@@ -34,13 +34,21 @@ class CollectionAndHistoryPage(Base):
             # 返回上一层
             self.pubmethod.clickBack()
 
-    # 获取我的收藏第1条记录的标题 —— LJX
-    def getCollectionTitle(self):
+    # 获取我的收藏相应记录的标题 —— LJX
+    def getCollectionTitle(self, instance=0):
         if self.base.elementIsExit(COLLECTION_ID):
-            strText = self.base.elementText(COLLECTION_ID, '获取资讯详情页的文章标题')
+            strText = self.base.elementText(COLLECTION_ID, '我的收藏记录的标题', instance)
             return strText
         else:
             self.assertFalse(COLLECTION_ID)
+
+    # 获取历史相应记录的标题 —— LJX
+    def getHistoryTitle(self, instance=0):
+        if self.base.elementIsExit(HISTORY_ID):
+            strText = self.base.elementText(HISTORY_ID, '我的收藏记录的标题', instance)
+            return strText
+        else:
+            self.assertFalse(HISTORY_ID)
 
     # 我的收藏页面点击元素 —— LJX
     def clickCollection(self, element):
@@ -48,6 +56,20 @@ class CollectionAndHistoryPage(Base):
             self.base.clickByElement(element, '我的收藏页面的{}'.format(element))
         else:
             self.assertFalse(element)
+
+    # 我的收藏页点击删除按钮 —— LJX
+    def clickCollectDelete(self):
+        if self.base.elementIsExit(MULTI_CHOICE):
+            self.base.clickByElement(COLLECT_DELETE_BUTTON, '“删除”相对坐标')
+        else:
+            self.assertFalse(MULTI_CHOICE)
+
+    # 我的收藏页点击发送至桌面按钮 —— LJX
+    def clickCollectAddToDesk(self):
+        if self.base.elementIsExit(MULTI_CHOICE):
+            self.base.clickByElement(COLLECT_ADDTODESK_BUTTON, '“发送至桌面”相对坐标')
+        else:
+            self.assertFalse(MULTI_CHOICE)
 
     # 在添加收藏页面点击元素 —— LJX
     def clickAddCollectFolder(self, element):
@@ -63,7 +85,7 @@ class CollectionAndHistoryPage(Base):
         else:
             self.assertFalse(element)
 
-    # 删除“自动化测试”收藏文件夹
+    # 删除“自动化测试”收藏文件夹 —— LJX
     def deleteCollectFolder(self):
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
@@ -81,14 +103,37 @@ class CollectionAndHistoryPage(Base):
         else:
             self.pubmethod.clickBack()
 
+    # 设置输入框文本 —— LJX
     def setText(self, element, text):
         if self.base.elementIsExit(element):
-            # self.base.clickByElement(element, '添加收藏页面的{}'.format(element))
-            # self.base.long_clickByElement(element, '添加收藏页面的{}'.format(element), 1)
             self.base.elementSetText(element, text, text)
             sleep(1)
         else:
             self.assertFalse(element)
 
+    # 我的收藏页面长按单条/多条记录 —— LJX
+    def longClickCollection(self, element, nums=1):
+        if self.base.elementIsExit(element):
+            self.base.long_clickByElementIdAndInstance(element, '收藏页面的{}'.format(element))
+            for i in range(1, nums):
+                self.base.clickByElementIdAndInstance(element, '收藏页面的{}'.format(element), i)
+        else:
+            self.assertFalse(element)
+
+    # 历史页面长按单条/多条记录 —— LJX
+    def longClickHistory(self, element, nums=1):
+        if self.base.elementIsExit(element):
+            self.base.long_clickByElementIdAndInstance(element, '历史页面的{}'.format(element), 1)
+            for i in range(2, nums):
+                self.base.clickByElementIdAndInstance(element, '历史页面的{}'.format(element), i)
+        else:
+            self.assertFalse(element)
+
+    # 历史页点击删除按钮 —— LJX
+    def clickHistoryDelete(self):
+        if self.base.elementIsExit(MULTI_CHOICE):
+            self.base.clickByElement(HISTORY_DELETE_BUTTON, '删除按钮相对坐标')
+        else:
+            self.assertFalse(MULTI_CHOICE)
 
 

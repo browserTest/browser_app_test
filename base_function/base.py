@@ -203,18 +203,18 @@ class Base():
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
 
     # 提取元素文本    ---wmw
-    def elementText(self,element,logtext):
+    def elementText(self,element,logtext, instance=0):
         '''
         :param element: 元素名称，可根据resource、xpath进行判断并提取元素文本
         :param logtext: 打印log的文案
         :return:
         '''
         if str(element).startswith("com"):
-            text = self.d(resourceId=element).get_text()
+            text = self.d(resourceId=element, instance=instance).get_text()
             logging.info("提取元素文本: {}".format(logtext))
             return text
         elif re.findall("//", str(element)):
-            text = self.d.xpath(element).get_text()
+            text = self.d.xpath(element, instance=instance).get_text()
             logging.info("提取元素文本: {}".format(logtext))
             return text
 
@@ -309,6 +309,17 @@ class Base():
         self.d(resourceId=id,instance=instance).click()
         logging.info("点击元素： {}".format(logtext))
 
+    # 根据元素id位于第几个进行长按操作 —— LJX
+    def long_clickByElementIdAndInstance(self, element, logtext, instance=0, duration=1):
+        '''
+        :param element: 元素id
+        :param logtext: 打印log的文案
+        :param duration：长按的时长，单位秒
+        :param instance：第几个
+        :return:
+        '''
+        self.d(resourceId=element, instance=instance).long_click(duration)
+        logging.info("长按元素: {}".format(logtext))
 
     # 增加公共监听
     def browserWatcher(self):

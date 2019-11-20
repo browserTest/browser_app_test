@@ -13,6 +13,9 @@ HISTORY_PAGE = 'com.android.browser:id/content_panel'
 # 我的收藏每条记录ID —— LJX
 COLLECTION_ID = 'com.android.browser:id/title'
 
+# 历史每条记录ID —— LJX
+HISTORY_ID = 'com.android.browser:id/title'
+
 # 添加收藏-》编辑-》编辑文件夹入口ID —— LJX
 COLLECT_FOLDER_ID = 'com.android.browser:id/folder'
 
@@ -54,6 +57,30 @@ COLLECT_NAME = '百度一下'
 
 # 添加收藏的名称 —— LJX
 BAIDU_HOME = '百度一下,你就知道'
+
+# 添加到收藏 —— LJX
+ADD_TO_COLLECTION = 'com.android.browser:id/add_to_bookmark'
+
+# 添加到主页常用 —— LJX
+ADD_TO_NEGATIVE = 'com.android.browser:id/add_to_homepage'
+
+# 添加到桌面 —— LJX
+ADD_TO_DESKTOP = 'com.android.browser:id/ll_add_to_desktop'
+
+# 我的收藏页长按记录后底部“删除”相对坐标 —— LJX
+COLLECT_DELETE_BUTTON = (0.853, 0.917)
+
+# 我的收藏页长按记录后底部“发送至桌面”相对坐标 —— LJX
+COLLECT_ADDTODESK_BUTTON = (0.384, 0.94)
+
+# 二次确认删除弹框上的“删除收藏”按钮 —— LJX
+DELETE_CONFIRM = 'com.android.browser:id/contentPanel'
+
+# 长按记录，右上角的“全选”按钮
+MULTI_CHOICE = 'com.android.browser:id/mz_action_multi_choice_select_all_item'
+
+# 历史页长按记录后底部删除按钮相对坐标 —— LJX
+HISTORY_DELETE_BUTTON = (0.734, 0.925)
 
 
 

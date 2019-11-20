@@ -142,6 +142,154 @@ class TestNegativePage():
         self.collectionandhistory.clickCollection(COLLECT_NAME)
         self.base.assertTrue(BAIDU_HOME)
 
+    @allure.story('添加一个网页到收藏/主页常用/桌面，查看是否添加到对应目录下并且点击能正常打开 —— LJX')
+    @pytest.mark.P1
+    def test005CollectWebPage(self, collectionAndHistory_init):
+        # 获取第1个热词
+        self.home.clickHomeSearch()
+        hotSearchWord = self.searchpanel.clickHotWords()
+        self.searchpanel.clickSearchHistory()
+        # 添加到收藏夹
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+        self.collectionandhistory.clickAddCollectFolder(ADD_TO_COLLECTION)
+        # 等待2秒，"已添加到收藏"toast提示消失后才能定位到其它元素
+        sleep(2)
+        # 进入收藏夹新建的文件夹下，断言是否存在数据
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        # 获取我的收藏页第1条记录的标题
+        CollectionTitle = self.collectionandhistory.getCollectionTitle()
+        self.base.assertEqual(hotSearchWord, CollectionTitle, True)
+        # 返回上一层，重新添加收藏
+        self.pubmethod.clickBack()
+        # 添加到主页常用
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+        self.collectionandhistory.clickAddCollectFolder(ADD_TO_NEGATIVE)
+        # 等待2秒，"已添加到主页常用"toast提示消失后才能定位到其它元素
+        sleep(2)
+        self.home.clickHome()
+        # 进入负一屏
+        self.home.clickHomeOnPage(MYCOLLECTION)
+        self.base.assertTrue(hotSearchWord, True, timeout=3)
+        # 返回上一层，重新添加收藏
+        self.pubmethod.clickBack()
+        # 添加到桌面
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+        self.collectionandhistory.clickAddCollectFolder(ADD_TO_DESKTOP)
+        # 等待2秒，"已添加到主页常用"toast提示消失后才能定位到其它元素
+        sleep(2)
+        self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
+        self.base.assertTrue(hotSearchWord, True, timeout=3)
+
+    @allure.story('我的收藏-长按单个-删除，检查是否正常删除 —— LJX')
+    @pytest.mark.P1
+    def test006DeleteCollectionOne(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按1条记录，删除，断言被删除记录不存在
+        '''
+        # 进入收藏夹,长按
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        CollectionTitle = self.collectionandhistory.getCollectionTitle()
+        print(CollectionTitle)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID)
+        self.collectionandhistory.clickCollectDelete()
+        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.base.assertTrue(CollectionTitle, False, timeout=3)
+
+    @allure.story('我的收藏-长按多个-删除，检查是否正常删除 —— LJX')
+    @pytest.mark.P1
+    def test006DeleteCollectionMore(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在
+        '''
+        # 进入收藏夹,长按
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        CollectionTitle = self.collectionandhistory.getCollectionTitle(1)
+        print(CollectionTitle)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID, 2)
+        self.collectionandhistory.clickCollectDelete()
+        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.base.assertTrue(CollectionTitle, False, timeout=3)
+
+    @allure.story('历史-长按1个-删除，检查是否正常删除 —— LJX')
+    @pytest.mark.P1
+    def test007DeleteHistoryOne(self, collectionAndHistory_init):
+        '''
+        1、进入历史，长按1条记录，删除，断言被删除记录不存在
+        '''
+        # 进入历史，获取第1条记录标题
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        HistoryTitle = self.collectionandhistory.getHistoryTitle(1)
+        print(HistoryTitle)
+        self.collectionandhistory.longClickHistory(HISTORY_ID)
+        self.collectionandhistory.clickHistoryDelete()
+        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        sleep(1)
+        self.base.assertTrue(HistoryTitle, False, timeout=3)
+
+    @allure.story('历史-长按多个-删除，检查是否正常删除 —— LJX')
+    @pytest.mark.P1
+    def test008DeleteHistoryMore(self, collectionAndHistory_init):
+        '''
+        1、进入历史，长按多条记录，删除，断言被删除记录不存在
+        '''
+        # 进入历史，获取第1条记录标题
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        HistoryTitle = self.collectionandhistory.getHistoryTitle(2)
+        print(HistoryTitle)
+        self.collectionandhistory.longClickHistory(HISTORY_ID, 3)
+        self.collectionandhistory.clickHistoryDelete()
+        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        sleep(1)
+        self.base.assertTrue(HistoryTitle, False, timeout=3)
+
+    @allure.story('我的收藏-长按单个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX')
+    @pytest.mark.P1
+    def test009AddToDeskOne(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按1条记录，发送到桌面，断言桌面存在记录
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        CollectionTitle = self.collectionandhistory.getCollectionTitle()
+        print(CollectionTitle)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID)
+        self.collectionandhistory.clickCollectAddToDesk()
+        # 等待2秒，"已添加到主页常用"toast提示消失后才能定位到其它元素
+        sleep(2)
+        self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
+        self.base.assertTrue(CollectionTitle, True, timeout=3)
+        self.base.clickByElement(CollectionTitle, '发送到桌面的收藏')
+        self.base.assertTrue(CollectionTitle, True, timeout=3)
+
+    @allure.story('我的收藏-长按多个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX')
+    @pytest.mark.P1
+    def test010AddToDeskMore(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按1条记录，发送到桌面，断言桌面存在记录
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        CollectionTitle = self.collectionandhistory.getCollectionTitle(1)
+        print(CollectionTitle)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID, 2)
+        self.collectionandhistory.clickCollectAddToDesk()
+        # 等待2秒，"已添加到主页常用"toast提示消失后才能定位到其它元素
+        sleep(2)
+        self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
+        self.base.assertTrue(CollectionTitle, True, timeout=3)
+        self.base.clickByElement(CollectionTitle, '发送到桌面的收藏')
+        self.base.assertTrue(CollectionTitle, True, timeout=3)
+
+
+
 
 
 
