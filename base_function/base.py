@@ -211,11 +211,11 @@ class Base():
         '''
         if str(element).startswith("com"):
             text = self.d(resourceId=element, instance=instance).get_text()
-            logging.info("提取元素文本: {}".format(logtext))
+            logging.info("提取第{}位的{}元素文本".format(instance, logtext))
             return text
         elif re.findall("//", str(element)):
             text = self.d.xpath(element, instance=instance).get_text()
-            logging.info("提取元素文本: {}".format(logtext))
+            logging.info("提取第{}位的{}元素文本".format(instance, logtext))
             return text
 
     # 输入文本——LYX
