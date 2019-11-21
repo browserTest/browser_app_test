@@ -73,6 +73,9 @@ COLLECT_DELETE_BUTTON = (0.853, 0.917)
 # 我的收藏页长按记录后底部“发送至桌面”相对坐标 —— LJX
 COLLECT_ADDTODESK_BUTTON = (0.384, 0.94)
 
+# 我的收藏页长按记录后底部“新窗口打开”相对坐标 —— LJX
+COLLECT_NEW_WINDOW = (0.146, 0.929)
+
 # 二次确认删除弹框上的“删除收藏”按钮 —— LJX
 DELETE_CONFIRM = 'com.android.browser:id/contentPanel'
 
