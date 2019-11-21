@@ -60,3 +60,15 @@ ANJUKE_SEARCH = '挑好房，上安居客'
 
 # 安居客新房页面搜索框——LYX
 NEWHOUSE_SEARCH = '请输入楼盘名称或地址'
+
+# 小说页面底部书架栏目——LYX
+NOVEL_BOOKSHELF = '书架'
+
+# 头条网页顶部地址栏——LYX
+TOUTIAO = '推荐'
+
+# 酷站页面顶部地址栏——LYX
+KUZHAN = '魅族浏览器网址导航'
+
+# 首页热门小说——LYX
+HOT_NOVEL = '热门小说'

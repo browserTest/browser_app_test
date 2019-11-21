@@ -79,3 +79,18 @@ class HomePage(Base):
     def left_swipe(self):
         sleep(1)
         self.base.swipeByElement(LEFTSWIPE_COORDINATE,"屏幕边缘左滑")
+
+    # 提取首页12个导航位的名称——LYX
+    def get_HomeBusiness(self):
+        HOME_BUSINESS_NAME = []
+        for i in range(12):
+            text = self.base.elementText(HOME_BUSINESS_ID,"首页导航栏",i)
+            HOME_BUSINESS_NAME.append(text)
+        return HOME_BUSINESS_NAME
+
+    # 点击安居客首页新房入口——LYX
+    def clickNewHouse(self):
+        if self.base.elementIsExit(NEWHOUSE):
+            self.base.clickByElement(NEWHOUSE,'安居客首页新房入口')
+        else:
+            self.assertFalse(NEWHOUSE)

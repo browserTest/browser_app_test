@@ -209,6 +209,7 @@ class Base():
             logging.info("提取第{}位的{}元素文本".format(instance, logtext))
             return text
 
+
     # 输入文本——LYX
     def elementSetText(self,element,text,logtext):
         '''

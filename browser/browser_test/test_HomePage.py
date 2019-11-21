@@ -4,6 +4,7 @@ from config.config import *
 from browser.browser_page.HomePage import HomePage
 from browser.browser_page.PubMethod import PubMethod
 from browser.browser_element.PubElement import *
+from browser.browser_page.MorePage import MorePage
 from base_function.base import Base
 from browser.browser_element.Home import *
 import allure
@@ -22,6 +23,7 @@ class TestHomePage():
         self.home = HomePage(self.driver)
         self.pubmethod = PubMethod(self.driver)
         self.share = SharePage(self.driver)
+        self.more = MorePage(self.driver)
         logging.info("")
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
@@ -80,6 +82,28 @@ class TestHomePage():
         self.base.assertTrue(ANJUKE_SEARCH)
         self.home.left_swipe()
         self.base.assertTrue(NEWHOUSE_SEARCH)
+
+    @allure.story('测试首页12个导航位能否正常打开')
+    def test004HomePage(self, home_init):
+        '''
+        1、获取首页12个导航位名称
+        2、依次打开12个导航位（小说除外），均能正常跳转
+        '''
+        HOME_BUSINESS_NAME = self.home.get_HomeBusiness()
+        for i in range(0,12):
+            if HOME_BUSINESS_NAME[i] == "热门小说" :
+                continue
+            self.more.clickDaoHang(HOME_BUSINESS_NAME[i])
+            if HOME_BUSINESS_NAME[i] == "头条" :
+                self.base.assertTrue(TOUTIAO)
+            elif HOME_BUSINESS_NAME[i] == "安居客":
+                self.base.assertTrue(ANJUKE_SEARCH)
+            elif HOME_BUSINESS_NAME[i] == "酷站":
+                self.base.assertTrue(KUZHAN)
+            else:
+                self.base.assertTrue(HOME_BUSINESS_NAME[i])
+            self.pubmethod.clickBack()
+
 
 
 
