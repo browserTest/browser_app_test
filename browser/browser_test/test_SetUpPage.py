@@ -28,46 +28,19 @@ class TestSetUpPage():
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.base.browserWatcher()
         self.home.clickHome()
         self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
 
-    # ---wmw
-    @allure.story('测试简版显示是否正常')
-    def test001SetUpPage(self, setUp_init):
 
-        # 点击主页工具菜单
-        self.home.clickMore()
-        # 点击设置
-        self.toolbarpanel.clickSetUp()
-        # 点击魅族头条设置
-        self.setup.clickMeizuHeadlinesSettings(2)
-        # 点击简版显示
-        self.setup.clickSimple()
-        # 点击mback
-        self.pubmethod.clickBack()
-        # 断言页面魅族头条是否存在
-        self.base.assertTrue(SETUP_MEIZU_HEADLINES)
-        # 点击简版显示--更多
-        self.setup.clickSetUpMore()
-        # 提取资讯流页面第一个文章的文本信息
-        Text = self.zixuninformation.getZiXunArticleTitle()
-        # 点击工具栏资讯刷新页面
-        self.home.clickInformation()
-        # 断言页面是否存刷新成功
-        self.base.assertTrue(Text)
-        sleep(5)
-        # 打开资讯文章
-        self.zixuninformation.clickOpenZiXunArticle()
-        # 断言是否正常打开
-        #self.base.assertTrue()
 
 
     # ---wmw
     @allure.story('测试设置清除浏览器')
-    def test002SetUpPage(self, setUp_init):
+    def test001SetUpPage(self, setUp_init):
         '''
 
         1、点击主页工具菜单
@@ -112,11 +85,11 @@ class TestSetUpPage():
         # 断言页面是否会重新提示地址位置授权
         self.base.assertTrue(GEOGRAPHY)
         # 点击允许
-        self.setup.clickAllow()
+        #self.setup.clickAllow()
 
     # ---wmw
     @allure.story('测试切换搜索引擎')
-    def test003SetUpPage(self, setUp_init):
+    def test002SetUpPage(self, setUp_init):
         '''
 
         1、点击主页工具菜单
@@ -151,7 +124,7 @@ class TestSetUpPage():
 
     # ---wmw
     @allure.story('测试恢复默认设置')
-    def test004SetUpPage(self, setUp_init):
+    def test003SetUpPage(self, setUp_init):
         '''
         1、点击主页工具菜单
         2、点击设置
@@ -184,7 +157,7 @@ class TestSetUpPage():
         # 向下滑动到恢复默认设置
         self.base.scrollToElement(SETUP_RESET_TEXT)
         # 点击恢复默认设置
-        self.setup.clickResetToDefault(8)
+        self.setup.clickResetToDefault(7)
         # 点击恢复
         self.setup.clickReset()
         # 点击主页工具菜单
@@ -198,6 +171,37 @@ class TestSetUpPage():
         self.base.assertEqual(BeforeBlockAdsText,AfterBlockAdsText,False)
         self.base.assertEqual(BeforeLockingVerticalScreen, AfterLockingVerticalScreen, False)
         self.base.assertEqual(BeforeSwipeLeftRight, AfterSwipeLeftRight, False)
+
+
+    # ---wmw
+    @allure.story('测试简版显示是否正常')
+    def test004SetUpPage(self, setUp_init):
+
+        # 点击主页工具菜单
+        self.home.clickMore()
+        # 点击设置
+        self.toolbarpanel.clickSetUp()
+        # 点击魅族头条设置
+        self.setup.clickMeizuHeadlinesSettings(2)
+        # 点击简版显示
+        self.setup.clickSimple()
+        # 点击mback
+        self.pubmethod.clickBack()
+        # 断言页面魅族头条是否存在
+        self.base.assertTrue(SETUP_MEIZU_HEADLINES)
+        # 点击简版显示--更多
+        self.setup.clickSetUpMore()
+        # 提取资讯流页面第一个文章的文本信息
+        afterText = self.news.getNewsArticleTitle()
+        # 点击工具栏资讯刷新页面
+        self.home.clickInformation()
+        # 断言页面是否存刷新成功
+        self.base.assertTrue(afterText,False)
+        sleep(5)
+        # 打开资讯文章
+        self.news.clickOpenNewsArticle()
+        beforeText = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU)
+        self.base.assertEqual(afterText, beforeText, True)
 
 
 

@@ -40,9 +40,10 @@ class TestSearchPanelPage():
         4、断言页面是否正常跳转到对应的搜索结果页
         '''
         self.home.clickHomeSearch()
-        SearchText = self.searchpanel.clickSearchText()
+        afterSearchText = self.searchpanel.clickSearchText()
         self.searchpanel.clickSearchInto()
-        self.base.assertTrue(SearchText)
+        beforeSearchText = self.pubmethod.getBaiduApiText(LOCK)
+        self.base.assertEqual(afterSearchText, beforeSearchText, True)
 
 
     # ---wmw
@@ -55,9 +56,10 @@ class TestSearchPanelPage():
         4、断言页面是否打开正确
         '''
         self.home.clickHomeSearch()
-        OneSearchHistory = self.searchpanel.clickHotWords()
+        afterOneSearchHistory = self.searchpanel.clickHotWords()
         self.searchpanel.clickSearchHistory()
-        self.base.assertTrue(OneSearchHistory)
+        beforeOneSearchHistory = self.pubmethod.getBaiduApiText(LOCK)
+        self.base.assertEqual(afterOneSearchHistory, beforeOneSearchHistory, True)
 
     # ---wmw
     @allure.story('测试换一换')
@@ -69,9 +71,9 @@ class TestSearchPanelPage():
         4、断言第一个搜索热词是否不存在
         '''
         self.home.clickHomeSearch()
-        Panel = self.searchpanel.clickHotWords()
+        panel = self.searchpanel.clickHotWords()
         self.searchpanel.clickAnotherChange()
-        self.base.assertTrue(Panel,False,timeout=15)
+        self.base.assertTrue(panel,False,timeout=15)
 
     @allure.story('搜索页顶部地址栏输入，选中文字')
     def test004SearchPanelPage(self, search_init):

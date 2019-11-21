@@ -98,7 +98,7 @@ class SearchPanelPage(Base):
     # 搜索框输入m.80txt.com  --wmw
     def inputNumber(self):
         if self.base.elementIsExit(SEARCHPANEL_TEXT):
-            self.base.elementSetText(SEARCHPANEL_TEXT, "m.80txt.com", "搜索框输入m.80txt.com")
+            self.base.elementSetText(SEARCHPANEL_TEXT, "m.80txt.la", "搜索框输入m.80txt.com")
         else:
             self.assertFalse(SEARCHPANEL_TEXT)
 

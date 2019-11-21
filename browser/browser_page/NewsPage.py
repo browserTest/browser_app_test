@@ -1,5 +1,6 @@
 from base_function.base import *
 from browser.browser_element.NewsElement import *
+from browser.browser_page.PersonalCenterPage import *
 
 
 class NewsPage(Base):
@@ -25,6 +26,7 @@ class NewsPage(Base):
     def dropScrollNews(self):
         if self.base.elementIsExit(NEWS_TEXT):
             self.base.dragByElement(NEWS_ARTICLE_TITLE,NEWS_REFRESH_POSITION,2)
+            sleep(4)
         else:
             self.assertFalse(NEWS_TEXT)
 
@@ -50,7 +52,7 @@ class NewsPage(Base):
     def clickOpenNewsArticle(self):
         if self.base.elementIsExit(NEWS_ARTICLE_TITLE):
             self.base.clickByElement(NEWS_ARTICLE_TITLE,'在资讯流列表点击资讯文章进入详情页')
-
+            sleep(4)
         else:
             self.assertFalse(NEWS_ARTICLE_TITLE)
 
@@ -75,23 +77,6 @@ class NewsPage(Base):
     # 点击广告--不感兴趣   ---wmw
     def clickNewsAdvertisementUninterested(self):
          self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
-
-
-    # 点击打开或安装按钮---wmw
-    def clickNewsAdvertisementOpenOrInstall(self):
-        # 判断页面是否存在广告
-        if self.base.elementIsExit(NEWS_ADVERTISEMENT):
-            # 判断页面是否存在打开
-            if self.base.elementIsExit(NEWS_ADVERTISEMENT_OPEN):
-                self.base.clickByElement(NEWS_ADVERTISEMENT_OPEN, '点击打开')
-            else:
-                # 向下滑动找到安装,并点击安装
-                self.base.scrollToElement(NEWS_ADVERTISEMENT)
-                self.base.clickByElement(NEWS_ADVERTISEMENT_INSTALL, '点击安装')
-                sleep(40)
-                self.base.clickByElement(NEWS_ADVERTISEMENT_OPEN, '点击打开')
-        else:
-            self.assertFalse(NEWS_ADVERTISEMENT)
 
 
     # 在资讯列表点击倒三角，进入频道管理页面
@@ -181,5 +166,23 @@ class NewsPage(Base):
         else:
             self.assertFalse(ARTICLE_DETAILS_TOP)
 
+
+    # 在资讯文章详情页点击添加评论输入框   ---wmw
+    def clickCommentBox(self):
+        if self.base.elementIsExit(NEWS_PAGE_MOREMENU):
+            self.base.clickByElement(NEWS_COMMENT_BOX,'资讯文章详情页，点击添加评论输入框')
+        else:
+            self.assertFalse(NEWS_PAGE_MOREMENU)
+
+    # 根据焦点位置，输入文本  --wmw
+    def inputFocalPositionText(self):
+        self.base.elementInputFocalPositionText("m.80txt.la1234", "根据焦点位置,输入文本m.80txt.la1234",False)
+
+    # 点击输入框右侧发布按钮  --wmw
+    def clickRelease(self):
+        if self.base.elementIsExit(NEWS_PAGE_MOREMENU):
+            self.base.clickByElement(NEWS_RELEASE, "点击发布")
+        else:
+            self.assertFalse(NEWS_PAGE_MOREMENU)
 
 

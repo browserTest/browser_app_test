@@ -1,3 +1,5 @@
+from time import sleep
+
 from base_function.base import Base
 from browser.browser_element.Read import *
 
@@ -39,5 +41,14 @@ class ReadPage(Base):
     def clickReadButton(self):
         if self.base.elementIsExit(READ_BUTTON):
             self.base.clickByElement(READ_BUTTON, "地址栏阅读模式按钮")
+            sleep(4)
         else:
             self.assertFalse(READ_BUTTON)
+
+
+    # 点击工具面板电脑版  --wmw
+    def clickComputerButton(self):
+        if self.base.elementIsExit(COMPUTER):
+            self.base.clickByElement(COMPUTER, "点击工具面板电脑版")
+        else:
+            self.assertFalse(COMPUTER)

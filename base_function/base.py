@@ -353,6 +353,16 @@ class Base():
             text.append(word['words'])
         return text
 
+    # 根据焦点位置,输入文本  ---wmw
+    def elementInputFocalPositionText(self,text,logtext,clear=False):
+        '''
+        :param text: 输入文本
+        :param logtext: 打印log的文案
+        :param clear: 是否先清除文本内容
+        :return:
+        '''
+        text = self.d.send_keys(text, clear=clear)
+        logging.info("根据焦点位置，输入文本: {}".format(logtext))
 
 
 

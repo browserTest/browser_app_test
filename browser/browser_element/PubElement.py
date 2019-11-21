@@ -7,6 +7,9 @@
 # 浏览器包名
 BROWSER_PACKAGE_NAME = 'com.android.browser'
 
+# Flyme账号包名  ---wmw
+FLYME_PACKAGE_NAME = 'com.meizu.account'
+
 
 # 访问网页或资讯详情页所显示的进度条
 BROWSER_PROGRESS = 'com.android.browser:id/progress'

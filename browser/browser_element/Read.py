@@ -25,3 +25,7 @@ READ_NEXT = 'pt_next'
 
 # 目录  --wmw
 READ_CATALOG = '目录'
+
+
+# 工具面板电脑版  --wmw
+COMPUTER = '电脑版'

@@ -157,12 +157,12 @@ class TestNewsPage():
         '''
         1、点击资讯按钮进入资讯流列表，并刷新资讯
         2、上滑页面，点击X按钮，删除广告，并断言是否存在
-        3、点击安装，并打开应用，若已安装则直接打开
         '''
         self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.clickPrivacyAgree()
         self.pubmethod.clickPermissionAgree()
+        sleep(4)
         # 点击资讯按钮进入资讯流列表
         self.home.clickInformation()
         # 点击“倒三角”进入频道管理页面
@@ -178,9 +178,11 @@ class TestNewsPage():
         sleep(4)
         # 断言页面是否存在广告
         self.base.assertTrue(NEWS_ADVERTISEMENT, False)
-        self.base.scrollToElement(NEWS_ADVERTISEMENT)
-        # 点击打开或安装
-        self.news.clickNewsAdvertisementOpenOrInstall()
+
+
+
+
+
 
 
 

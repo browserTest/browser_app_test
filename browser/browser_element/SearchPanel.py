@@ -73,3 +73,7 @@ CUSTOMIZE_SKIP = 'com.android.browser:id/mz_action_text'
 
 # 主题美化首页——LYX
 CUSTOMIZE = 'com.meizu.customizecenter:id/mc_search_edit'
+
+# 网页地址栏锁图标  ---wmw
+LOCK = 'com.android.browser:id/security_icon'
+
