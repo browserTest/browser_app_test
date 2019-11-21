@@ -122,16 +122,6 @@ class Base():
             self.d(scrollable=True).scroll.to(text=element)
         logging.info('滑动查找元素： {}'.format(element))
 
-
-    # 左右滑动页面
-    def swipe(self, direction):
-        """
-        :param direction: 滑动方向
-        :return:
-        """
-        self.d.swipe_ext(direction, scale=0.9)
-        logging.info("向{}滑动页面".format(direction))
-
     # 查找元素，判断元素存在
     def elementIsExit(self, element, timeout = 5):
         '''
