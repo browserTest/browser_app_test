@@ -290,7 +290,7 @@ class TestNegativePage():
         self.base.clickByElement(CollectionTitle, '发送到桌面的收藏')
         self.base.assertTrue(CollectionTitle, True, timeout=3)
 
-    @allure.story('我的收藏-长按单个-新窗口打开，检查是否成功添加至桌面且正常打开 —— LJX')
+    @allure.story('我的收藏-长按1条记录-新窗口打开，检查是否正常打开且多窗口数量+1 —— LJX')
     @pytest.mark.P1
     def test12NewWindowOpenOne(self, collectionAndHistory_init):
         '''
@@ -303,21 +303,47 @@ class TestNegativePage():
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
         self.collectionandhistory.clickAddCollectFolder(ADD_TO_COLLECTION)
-        # 返回上一层，重新添加收藏
+        # 返回上一层
         self.pubmethod.clickBack()
-        sleep(1)
         # 获取当前多窗口数量
         winNumBefore = self.windowstab.getWindowsNum()
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
-        CollectionTitle = self.collectionandhistory.getCollectionTitle()
-        print(CollectionTitle)
+        # CollectionTitle = self.collectionandhistory.getCollectionTitle()
+        # print(CollectionTitle)
         self.collectionandhistory.longClickCollection(COLLECTION_ID)
         self.collectionandhistory.clickCollectNewWindowOpen()
-        # 新窗口打开后到窗口数量
+        # 新窗口打开后的窗口数量
         winNumAfter = self.windowstab.getWindowsNum()
-        self.base.assertEqual(winNumBefore, winNumAfter, False, timeout=3)
         self.base.assertTrue(hotSearchWord, timeout=3)
+        self.base.assertEqual(winNumBefore, winNumAfter, False, timeout=3)
+
+    @allure.story('我的收藏-长按3条记录-新窗口打开，检查是否正常打开且多窗口数量+3 —— LJX')
+    @pytest.mark.P1
+    def test13NewWindowOpenMore(self, collectionAndHistory_init):
+        '''
+        1、进入收藏夹，长按多条记录，新窗口打开，断言正常打开且新窗口数量+3
+        '''
+        # 收藏一个网页到收藏夹
+        self.home.clickHomeSearch()
+        hotSearchWord = self.searchpanel.clickHotWords()
+        self.searchpanel.clickSearchHistory()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+        self.collectionandhistory.clickAddCollectFolder(ADD_TO_COLLECTION)
+        # 返回上一层
+        self.pubmethod.clickBack()
+        # 获取当前多窗口数量
+        winNumBefore = self.windowstab.getWindowsNum()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
+        self.collectionandhistory.longClickCollection(COLLECTION_ID, 3)
+        self.collectionandhistory.clickCollectNewWindowOpen()
+        # 新窗口打开后的窗口数量
+        winNumAfter = self.windowstab.getWindowsNum()
+        self.base.assertTrue(hotSearchWord, timeout=3)
+        self.base.assertEqual(int(winNumBefore)+3, int(winNumAfter), True, timeout=3)
+
 
 
 

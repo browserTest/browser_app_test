@@ -80,10 +80,9 @@ class TestNegativePage():
         2、进入精选页，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素
         3、返回上一层到负一屏，断言负一屏是否存在“凤凰网”书签
         '''
-        # 清空历史数据
-        self.toolbarpanel.cleanHistory()
-        # 进入负一屏
+        # 进入负一屏，删除“百度一下”书签
         self.home.clickHomeOnPage(MYCOLLECTION)
+        self.negativescreen.deleteBookmark(BAIDU_TEXT)
         # 点击搜索框
         self.home.clickHomeSearch()
         # 搜索框'm.baidu.com'
@@ -107,10 +106,13 @@ class TestNegativePage():
     @allure.story('测试负一屏-》自定义页打开网站 —— LJX')
     @pytest.mark.P1
     def test004AddToHomeWebsite(self, negative_init):
-        # 清空历史数据
-        self.toolbarpanel.cleanHistory()
-        # 进入负一屏
+        '''
+        1、清空历史数据
+        2、进入负一屏-》自定义添加
+        '''
+        # 进入负一屏，删除“百度一下”书签
         self.home.clickHomeOnPage(MYCOLLECTION)
+        self.negativescreen.deleteBookmark(BAIDU_SEARCH)
         # 在负一屏点击"添加"
         self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
         # 进入自定义
@@ -124,6 +126,26 @@ class TestNegativePage():
         # 断言是否进入"百度一下"网页
         self.base.assertTrue(BAIDU_SEARCH, timeout=3)
 
+    @allure.story('添加书签后，在负一屏点击默认图标和任一手动添加图标，正常跳转 —— LJX')
+    @pytest.mark.P1
+    def test005AddBookmark(self, negative_init):
+        '''
+        1、进入负一屏，删除“凤凰网”书签
+        2、进入精选页，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素
+        3、返回上一层到负一屏，断言负一屏是否存在“凤凰网”书签
+        '''
+        # 进入负一屏，删除"凤凰网"书签，进入分类-》资讯头条
+        self.home.clickHomeOnPage(MYCOLLECTION)
+        self.negativescreen.deleteBookmark(TENCENT_LITERATURE)
+        self.negativescreen.clickAddTo(NAGATIVE_SCREEN_ADD_TEXT)
+
+        self.addtohome.clickAddToHomeWebsite(TENCENT_LITERATURE)
+
+        # 返回上一层到负一屏，断言是否存在"凤凰网"书签
+        self.pubmethod.clickBack()
+        self.base.assertTrue(IFENG_SIMPLIFIED, timeout=3)
+        # 断言是否进入"凤凰网"网页
+        self.base.assertTrue(IFENG_TRADITIONAL, timeout=8)
 
 
 

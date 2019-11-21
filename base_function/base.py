@@ -72,11 +72,12 @@ class Base():
         logging.info("点击元素: {}".format(logtext))
 
 
-    # 根据元素id及text组合进行点击操作
+    # 根据元素id及text组合进行点击操作 —— LJX
     def clickByElementIdAndText(self, id, text, logtext):
         '''
         :param id: 元素id
         :param text: 元素text
+        :param logtext：打印log的文案
         :return:
         '''
         self.d(resourceId=id, text= text).click()

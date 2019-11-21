@@ -24,7 +24,7 @@ class AddToHomePage(Base):
         else:
             self.assertFalse(element)
 
-    # 点击添加到主页的添加按钮
+    # 点击“添加到主页”的添加按钮
     def clickAddToHome(self, instance):
         if self.base.elementIsExit(ADD_TO_TEXT):
             self.base.clickByElementClassNameAndText(ADD_TO_CLASSNAME, ADD_TO_TEXT, '负一屏精选页面添加按钮', instance)
