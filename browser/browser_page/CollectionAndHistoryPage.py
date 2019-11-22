@@ -38,7 +38,8 @@ class CollectionAndHistoryPage(Base):
     def getCollectionTitle(self, instance=0):
         if self.base.elementIsExit(COLLECTION_ID):
             strText = self.base.elementText(COLLECTION_ID, '我的收藏记录的标题', instance)
-            return strText
+            strTitle = re.sub('\W+', '', strText)
+            return strTitle
         else:
             self.assertFalse(COLLECTION_ID)
 

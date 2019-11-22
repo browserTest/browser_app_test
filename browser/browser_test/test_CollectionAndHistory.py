@@ -92,6 +92,7 @@ class TestNegativePage():
         print(ArticleDetailsTitle)
         self.news.clickOpenNewsArticle()
         self.news.clickArticleCollectPosition()
+        # sleep(3)
         # 返回上一层，进入我的收藏
         self.pubmethod.clickBack()
         self.home.clickMore()
@@ -103,6 +104,7 @@ class TestNegativePage():
         # 点击进入我的收藏第1条记录，取消收藏
         self.collectionandhistory.clickCollection(COLLECTION_ID)
         self.news.clickArticleCollectPosition()
+        # sleep(2)
         # 返回上一层，重新进入我的收藏
         self.pubmethod.clickBack()
         self.home.clickMore()
@@ -344,7 +346,7 @@ class TestNegativePage():
         self.base.assertTrue(hotSearchWord, timeout=3)
         self.base.assertEqual(int(winNumBefore)+3, int(winNumAfter), True, timeout=3)
 
-    @allure.story('无痕模式下，输入网址搜索访问网站，不会记录历史 —— LJX')
+    @allure.story('开启无痕模式，访问网站，不会生成历史记录 —— LJX')
     @pytest.mark.P1
     def test14NoMarking(self, collectionAndHistory_init):
         '''

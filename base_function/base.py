@@ -186,16 +186,17 @@ class Base():
         '''
         if mark:
             if element == element1:
-                assert True, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
-                logging.info("元素相等，断言成功，元素名称为： {} {}".format(element,element1))
+                assert True, "元素1名称与元素2名称不相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
+                logging.info("元素相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
             elif element in element1:
-                assert True, "断言元素不包含失败，元素名称为： {} {}".format(element, element1)
-                logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
+                assert True, "元素1名称与元素2名称不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1)
+                logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
             else:
-                logging.info("断言元素包含失败，元素名称为： {} {}".format(element, element1))
+                logging.info("元素1名称与元素2名称不相等且不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1))
+                assert False
         else:
-            assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
-            logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
+            assert element != element1, "元素1名称与元素2名称相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
+            logging.info("元素不相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
 
     # 提取元素文本    ---wmw
     def elementText(self,element,logtext, instance=0):
