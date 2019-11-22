@@ -1,7 +1,5 @@
 from asyncio import sleep
-
 import pytest
-
 from browser.browser_element.WindowsTabElement import *
 from browser.browser_page.MorePage import *
 from browser.browser_page.SharePage import *
@@ -20,11 +18,10 @@ class WindowsTabPage(Base):
             self.assertFalse(WINDOWS_TAB_BUTTON)
 
     # 新建多窗口、滑动多窗口tab并浏览多窗口页面
-    def newWindowsTab(self):
+    def newWindowsTab(self,num):
         # 判断多窗口数量
         if self.base.elementIsExit(WINDOWS_TAB_NUM):
             # 新建多窗口数量
-            num = 2
             for j in range(num):
                 # 在多窗口浏览Tab页面，点击新建多窗口按钮
                 self.base.clickByElement(NEW_WINDOWS_TAB, '在多窗口浏览Tab页面，点击新建多窗口按钮')
@@ -40,9 +37,8 @@ class WindowsTabPage(Base):
     def scrollToWindowsTab(self):
         if self.base.elementIsExit(CLOSE_WINDOWS_TAB):
             # 滑动浏览多窗口
-            self.base.swipe('left')
-            self.base.swipe('right')
-            self.base.swipe('left')
+            self.base.swipeByElement(WINDOWS_POSITION,'向左滑动多窗口','left')
+            self.base.swipeByElement(WINDOWS_POSITION,'向左滑动多窗口','right',2)
         else:
             self.assertFalse(CLOSE_WINDOWS_TAB)
 

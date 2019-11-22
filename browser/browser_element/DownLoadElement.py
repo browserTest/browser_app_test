@@ -17,7 +17,7 @@ DOWN_LOAD = '//*[@resource-id="com.android.browser:id/custom"]/android.widget.Li
 SEARCH_PAGE_REFRASH = 'com.android.browser:id/bt_refresh'
 
 # 长按搜索结果页的网页链接
-LONG_SEARCH_PAGR_LINK =	(0.262, 0.363)
+LONG_SEARCH_PAGR_LINK =	(0.422, 0.378)
 
 # 长按弹框
 LONG_PRESS_BOX = 'android.widget.LinearLayout'
@@ -32,5 +32,25 @@ APPNAME = 'QQ'
 QQDOWN = '高速下载'
 
 # 下载管理页面中的下载完成的文件标题名称
-DOWN_LOAD_TITLE = 'com.android.providers.downloads.ui:id/download_title'
+DOWN_LOAD_MANAGE_TITLE = 'com.android.providers.downloads.ui:id/download_title'
+
+# 下载管理页面中的“全选”按钮
+DOWN_LOAD_MANAGE_CHOOSE = '全选'
+
+# 下载管理页面中的“全不选”按钮
+DOWN_LOAD_MANAGE_CHOOSEONE = '全不选'
+
+# 下载管理页面中的“删除”按钮
+DOWN_LOAD_MANAGE_DELETE_SELECTED = '删除'
+
+# 下载管理页面中的点击“删除”按钮
+DOWN_LOAD_MANAGE_DELETE = 'android:id/text1'
+
+# 下载管理页面中的点击“取消”按钮
+DOWN_LOAD_MANAGE_RENAME = '重命名'
+
+
+# 下载管理中的下载进度状态
+DOWN_LOAD_PROGRESS = 'com.android.providers.downloads.ui:id/download_speed'
+
 

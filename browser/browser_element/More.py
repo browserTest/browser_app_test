@@ -51,3 +51,5 @@ FINDHOUSE = '找房子'
 FINDHOUSE_PAGE = '房产'
 
 
+# 断言“更多”页面中搜索框的默认关键字————LCM
+DEFAULT_WORD = '输入关键词'

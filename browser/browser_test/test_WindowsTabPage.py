@@ -37,17 +37,19 @@ class TestWindowsTabPage():
         2、点击多窗口按钮
         3、点击新建多窗口按钮（新建3个多窗口tab）
         4、滑动浏览多窗口tab页
-        5、点击多窗口中tab页进入网页浏览
-        6、断言首页导航网站-》更多 -》小视频
+        5、断言首页导航网站-》更多 -》搜索框中的默认关键字：输入关键字
+        6、点击多窗口中tab页进入网页浏览
+        7、断言多窗口数量不相等
         '''
         self.more.clickDaoHang(HOME_BUSINESS_MORE_TEXT)
+        winNumBefore = self.windowstab.getWindowsNum()
         self.windowstab.clickWindowsTab()
-        self.windowstab.newWindowsTab()
+        self.windowstab.newWindowsTab(2)
         self.windowstab.scrollToWindowsTab()
         self.windowstab.openWindowsTabPage()
-        # 断言首页导航网站-》更多 -》小视频
-        self.base.assertTrue(SMALL_VIDEO, timeout=5)
-
+        self.base.assertTrue(DEFAULT_WORD)
+        NumAfter = self.windowstab.getWindowsNum()
+        self.base.assertEqual(winNumBefore,NumAfter,False)
 
     # 关闭所有的多窗口  ——LCM
     @allure.story('测试多窗口浏览tab页关闭所有的多窗口')
@@ -61,14 +63,14 @@ class TestWindowsTabPage():
         '''
         self.more.clickDaoHang(HOME_BUSINESS_MORE_TEXT)
         self.windowstab.clickWindowsTab()
-        self.windowstab.newWindowsTab()
+        self.windowstab.newWindowsTab(2)
         # 获取新建的多窗口数量
         winNumBefore = self.windowstab.getWindowsNum()
         self.windowstab.closeAllWindowsTab()
         # 获取删除多窗口后的数量
         NumAfter = self.windowstab.getWindowsNum()
         # 断言多窗口数量为：1
-        assert winNumBefore != NumAfter
+        self.base.assertEqual(winNumBefore,NumAfter,False)
 
     # 多窗口浏览tab页上滑关闭多窗口  ——LCM
     @allure.story('测试多窗口浏览tab页上滑关闭一个多窗口')
@@ -84,13 +86,13 @@ class TestWindowsTabPage():
         '''
         self.more.clickDaoHang(HOME_BUSINESS_MORE_TEXT)
         self.windowstab.clickWindowsTab()
-        self.windowstab.newWindowsTab()
+        self.windowstab.newWindowsTab(2)
         winNumBefore = self.windowstab.getWindowsNum()
         self.windowstab.closeOneWindowsTab()
         self.windowstab.openWindowsTabPage()
         NumAfter = self.windowstab.getWindowsNum()
         # 断言新建多窗口时的数量和删除多窗口后的数量
-        assert winNumBefore != NumAfter
+        self.base.assertEqual(winNumBefore,NumAfter,False)
 
 
     # 长按menu_more按钮，关闭多窗口  ——LCM
@@ -108,14 +110,14 @@ class TestWindowsTabPage():
         '''
         self.more.clickDaoHang(HOME_BUSINESS_MORE_TEXT)
         self.windowstab.clickWindowsTab()
-        self.windowstab.newWindowsTab()
+        self.windowstab.newWindowsTab(2)
         self.windowstab.openWindowsTabPage()
         winNumBefore = self.windowstab.getWindowsNum()
         # 点击长按menu_more按钮后，上滑到显示的“X”按钮，放开删除当前窗口
         self.windowstab.longPressCloseWindowsTab()
         NumAfter = self.windowstab.getWindowsNum()
         # 断言新建多窗口时的数量和删除多窗口后的数量
-        assert winNumBefore != NumAfter
+        self.base.assertEqual(winNumBefore,NumAfter,False)
 
 
 

@@ -67,6 +67,8 @@ class Base():
             self.d.xpath(element).click()
         elif type(element) == tuple:
             self.d.click(element[0], element[1])
+        elif str(element).startswith("android"):
+            self.d(resourceId=element).click()
         else:
             self.d(text=element).click()
         logging.info("点击元素: {}".format(logtext))
@@ -187,10 +189,12 @@ class Base():
                 assert True, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
                 logging.info("元素相等，断言成功，元素名称为： {} {}".format(element,element1))
             elif element in element1:
-                assert True, "断言元素不包含失败，元素名称为： {} {}".format(element, element1)
+                assert True, "断言元素包含失败，元素名称为： {} {}".format(element, element1)
                 logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
+            else:
+                logging.info("断言元素失败，元素名称为： {} {}".format(element, element1))
         else:
-            assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
+            assert element != element1, "断言元素不相等，断言失败，元素名称为： {} {}".format(element,element1)
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
 
     # 提取元素文本    ---wmw
@@ -236,7 +240,7 @@ class Base():
         if str(element).startswith("com"):
             self.d(resourceId=element).long_click(duration)
         elif type(element) == tuple:
-            self.d.long_click(element[0],element[1],duration)
+            self.d.long_click(element[0],element[1],duration=8)
         else:
             self.d(text=element).long_click(duration)
         logging.info("长按元素: {}".format(logtext))

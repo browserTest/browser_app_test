@@ -1,7 +1,9 @@
+from time import sleep
 
 from base_function.base import Base
 from browser.browser_element.Home import *
 from browser.browser_element.ShareElement import *
+from browser.browser_element.NewsElement import *
 
 
 class SharePage(Base):
@@ -34,3 +36,11 @@ class SharePage(Base):
         else:
             self.assertFalse(SHARE_PAGE)
 
+    # 在资讯文章中点击分享按钮————LCM
+    def clickNewsArticleShare(self):
+        if self.base.elementIsExit(NEWS_PAGE_BACK):
+
+            sleep(4)
+            self.base.clickByElement(NEWS_SHARE_PAGR, '点击资讯文章详情页总的分享按钮')
+        else:
+            self.assertFalse(NEWS_PAGE_BACK)
