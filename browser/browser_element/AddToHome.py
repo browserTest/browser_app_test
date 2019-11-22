@@ -50,8 +50,31 @@ DIY_NAME_ID = 'com.android.browser:id/name'
 BAIDU_THINK = '百度搜索'
 
 # 精选-》腾讯文学 —— LJX
-TENCENT_LITERATURE = '腾讯文学'
+MEIZU_COMMUNITY = '魅族社区'
 
+# "添加到主页"每个“添加”或“已添加”按钮的ID —— LJX
+ADD_ID = 'com.android.browser:id/add_frame'
+
+# 精选-》网址导航 —— LJX
+WEBSITE_GUIDE = '网址导航'
+
+# 精选-》添加className —— LJX
+ADD_TO_CLASSNAME = 'android.widget.TextView'
+
+# 精选-》豆瓣名称 —— LJX
+DOUBAN_NAME = '豆瓣'
+
+# 精选-》豆瓣URL —— LJX
+DOUBAN_URL = 'm.douban.com'
+
+# 精选-》在线商城 —— LJX
+ONLINE_STORE= '在线商城'
+
+# 精选-》途牛旅游 —— LJX
+TUNIU = '途牛旅游'
+
+# 精选-》百度新闻 —— LJX
+BAIDU_NEWS = '百度新闻'
 
 
 
