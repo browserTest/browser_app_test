@@ -57,7 +57,7 @@ class Base():
     # 根据元素名称进行点击操作
     def clickByElement(self, element, logtext):
         '''
-        :param element: 元素名称，可根据resource、xpath及Text进行判断并点击
+        :param element: 元素名称，可根据resource、xpath、坐标及Text进行判断并点击
         :param logtext: 打印log的文案
         :return:
         '''
@@ -67,6 +67,8 @@ class Base():
             self.d.xpath(element).click()
         elif type(element) == tuple:
             self.d.click(element[0], element[1])
+        elif str(element).startswith("android"):
+            self.d(resourceId=element).click()
         else:
             self.d(text=element).click()
         logging.info("点击元素: {}".format(logtext))
@@ -189,6 +191,8 @@ class Base():
             elif element in element1:
                 assert True, "断言元素不包含失败，元素名称为： {} {}".format(element, element1)
                 logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
+            else:
+                logging.info("断言元素包含失败，元素名称为： {} {}".format(element, element1))
         else:
             assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
