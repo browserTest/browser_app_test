@@ -344,6 +344,33 @@ class TestNegativePage():
         self.base.assertTrue(hotSearchWord, timeout=3)
         self.base.assertEqual(int(winNumBefore)+3, int(winNumAfter), True, timeout=3)
 
+    @allure.story('无痕模式下，输入网址搜索访问网站，不会记录历史 —— LJX')
+    @pytest.mark.P1
+    def test14NoMarking(self, collectionAndHistory_init):
+        '''
+        1、获取历史第1条记录标题
+        2、打开无痕模式，点击一个热词进行搜索
+        3、返回上一层，获取历史第1条记录标题
+        4、断言历史第1条记录的标题没有改变
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        historyTitleBefore = self.collectionandhistory.getHistoryTitle()
+        # 返回上一层
+        self.pubmethod.clickBack()
+        self.home.clickMore()
+        self.collectionandhistory.openNoMarking()
+        # 点击第1个热词，进入搜索结果页
+        self.home.clickHomeSearch()
+        self.searchpanel.clickSearchHistory()
+        # 返回上一层
+        self.pubmethod.clickBack()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        historyTitleAfter = self.collectionandhistory.getHistoryTitle()
+        self.base.assertEqual(historyTitleBefore, historyTitleAfter, True, timeout=3)
+
+
 
 
 

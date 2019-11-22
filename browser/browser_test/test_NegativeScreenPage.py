@@ -254,9 +254,7 @@ class TestNegativePage():
         '''
         self.home.clickHomeOnPage(MYCOLLECTION)
         self.negativescreen.addMeizuCommunity(TUNIU)
-        # self.pubmethod.clickBack()
         self.negativescreen.addMeizuCommunity(BAIDU_NEWS)
-        # self.pubmethod.clickBack()
         self.negativescreen.newFolder(BAIDU_NEWS, TUNIU)
         self.negativescreen.longClickNegativeBookmark(FILE)
         self.negativescreen.clickNegative(RERAME_FILE)
@@ -286,11 +284,12 @@ class TestNegativePage():
         2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签
         '''
         self.home.clickHomeOnPage(MYCOLLECTION)
+        bottomBefore = self.negativescreen.folderBottom(AUTOMATION_FILE)
+        self.negativescreen.dragFolder(AUTOMATION_FILE, DRAG_FILE_POSITION)
+        bottomAfter = self.negativescreen.folderBottom(AUTOMATION_FILE)
+        self.base.assertEqual(bottomBefore, bottomAfter, False, timeout=3)
 
-        self.negativescreen.longClickNegativeBookmark(AUTOMATION_FILE)
-        self.negativescreen.clickNegative(DELETE_FILE)
-        self.negativescreen.clickNegative(DELETE_CONFIRM)
-        self.base.assertTrue(AUTOMATION_FILE, False, timeout=3)
+
 
 
 

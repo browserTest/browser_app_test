@@ -143,4 +143,12 @@ class CollectionAndHistoryPage(Base):
         else:
             self.assertFalse(MULTI_CHOICE)
 
+    # 点击无痕按钮 —— LJX
+    def openNoMarking(self):
+        if self.base.elementIsExit(NO_MARKING):
+            self.base.clickByElement(NO_MARKING, '无痕按钮')
+        else:
+            self.assertFalse(NO_MARKING)
+
+
 

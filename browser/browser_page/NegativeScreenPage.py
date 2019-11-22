@@ -34,7 +34,7 @@ class NegativeScreenPage(Base):
         if self.base.elementIsExit(element) is False:
             self.clickNegative(NAGATIVE_SCREEN_ADD_TEXT)
             if self.base.elementIsExit(element):
-                self.base.clickByElementRight(element, ADD_ID, 'right', '精选页"{}"书签的添加按钮'.format(element))
+                self.base.clickByElementRight(element, ADD_ID, 'right')
                 self.base.usePhone('back')
             else:
                 self.assertFalse(element)
@@ -66,6 +66,8 @@ class NegativeScreenPage(Base):
     # 合并2个书签 —— LJX
     def newFolder(self, element1, element2):
         if self.base.elementIsExit(AUTOMATION_FILE) is False:
+            self.addMeizuCommunity(TUNIU)
+            self.addMeizuCommunity(BAIDU_NEWS)
             self.base.dragElementToElement(element1, element2)
         else:
             self.long_clickByElement(AUTOMATION_FILE, '负一屏的{}'.format(AUTOMATION_FILE), 1)
@@ -79,7 +81,15 @@ class NegativeScreenPage(Base):
     def dragFolder(self, element, position):
         if self.base.elementIsExit(element):
             self.base.dragByElement(element, position)
+        else:
+            self.assertFalse(element)
 
+    # 获取文件夹坐标信息 —— LJX
+    def folderBottom(self, element):
+        if self.base.elementIsExit(element):
+            self.base.getInfoBottom(element)
+        else:
+            self.assertFalse(element)
 
 
 

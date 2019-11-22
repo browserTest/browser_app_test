@@ -79,3 +79,12 @@ class PubMethod(Base):
             return strText
         else:
             self.assertFalse(element)
+
+
+    # 删除桌面的书签
+    def deleteBookmark(self, element, position):
+        if self.base.elementIsExit(element):
+            # self.base.long_clickByElement(element, '桌面的{}'.format(element), 1)
+            self.base.dragByElement(element, position)
+        else:
+            pass

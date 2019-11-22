@@ -67,8 +67,6 @@ class Base():
             self.d.xpath(element).click()
         elif type(element) == tuple:
             self.d.click(element[0], element[1])
-        elif str(element).startswith("android"):
-            self.d(resourceId=element).click()
         else:
             self.d(text=element).click()
         logging.info("点击元素: {}".format(logtext))
@@ -189,12 +187,10 @@ class Base():
                 assert True, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
                 logging.info("元素相等，断言成功，元素名称为： {} {}".format(element,element1))
             elif element in element1:
-                assert True, "断言元素包含失败，元素名称为： {} {}".format(element, element1)
+                assert True, "断言元素不包含失败，元素名称为： {} {}".format(element, element1)
                 logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
-            else:
-                logging.info("断言元素失败，元素名称为： {} {}".format(element, element1))
         else:
-            assert element != element1, "断言元素不相等，断言失败，元素名称为： {} {}".format(element,element1)
+            assert element != element1, "断言元素不相等失败，元素名称为： {} {}".format(element,element1)
             logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
 
     # 提取元素文本    ---wmw
@@ -212,7 +208,6 @@ class Base():
             text = self.d.xpath(element, instance=instance).get_text()
             logging.info("提取第{}位的{}元素文本".format(instance, logtext))
             return text
-
 
     # 输入文本——LYX
     def elementSetText(self,element,text,logtext):
@@ -380,6 +375,32 @@ class Base():
         '''
         text = self.d.send_keys(text, clear=clear)
         logging.info("根据焦点位置，输入文本: {}".format(logtext))
+
+    # 点击元素某个方向上的元素 —— LJX
+    def clickByElementRight(self, elementText, element, direction):
+         if direction == 'up':
+             if str(element).startswith("com"):
+                self.d(text=elementText).up(resourceId=element).click()
+             else:
+                 self.d(text=elementText).up(text=element).click()
+         elif direction == 'down':
+             if str(element).startswith("com"):
+                 self.d(text=elementText).down(resourceId=element).click()
+             else:
+                 self.d(text=elementText).down(text=element).click()
+         elif direction == 'right':
+             if str(element).startswith("com"):
+                 self.d(text=elementText).right(resourceId=element).click()
+             else:
+                 self.d(text=elementText).right(text=element).click()
+         else:
+             if str(element).startswith("com"):
+                 self.d(text=elementText).left(resourceId=element).click()
+             else:
+                 self.d(text=elementText).left(text=element).click()
+         logging.info("点击{}元素{}方的{}元素".format(elementText, direction, element))
+
+
 
 
 

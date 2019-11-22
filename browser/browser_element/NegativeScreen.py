@@ -55,6 +55,9 @@ RERAME_FILE = '重命名'
 # 重命名文件夹文本输入框 —— LJX
 RERAME_FILE_ID = 'com.android.browser:id/name'
 
+# 移动文件夹到某个坐标 —— LJX
+DRAG_FILE_POSITION = (0.022, 0.317)
+
 
 
 
