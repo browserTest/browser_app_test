@@ -357,6 +357,18 @@ class Base():
             text.append(word['words'])
         return text
 
+    # 获取元素坐标信息 —— LJX
+    def getInfoBottom(self, elemnt, logtext):
+        '''
+        :param elemnt: 元素text
+        :param logtext:打印log的文案
+        :return:返回元素信息的坐标
+        '''
+        info = self.d(text=elemnt).info
+        bottom = info[bounds][bottom]
+        logging.info("获取元素坐标： {}".format(logtext))
+        return bottom
+
     # 根据焦点位置,输入文本  ---wmw
     def elementInputFocalPositionText(self,text,logtext,clear=False):
         '''
