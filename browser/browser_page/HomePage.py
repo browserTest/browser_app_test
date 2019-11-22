@@ -94,3 +94,17 @@ class HomePage(Base):
             self.base.clickByElement(NEWHOUSE,'安居客首页新房入口')
         else:
             self.assertFalse(NEWHOUSE)
+
+    # 点击小说精选页的推荐小说——LYX
+    def clickTv_Novel(self):
+        if self.base.elementIsExit(TV_NOVEL):
+            self.base.clickByElement(TV_NOVEL,'小说详情页的推荐小说')
+        else:
+            self.assertFalse(TV_NOVEL)
+
+    # 点击小说详情页的免费阅读——LYX
+    def clickFreeRead(self):
+        if self.base.elementIsExit(FREE_READ):
+            self.base.clickByElement(FREE_READ,'小说详情页的免费阅读')
+        else:
+            self.assertFalse(FREE_READ)

@@ -167,7 +167,7 @@ class Base():
         :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False
         :return:
         '''
-        #sleep(2)
+        sleep(2)
         if mark:
             assert self.elementIsExit(element, timeout) == True, "断言元素存在失败，元素名称为： {}".format(element)
             logging.info("已找到元素，断言成功，元素名称为： {}".format(element))
@@ -319,9 +319,10 @@ class Base():
 
     # 增加公共监听
     def browserWatcher(self):
-        # self.d.watchers.run()
+        self.d.watchers.run()
         self.d.watcher("始终允许").when(text='始终允许').click()
         self.d.watcher("允许").when(text='允许').click()
+        self.d.watcher("确定").when(text='确定').click()
 
     # 二进制读取图片
     def readImage(self, imageFile):

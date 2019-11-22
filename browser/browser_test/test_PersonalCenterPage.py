@@ -87,8 +87,21 @@ class TestPersonalCenterPage():
         beforeCommentTxt = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU)
         self.base.assertEqual(afterCommentTxt, beforeCommentTxt, True)
 
-    @allure.story('测试资讯文章评论是否提交正常')
+    @allure.story('测试小游戏是否正常打开')
     def test004RefreshNewsOpenArticle(self,personalCenter_init):
+        '''
+        1、点击工具栏面板头像图标，进入个人中心
+        2、点击小游戏
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickFlymeme()
+        self.personalcenter.clickMiniGame()
+        self.base.browserWatcher()
+        self.pubmethod.clearApp(HOT_GAME)
+
+
+    @allure.story('测试资讯文章评论是否提交正常')
+    def test005RefreshNewsOpenArticle(self,personalCenter_init):
         '''
         1、清除浏览器数据,进入军事频道
         2、点击第一篇文章进入文章详情页，点击评论输入内容

@@ -68,3 +68,9 @@ KUZHAN = '魅族浏览器网址导航'
 
 # 首页热门小说——LYX
 HOT_NOVEL = '热门小说'
+
+# 小说中精选页的推荐小说
+TV_NOVEL = 'com.android.browser:id/cover'
+
+#小说详情页免费阅读按钮
+FREE_READ = '免费阅读'

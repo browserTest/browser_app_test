@@ -120,7 +120,7 @@ class TestSearchPanelPage():
         self.searchpanel.inputBaidu()
         self.searchpanel.clickSearchInto()
         # 监听地理位置弹框，点击“始终允许”
-        # self.base.browserWatcher()
+        self.base.browserWatcher()
         # 判断顶部地址栏是否展开
         self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )
         # 向上滑动页面,收起顶部地址栏

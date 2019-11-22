@@ -25,14 +25,15 @@ class TestMorePage():
         logging.info("****开始执行用例****")
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
-        # self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.home.clickHome()
+        self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
 
 
-    @allure.story('测试网址导航页面头条跳转')
+    @allure.story('测试网址导航页面1-头条跳转')
     @pytest.mark.P3
     def test001MorePage(self, more_init):
         '''
@@ -41,8 +42,6 @@ class TestMorePage():
         3、断言是否跳转到"头条"页面
 
         '''
-        # 首次进入浏览器，根据显示页面点击home键回到主页
-        self.home.clickHomeOnPage(HOME_PAGE)
         # 点击导航栏-》更多
         self.home.clickBusinessMore()
         # 点击网址导航-》头条
@@ -50,24 +49,10 @@ class TestMorePage():
         self.base.assertTrue(TOUTIAO_PAGE)
 
 
-    @allure.story('测试网址导航页面小视频跳转')
-    @pytest.mark.P0
-    def test002MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"小视频"
-        3、断言是否跳转到"小视频"页面
-
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》小视频
-        self.more.clickDaoHang(SMALL_VIDEO)
-        self.base.assertTrue(SMALL_VIDEO_PAGE, timeout=15)
 
     @allure.story('测试网址导航页面搜狐跳转')
     @pytest.mark.P1
-    def test003MorePage(self, more_init):
+    def test002MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"搜狐"
@@ -80,69 +65,11 @@ class TestMorePage():
         self.more.clickDaoHang(SOUHU)
         self.base.assertTrue(SOUHU_PAGE, timeout=15)
 
-    @allure.story('测试网址导航页面漫画跳转')
+
+
+    @allure.story('测试网址导航页面8-京东跳转')
     @pytest.mark.P1
-    def test004MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"漫画"
-        3、断言是否跳转到"漫画"页面
-
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》漫画
-        self.more.clickDaoHang(MANHUA)
-        self.base.assertTrue(MANHUA_PAGE, timeout=15)
-
-    @allure.story('测试网址导航页面小说跳转')
-    @pytest.mark.P1
-    def test005MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"小说"
-        3、断言是否跳转到"小说"页面
-
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》小说
-        self.more.clickDaoHang(BOOK)
-        self.base.assertTrue(BOOK_PAGE, timeout=15)
-
-    @allure.story('测试网址导航页面钱包跳转')
-    @pytest.mark.P1
-    def test006MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"钱包"
-        3、断言是否跳转到"钱包"页面
-
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》钱包
-        self.more.clickDaoHang(MONEY)
-        self.base.assertTrue(MONEY_PAGE, timeout=15)
-
-    @allure.story('测试网址导航页面搞笑跳转')
-    @pytest.mark.P1
-    def test007MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"搞笑"
-        3、断言是否跳转到"搞笑"页面
-
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》搞笑
-        self.more.clickDaoHang(FUNNY)
-        self.base.assertTrue(FUNNY_PAGE, timeout=15)
-
-    @allure.story('测试网址导航页面京东跳转')
-    @pytest.mark.P1
-    def test008MorePage(self, more_init):
+    def test003MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"京东"
@@ -155,24 +82,11 @@ class TestMorePage():
         self.more.clickDaoHang(JD)
         self.base.assertTrue(JD_PAGE, timeout=15)
 
-    @allure.story('测试网址导航页面中文跳转')
-    @pytest.mark.P1
-    def test009MorePage(self, more_init):
-        '''
-        1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
-        2、点击"中文"
-        3、断言是否跳转到"中文"页面
 
-        '''
-        # 点击导航栏-》更多
-        self.home.clickBusinessMore()
-        # 点击网址导航-》中文
-        self.more.clickDaoHang(ZH)
-        self.base.assertTrue(ZH_PAGE, timeout=15)
 
-    @allure.story('测试网址导航页面聚划算跳转')
+    @allure.story('测试网址导航页面11-聚划算跳转')
     @pytest.mark.P1
-    def test010MorePage(self, more_init):
+    def test004MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"聚划算"
@@ -185,9 +99,9 @@ class TestMorePage():
         self.more.clickDaoHang(JHS)
         self.base.assertTrue(JHS_PAGE, timeout=15)
 
-    @allure.story('测试网址导航页面同城跳转')
+    @allure.story('测试网址导航页面4-同城跳转')
     @pytest.mark.P1
-    def test011MorePage(self, more_init):
+    def test005MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"同城"
@@ -200,9 +114,9 @@ class TestMorePage():
         self.more.clickDaoHang(TONGCHEN)
         self.base.assertTrue(TONGCHEN_PAGE, timeout=15)
 
-    @allure.story('测试网址导航页面星座跳转')
+    @allure.story('测试网址导航页面6-找房子跳转')
     @pytest.mark.P1
-    def test012MorePage(self, more_init):
+    def test006MorePage(self, more_init):
         '''
         1、在浏览器首页点击导航栏中"更多"按钮，进入到浏览器网址导航页面
         2、点击"找房子"
@@ -214,3 +128,101 @@ class TestMorePage():
         # 点击网址导航-》找房子
         self.more.clickDaoHang(FINDHOUSE)
         self.base.assertTrue(FINDHOUSE_PAGE, timeout=15)
+
+    @allure.story('测试网址导航页面2-在线商城跳转')
+    def test007MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"在线商城"按钮，进入到浏览器网址导航页面
+        2、点击"在线商城"
+        3、断言是否跳转到"在线商城"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》在线商城
+        self.more.clickDaoHang(MALL)
+        self.base.assertTrue(MALL_PAGE)
+
+    @allure.story('测试网址导航页面3-二手市场跳转')
+    def test008MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"二手市场"按钮，进入到浏览器网址导航页面
+        2、点击"二手市场"
+        3、断言是否跳转到"二手市场"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》二手市场
+        self.more.clickDaoHang(FLEA_MARKET)
+        self.base.assertTrue(FLEA_MARKET_PAGE)
+
+    @allure.story('测试网址导航页面5-安居客跳转')
+    def test009MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"安居客"按钮，进入到浏览器网址导航页面
+        2、点击"安居客"
+        3、断言是否跳转到"安居客"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》安居客
+        self.more.clickDaoHang(ANJUKE)
+        self.base.assertTrue(ANJUKE_PAGE)
+
+    @allure.story('测试网址导航页面7-爱淘宝跳转')
+    def test010MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"爱淘宝"按钮，进入到浏览器网址导航页面
+        2、点击"爱淘宝"
+        3、断言是否跳转到"爱淘宝"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》爱淘宝
+        self.more.clickDaoHang(AITAOBAO)
+        self.base.assertTrue(AITAOBAO_PAGE)
+
+    @allure.story('测试网址导航页面9-天猫跳转')
+    def test011MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"天猫"按钮，进入到浏览器网址导航页面
+        2、点击"天猫"
+        3、断言是否跳转到"天猫"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》天猫
+        self.more.clickDaoHang(TIANMAO)
+        self.base.assertTrue(TIANMAO_PAGE)
+
+    @allure.story('测试网址导航页面10-拼多多跳转')
+    def test012MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"拼多多"按钮，进入到浏览器网址导航页面
+        2、点击"拼多多"
+        3、断言是否跳转到"拼多多"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》拼多多
+        self.more.clickDaoHang(PINDUODUO)
+        self.base.assertTrue(PINDUODUO_PAGE)
+
+    @allure.story('测试网址导航页面12-招聘跳转')
+    def test013MorePage(self, more_init):
+        '''
+        1、在浏览器首页点击导航栏中"招聘"按钮，进入到浏览器网址导航页面
+        2、点击"招聘"
+        3、断言是否跳转到"招聘"页面
+
+        '''
+        # 点击导航栏-》更多
+        self.home.clickBusinessMore()
+        # 点击网址导航-》招聘
+        self.more.clickDaoHang(ZHAOPIN)
+        self.base.assertTrue(ZHAOPIN_PAGE)

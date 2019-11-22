@@ -37,3 +37,9 @@ PERSONAL_CENTER_MY_COMMENT_A = '我的评论'
 
 # 我的评论列表页面--第一条评论  --wmw
 PERSONAL_CENTER_COMMENT_ONE = '//*[@resource-id="com.android.browser:id/sites_container"]/android.widget.LinearLayout[1]'
+
+# 个人中心页面小游戏图标——LYX
+MINI_GAME = 'com.android.browser:id/minigame_view'
+
+# 小游戏首页栏目名称
+HOT_GAME = '游戏'

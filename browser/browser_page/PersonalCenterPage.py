@@ -90,4 +90,9 @@ class PersonalCenterPage(Base):
         else:
             self.assertFalse(PERSONAL_CENTER_COMMENT_DETAILS)
 
-
+    # 点击小游戏——LYX
+    def clickMiniGame(self):
+        if self.base.elementIsExit(MINI_GAME):
+            self.base.clickByElement(MINI_GAME, "小游戏")
+        else:
+            self.assertFalse(MINI_GAME)

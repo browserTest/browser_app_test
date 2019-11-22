@@ -94,6 +94,7 @@ class TestHomePage():
             if HOME_BUSINESS_NAME[i] == "热门小说" :
                 continue
             self.more.clickDaoHang(HOME_BUSINESS_NAME[i])
+            self.base.browserWatcher()
             if HOME_BUSINESS_NAME[i] == "头条" :
                 self.base.assertTrue(TOUTIAO)
             elif HOME_BUSINESS_NAME[i] == "安居客":
@@ -103,6 +104,19 @@ class TestHomePage():
             else:
                 self.base.assertTrue(HOME_BUSINESS_NAME[i])
             self.pubmethod.clickBack()
+
+
+    @allure.story('测试小说能否正常打开')
+    def test005HomePage(self, home_init):
+        '''
+        1、点击"热门小说"
+        2、断言是否跳转到"小说"页面
+        '''
+        # 点击导航栏-》更多
+        self.more.clickDaoHang(HOT_NOVEL)
+        self.base.browserWatcher()
+        self.base.assertTrue(NOVEL_BOOKSHELF)
+
 
 
 
