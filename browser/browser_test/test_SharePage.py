@@ -26,7 +26,6 @@ class TestSharePage():
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-        self.pubmethod.clickBack()
         self.home.clickHome()
         self.home.clickHomeOnPage(HOME_PAGE)
         yield

@@ -240,7 +240,7 @@ class Base():
         if str(element).startswith("com"):
             self.d(resourceId=element).long_click(duration)
         elif type(element) == tuple:
-            self.d.long_click(element[0],element[1],duration=8)
+            self.d.long_click(element[0],element[1],duration)
         else:
             self.d(text=element).long_click(duration)
         logging.info("长按元素: {}".format(logtext))
