@@ -80,6 +80,7 @@ NEWS_CHANNEL_BEAUTY_GIRL = '美女'
 NEWS_CHANNEL_VIDEO = '视频'
 NEWS_CHANNEL_MILITARY = '军事'
 NEWS_CHANNEL_HEALTH = '健康'
+NEWS_CHANNEL_CONSTELLATION = '星座'
 
 # 美女频道标签
 # NEWS_BEAUTY_GIRL_ID = 'com.android.browser:id/label_name'
