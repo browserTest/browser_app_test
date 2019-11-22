@@ -13,5 +13,5 @@ SHARE_TEXT = 'com.meizu.notepaper:id/gy'
 SHARE_TEXTTITLE = '标题'
 
 # 资讯文章详情页的分享按钮位置
-NEWS_SHARE_PAGR = 0.916, 0.926
+NEWS_SHARE_PAGR = 0.918, 0.929
 
