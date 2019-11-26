@@ -79,3 +79,5 @@ class TestPubMethod():
         # 点击权限弹窗“始终允许”按钮，进入浏览器
         self.pubmethod.clickPermissionAgree()
         self.base.assertTrue(HOME_PAGE, timeout=5)
+
+

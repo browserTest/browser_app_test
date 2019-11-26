@@ -101,11 +101,11 @@ class CollectionAndHistoryPage(Base):
             self.base.long_clickByElement(COLLECT_NEW_FOLDER_NAME, '"自动化测试"收藏文件夹', 1)
             if self.base.elementIsExit(DELETE_FOLDER):
                 self.base.clickByElement(DELETE_FOLDER, '删除文件夹')
-                if self.base.elementIsExit(DELETE_CONFIRM):
-                    self.base.clickByElement(DELETE_CONFIRM, '确定')
+                if self.base.elementIsExit(CONFIRM_TEXT):
+                    self.base.clickByElement(CONFIRM_TEXT, '确定')
                     self.pubmethod.clickBack()
                 else:
-                    self.assertFalse(DELETE_CONFIRM)
+                    self.assertFalse(CONFIRM_TEXT)
             else:
                 self.assertFalse(DELETE_FOLDER)
         else:

@@ -1,6 +1,8 @@
 import pytest
 from base_function.base import Base
 from browser.browser_element.PubElement import *
+from browser.browser_page.HomePage import *
+from browser.browser_page.NegativeScreenPage import *
 from time import sleep
 from config.config import *
 import re
@@ -10,6 +12,7 @@ class PubMethod(Base):
 
     def __init__(self, driver):
         self.base = Base(driver)
+        self
 
     # 启动应用
     def startApp(self, packagename):
@@ -81,10 +84,16 @@ class PubMethod(Base):
             self.assertFalse(element)
 
 
-    # 删除桌面的书签
+    # 删除桌面的书签 —— LJX
     def deleteBookmark(self, element, position):
-        if self.base.elementIsExit(element):
+        if self.base.scrollToElement(element):
             # self.base.long_clickByElement(element, '桌面的{}'.format(element), 1)
             self.base.dragByElement(element, position)
         else:
             pass
+
+    # 返回到首页或负一屏 —— LJX
+    def mbackToHomeOrNegative(self):
+        # 如果不在首页也不在负一屏，则mback返回上一层，直到返回到首页或负一屏
+        while not self.base.elementIsExit(BACKGROUND_ID) and not self.base.elementIsExit(SAVED_PAGE):
+            self.clickBack()

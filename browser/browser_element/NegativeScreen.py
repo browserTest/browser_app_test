@@ -1,8 +1,8 @@
 """
 负一屏相关常量
 """
-# 负一屏添加按钮 —— LJX
-NAGATIVE_SCREEN_ADD_TEXT = '添加'
+# 负一屏的添加按钮 —— LJX
+NEGATIVE_ADD_TEXT = '添加'
 
 # 长按负一屏书签，弹框的删除按钮 —— LJX
 DELETE_TEXT = '删除'
@@ -44,7 +44,7 @@ AUTOMATION_FILE = '自动化测试'
 DELETE_FILE = '删除文件夹'
 
 # 删除文件夹的“确认”按钮 —— LJX
-DELETE_CONFIRM = '确定'
+CONFIRM_TEXT = '确定'
 
 # 文件夹 —— LJX
 FILE = '文件夹'
@@ -55,8 +55,17 @@ RERAME_FILE = '重命名'
 # 重命名文件夹文本输入框 —— LJX
 RERAME_FILE_ID = 'com.android.browser:id/name'
 
-# 移动文件夹到某个坐标 —— LJX
-DRAG_FILE_POSITION = (0.022, 0.317)
+# 指定坐标 —— LJX
+DRAG_FILE_POSITION = (0.495, 0.227)
+
+# 负一屏-》已保存网页 —— LJX
+SAVED_PAGE = '已保存网页'
+
+# 负一屏任意书签图标ID —— LJX
+BOOKMARK_ICON = 'com.android.browser:id/fragment_shotcut'
+
+
+
 
 
 

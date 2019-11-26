@@ -135,7 +135,7 @@ class TestNegativePage():
         self.collectionandhistory.clickAddCollectFolder(COLLECT_NEW_FOLDER_NAME)
         self.collectionandhistory.setText(ADD_COLLECT_URL, COLLECT_NAME)
         self.collectionandhistory.setText(ADD_COLLECT_ADDRESS, COLLECT_URL)
-        self.collectionandhistory.clickAddCollectFolder(DELETE_CONFIRM)
+        self.collectionandhistory.clickAddCollectFolder(CONFIRM_TEXT)
         # 等待2秒，"已添加到收藏"toast提示消失后才能定位到其它元素
         sleep(2)
         # 进入收藏夹新建的文件夹下，断言是否存在数据
@@ -201,7 +201,7 @@ class TestNegativePage():
         print(CollectionTitle)
         self.collectionandhistory.longClickCollection(COLLECTION_ID)
         self.collectionandhistory.clickCollectDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         self.base.assertTrue(CollectionTitle, False, timeout=3)
 
     @allure.story('我的收藏-长按多个-删除，检查是否正常删除 —— LJX')
@@ -217,7 +217,7 @@ class TestNegativePage():
         print(CollectionTitle)
         self.collectionandhistory.longClickCollection(COLLECTION_ID, 2)
         self.collectionandhistory.clickCollectDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         self.base.assertTrue(CollectionTitle, False, timeout=3)
 
     @allure.story('历史-长按1个-删除，检查是否正常删除 —— LJX')
@@ -233,7 +233,7 @@ class TestNegativePage():
         print(HistoryTitle)
         self.collectionandhistory.longClickHistory(HISTORY_ID)
         self.collectionandhistory.clickHistoryDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         sleep(1)
         self.base.assertTrue(HistoryTitle, False, timeout=3)
 
@@ -250,7 +250,7 @@ class TestNegativePage():
         print(HistoryTitle)
         self.collectionandhistory.longClickHistory(HISTORY_ID, 3)
         self.collectionandhistory.clickHistoryDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         sleep(1)
         self.base.assertTrue(HistoryTitle, False, timeout=3)
 

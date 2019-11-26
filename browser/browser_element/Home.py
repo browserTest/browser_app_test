@@ -74,3 +74,6 @@ TV_NOVEL = 'com.android.browser:id/cover'
 
 #小说详情页免费阅读按钮
 FREE_READ = '免费阅读'
+
+# 首页背景图ID —— LJX
+BACKGROUND_ID = 'com.android.browser:id/search_bar_container'

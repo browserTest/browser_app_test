@@ -38,6 +38,13 @@ class AddToHomePage(Base):
         else:
             self.assertFalse(ADD_TO_CLASSNAME)
 
+    # 在“添加到主页”点击指定网站的添加按钮 —— LJX
+    def addBookmark(self, element):
+        if self.base.elementIsExit(element):
+            self.base.clickByElementRight(element, ADD_ID, direction='right')
+        else:
+            self.assertFalse(element)
+
 
 
 
