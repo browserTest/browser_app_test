@@ -72,10 +72,10 @@ WEBSITE_GUIDE_HOME = '生活实用'
 ADD_TO_CLASSNAME = 'android.widget.TextView'
 
 # 精选-》豆瓣名称 —— LJX
-DOUBAN_NAME = '豆瓣'
+DOUBAN_NAME = 'douban'
 
 # 精选-》豆瓣首页元素 —— LJX
-DOUBAN_HOME ='豆瓣App 记录你的书影音生活'
+DOUBAN_HOME ='记录你的书影音生活'
 
 # 精选-》豆瓣URL —— LJX
 DOUBAN_URL = 'm.douban.com'

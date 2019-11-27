@@ -49,7 +49,7 @@ class TestNegativePage():
         self.base.assertTrue(HAO123WEB, timeout=3)
         # 返回上一层到负一屏，上滑页面1次，断言是否存在"hao123"书签
         sleep(3)
-        self.pubmethod.clickBack()
+        self.base.clickByElement(WEBSITE_BACKWARD, '工底部具栏返回上一层')
         self.base.scroll()
         self.base.assertTrue(HAO123, timeout=3)
 
@@ -75,7 +75,7 @@ class TestNegativePage():
         self.base.assertTrue(IFENG_TRADITIONAL, timeout=3)
         # 返回上一层到负一屏，上滑页面1次，断言是否存在"凤凰网"书签
         sleep(2)
-        self.pubmethod.clickBack()
+        self.base.clickByElement(WEBSITE_BACKWARD, '工底部具栏返回上一层')
         self.base.scroll()
         self.base.assertTrue(IFENG_SIMPLIFIED, timeout=3)
 
@@ -98,9 +98,11 @@ class TestNegativePage():
         self.home.clickHomeSearch()
         self.searchpanel.inputBaidu()
         self.searchpanel.clickSearchInto()
+        # 监听地理位置弹框，点击“始终允许”
+        self.base.browserWatcher()
         sleep(2)
         # 返回上一层到负一屏，点击"添加"，进入历史，断言是否存在"百度一下"网页，并添加书签
-        self.pubmethod.clickBack()
+        self.base.clickByElement(WEBSITE_BACKWARD, '工底部具栏返回上一层')
         self.negativescreen.clickNegativeScrollUP(NEGATIVE_ADD_TEXT)
         self.addtohome.clickAddToHomeTab(HISTORY_TEXT)
         self.base.assertTrue(BAIDU_TEXT, timeout=3)
@@ -110,7 +112,7 @@ class TestNegativePage():
         self.base.assertTrue(BAIDU_LOGO, timeout=3)
         # 返回上一层到负一屏，上滑页面1次，断言是否存在"百度一下"书签
         sleep(2)
-        self.pubmethod.clickBack()
+        self.base.clickByElement(WEBSITE_BACKWARD, '工底部具栏返回上一层')
         self.base.scroll()
         self.base.assertTrue(BAIDU_TEXT, timeout=3)
 
@@ -163,7 +165,7 @@ class TestNegativePage():
         self.negativescreen.clickNegativeScrollUP(MEIZU_COMMUNITY)
         self.base.assertTrue(MEIZU_COMMUNITY_HOME, timeout=3)
         sleep(2)
-        self.pubmethod.clickBack()
+        self.base.clickByElement(WEBSITE_BACKWARD, '工底部具栏返回上一层')
         # 负一屏点击“网址导航”书签，断言是否正常跳转
         # todo:缺少下滑
         self.negativescreen.clickNegativeScrollUP(WEBSITE_GUIDE)

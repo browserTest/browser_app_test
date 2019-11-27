@@ -70,7 +70,11 @@ class Base():
         elif str(element).startswith("android"):
             self.d(resourceId=element).click()
         else:
-            self.d(text=element).click()
+            logging.info("点击元素: {}, element: {}".format(self.d(text=element), element))
+            try:
+                self.d(text=element).click()   # todo: click 不存在
+            except Exception as e:
+                logging.error("element click error, {}, {}".format(element, e))
         logging.info("点击元素: {}".format(logtext))
 
 

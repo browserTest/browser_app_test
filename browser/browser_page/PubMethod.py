@@ -3,6 +3,8 @@ from base_function.base import Base
 from browser.browser_element.PubElement import *
 from browser.browser_page.HomePage import *
 from browser.browser_page.NegativeScreenPage import *
+from browser.browser_element.SearchPanel import *
+from browser.browser_element.NewsElement import *
 from time import sleep
 from config.config import *
 import re
@@ -87,13 +89,18 @@ class PubMethod(Base):
     # 删除桌面的书签 —— LJX
     def deleteBookmark(self, element, position):
         if self.base.scrollToElement(element):
-            # self.base.long_clickByElement(element, '桌面的{}'.format(element), 1)
+            # todo:缺少左右滑动
             self.base.dragByElement(element, position)
         else:
             pass
 
     # 返回到首页或负一屏 —— LJX
     def mbackToHomeOrNegative(self):
-        # 如果不在首页也不在负一屏，则mback返回上一层，直到返回到首页或负一屏
+        # 如果不在首页也不在负一屏，返回上一层，直到返回到首页或负一屏
         while not self.base.elementIsExit(BACKGROUND_ID) and not self.base.elementIsExit(SAVED_PAGE):
-            self.clickBack()
+            if self.base.elementIsExit(WEBSITE_BACKWARD):
+                self.base.clickByElement(WEBSITE_BACKWARD, '工具栏返回上一次按钮')
+            elif self.base.elementIsExit(NEWS_PAGE_BACK):
+                self.base.clickByElement(NEWS_PAGE_BACK)
+            else:
+                self.clickBack()
