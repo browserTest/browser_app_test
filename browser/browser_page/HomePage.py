@@ -3,6 +3,7 @@ from base_function.base import Base
 from browser.browser_element.Home import *
 from browser.browser_element.PubElement import *
 from browser.browser_element.CollectionAndHistory import *
+from browser.browser_element.NegativeScreen import *
 from time import sleep
 
 
@@ -35,7 +36,7 @@ class HomePage(Base):
 
     # 根据传参确认是否需要点击home按钮
     def clickHomeOnPage(self, page):
-        if page == HOME_PAGE and self.base.elementIsExit(COLLECTION_FOLDER):
+        if page == HOME_PAGE and self.base.elementIsExit(SAVED_PAGE):
             self.clickHome()
         elif page == MYCOLLECTION and self.base.elementIsExit(ARTICLE_ID):
             self.clickHome()
