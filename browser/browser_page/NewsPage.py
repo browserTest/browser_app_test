@@ -178,7 +178,7 @@ class NewsPage(Base):
     def inputFocalPositionText(self):
         self.base.elementInputFocalPositionText("m.80txt.la1234", "根据焦点位置,输入文本m.80txt.la1234",False)
 
-    # 点击输入框右侧发布按钮  --wmw
+    # 点击输入框右侧发布按钮  --wmw cv
     def clickRelease(self):
         if self.base.elementIsExit(NEWS_PAGE_MOREMENU):
             self.base.clickByElement(NEWS_RELEASE, "点击发布")

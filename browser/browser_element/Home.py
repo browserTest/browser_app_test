@@ -114,3 +114,5 @@ ANJUKE_PAGE = '新房'
 # 11-头条及其详情页面
 TOUTIAO = '今日头条'
 TOUTIAO_PAGE = '头条搜索'
+# 首页背景图ID —— LJX
+BACKGROUND_ID = 'com.android.browser:id/search_bar_container'

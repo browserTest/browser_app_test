@@ -84,8 +84,6 @@ class TestSetUpPage():
         self.searchpanel.clickSearchInto()
         # 断言页面是否会重新提示地址位置授权
         self.base.assertTrue(GEOGRAPHY)
-        # 点击允许
-        #self.setup.clickAllow()
 
     # ---wmw
     @allure.story('测试切换搜索引擎')
@@ -129,16 +127,15 @@ class TestSetUpPage():
         1、点击主页工具菜单
         2、点击设置
         3、点击广告屏蔽
-        4、获取未点击前，广告屏蔽，锁定竖屏，精选内容推送开关状态
-        5、点击锁定竖屏
-        6、点击精选内容推送
-        7、向下滑动到恢复默认设置
-        8、点击恢复默认设置
-        9、点击恢复
-        10、点击主页工具菜单
-        11、点击设置
-        12、获取点击后，广告屏蔽，锁定竖屏，精选内容推送开关状态
-        13、判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
+        4、获取未点击前，广告屏蔽，精选内容推送开关状态
+        5、点击精选内容推送
+        6、向下滑动到恢复默认设置
+        7、点击恢复默认设置
+        8、点击恢复
+        9、点击主页工具菜单
+        10、点击设置
+        11、获取点击后，广告屏蔽，精选内容推送开关状态
+        12、判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
         '''
 
         # 点击主页工具菜单
@@ -147,13 +144,12 @@ class TestSetUpPage():
         self.toolbarpanel.clickSetUp()
         # 点击广告屏蔽
         self.setup.clickBlockAds(0)
-        BeforeBlockAdsText = self.setup.obtainSwitch()
-        BeforeLockingVerticalScreen = self.setup.obtainSwitch()
-        BeforeSwipeLeftRight = self.setup.obtainSwitch()
-        # 点击锁定竖屏
-        self.setup.clickLockingVerticalScreen(4)
+        BeforeBlockAdsText = self.setup.obtainBlockAdsSwitch()
+        sleep(4)
         # 点击精选内容推送
         self.setup.clickSwipeLeftRight(6)
+        sleep(4)
+        BeforeSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch()
         # 向下滑动到恢复默认设置
         self.base.scrollToElement(SETUP_RESET_TEXT)
         # 点击恢复默认设置
@@ -164,12 +160,10 @@ class TestSetUpPage():
         self.home.clickMore()
         # 点击设置
         self.toolbarpanel.clickSetUp()
-        AfterBlockAdsText = self.setup.obtainSwitch()
-        AfterLockingVerticalScreen = self.setup.obtainSwitch()
-        AfterSwipeLeftRight = self.setup.obtainSwitch()
+        AfterBlockAdsText = self.setup.obtainBlockAdsSwitch()
+        AfterSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch()
         # 判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
         self.base.assertEqual(BeforeBlockAdsText,AfterBlockAdsText,False)
-        self.base.assertEqual(BeforeLockingVerticalScreen, AfterLockingVerticalScreen, False)
         self.base.assertEqual(BeforeSwipeLeftRight, AfterSwipeLeftRight, False)
 
 
@@ -191,6 +185,10 @@ class TestSetUpPage():
         self.base.assertTrue(SETUP_MEIZU_HEADLINES)
         # 点击简版显示--更多
         self.setup.clickSetUpMore()
+        # 点击“倒三角”进入频道管理页面
+        self.news.clickNewsTriangle()
+        # 点击“星座”频道打开，进入资讯流列表
+        self.news.clickNewsChannel(NEWS_CHANNEL_CONSTELLATION)
         # 提取资讯流页面第一个文章的文本信息
         afterText = self.news.getNewsArticleTitle()
         # 点击工具栏资讯刷新页面

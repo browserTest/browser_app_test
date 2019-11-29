@@ -32,3 +32,9 @@ COLLECT_EDIT_ID = 'com.android.browser:id/edit'
 # 设置-》我的收藏 —— LJX
 MY_COLLECTION = '我的收藏'
 
+# 无痕模式ID —— LJX
+NO_MARKING_ID = 'com.android.browser:id/title'
+
+# 无痕模式文案 —— LJX
+NO_MARKING = '无痕模式'
+

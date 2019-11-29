@@ -6,6 +6,7 @@ ADD_TO_CLASSNAME = 'android.widget.TextView'
 
 # 添加 —— LJX
 ADD_TO_TEXT = '添加'
+DIY_ADD_ID = 'com.android.browser:id/add'
 
 # 精选-》hao123 —— LJX
 HAO123 = 'hao123'
@@ -49,8 +50,14 @@ DIY_NAME_ID = 'com.android.browser:id/name'
 # 自定义-网址联想 —— LJX
 BAIDU_THINK = '百度搜索'
 
-# 精选-》腾讯文学 —— LJX
+# 精选-》魅族社区 —— LJX
 MEIZU_COMMUNITY = '魅族社区'
+
+# 桌面包名 —— LJX
+LAUNCHER_PACKAGE_NAME = 'com.meizu.flyme.launcher'
+
+# 魅族社区首页元素 —— LJX
+MEIZU_COMMUNITY_HOME = '热帖'
 
 # "添加到主页"每个“添加”或“已添加”按钮的ID —— LJX
 ADD_ID = 'com.android.browser:id/add_frame'
@@ -58,11 +65,17 @@ ADD_ID = 'com.android.browser:id/add_frame'
 # 精选-》网址导航 —— LJX
 WEBSITE_GUIDE = '网址导航'
 
+# 网址导航首页的元素 —— LJX
+WEBSITE_GUIDE_HOME = '生活实用'
+
 # 精选-》添加className —— LJX
 ADD_TO_CLASSNAME = 'android.widget.TextView'
 
 # 精选-》豆瓣名称 —— LJX
-DOUBAN_NAME = '豆瓣'
+DOUBAN_NAME = 'douban'
+
+# 精选-》豆瓣首页元素 —— LJX
+DOUBAN_HOME ='记录你的书影音生活'
 
 # 精选-》豆瓣URL —— LJX
 DOUBAN_URL = 'm.douban.com'
@@ -75,6 +88,15 @@ TUNIU = '途牛旅游'
 
 # 精选-》百度新闻 —— LJX
 BAIDU_NEWS = '百度新闻'
+
+# 精选-》网易 —— LJX
+NETEASE = '网易'
+
+# 精选-》新浪微博 —— LJX
+SINA_WEIBO  = '新浪微博'
+
+# 精选-》手机腾讯 —— LJX
+MOBILE_TENCENT  = '手机腾讯'
 
 
 

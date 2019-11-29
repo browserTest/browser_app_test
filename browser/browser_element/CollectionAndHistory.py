@@ -4,9 +4,6 @@
 # 我的收藏页面 —— LJX
 MYCOLLECTION = 'collection'
 
-# 已保存网页文件夹 —— LJX
-COLLECTION_FOLDER = '已保存网页'
-
 # 历史页面的“暂无历史记录” —— LJX
 HISTORY_PAGE = 'com.android.browser:id/content_panel'
 
@@ -84,6 +81,7 @@ MULTI_CHOICE = 'com.android.browser:id/mz_action_multi_choice_select_all_item'
 
 # 历史页长按记录后底部删除按钮相对坐标 —— LJX
 HISTORY_DELETE_BUTTON = (0.734, 0.925)
+
 
 
 

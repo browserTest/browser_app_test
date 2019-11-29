@@ -35,3 +35,6 @@ PERMISSION_AGREE_BUTTON = '始终允许'
 
 #权限弹框不同意按钮——LYX
 PERMISSION_DISAGREE_BUTTUN = '拒绝'
+
+# 桌面顶部坐标 —— LJX
+TOP_OF_LAUNCHER = (0.489, 0.029)

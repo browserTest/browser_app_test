@@ -108,3 +108,4 @@ class HomePage(Base):
             self.base.clickByElement(FREE_READ,'小说详情页的免费阅读')
         else:
             self.assertFalse(FREE_READ)
+

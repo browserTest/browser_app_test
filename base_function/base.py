@@ -57,7 +57,7 @@ class Base():
     # 根据元素名称进行点击操作
     def clickByElement(self, element, logtext):
         '''
-        :param element: 元素名称，可根据resource、xpath及Text进行判断并点击
+        :param element: 元素名称，可根据resource、xpath、坐标及Text进行判断并点击
         :param logtext: 打印log的文案
         :return:
         '''
@@ -70,7 +70,11 @@ class Base():
         elif str(element).startswith("android"):
             self.d(resourceId=element).click()
         else:
-            self.d(text=element).click()
+            logging.info("点击元素: {}, element: {}".format(self.d(text=element), element))
+            try:
+                self.d(text=element).click()   # todo: click 不存在
+            except Exception as e:
+                logging.error("element click error, {}, {}".format(element, e))
         logging.info("点击元素: {}".format(logtext))
 
 
@@ -112,17 +116,19 @@ class Base():
 
 
 
-    # 向下滑动页面到指定元素位置
+    # 滑动页面到指定元素位置
     def scrollToElement(self, element):
         '''
         :param element: 元素名称，仅使用id或text识别
-        :return:
+        :return: 是否找到指定元素，返回True or False
         '''
         if str(element).startswith("com"):
-            self.d(scrollable=True).scroll.to(resourceId=element)
+            result = self.d(scrollable=True).scroll.to(resourceId=element)
         else:
-            self.d(scrollable=True).scroll.to(text=element)
-        logging.info('滑动查找元素： {}'.format(element))
+            result =  self.d(scrollable=True).scroll.to(text=element)
+        logging.info('滑动查找元素： {}, 是否找到指定元素：{}'.format(element, result))
+        return result
+
 
     # 查找元素，判断元素存在
     def elementIsExit(self, element, timeout = 5):
@@ -186,16 +192,17 @@ class Base():
         '''
         if mark:
             if element == element1:
-                assert True, "断言元素相等失败，元素名称为： {} {}".format(element,element1)
-                logging.info("元素相等，断言成功，元素名称为： {} {}".format(element,element1))
+                assert True, "元素1名称与元素2名称不相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
+                logging.info("元素相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
             elif element in element1:
-                assert True, "断言元素包含失败，元素名称为： {} {}".format(element, element1)
-                logging.info("元素包含，断言成功，元素名称为： {} {}".format(element, element1))
+                assert True, "元素1名称与元素2名称不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1)
+                logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
             else:
-                logging.info("断言元素失败，元素名称为： {} {}".format(element, element1))
+                logging.info("元素1名称与元素2名称不相等且不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1))
+                assert False
         else:
-            assert element != element1, "断言元素不相等，断言失败，元素名称为： {} {}".format(element,element1)
-            logging.info("元素不相等，断言成功，元素名称为： {} {}".format(element,element1))
+            assert element != element1, "元素1名称与元素2名称相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
+            logging.info("元素不相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
 
     # 提取元素文本    ---wmw
     def elementText(self,element,logtext, instance=0):
@@ -212,7 +219,6 @@ class Base():
             text = self.d.xpath(element, instance=instance).get_text()
             logging.info("提取第{}位的{}元素文本".format(instance, logtext))
             return text
-
 
     # 输入文本——LYX
     def elementSetText(self,element,text,logtext):
@@ -289,13 +295,21 @@ class Base():
             if str(element).startswith('com'):
                 self.d(resourceId=element).drag_to(element1[0], element1[1], duration=0.05)
             else:
-                pass
+                self.d(text=element).drag_to(element1[0], element1[1], duration=4)
         logging.info("选择一个位置拖拽到另一个位置： {}次".format(num))
 
-
+    # 把指定元素拖拽到指定元素 —— LJX
+    def dragElementToElement(self, elementFrom, elementTo):
+        '''
+        :param elementFrom: 元素名称，仅可根据text进行拖拽
+        :param elementTo: 元素名称，仅可根据text进行拖拽
+        :return:
+        '''
+        self.d(text=elementFrom).drag_to(text=elementTo, duration=3)
+        logging.info("把'{}'元素拖拽到 '{}' 元素".format(elementFrom, elementTo))
 
     # 根据元素id位于第几个进行点击操作——wmw
-    def clickByElementIdAndInstance(self, id, logtext,instance):
+    def clickByElementIdAndInstance(self, id, logtext,instance=0):
         '''
         :param id: 元素ID
         :param logtext: 打印log的文案
@@ -365,8 +379,7 @@ class Base():
         :param logtext:打印log的文案
         :return:返回元素信息的坐标
         '''
-        info = self.d(text=elemnt).info
-        bottom = info[bounds][bottom]
+        bottom = self.d(text=elemnt).info['bounds']
         logging.info("获取元素坐标： {}".format(logtext))
         return bottom
 
@@ -380,6 +393,50 @@ class Base():
         '''
         text = self.d.send_keys(text, clear=clear)
         logging.info("根据焦点位置，输入文本: {}".format(logtext))
+
+    # 点击元素某个方向上的元素 —— LJX
+    def clickByElementRight(self, elementText, element, direction):
+         if direction == 'up':
+             if str(element).startswith("com"):
+                self.d(text=elementText).up(resourceId=element).click()
+             else:
+                 self.d(text=elementText).up(text=element).click()
+         elif direction == 'down':
+             if str(element).startswith("com"):
+                 self.d(text=elementText).down(resourceId=element).click()
+             else:
+                 self.d(text=elementText).down(text=element).click()
+         elif direction == 'right':
+             if str(element).startswith("com"):
+                 self.d(text=elementText).right(resourceId=element).click()
+             else:
+                 self.d(text=elementText).right(text=element).click()
+         else:
+             if str(element).startswith("com"):
+                 self.d(text=elementText).left(resourceId=element).click()
+             else:
+                 self.d(text=elementText).left(text=element).click()
+         logging.info("点击{}元素{}方的{}元素".format(elementText, direction, element))
+
+
+    # 重复点击元素N次，每次间隔1秒，若该元素消失则中止偿试并返回bool值 —— LJX
+    def clickGoneByElementAndTimes(self, element, times=3):
+        '''
+        :param element: 元素名称，可根据resourceId、Xpath及Text进行点击
+        :param times:点击元素次数
+        :return: bool值
+        '''
+        if str(element).startswith("com"):
+            self.d(resourceId=element).click_gone(maxretry=times, interval=1)
+        elif re.findall("//", str(element)):
+            self.d.xpath(element).click_gone(maxretry=times, interval=1)
+        else:
+            self.d(text=element).click_gone(maxretry=times, interval=1)
+        logging.info("重复点击{}元素{}次".format(element, times))
+
+
+
+
 
 
 

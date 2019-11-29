@@ -38,7 +38,8 @@ class CollectionAndHistoryPage(Base):
     def getCollectionTitle(self, instance=0):
         if self.base.elementIsExit(COLLECTION_ID):
             strText = self.base.elementText(COLLECTION_ID, '我的收藏记录的标题', instance)
-            return strText
+            strTitle = re.sub('\W+', '', strText)
+            return strTitle
         else:
             self.assertFalse(COLLECTION_ID)
 
@@ -100,11 +101,11 @@ class CollectionAndHistoryPage(Base):
             self.base.long_clickByElement(COLLECT_NEW_FOLDER_NAME, '"自动化测试"收藏文件夹', 1)
             if self.base.elementIsExit(DELETE_FOLDER):
                 self.base.clickByElement(DELETE_FOLDER, '删除文件夹')
-                if self.base.elementIsExit(DELETE_CONFIRM):
-                    self.base.clickByElement(DELETE_CONFIRM, '确定')
+                if self.base.elementIsExit(CONFIRM_TEXT):
+                    self.base.clickByElement(CONFIRM_TEXT, '确定')
                     self.pubmethod.clickBack()
                 else:
-                    self.assertFalse(DELETE_CONFIRM)
+                    self.assertFalse(CONFIRM_TEXT)
             else:
                 self.assertFalse(DELETE_FOLDER)
         else:
@@ -142,5 +143,13 @@ class CollectionAndHistoryPage(Base):
             self.base.clickByElement(HISTORY_DELETE_BUTTON, '删除按钮相对坐标')
         else:
             self.assertFalse(MULTI_CHOICE)
+
+    # 点击无痕按钮 —— LJX
+    def openNoMarking(self):
+        if self.base.elementIsExit(NO_MARKING):
+            self.base.clickByElement(NO_MARKING, '无痕按钮')
+        else:
+            self.assertFalse(NO_MARKING)
+
 
 

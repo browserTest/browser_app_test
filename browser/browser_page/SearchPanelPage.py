@@ -147,3 +147,12 @@ class SearchPanelPage(Base):
     # 获取搜索框文本    ---wmw
     def clickSearchText(self):
         return self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
+
+    # 点击某个元素多次 —— LJX
+    def clickMoreRefresh(self, element, times):
+        if self.base.elementIsExit(element):
+            for i in range(1, times):
+                self.base.clickByElement(element, '第{}次点击{}按钮'.format(i, element))
+        else:
+            self.base.assertFalse(element)
+

@@ -28,8 +28,6 @@ class TestPersonalCenterPage():
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-        #self.home.clickHome()
-        #self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -88,7 +86,7 @@ class TestPersonalCenterPage():
         self.base.assertEqual(afterCommentTxt, beforeCommentTxt, True)
 
     @allure.story('测试小游戏是否正常打开')
-    def test004RefreshNewsOpenArticle(self,personalCenter_init):
+    def test004PersonalCenterPage(self,personalCenter_init):
         '''
         1、点击工具栏面板头像图标，进入个人中心
         2、点击小游戏

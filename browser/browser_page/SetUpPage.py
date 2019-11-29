@@ -106,7 +106,7 @@ class SetUpPage(Base):
     # 点击广告屏蔽   ---wmw
     def clickBlockAds(self,instance):
         if self.base.elementIsExit(SETUP_ID):
-            if self.obtainSwitch() == "关闭":
+            if self.obtainBlockAdsSwitch() == "关闭":
                 return
             else:
                 self.base.clickByElementIdAndInstance(SETUP_ID, "广告屏蔽", instance)
@@ -128,29 +128,25 @@ class SetUpPage(Base):
         else:
             self.assertFalse(SETUP_RESET)
 
-    # 获取开关状态    ---wmw
-    def obtainSwitch(self):
-        return self.base.elementText(SETUP_SWITCH, "开关状态")
+    # 获取广告屏蔽开关状态    ---wmw
+    def obtainBlockAdsSwitch(self):
+        return self.base.elementText(SETUP_SWITCH, "开关状态",0)
+
+    # 获取精选内容推送开关状态    ---wmw
+    def obtainSwipeLeftRightSwitch(self):
+        return self.base.elementText(SETUP_SWITCH, "开关状态",3)
+
 
     # 点击精选内容推送  ---wmw
     def clickSwipeLeftRight(self,instance):
         if self.base.elementIsExit(SETUP_ID):
-            if self.obtainSwitch() == "关闭":
+            if self.obtainSwipeLeftRightSwitch() == "关闭":
                 return
             else:
                 self.base.clickByElementIdAndInstance(SETUP_ID, "精选内容推送",instance)
         else:
             self.assertFalse(SETUP_ID)
 
-    # 点击锁定竖屏   ---wmw
-    def clickLockingVerticalScreen(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            if self.obtainSwitch() == "开启":
-                return
-            else:
-                self.base.clickByElementIdAndInstance(SETUP_ID, "锁定竖屏",instance)
-        else:
-            self.assertFalse(SETUP_ID)
 
     # 点击允许   ---wmw
     def clickAllow(self):

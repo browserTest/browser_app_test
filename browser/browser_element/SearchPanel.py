@@ -77,3 +77,5 @@ CUSTOMIZE = 'com.meizu.customizecenter:id/mc_search_edit'
 # 网页地址栏锁图标  ---wmw
 LOCK = 'com.android.browser:id/security_icon'
 
+# 网页返回上一层按钮 —— LJX
+WEBSITE_BACKWARD = 'com.android.browser:id/backward'

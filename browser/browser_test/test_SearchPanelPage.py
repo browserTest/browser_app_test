@@ -153,6 +153,20 @@ class TestSearchPanelPage():
         self.base.assertTrue(CUSTOMIZE)
 
 
+    @allure.story('地址栏多次点击刷新网页，进度条和页面加载正常 —— LJX')
+    def test007SearchPanelPage(self, search_init):
+        '''
+        1、点击首页搜索框，输入主题美化地址
+        2、弹出跳转提示，点击允许，跳转至主题美化APP
+        '''
+        # 点击首页搜索框,点击第1个热词进入搜索结果页，并点击5次刷新按钮
+        self.home.clickHomeSearch()
+        self.searchpanel.clickSearchHistory()
+        self.searchpanel.clickMoreRefresh(ADDRESS_CONTAINER_REFRESH, 5)
+
+
+
+
 
 
 

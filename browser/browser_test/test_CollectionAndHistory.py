@@ -92,6 +92,7 @@ class TestNegativePage():
         print(ArticleDetailsTitle)
         self.news.clickOpenNewsArticle()
         self.news.clickArticleCollectPosition()
+        # sleep(3)
         # 返回上一层，进入我的收藏
         self.pubmethod.clickBack()
         self.home.clickMore()
@@ -103,6 +104,7 @@ class TestNegativePage():
         # 点击进入我的收藏第1条记录，取消收藏
         self.collectionandhistory.clickCollection(COLLECTION_ID)
         self.news.clickArticleCollectPosition()
+        # sleep(2)
         # 返回上一层，重新进入我的收藏
         self.pubmethod.clickBack()
         self.home.clickMore()
@@ -133,7 +135,7 @@ class TestNegativePage():
         self.collectionandhistory.clickAddCollectFolder(COLLECT_NEW_FOLDER_NAME)
         self.collectionandhistory.setText(ADD_COLLECT_URL, COLLECT_NAME)
         self.collectionandhistory.setText(ADD_COLLECT_ADDRESS, COLLECT_URL)
-        self.collectionandhistory.clickAddCollectFolder(DELETE_CONFIRM)
+        self.collectionandhistory.clickAddCollectFolder(CONFIRM_TEXT)
         # 等待2秒，"已添加到收藏"toast提示消失后才能定位到其它元素
         sleep(2)
         # 进入收藏夹新建的文件夹下，断言是否存在数据
@@ -199,7 +201,7 @@ class TestNegativePage():
         print(CollectionTitle)
         self.collectionandhistory.longClickCollection(COLLECTION_ID)
         self.collectionandhistory.clickCollectDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         self.base.assertTrue(CollectionTitle, False, timeout=3)
 
     @allure.story('我的收藏-长按多个-删除，检查是否正常删除 —— LJX')
@@ -215,7 +217,7 @@ class TestNegativePage():
         print(CollectionTitle)
         self.collectionandhistory.longClickCollection(COLLECTION_ID, 2)
         self.collectionandhistory.clickCollectDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         self.base.assertTrue(CollectionTitle, False, timeout=3)
 
     @allure.story('历史-长按1个-删除，检查是否正常删除 —— LJX')
@@ -231,7 +233,7 @@ class TestNegativePage():
         print(HistoryTitle)
         self.collectionandhistory.longClickHistory(HISTORY_ID)
         self.collectionandhistory.clickHistoryDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         sleep(1)
         self.base.assertTrue(HistoryTitle, False, timeout=3)
 
@@ -248,7 +250,7 @@ class TestNegativePage():
         print(HistoryTitle)
         self.collectionandhistory.longClickHistory(HISTORY_ID, 3)
         self.collectionandhistory.clickHistoryDelete()
-        self.collectionandhistory.clickCollection(DELETE_CONFIRM)
+        self.collectionandhistory.clickCollection(CONFIRM_TEXT)
         sleep(1)
         self.base.assertTrue(HistoryTitle, False, timeout=3)
 
@@ -343,6 +345,33 @@ class TestNegativePage():
         winNumAfter = self.windowstab.getWindowsNum()
         self.base.assertTrue(hotSearchWord, timeout=3)
         self.base.assertEqual(int(winNumBefore)+3, int(winNumAfter), True, timeout=3)
+
+    @allure.story('开启无痕模式，访问网站，不会生成历史记录 —— LJX')
+    @pytest.mark.P1
+    def test14NoMarking(self, collectionAndHistory_init):
+        '''
+        1、获取历史第1条记录标题
+        2、打开无痕模式，点击一个热词进行搜索
+        3、返回上一层，获取历史第1条记录标题
+        4、断言历史第1条记录的标题没有改变
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        historyTitleBefore = self.collectionandhistory.getHistoryTitle()
+        # 返回上一层
+        self.pubmethod.clickBack()
+        self.home.clickMore()
+        self.collectionandhistory.openNoMarking()
+        # 点击第1个热词，进入搜索结果页
+        self.home.clickHomeSearch()
+        self.searchpanel.clickSearchHistory()
+        # 返回上一层
+        self.pubmethod.clickBack()
+        self.home.clickMore()
+        self.toolbarpanel.clickToolsPanel(HISTORY)
+        historyTitleAfter = self.collectionandhistory.getHistoryTitle()
+        self.base.assertEqual(historyTitleBefore, historyTitleAfter, True, timeout=3)
+
 
 
 
