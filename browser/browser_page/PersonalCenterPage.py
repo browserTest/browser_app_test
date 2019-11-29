@@ -96,3 +96,47 @@ class PersonalCenterPage(Base):
             self.base.clickByElement(MINI_GAME, "小游戏")
         else:
             self.assertFalse(MINI_GAME)
+
+    # 在个人中心页，点击退出账号 ---wmw
+    def clickOutAccount(self):
+        # 判断页面是否存在我的账号图标
+        if self.base.elementIsExit(PERSONAL_CENTER_NOT_LOGGED_IN):
+            return
+        else:
+            self.base.clickByElement(PERSONAL_CENTER_FLYME_ME_A, '我的账号图标')
+            if self.base.elementIsExit(PERSONAL_CENTER_ACCOUNT):
+                self.base.clickByElement(PERSONAL_CENTER_ACCOUNT,"点击账号管理")
+                if self.base.elementIsExit(PERSONAL_CENTER_OUT_ACCOUNT):
+                    self.base.clickByElement(PERSONAL_CENTER_OUT_ACCOUNT, "点击退出账号")
+                    if self.base.elementIsExit(PERSONAL_CENTER_PASSWORD_B):
+                        self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "app123456789","输入退出密码")
+                        if self.base.elementIsExit(PERSONAL_CENTER_DETERMINE):
+                            self.base.clickByElement(PERSONAL_CENTER_DETERMINE, "点击确定")
+                        else:
+                            self.assertFalse(PERSONAL_CENTER_DETERMINE)
+                    else:
+                        self.assertFalse(PERSONAL_CENTER_PASSWORD_B)
+                else:
+                    self.assertFalse(PERSONAL_CENTER_OUT_ACCOUNT)
+            else:
+                if self.base.elementIsExit(PERSONAL_CENTER_COMPLETE_BUTTON):
+                    self.base.clickByElementIdAndInstance(PERSONAL_CENTER_BUTTON,"点击同步数据按钮",0)
+                    self.base.clickByElementIdAndInstance(PERSONAL_CENTER_BUTTON,"点击查找手机按钮",1)
+                    self.base.clickByElement(PERSONAL_CENTER_COMPLETE_BUTTON,"点击完成按钮")
+                    if self.base.elementIsExit(PERSONAL_CENTER_ACCOUNT):
+                        self.base.clickByElement(PERSONAL_CENTER_ACCOUNT, "点击账号管理")
+                        if self.base.elementIsExit(PERSONAL_CENTER_OUT_ACCOUNT):
+                            self.base.clickByElement(PERSONAL_CENTER_OUT_ACCOUNT, "点击退出账号")
+                            if self.base.elementIsExit(PERSONAL_CENTER_PASSWORD_B):
+                                self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "app123456789", "输入退出密码")
+                                if self.base.elementIsExit(PERSONAL_CENTER_DETERMINE):
+                                    self.base.clickByElement(PERSONAL_CENTER_DETERMINE, "点击确定")
+                                else:
+                                    self.assertFalse(PERSONAL_CENTER_DETERMINE)
+                            else:
+                                self.assertFalse(PERSONAL_CENTER_PASSWORD_B)
+                        else:
+                            self.assertFalse(PERSONAL_CENTER_OUT_ACCOUNT)
+                else:
+                    self.assertFalse(PERSONAL_CENTER_COMPLETE_BUTTON)
+

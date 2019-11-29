@@ -44,7 +44,10 @@ class SearchPanelPage(Base):
 
     # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
-        return self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
+        if self.base.elementIsExit(SEARCHPANEL_SEARCH):
+            self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
+        else:
+            self.assertFalse(SEARCHPANEL_SEARCH)
 
     # 点击清空    ---wmw
     def clickEmpty(self):
@@ -146,7 +149,10 @@ class SearchPanelPage(Base):
 
     # 获取搜索框文本    ---wmw
     def clickSearchText(self):
-        return self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
+        if self.base.elementIsExit(SEARCHPANEL_OPEN):
+            self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
+        else:
+            self.base.assertFalse(CUSTOMIZE_SKIP)
 
     # 点击某个元素多次 —— LJX
     def clickMoreRefresh(self, element, times):

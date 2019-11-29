@@ -125,7 +125,17 @@ class TestPersonalCenterPage():
         self.news.inputFocalPositionText()
         self.news.clickRelease()
         self.base.assertTrue(NEWS_INPUT_COMMENTS)
-        self.pubmethod.clearApp(FLYME_PACKAGE_NAME)
+
+    @allure.story('测试退出账号')
+    def test006PersonalCenterPage(self, personalCenter_init):
+        '''
+            1、测试退出账号
+        '''
+        self.home.clickMore()
+        self.toolbarpanel.clickFlymeme()
+        self.personalcenter.clickOutAccount()
+        self.base.assertTrue(PERSONAL_CENTER_NOT_LOGGED_IN)
+
 
 
 
