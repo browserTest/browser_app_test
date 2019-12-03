@@ -67,3 +67,10 @@ PERSONAL_CENTER_BUTTON = 'com.meizu.account:id/widgetContainer'
 # 完成按钮   ---wmw
 PERSONAL_CENTER_COMPLETE_BUTTON = '完成'
 
+#  删除   ---wmw
+PERSONAL_CENTER_DELETE = '删除'
+
+# 删除评论弹框  ---wmw
+PERSONAL_CENTER_DELETE_BOX = '删除评论'
+
+

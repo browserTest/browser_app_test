@@ -1,5 +1,5 @@
 from browser.browser_element.NewsElement import NEWS_PAGE_MOREMENU, NEWS_CHANNEL_MILITARY, NEWS_ALL_COMMENTS, \
-    NEWS_INPUT_COMMENTS
+    NEWS_INPUT_COMMENTS, NEWS_CHANNEL_CONSTELLATION
 from browser.browser_page.NewsPage import NewsPage
 from config.config import *
 from browser.browser_page.PubMethod import PubMethod
@@ -116,8 +116,8 @@ class TestPersonalCenterPage():
         self.home.clickInformation()
         # 点击“倒三角”进入频道管理页面
         self.news.clickNewsTriangle()
-        # 点击“军事”频道打开，进入资讯流列表
-        self.news.clickNewsChannel(NEWS_CHANNEL_MILITARY)
+        # 点击“星座”频道打开，进入资讯流列表
+        self.news.clickNewsChannel(NEWS_CHANNEL_CONSTELLATION)
         self.news.dropScrollNews()
         self.news.clickOpenNewsArticle()
         self.base.scrollToElement(NEWS_ALL_COMMENTS)
@@ -125,6 +125,20 @@ class TestPersonalCenterPage():
         self.news.inputFocalPositionText()
         self.news.clickRelease()
         self.base.assertTrue(NEWS_INPUT_COMMENTS)
+        sleep(4)
+        # 点击mback
+        self.pubmethod.clickBack()
+        self.home.clickMore()
+        self.toolbarpanel.clickFlymeme()
+        self.personalcenter.clickMyComment()
+        self.personalcenter.clickDelete()
+        self.personalcenter.clickDeleteBox()
+        # 点击mback
+        self.pubmethod.clickBack()
+        self.personalcenter.clickMyComment()
+        self.base.assertTrue(NEWS_INPUT_COMMENTS, False)
+
+
 
     @allure.story('测试退出账号')
     def test006PersonalCenterPage(self, personalCenter_init):
