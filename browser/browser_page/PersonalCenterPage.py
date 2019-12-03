@@ -2,6 +2,7 @@ from time import sleep
 
 import pytest
 from base_function.base import Base
+from browser.browser_element.NewsElement import NEWS_INPUT_COMMENTS
 from browser.browser_element.ToolbarPanel import *
 from base_function.driver import Driver
 from browser.browser_element.PubElement import *
@@ -96,6 +97,20 @@ class PersonalCenterPage(Base):
             self.base.clickByElement(MINI_GAME, "小游戏")
         else:
             self.assertFalse(MINI_GAME)
+
+    # 点击删除评论——wmw
+    def clickDelete(self):
+        if self.base.elementIsExit(NEWS_INPUT_COMMENTS):
+            self.base.clickByElement(PERSONAL_CENTER_DELETE, "点击删除")
+        else:
+            self.assertFalse(NEWS_INPUT_COMMENTS)
+
+    # 点击删除评论弹框--确定按钮——wmw
+    def clickDeleteBox(self):
+        if self.base.elementIsExit(PERSONAL_CENTER_DELETE_BOX):
+            self.base.clickByElement(PERSONAL_CENTER_DETERMINE, "点击确定")
+        else:
+            self.assertFalse(PERSONAL_CENTER_DELETE_BOX)
 
     # 在个人中心页，点击退出账号 ---wmw
     def clickOutAccount(self):
