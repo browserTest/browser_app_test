@@ -130,12 +130,17 @@ class SetUpPage(Base):
 
     # 获取广告屏蔽开关状态    ---wmw
     def obtainBlockAdsSwitch(self):
-        return self.base.elementText(SETUP_SWITCH, "开关状态",0)
+        if self.base.elementIsExit(SETUP_ID):
+            return self.base.elementText(SETUP_SWITCH, "开关状态",0)
+        else:
+            self.assertFalse(SETUP_ID)
 
     # 获取精选内容推送开关状态    ---wmw
     def obtainSwipeLeftRightSwitch(self):
-        return self.base.elementText(SETUP_SWITCH, "开关状态",3)
-
+        if self.base.elementIsExit(SETUP_ID):
+            return self.base.elementText(SETUP_SWITCH, "开关状态",3)
+        else:
+            self.assertFalse(SETUP_ID)
 
     # 点击精选内容推送  ---wmw
     def clickSwipeLeftRight(self,instance):

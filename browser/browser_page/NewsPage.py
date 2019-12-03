@@ -76,7 +76,10 @@ class NewsPage(Base):
 
     # 点击广告--不感兴趣   ---wmw
     def clickNewsAdvertisementUninterested(self):
-         self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
+        if self.base.elementIsExit(NEWS_ADVERTISEMENT):
+            self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
+        else:
+            self.assertFalse(NEWS_ADVERTISEMENT)
 
 
     # 在资讯列表点击倒三角，进入频道管理页面
@@ -176,9 +179,12 @@ class NewsPage(Base):
 
     # 根据焦点位置，输入文本  --wmw
     def inputFocalPositionText(self):
-        self.base.elementInputFocalPositionText("m.80txt.la1234", "根据焦点位置,输入文本m.80txt.la1234",False)
+        if self.base.elementIsExit(NEWS_PAGE_MOREMENU):
+            self.base.elementInputFocalPositionText("m.80txt.la1234", "根据焦点位置,输入文本m.80txt.la1234",False)
+        else:
+            self.assertFalse(NEWS_PAGE_MOREMENU)
 
-    # 点击输入框右侧发布按钮  --wmw cv
+    # 点击输入框右侧发布按钮  --wmw
     def clickRelease(self):
         if self.base.elementIsExit(NEWS_PAGE_MOREMENU):
             self.base.clickByElement(NEWS_RELEASE, "点击发布")

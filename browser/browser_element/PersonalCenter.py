@@ -43,3 +43,27 @@ MINI_GAME = 'com.android.browser:id/minigame_view'
 
 # 小游戏首页栏目名称
 HOT_GAME = '游戏'
+
+# 账号管理  --wmw
+PERSONAL_CENTER_ACCOUNT = '账号管理'
+
+# 退出账号  --wmw
+PERSONAL_CENTER_OUT_ACCOUNT = '退出账号'
+
+# 退出密码   --wmw
+PERSONAL_CENTER_PASSWORD_B = 'com.meizu.account:id/PasswordEdit'
+
+# 确定   --wmw
+PERSONAL_CENTER_DETERMINE = '确定'
+
+# 同步数据按钮  --wmw
+PERSONAL_CENTER_SYNC_BUTTON = '//*[@resource-id="com.meizu.account:id/accountTipContainer"]/android.widget.LinearLayout[1]'
+
+# 查找手机按钮   --wmw
+PERSONAL_CENTER_SEEK_BUTTON = '//*[@resource-id="com.meizu.account:id/accountTipContainer"]/android.widget.LinearLayout[2]'
+
+PERSONAL_CENTER_BUTTON = 'com.meizu.account:id/widgetContainer'
+
+# 完成按钮   ---wmw
+PERSONAL_CENTER_COMPLETE_BUTTON = '完成'
+
