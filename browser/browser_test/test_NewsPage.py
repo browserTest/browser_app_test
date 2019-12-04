@@ -23,8 +23,6 @@ class TestNewsPage():
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-        self.home.clickHome()
-        self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -35,15 +33,15 @@ class TestNewsPage():
         '''
         1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表
         2、获取资讯流列表的文章标题
-        3、下拉刷新资讯流列表内容
-        4、再次获取资讯流列表的文章标题
-        5、断言刷新前和刷新后的文章标题不一样
-        6、滑动页面找到'上次看到这里，点击刷新'提示语
-        7、点击'上次看到这里，点击刷新'提示语，刷新资讯流内容
-        8、断言刷新前和刷新后的文章标题不一样
-        9、上滑刷新，刷新新的资讯文章
-        10、断言刷新前的文章内容标题不存在
+        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题
+        4、断言刷新前和刷新后的文章标题不一样
+        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容
+        6、断言刷新前和刷新后的文章标题不一样
+        7、上滑刷新，刷新新的资讯文章
+        8、断言刷新前的文章内容标题不存在
         '''
+        self.home.clickHome()
+        self.home.clickHomeOnPage(HOME_PAGE)
         self.home.clickInformation()
         beforeArticleTitle = self.news.getNewsArticleTitle()
         self.news.dropScrollNews()
@@ -55,7 +53,7 @@ class TestNewsPage():
         sleep(2)
         afterRefreshArticleTitle = self.news.getNewsArticleTitle()
         self.base.assertEqual(afterArticleTitle,afterRefreshArticleTitle,False)
-        self.news.scrollUpNews(5)
+        self.news.scrollUpNews(2)
         afterToArticleTitle = self.news.getNewsArticleTitle()
         self.base.assertEqual(afterRefreshArticleTitle,afterToArticleTitle,False)
 
@@ -102,6 +100,7 @@ class TestNewsPage():
         self.pubmethod.clickPrivacyAgree()
         self.pubmethod.clickPermissionAgree()
         sleep(4)
+        self.base.browserWatcher()
         self.home.clickInformation()
         self.news.clickNewsTriangle()
         self.news.longPressNewsChannel(NEWS_CHANNEL_TOUTIAO)
@@ -145,11 +144,15 @@ class TestNewsPage():
         self.home.clickInformation()
         self.news.clickNewsTriangle()
         self.news.clickNewsChannel(NEWS_CHANNEL_HEALTH)
+        self.news.clickOpenNewsArticle()
+        self.pubmethod.clickBack()
         self.news.dropScrollNews()
         beforetitle = self.news.getNewsArticleTitle()
         self.news.clickOpenNewsArticle()
         aftertitle = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU)
         self.base.assertEqual(beforetitle,aftertitle,True)
+        self.pubmethod.clickBack()
+        self.base.assertTrue(NEWS_CHANNEL_HEALTH)
 
 
     #  ---wmw

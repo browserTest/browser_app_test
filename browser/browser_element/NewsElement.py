@@ -25,6 +25,8 @@ NEWS_PAGE_BACK = 'com.android.browser:id/bt_zixun_back'
 # 文章右上角菜单按钮
 NEWS_PAGE_MOREMENU = 'com.android.browser:id/moremenu'
 
+# 关闭文章详情页中的更多菜单提示语
+NEWS_ARTICLE_DELETE = 'com.android.browser:id/guide_bg_middle'
 
 # 视频连播页的更多负反馈按钮
 NEWS_PAGE_VIDEO = 'com.android.browser:id/more_btn'
@@ -42,7 +44,7 @@ NEWS_ADVERTISEMENT = '广告'
 NEWS_ADVERTISEMENT_DELETE = '//*[@resource-id="com.android.browser:id/news_sdk_recycle_view"]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.ImageView[1]'
 
 # 广告-不感兴趣  ---wmw
-NEWS_ADVERTISEMENT_UNINTERESTED = '//android.widget.FrameLayout[2]'
+NEWS_ADVERTISEMENT_UNINTERESTED = '//android.widget.FrameLayout[1]'
 
 # 根据位置向上滑动页面   ---wmw
 NEWS_ADVERTISEMENT_POSITION_X = 0,1629,0,878

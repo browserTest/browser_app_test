@@ -138,7 +138,7 @@ class NewsPage(Base):
     # 删除频道或者删除资讯文章
     def clickDeleteNewsChannel(self,element,num):
         # 判断“头条”频道是否存在
-        if self.base.elementIsExit(NEWS_CHANNEL_TOUTIAO):
+        if self.base.elementIsExit(element):
             for i in range(num):
                 self.base.clickByElement(element, '点击"X"按钮，进行"删除"文章/频道')
         else:

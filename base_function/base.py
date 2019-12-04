@@ -337,6 +337,7 @@ class Base():
         self.d.watcher("始终允许").when(text='始终允许').click()
         self.d.watcher("允许").when(text='允许').click()
         self.d.watcher("确定").when(text='确定').click()
+        self.d.watcher('我知道了').when(text='我知道了').click()
 
     # 二进制读取图片
     def readImage(self, imageFile):
