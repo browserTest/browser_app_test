@@ -71,6 +71,3 @@ class TestSharePage():
         self.share.clickNewsArticleShare()
         self.share.clickNotes()
         self.base.assertTrue(SHARE_TEXT)
-        self.pubmethod.clickBack()
-        self.pubmethod.clickBack()
-        self.base.assertTrue(NEWS_TEXT)

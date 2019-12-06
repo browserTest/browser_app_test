@@ -23,6 +23,7 @@ class TestNewsPage():
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.mbackToHomeOrNegative()
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -151,8 +152,6 @@ class TestNewsPage():
         self.news.clickOpenNewsArticle()
         aftertitle = self.pubmethod.getBaiduApiText(NEWS_PAGE_MOREMENU)
         self.base.assertEqual(beforetitle,aftertitle,True)
-        self.pubmethod.clickBack()
-        self.base.assertTrue(NEWS_CHANNEL_HEALTH)
 
 
     #  ---wmw

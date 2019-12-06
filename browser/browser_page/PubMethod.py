@@ -101,6 +101,6 @@ class PubMethod(Base):
             if self.base.elementIsExit(WEBSITE_BACKWARD):
                 self.base.clickByElement(WEBSITE_BACKWARD, '工具栏返回上一次按钮')
             elif self.base.elementIsExit(NEWS_PAGE_BACK):
-                self.base.clickByElement(NEWS_PAGE_BACK)
+                self.base.clickByElement(NEWS_PAGE_BACK,"点击资讯文章详情页返回按钮")
             else:
                 self.clickBack()
