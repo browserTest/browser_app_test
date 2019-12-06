@@ -28,6 +28,7 @@ class TestHomePage():
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.home.clickHome()
         self.home.clickHomeOnPage(HOME_PAGE)
         yield
         logging.info("****用例执行结束****")
@@ -83,31 +84,110 @@ class TestHomePage():
         self.home.left_swipe()
         self.base.assertTrue(NEWHOUSE_SEARCH)
 
-    @allure.story('测试首页12个导航位能否正常打开')
+
+    @allure.story('测试爱淘宝能否正常打开')
     def test004HomePage(self, home_init):
         '''
-        1、获取首页12个导航位名称
-        2、依次打开12个导航位（小说除外），均能正常跳转
+        1、点击"爱淘宝"
+        2、断言是否跳转到"爱淘宝"页面
         '''
-        HOME_BUSINESS_NAME = self.home.get_HomeBusiness()
-        for i in range(0,12):
-            if HOME_BUSINESS_NAME[i] == "热门小说" :
-                continue
-            self.more.clickDaoHang(HOME_BUSINESS_NAME[i])
-            self.base.browserWatcher()
-            if HOME_BUSINESS_NAME[i] == "头条" :
-                self.base.assertTrue(TOUTIAO)
-            elif HOME_BUSINESS_NAME[i] == "安居客":
-                self.base.assertTrue(ANJUKE_SEARCH)
-            elif HOME_BUSINESS_NAME[i] == "酷站":
-                self.base.assertTrue(KUZHAN)
-            else:
-                self.base.assertTrue(HOME_BUSINESS_NAME[i])
-            self.pubmethod.clickBack()
+        # 点击网址导航-》爱淘宝
+        self.more.clickDaoHang(AITAOBAO)
+        self.base.assertTrue(AITAOBAO_PAGE)
 
+    @allure.story('测试搜索能否正常打开')
+    def test005HomePage(self, home_init):
+        '''
+        1、点击"搜索"
+        2、断言是否跳转到"搜索"页面
+        '''
+        # 点击网址导航-》搜索
+        self.more.clickDaoHang(WEB_SEARCH)
+        self.base.browserWatcher()
+        self.base.assertTrue(WEB_SEARCH_PAGE)
+
+    @allure.story('测试聚划算能否正常打开')
+    def test006HomePage(self, home_init):
+        '''
+        1、点击"聚划算"
+        2、断言是否跳转到"聚划算"页面
+        '''
+        # 点击网址导航-》聚划算
+        self.more.clickDaoHang(JHS)
+        self.base.assertTrue(JHS_PAGE)
+
+    @allure.story('测试天猫能否正常打开')
+    def test007HomePage(self, home_init):
+        '''
+        1、点击"天猫"
+        2、断言是否跳转到"天猫"页面
+        '''
+        # 点击网址导航-》天猫
+        self.more.clickDaoHang(TIANMAO)
+        self.base.assertTrue(TIANMAO_PAGE)
+
+    @allure.story('测试同城能否正常打开')
+    def test008HomePage(self, home_init):
+        '''
+        1、点击"同城"
+        2、断言是否跳转到"同城"页面
+        '''
+        # 点击网址导航-》同城
+        self.more.clickDaoHang(TONGCHEN)
+        self.base.assertTrue(TONGCHEN_PAGE)
+
+    @allure.story('测试京东能否正常打开')
+    def test009HomePage(self, home_init):
+        '''
+        1、点击"京东"
+        2、断言是否跳转到"京东"页面
+        '''
+        # 点击网址导航-》京东
+        self.more.clickDaoHang(JD)
+        self.base.assertTrue(JD_PAGE)
+
+    @allure.story('测试招聘能否正常打开')
+    def test010HomePage(self, home_init):
+        '''
+        1、点击"招聘"
+        2、断言是否跳转到"招聘"页面
+        '''
+        # 点击网址导航-》招聘
+        self.more.clickDaoHang(ZHAOPIN)
+        self.base.assertTrue(ZHAOPIN_PAGE)
+
+    @allure.story('测试拼多多能否正常打开')
+    def test011HomePage(self, home_init):
+        '''
+        1、点击"拼多多"
+        2、断言是否跳转到"拼多多"页面
+        '''
+        # 点击网址导航-》拼多多
+        self.more.clickDaoHang(PINDUODUO)
+        self.base.assertTrue(PINDUODUO_PAGE)
+
+    @allure.story('测试安居客能否正常打开')
+    def test012HomePage(self, home_init):
+        '''
+        1、点击"安居客"
+        2、断言是否跳转到"安居客"页面
+        '''
+        # 点击网址导航-》安居客
+        self.more.clickDaoHang(ANJUKE)
+        self.base.assertTrue(ANJUKE_PAGE)
+
+    @allure.story('测试今日头条能否正常打开')
+    def test013HomePage(self, home_init):
+        '''
+        1、点击"今日头条"
+        2、断言是否跳转到"今日头条"页面
+        '''
+        # 点击网址导航-》今日头条
+        self.more.clickDaoHang(TOUTIAO)
+        self.base.assertTrue(TOUTIAO_PAGE)
 
     @allure.story('测试小说能否正常打开')
-    def test005HomePage(self, home_init):
+    def test014HomePage(self, home_init):
         '''
         1、点击"热门小说"
         2、断言是否跳转到"小说"页面
@@ -116,12 +196,6 @@ class TestHomePage():
         self.more.clickDaoHang(HOT_NOVEL)
         self.base.browserWatcher()
         self.base.assertTrue(NOVEL_BOOKSHELF)
-
-
-
-
-
-
 
 
 

@@ -75,5 +75,44 @@ TV_NOVEL = 'com.android.browser:id/cover'
 #小说详情页免费阅读按钮
 FREE_READ = '免费阅读'
 
+# 1-爱淘宝及其详情页
+AITAOBAO = '爱淘宝'
+AITAOBAO_PAGE = '爱淘宝精选'
+
+# 2-搜索及其详情页
+WEB_SEARCH = '搜索'
+WEB_SEARCH_PAGE = '网页搜索'
+
+# 3-聚划算及其详情页面
+JHS = '聚划算'
+JHS_PAGE = '鞋包饰品'
+
+# 4-天猫及其详情页
+TIANMAO = '天猫'
+TIANMAO_PAGE = '天猫精选'
+
+# 5-同城及其详情页面
+TONGCHEN = '同城'
+TONGCHEN_PAGE = '同城服务'
+
+# 7-京东及其详情页面
+JD = '京东'
+JD_PAGE = '京东超市'
+
+# 8-招聘及其详情页
+ZHAOPIN = '招聘'
+ZHAOPIN_PAGE = '高薪资'
+
+# 9-拼多多及其详情页
+PINDUODUO = '拼多多'
+PINDUODUO_PAGE = '热门'
+
+# 10-安居客及其详情页
+ANJUKE = '安居客'
+ANJUKE_PAGE = '新房'
+
+# 11-头条及其详情页面
+TOUTIAO = '今日头条'
+TOUTIAO_PAGE = '头条搜索'
 # 首页背景图ID —— LJX
 BACKGROUND_ID = 'com.android.browser:id/search_bar_container'

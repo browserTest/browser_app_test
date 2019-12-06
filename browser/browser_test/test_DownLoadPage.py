@@ -54,7 +54,7 @@ class TestDownPage():
         '''
         self.home.clickMore()
         self.tool.clickToolsPanel(SET_UP)
-        self.set.clickSearchEngine(1)
+        self.set.clickSearchEngine(2)
         self.set.click360()
         self.pubmethod.clickBack()
         self.home.clickHomeSearch()

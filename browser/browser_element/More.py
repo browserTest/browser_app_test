@@ -56,7 +56,7 @@ MALL_PAGE = '魅族官网'
 
 # 3-二手市场及其详情页
 FLEA_MARKET = '二手市场'
-FLEA_MARKET_PAGE = '二手'
+FLEA_MARKET_PAGE = '二手手机'
 
 # 5-安居客及其详情页
 ANJUKE = '安居客'
@@ -72,11 +72,11 @@ TIANMAO_PAGE = '天猫精选'
 
 # 10-拼多多及其详情页
 PINDUODUO = '拼多多'
-PINDUODUO_PAGE = '拼多多'
+PINDUODUO_PAGE = '热门'
 
 # 12-招聘及其详情页
 ZHAOPIN = '招聘'
-ZHAOPIN_PAGE = '招聘'
+ZHAOPIN_PAGE = '高薪资'
 
 
 # 断言“更多”页面中搜索框的默认关键字————LCM
