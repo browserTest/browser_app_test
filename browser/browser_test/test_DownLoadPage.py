@@ -44,13 +44,12 @@ class TestDownPage():
         3、设置搜索引擎为“360”
         4、mback返回上一级页面（首页）
         5、点击“搜索框”，点击“搜索”按钮，访问网页，在页面内等待2秒
-        6、使用百度文字识别 API 识别并获取图片中文字
-        7、长按网页链接，显示长按菜单弹框
-        8、点击“下载链接”按钮，显示下载弹框
-        9、断言“下载弹框”中的名称
+        6、长按网页链接，显示长按菜单弹框
+        7、点击“下载链接”按钮，显示下载弹框
+        8、断言“下载弹框”中的名称
+        9、获取下载弹框中的标题
         10、点击下载弹框中的“取消”按钮
-        11、再次通过百度文字识别 API 识别并获取图片中文字
-        12、断言显示“下载弹框”前和取消“下载弹框”后的元素相等
+        11、断言显示“下载弹框”的元素不存在
         '''
         self.home.clickMore()
         self.tool.clickToolsPanel(SET_UP)
@@ -60,13 +59,13 @@ class TestDownPage():
         self.home.clickHomeSearch()
         self.search.clickSearchInto()
         sleep(2)
-        beforetitle = self.pubmethod.getBaiduApiText(SEARCHPANEL_TEXT)
         self.down.longLink()
         self.down.clickDownLink()
         self.base.assertTrue(DOWNLOAD_NAME)
+        title = self.down.getDownTitle(DOWNLOAD_NAME)
         self.down.clickCancelButton()
-        aftertitle = self.pubmethod.getBaiduApiText(SEARCHPANEL_TEXT)
-        self.base.assertEqual(beforetitle,aftertitle,True)
+        self.base.assertTrue(title,False)
+
 
     @allure.story('测试长按网页链接下载，断言下载完成后的小红点')
     def test002DownWebPage(self,down_init):
