@@ -172,6 +172,7 @@ class TestNewsPage():
         self.news.clickNewsChannel(NEWS_CHANNEL_VIDEO)
         # 上滑页面
         self.news.SlideUp()
+        sleep(2)
         # 点击 X 按钮，删除广告
         self.news.clickNewsAdvertisementDelete()
         # 点击不感兴趣

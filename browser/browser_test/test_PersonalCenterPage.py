@@ -104,7 +104,7 @@ class TestPersonalCenterPage():
         1、清除浏览器数据,进入军事频道
         2、点击第一篇文章进入文章详情页，点击评论输入内容
         3、断言页面是否存在输入内容
-        4、清空Flyme账号
+        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在
         '''
         self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
@@ -133,7 +133,6 @@ class TestPersonalCenterPage():
         self.personalcenter.clickMyComment()
         self.personalcenter.clickDelete()
         self.personalcenter.clickDeleteBox()
-        # 点击mback
         self.pubmethod.clickBack()
         self.personalcenter.clickMyComment()
         self.base.assertTrue(NEWS_INPUT_COMMENTS, False)
@@ -143,7 +142,7 @@ class TestPersonalCenterPage():
     @allure.story('测试退出账号')
     def test006PersonalCenterPage(self, personalCenter_init):
         '''
-            1、测试退出账号
+            1、退出Flyme账号
         '''
         self.home.clickMore()
         self.toolbarpanel.clickFlymeme()

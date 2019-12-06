@@ -1,4 +1,5 @@
 from base_function.base import *
+from browser.browser_element.Home import HOME_HOME
 from browser.browser_element.NewsElement import *
 from browser.browser_page.PersonalCenterPage import *
 
@@ -76,10 +77,7 @@ class NewsPage(Base):
 
     # 点击广告--不感兴趣   ---wmw
     def clickNewsAdvertisementUninterested(self):
-        if self.base.elementIsExit(NEWS_ADVERTISEMENT):
-            self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
-        else:
-            self.assertFalse(NEWS_ADVERTISEMENT)
+        self.base.clickByElement(NEWS_ADVERTISEMENT_UNINTERESTED,"点击不感兴趣")
 
 
     # 在资讯列表点击倒三角，进入频道管理页面
