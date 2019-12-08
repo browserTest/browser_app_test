@@ -85,7 +85,6 @@ class PubMethod(Base):
         else:
             self.assertFalse(element)
 
-
     # 删除桌面的书签 —— LJX
     def deleteBookmark(self, element, position):
         if self.base.scrollToElement(element):
@@ -99,8 +98,8 @@ class PubMethod(Base):
         # 如果不在首页也不在负一屏，返回上一层，直到返回到首页或负一屏
         while not self.base.elementIsExit(BACKGROUND_ID) and not self.base.elementIsExit(SAVED_PAGE):
             if self.base.elementIsExit(WEBSITE_BACKWARD):
-                self.base.clickByElement(WEBSITE_BACKWARD, '工具栏返回上一次按钮')
+                self.base.clickByElement(WEBSITE_BACKWARD, '底部工具栏返回上一层按钮')
             elif self.base.elementIsExit(NEWS_PAGE_BACK):
-                self.base.clickByElement(NEWS_PAGE_BACK,"点击资讯文章详情页返回按钮")
+                self.base.clickByElement(NEWS_PAGE_BACK, '文章详情页顶部的返回按钮')
             else:
                 self.clickBack()

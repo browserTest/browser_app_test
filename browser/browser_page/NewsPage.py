@@ -151,22 +151,12 @@ class NewsPage(Base):
         else:
             self.assertFalse(NEWS_MY_CHANNEL_ADDED)
 
-
-    # 获取资讯详情页的文章标题 —— LJX
-    def getArticleDetailsTitle(self):
-        if self.base.elementIsExit(ARTICLE_DETAILS_TOP):
-            strText = self.base.elementText(ARTICLE_DETAILS_TITLE, '获取资讯详情页的文章标题')
-            return strText
-        else:
-            self.assertFalse(ARTICLE_DETAILS_TOP)
-
-    # 资讯详情页点击收藏按钮 —— LJX
+    # 在资讯详情页点击收藏图标的相对位置 —— LJX
     def clickArticleCollectPosition(self):
         if self.base.elementIsExit(ARTICLE_DETAILS_TOP):
             self.base.clickByElement(ARTICLE_COLLECT_POSITION, '资讯详情页收藏按钮相对坐标')
         else:
             self.assertFalse(ARTICLE_DETAILS_TOP)
-
 
     # 在资讯文章详情页点击添加评论输入框   ---wmw
     def clickCommentBox(self):
@@ -189,4 +179,10 @@ class NewsPage(Base):
         else:
             self.assertFalse(NEWS_PAGE_MOREMENU)
 
+    # 在资讯文章详情页点击顶部的返回按钮 —— LJX
+    def clickNewsBack(self):
+        if self.base.elementIsExit(NEWS_PAGE_BACK):
+            self.base.clickByElement(NEWS_PAGE_BACK, "文章详情页顶部的返回按钮")
+        else:
+            self.assertFalse(NEWS_PAGE_BACK)
 

@@ -30,6 +30,7 @@ class TestNegativePage():
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.mbackToHomeOrNegative()
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -40,11 +41,11 @@ class TestNegativePage():
         '''
         1、先判断是否存在历史数据，不存在则造一条历史数据，存在则不处理
         2、点击工具栏中more菜单，再点击工具面板的“清空历史”，清空历史的弹框选择取消
-        3、断言存在历史数据
+        3、断言不存在“暂无历史记录”元素
         '''
         # 监听地理位置弹框，点击“始终允许”
         self.base.browserWatcher()
-        # 制造一条历史数据
+        # 当没有数历史数据时，制造一条历史数据
         self.collectionandhistory.makeHistory()
         # 点击工具面板的“清空历史”，弹框选择取消
         self.home.clickMore()
@@ -60,18 +61,18 @@ class TestNegativePage():
     def test002CleanUpHistory(self, collectionAndHistory_init):
         '''
         1、先判断是否存在历史数据，不存在则造一条历史数据，存在则不处理
-        2、点击工具栏中more菜单，再点击工具面板的“清空历史”，清空历史的弹框选择取消
-        3、断言存在历史数据
+        2、点击工具栏中more菜单，再点击工具面板的“清空历史”，清空历史的弹框选择确定
+        3、断言存在“暂无历史记录”元素
         '''
-        # 监听地理位置弹框，点击“始终允许”
+        # 监听地理位置弹框，点击允许”
         self.base.browserWatcher()
         # 制造一条历史数据
         self.collectionandhistory.makeHistory()
-        # 点击工具面板的“清空历史”，弹框选择取消
+        # 点击工具面板的“清空历史”，弹框选择确定
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(CLEAN_UP_HISTORY)
         self.toolbarpanel.clickToolsPanel(CLEAN_UP)
-        # 再次进入工具面板的“清空历史”，断言页面不存在“暂无历史数据”元素
+        # 再次进入工具面板的“清空历史”，断言页面存在“暂无历史数据”元素
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(HISTORY)
         self.base.assertTrue(HISTORY_PAGE, timeout=3)
@@ -80,38 +81,36 @@ class TestNegativePage():
     @pytest.mark.P1
     def test003CollectArticle(self, collectionAndHistory_init):
         '''
-        1、进入资讯流，下拉刷新，获取第1篇文章第标题，并收藏该文章，进入收藏夹获取第1条记录的标题，断言两个标题是否相等
+        1、进入资讯流，下拉刷新，获取第1篇文章第标题，并收藏该文章，进入收藏夹获取第1条记录的标题，断言两个标题相等
         2、在收藏夹点击进入第1条记录详情，取消收藏，返回到收藏夹，获取第1条记录第标题，断言标题不相等
         '''
+        # 进入资讯流，进入频道管理选择健康频道，下拉刷新
         self.home.clickInformation()
+        self.news.clickNewsTriangle()
+        self.news.clickNewsChannel(NEWS_CHANNEL_HEALTH)
         self.news.dropScrollNews()
-        sleep(3)
-        # 获取文章详情页的标题
-        ArticleDetailsTitle = self.news.getNewsArticleTitle()
-        print('-----------------------------------')
-        print(ArticleDetailsTitle)
+        sleep(2)
+        # 获取文章标题，并收藏该文章
+        ArticleTitle = self.news.getNewsArticleTitle()
         self.news.clickOpenNewsArticle()
         self.news.clickArticleCollectPosition()
-        # sleep(3)
         # 返回上一层，进入我的收藏
-        self.pubmethod.clickBack()
+        self.news.clickNewsBack()
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
-        # 获取我的收藏页第1条记录的标题
+        # 获取我的收藏页第1条记录的标题，断言收藏的文章标题与收藏夹第1条记录的标题一致
         CollectionTitle = self.collectionandhistory.getCollectionTitle()
-        print(CollectionTitle)
-        self.base.assertEqual(ArticleDetailsTitle, CollectionTitle, True)
+        self.base.assertEqual(ArticleTitle, CollectionTitle, True)
         # 点击进入我的收藏第1条记录，取消收藏
         self.collectionandhistory.clickCollection(COLLECTION_ID)
         self.news.clickArticleCollectPosition()
-        # sleep(2)
-        # 返回上一层，重新进入我的收藏
-        self.pubmethod.clickBack()
+        # 返回上一层，重新进入我的收藏，获取第1条记录标题
+        self.news.clickNewsBack()
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
         CollectionTitle = self.collectionandhistory.getCollectionTitle()
-        print(CollectionTitle)
-        self.base.assertEqual(ArticleDetailsTitle, CollectionTitle, False)
+        # 断言取消收藏的文章标题与收藏夹第1条记录的标题不一致
+        self.base.assertEqual(ArticleTitle, CollectionTitle, False)
 
     @allure.story('打开网页-添加收藏-编辑-新建收藏文件夹-收藏进去-能改的都改一遍-收藏夹打开该收藏正常 —— LJX')
     @pytest.mark.P1
@@ -123,8 +122,10 @@ class TestNegativePage():
         '''
         # 先删除“自动化测试”文件夹
         self.collectionandhistory.deleteCollectFolder()
+        # 点击搜索面板第1个热词，进入搜索结果页
         self.home.clickHomeSearch()
         self.searchpanel.clickSearchInto()
+        # 添加到收藏夹，编辑位置信息，新建"自动化测试"文件夹并收藏到该文件夹下
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
         self.toolbarpanel.clickToolsPanel(COLLECT_EDIT_ID)
@@ -133,17 +134,21 @@ class TestNegativePage():
         self.collectionandhistory.inputCollectFolderName(NEW_FOLDER_NAME_ID)
         self.collectionandhistory.clickAddCollectFolder(NEW_FOLDER_CONFIRM)
         self.collectionandhistory.clickAddCollectFolder(COLLECT_NEW_FOLDER_NAME)
+        # 编辑网页URL、网页名称为百度网页，点击"确认"，收藏到收藏夹中
         self.collectionandhistory.setText(ADD_COLLECT_URL, COLLECT_NAME)
         self.collectionandhistory.setText(ADD_COLLECT_ADDRESS, COLLECT_URL)
         self.collectionandhistory.clickAddCollectFolder(CONFIRM_TEXT)
-        # 等待2秒，"已添加到收藏"toast提示消失后才能定位到其它元素
+        # 等待2秒，"已添加到收藏"toast消失后才能定位到其它元素
         sleep(2)
-        # 进入收藏夹新建的文件夹下，断言是否存在数据
+        # 进入收藏夹新建的"自动化测试"文件夹，断言是否存在"百度一下"
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
         self.collectionandhistory.clickCollection(COLLECT_NEW_FOLDER_NAME)
         self.base.assertTrue(COLLECT_NAME)
+        # 点击进入"百度一下"，监听地理位置弹框，点击允许”，断言存在'百度一下,你就知道'
         self.collectionandhistory.clickCollection(COLLECT_NAME)
+
+        sleep(2)
         self.base.assertTrue(BAIDU_HOME)
 
     @allure.story('添加一个网页到收藏/主页常用/桌面，查看是否添加到对应目录下并且点击能正常打开 —— LJX')
@@ -166,7 +171,7 @@ class TestNegativePage():
         CollectionTitle = self.collectionandhistory.getCollectionTitle()
         self.base.assertEqual(hotSearchWord, CollectionTitle, True)
         # 返回上一层，重新添加收藏
-        self.pubmethod.clickBack()
+        self.news.clickNewsBack()
         # 添加到主页常用
         self.home.clickMore()
         self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
