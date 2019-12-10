@@ -38,8 +38,9 @@ class TestNegativePage():
         2、进入精选页，添加“hao123”书签，点击进入“hao123”网站，断言页面是否存在'hao123导航-上网从这里开始'元素
         3、返回上一层到负一屏，上滑页面1次，断言是否存在“hao123”书签
         '''
+        self.pubmethod.clickPrivacyAgree()
+        self.base.browserWatcher()
         # 进入负一屏，删除"hao123"书签
-        self.pubmethod.mbackToHomeOrNegative()
         self.home.clickHomeOnPage(MYCOLLECTION)
         self.negativescreen.deleteBookmark(HAO123)
         # 再进入精选页，添加"hao123"书签
