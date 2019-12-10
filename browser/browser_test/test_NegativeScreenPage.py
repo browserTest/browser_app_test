@@ -20,11 +20,12 @@ class TestNegativePage():
         self.pubmethod = PubMethod(self.driver)
         self.searchpanel = SearchPanelPage(self.driver)
         self.toolbarpanel = ToolBarPanelPage(self.driver)
+        self.windowstab = WindowsTabPage(self.driver)
         logging.info("")
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-        self.windowstab = WindowsTabPage(self.driver)
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -202,12 +203,12 @@ class TestNegativePage():
         2、在负一屏，长按“魅族社区”书签，选择删除后，断言不存在“魅族社区”元素
         '''
         # 进入负一屏，添加"魅族社区"书签
-        self.pubmethod.mbackToHomeOrNegative()
-        self.home.clickHomeOnPage(MYCOLLECTION)
-        self.negativescreen.addBookmarkToNegative(MEIZU_COMMUNITY)
-        # 长按删除"魅族社区"书签，断言当前页面不存在"魅族社区"
-        self.negativescreen.longClickNegative(MEIZU_COMMUNITY)
-        self.negativescreen.clickNegative(DELETE_TEXT)
+        # self.pubmethod.mbackToHomeOrNegative()
+        # self.home.clickHomeOnPage(MYCOLLECTION)
+        # self.negativescreen.addBookmarkToNegative(MEIZU_COMMUNITY)
+        # # 长按删除"魅族社区"书签，断言当前页面不存在"魅族社区"
+        # self.negativescreen.longClickNegative(MEIZU_COMMUNITY)
+        # self.negativescreen.clickNegative(DELETE_TEXT)
         self.base.assertTrue(MEIZU_COMMUNITY, False, timeout=3)
 
     @allure.story('长按负一屏图标：编辑功能正常 —— LJX')
@@ -229,7 +230,9 @@ class TestNegativePage():
         # 长按编辑"魅族社区"，修改网址名称和URL为"豆瓣"
         self.negativescreen.longClickNegative(MEIZU_COMMUNITY)
         self.negativescreen.clickNegative(EDIT)
+        self.negativescreen.clickNegative(WEBSITE_NAME)
         self.negativescreen.setText(WEBSITE_NAME, DOUBAN_NAME)
+        self.negativescreen.clickNegative(WEBSITE_URL)
         self.negativescreen.setText(WEBSITE_URL, DOUBAN_URL)
         self.negativescreen.clickNegative(EDIT_CONFIRM)
         # 等1秒后，上滑1次页面，断言负一屏存在"豆瓣"元素，打开
