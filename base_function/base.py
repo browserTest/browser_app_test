@@ -70,11 +70,7 @@ class Base():
         elif str(element).startswith("android"):
             self.d(resourceId=element).click()
         else:
-            logging.info("点击元素: {}, element: {}".format(self.d(text=element), element))
-            try:
-                self.d(text=element).click()   # todo: click 不存在
-            except Exception as e:
-                logging.error("element click error, {}, {}".format(element, e))
+            self.d(text=element).click()
         logging.info("点击元素: {}".format(logtext))
 
 
@@ -192,14 +188,15 @@ class Base():
         '''
         if mark:
             if element == element1:
-                assert True, "元素1名称与元素2名称不相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
+                assert True
                 logging.info("元素相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
             elif element in element1:
-                assert True, "元素1名称与元素2名称不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1)
+                assert True
                 logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
             else:
-                logging.info("元素1名称与元素2名称不相等且不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1))
-                assert False
+
+                assert False, "元素1名称与元素2名称不相等且不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1)
+                logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
         else:
             assert element != element1, "元素1名称与元素2名称相等，断言失败，元素1名称：{} && 元素2名称：{}".format(element,element1)
             logging.info("元素不相等，断言成功，元素1名称：{} && 元素2名称：{}".format(element,element1))
@@ -417,7 +414,7 @@ class Base():
                  self.d(text=elementText).left(resourceId=element).click()
              else:
                  self.d(text=elementText).left(text=element).click()
-         logging.info("点击{}元素{}方的{}元素".format(elementText, direction, element))
+         logging.info("点击{}元素{}方向的{}元素".format(elementText, direction, element))
 
 
     # 重复点击元素N次，每次间隔1秒，若该元素消失则中止偿试并返回bool值 —— LJX
