@@ -1,0 +1,45 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_DownLoadPage.py:27 
+INFO     root:test_DownLoadPage.py:28 ****开始执行用例****
+INFO     root:base.py:28 stop： com.android.browser
+INFO     root:base.py:28 start： com.android.browser
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： 已保存网页
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:74 点击元素: 浏览器首页more菜单
+INFO     root:base.py:143 查询到元素： 下载管理
+INFO     root:base.py:74 点击元素: 工具面板-》下载管理
+INFO     root:base.py:143 查询到元素： com.android.providers.downloads.ui:id/download_title
+INFO     root:base.py:143 查询到元素： com.android.providers.downloads.ui:id/download_title
+INFO     root:base.py:249 长按元素: 长按下载管理页面中的文件
+INFO     root:base.py:143 查询到元素： 全选
+INFO     root:base.py:74 点击元素: 选择下载管理页面中的文件
+INFO     root:base.py:143 查询到元素： 重命名
+INFO     root:base.py:74 点击元素: 点击删除按钮
+INFO     root:base.py:143 查询到元素： android:id/text1
+INFO     root:base.py:74 点击元素: 点击删除下载管理页面中的文件
+INFO     root:base.py:41 对设备进行操作，操作动作为： back
+INFO     root:base.py:143 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:74 点击元素: 首页搜索框
+INFO     root:base.py:143 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:74 点击元素: 搜索框右侧进入按钮
+INFO     root:base.py:143 查询到元素： com.android.browser:id/bt_refresh
+INFO     root:base.py:249 长按元素: 长按搜索结果页网页链接
+INFO     root:base.py:143 查询到元素： android.widget.LinearLayout
+INFO     root:base.py:74 点击元素: 点击长按菜单弹框中的“下载链接”按钮
+INFO     root:base.py:143 查询到元素： com.android.browser:id/download_name
+INFO     root:base.py:213 提取第0位的获取下载弹框中的标题内容元素文本
+INFO     root:base.py:143 查询到元素： com.android.browser:id/download_name
+INFO     root:base.py:74 点击元素: 点击下载弹框中的“下载”按钮
+INFO     root:base.py:143 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:74 点击元素: 浏览器首页more菜单
+INFO     root:base.py:143 查询到元素： 下载管理
+INFO     root:base.py:74 点击元素: 工具面板-》下载管理
+INFO     root:base.py:143 查询到元素： com.android.providers.downloads.ui:id/download_title
+INFO     root:base.py:213 提取第0位的获取下载弹框中的标题内容元素文本
+INFO     root:base.py:192 元素相等，断言成功，元素1名称：jump.bin && 元素2名称：jump.bin
+INFO     root:test_DownLoadPage.py:35 ****用例执行结束****
+INFO     root:test_DownLoadPage.py:36

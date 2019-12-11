@@ -1,0 +1,271 @@
+[ {
+  "uid" : "82d5d08e2e84a6e9",
+  "name" : "test003DownWebPage",
+  "time" : {
+    "start" : 1576031501687,
+    "stop" : 1576031532728,
+    "duration" : 31041
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "866f86fcfce5a3b2",
+  "name" : "test002DownWebPage",
+  "time" : {
+    "start" : 1576031472192,
+    "stop" : 1576031492150,
+    "duration" : 19958
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7af8d3d0a2285b54",
+  "name" : "test003MorePage",
+  "time" : {
+    "start" : 1576031608707,
+    "stop" : 1576031613915,
+    "duration" : 5208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94ae05c6ae663c48",
+  "name" : "test001NewWindowsTab",
+  "time" : {
+    "start" : 1576031988270,
+    "stop" : 1576032001991,
+    "duration" : 13721
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "255520b93cec240d",
+  "name" : "test001ShareWebPage",
+  "time" : {
+    "start" : 1576031908696,
+    "stop" : 1576031920941,
+    "duration" : 12245
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a028feeb6f4c50db",
+  "name" : "test013MorePage",
+  "time" : {
+    "start" : 1576031799892,
+    "stop" : 1576031805164,
+    "duration" : 5272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c639aa4748ba6af7",
+  "name" : "test009MorePage",
+  "time" : {
+    "start" : 1576031729210,
+    "stop" : 1576031734379,
+    "duration" : 5169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eac32be989616c0a",
+  "name" : "test005MorePage",
+  "time" : {
+    "start" : 1576031643106,
+    "stop" : 1576031665421,
+    "duration" : 22315
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "dcba82188f4e0074",
+  "name" : "test002SetUpPage",
+  "time" : {
+    "start" : 1576031839676,
+    "stop" : 1576031848056,
+    "duration" : 8380
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "58512519c49a9e39",
+  "name" : "test007MorePage",
+  "time" : {
+    "start" : 1576031695047,
+    "stop" : 1576031699914,
+    "duration" : 4867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "14ce39aa1262dd9c",
+  "name" : "test004SetUpPage",
+  "time" : {
+    "start" : 1576031889535,
+    "stop" : 1576031897945,
+    "duration" : 8410
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e026ae386c14d733",
+  "name" : "test011MorePage",
+  "time" : {
+    "start" : 1576031761389,
+    "stop" : 1576031766743,
+    "duration" : 5354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7aa2d60c58fca80e",
+  "name" : "test004LongPressCloseWindowsTab",
+  "time" : {
+    "start" : 1576032052913,
+    "stop" : 1576032061699,
+    "duration" : 8786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c14dd22fad5c4ae3",
+  "name" : "test008MorePage",
+  "time" : {
+    "start" : 1576031709846,
+    "stop" : 1576031714772,
+    "duration" : 4926
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "262cef5a8ee2d27c",
+  "name" : "test003SetUpPage",
+  "time" : {
+    "start" : 1576031859443,
+    "stop" : 1576031878170,
+    "duration" : 18727
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bcd4d71d2646a30",
+  "name" : "test001MorePage",
+  "time" : {
+    "start" : 1576031575030,
+    "stop" : 1576031579824,
+    "duration" : 4794
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80cc8c9d94b3f0b2",
+  "name" : "test004MorePage",
+  "time" : {
+    "start" : 1576031622952,
+    "stop" : 1576031628301,
+    "duration" : 5349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9ec979a994d609",
+  "name" : "test002ShareNewsPage",
+  "time" : {
+    "start" : 1576031936145,
+    "stop" : 1576031963396,
+    "duration" : 27251
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb5f77974cf9ef90",
+  "name" : "test003CloseOneWindowsTab",
+  "time" : {
+    "start" : 1576032032032,
+    "stop" : 1576032042807,
+    "duration" : 10775
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff9036876c59ed0e",
+  "name" : "test010MorePage",
+  "time" : {
+    "start" : 1576031748381,
+    "stop" : 1576031752525,
+    "duration" : 4144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56befac0147e7a00",
+  "name" : "test002CloseAllWindowsTab",
+  "time" : {
+    "start" : 1576032012302,
+    "stop" : 1576032021927,
+    "duration" : 9625
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe6228fed30db480",
+  "name" : "test001SetUpPage",
+  "time" : {
+    "start" : 1576031819961,
+    "stop" : 1576031828556,
+    "duration" : 8595
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "273f865a24246759",
+  "name" : "test004DownAppPage",
+  "time" : {
+    "start" : 1576031547129,
+    "stop" : 1576031561256,
+    "duration" : 14127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db7cc53a6bcf3c78",
+  "name" : "test012MorePage",
+  "time" : {
+    "start" : 1576031781447,
+    "stop" : 1576031789961,
+    "duration" : 8514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df9c5a1dc99c54a1",
+  "name" : "test006MorePage",
+  "time" : {
+    "start" : 1576031675376,
+    "stop" : 1576031680722,
+    "duration" : 5346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2317e4cc0624d75",
+  "name" : "test002MorePage",
+  "time" : {
+    "start" : 1576031589551,
+    "stop" : 1576031594636,
+    "duration" : 5085
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4b07d92ef53e656",
+  "name" : "test001DownWebPage",
+  "time" : {
+    "start" : 1576031431034,
+    "stop" : 1576031457686,
+    "duration" : 26652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

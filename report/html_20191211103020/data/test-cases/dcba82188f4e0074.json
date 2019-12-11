@@ -1,0 +1,154 @@
+{
+  "uid" : "dcba82188f4e0074",
+  "name" : "test002SetUpPage",
+  "fullName" : "browser.browser_test.test_SetUpPage.TestSetUpPage#test002SetUpPage",
+  "historyId" : "8c5998ca654be5c867957b139df6ba15",
+  "time" : {
+    "start" : 1576031839676,
+    "stop" : 1576031848056,
+    "duration" : 8380
+  },
+  "description" : "\n\n        1、点击主页工具菜单\n        2、点击设置\n        3、点击搜索引擎\n        4、点击百度\n        5、点击mback返回\n        6、点击首页搜索框\n        7、搜索框输入123\n        8、点击搜索\n        9、# 断言页面是否存在百度\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击主页工具菜单\n    2、点击设置\n    3、点击搜索引擎\n    4、点击百度\n    5、点击mback返回\n    6、点击首页搜索框\n    7、搜索框输入123\n    8、点击搜索\n    9、# 断言页面是否存在百度\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 百度",
+  "statusTrace" : "self = <browser_test.test_SetUpPage.TestSetUpPage object at 0x0000000004BA2C18>\nsetUp_init = None\n\n    @allure.story('测试切换搜索引擎')\n    def test002SetUpPage(self, setUp_init):\n        '''\n    \n        1、点击主页工具菜单\n        2、点击设置\n        3、点击搜索引擎\n        4、点击百度\n        5、点击mback返回\n        6、点击首页搜索框\n        7、搜索框输入123\n        8、点击搜索\n        9、# 断言页面是否存在百度\n    \n        '''\n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击设置\n        self.toolbarpanel.clickSetUp()\n        # 点击搜索引擎\n        self.setup.clickSearchEngine(1)\n        # 点击百度\n>       self.setup.clickBaidu()\n\nbrowser\\browser_test\\test_SetUpPage.py:111: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\SetUpPage.py:90: in clickBaidu\n    self.assertFalse(SETUP_BAIDU)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.SetUpPage.SetUpPage object at 0x0000000004EC4400>\nelement = '百度'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 百度\n\nbase_function\\base.py:160: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp_init",
+    "time" : {
+      "start" : 1576031831263,
+      "stop" : 1576031839675,
+      "duration" : 8412
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1576031829263,
+      "stop" : 1576031829263,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1576031829263,
+      "stop" : 1576031831263,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\n        1、点击主页工具菜单\n        2、点击设置\n        3、点击搜索引擎\n        4、点击百度\n        5、点击mback返回\n        6、点击首页搜索框\n        7、搜索框输入123\n        8、点击搜索\n        9、# 断言页面是否存在百度\n\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 百度",
+    "statusTrace" : "self = <browser_test.test_SetUpPage.TestSetUpPage object at 0x0000000004BA2C18>\nsetUp_init = None\n\n    @allure.story('测试切换搜索引擎')\n    def test002SetUpPage(self, setUp_init):\n        '''\n    \n        1、点击主页工具菜单\n        2、点击设置\n        3、点击搜索引擎\n        4、点击百度\n        5、点击mback返回\n        6、点击首页搜索框\n        7、搜索框输入123\n        8、点击搜索\n        9、# 断言页面是否存在百度\n    \n        '''\n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击设置\n        self.toolbarpanel.clickSetUp()\n        # 点击搜索引擎\n        self.setup.clickSearchEngine(1)\n        # 点击百度\n>       self.setup.clickBaidu()\n\nbrowser\\browser_test\\test_SetUpPage.py:111: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\SetUpPage.py:90: in clickBaidu\n    self.assertFalse(SETUP_BAIDU)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.SetUpPage.SetUpPage object at 0x0000000004EC4400>\nelement = '百度'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 百度\n\nbase_function\\base.py:160: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5143d646d0230c65",
+      "name" : "失败截图",
+      "source" : "5143d646d0230c65.jpg",
+      "type" : "image/jpg",
+      "size" : 159458
+    }, {
+      "uid" : "536d99539ef9b475",
+      "name" : "log",
+      "source" : "536d99539ef9b475.txt",
+      "type" : "text/plain",
+      "size" : 1259
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "setUp_init::0",
+    "time" : {
+      "start" : 1576031848780,
+      "stop" : 1576031848780,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试设置页面"
+  }, {
+    "name" : "story",
+    "value" : "测试切换搜索引擎"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SetUpPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSetUpPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "27472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SetUpPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dcba82188f4e0074.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "bd3476e5a0a0194e9f015fa84085bfb6",
+    "name" : "测试设置页面",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "706f158ee98b3f24dfca3a3da33a87a0",
+    "name" : "魅族浏览器分享功能测试",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "6d2b2be7d34cef424020a406a0787f0f",
+    "name" : "魅族浏览器网址导航页面测试",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "273c8b6283d6b5522887d8074f3ad85a",
+    "name" : "魅族浏览器下载功能测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "bd477089c769a5eccbbe1da2b7b4ef2f",
+    "name" : "魅族浏览器多窗口相关测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  } ]
+}

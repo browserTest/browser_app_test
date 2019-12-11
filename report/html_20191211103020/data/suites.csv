@@ -1,0 +1,220 @@
+"Status","Name","Duration in ms","Description"
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test002CloseAllWindowsTab","9625","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，新建3个多窗口
+        4、关闭所有的多窗口
+        5、断言多窗口数量为：1
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test009MorePage","5169","
+        1、在浏览器首页点击导航栏中""安居客""按钮，进入到浏览器网址导航页面
+        2、点击""安居客""
+        3、断言是否跳转到""安居客""页面
+
+        "
+"failed","browser.browser_test.test_SetUpPage.TestSetUpPage#test004SetUpPage","8410",""
+"failed","browser.browser_test.test_SetUpPage.TestSetUpPage#test002SetUpPage","8380","
+
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击搜索引擎
+        4、点击百度
+        5、点击mback返回
+        6、点击首页搜索框
+        7、搜索框输入123
+        8、点击搜索
+        9、# 断言页面是否存在百度
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test004MorePage","5349","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""聚划算""
+        3、断言是否跳转到""聚划算""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test013MorePage","5272","
+        1、在浏览器首页点击导航栏中""招聘""按钮，进入到浏览器网址导航页面
+        2、点击""招聘""
+        3、断言是否跳转到""招聘""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test003MorePage","5208","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""京东""
+        3、断言是否跳转到""京东""页面
+
+        "
+"passed","browser.browser_test.test_DownLoadPage.TestDownPage#test004DownAppPage","14127","
+        1、点击“搜索框”
+        2、输入“QQ”，点击“搜索”按钮
+        3、点击页面中的“高速下载”
+        4、显示下载弹框
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板
+        7、点击“下载管理”打开下载页面
+        8、断言下载中的状态
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test012MorePage","8514","
+        1、在浏览器首页点击导航栏中""拼多多""按钮，进入到浏览器网址导航页面
+        2、点击""拼多多""
+        3、断言是否跳转到""拼多多""页面
+
+        "
+"passed","browser.browser_test.test_DownLoadPage.TestDownPage#test001DownWebPage","26652","
+        1、打开浏览器，点击底部工具栏菜单menu_more按钮
+        2、点击“设置”进入设置页面
+        3、设置搜索引擎为“360”
+        4、mback返回上一级页面（首页）
+        5、点击“搜索框”，点击“搜索”按钮，访问网页，在页面内等待2秒
+        6、长按网页链接，显示长按菜单弹框
+        7、点击“下载链接”按钮，显示下载弹框
+        8、断言“下载弹框”中的名称
+        9、获取下载弹框中的标题
+        10、点击下载弹框中的“取消”按钮
+        11、断言显示“下载弹框”的元素不存在
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test002MorePage","5085","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""搜狐""
+        3、断言是否跳转到""搜狐""页面
+
+        "
+"failed","browser.browser_test.test_SetUpPage.TestSetUpPage#test001SetUpPage","8595","
+
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击清除浏览器数据
+        4、点击Cookies
+        5、点击账号密码
+        6、点击地理位置授权
+        7、点击清除数据按钮
+        8、点击完成按钮
+        9、点击mback返回
+        10、点击首页搜索框
+        11、搜索框输入文本
+        12、点击进入
+        13、断言页面是否会重新提示地址位置授权
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test007MorePage","4867","
+        1、在浏览器首页点击导航栏中""在线商城""按钮，进入到浏览器网址导航页面
+        2、点击""在线商城""
+        3、断言是否跳转到""在线商城""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test011MorePage","5354","
+        1、在浏览器首页点击导航栏中""天猫""按钮，进入到浏览器网址导航页面
+        2、点击""天猫""
+        3、断言是否跳转到""天猫""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test006MorePage","5346","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""找房子""
+        3、断言是否跳转到""找房子""页面
+
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test003CloseOneWindowsTab","10775","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口
+        4、获取新建的多窗口数量
+        5、上滑关闭2个多窗口
+        6、获取删除多窗口后的数量
+        7、断言多窗口数量是否减少
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test010MorePage","4144","
+        1、在浏览器首页点击导航栏中""爱淘宝""按钮，进入到浏览器网址导航页面
+        2、点击""爱淘宝""
+        3、断言是否跳转到""爱淘宝""页面
+
+        "
+"passed","browser.browser_test.test_DownLoadPage.TestDownPage#test003DownWebPage","31041","
+        1、点击“搜索框”，
+        2、点击“搜索”按钮，访问网页，在页面内等待2秒
+        3、长按网页链接，显示弹框，点击“下载链接”按钮，显示下载弹框
+        4、获取下载弹框中的标题名称
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒
+        7、点击“下载管理”打开下载页面
+        7、获取下载管理中下载好的文件名称标题
+        8、断言“下载管理”页面中的下载文件名称与之前下载中的文件名称相等
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test001NewWindowsTab","13721","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮（新建3个多窗口tab）
+        4、滑动浏览多窗口tab页
+        5、断言首页导航网站-》更多 -》搜索框中的默认关键字：输入关键字
+        6、点击多窗口中tab页进入网页浏览
+        7、断言多窗口数量不相等
+        "
+"failed","browser.browser_test.test_MorePage.TestMorePage#test005MorePage","22315","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""同城""
+        3、断言是否跳转到""同城""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test008MorePage","4926","
+        1、在浏览器首页点击导航栏中""二手市场""按钮，进入到浏览器网址导航页面
+        2、点击""二手市场""
+        3、断言是否跳转到""二手市场""页面
+
+        "
+"failed","browser.browser_test.test_SharePage.TestSharePage#test002ShareNewsPage","27251","
+        1、进入浏览器，点击""资讯""按钮
+        2、在资讯流列表点击“倒三角”，进入频道管理页面
+        3、打开“健康”频道
+        4、打开资讯文章详情页
+        5、点击分享按钮
+        6、点击分享面板-》便签按钮到便签
+        7、断言便签应用中是否存在分享的内容
+        8、点击mback返回资讯流列表
+        9、断言资讯流列表“资讯”按钮存在
+        "
+"failed","browser.browser_test.test_SetUpPage.TestSetUpPage#test003SetUpPage","18727","
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击广告屏蔽
+        4、获取未点击前，广告屏蔽，精选内容推送开关状态
+        5、点击精选内容推送
+        6、向下滑动到恢复默认设置
+        7、点击恢复默认设置
+        8、点击恢复
+        9、点击主页工具菜单
+        10、点击设置
+        11、获取点击后，广告屏蔽，精选内容推送开关状态
+        12、判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test004LongPressCloseWindowsTab","8786","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口
+        4、点击多窗口中tab页进入网页浏览
+        5、获取新建的多窗口数量
+        6、长按并且上滑到 “X” 位置后放开，关闭当前窗口
+        7、获取删除多窗口后的数量
+        8、断言多窗口数量是否减少
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test001MorePage","4794","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""头条""
+        3、断言是否跳转到""头条""页面
+
+        "
+"passed","browser.browser_test.test_DownLoadPage.TestDownPage#test002DownWebPage","19958","
+        1、点击“搜索框”
+        2、点击“搜索”按钮，访问网页，在页面内等待2秒
+        3、长按网页链接，显示长按菜单弹框
+        4、点击“下载链接”按钮，显示下载弹框
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒
+        6、断言工具面板中下载完成后的“小红点”
+        "
+"failed","browser.browser_test.test_SharePage.TestSharePage#test001ShareWebPage","12245","
+        1、进入浏览器，点击导航网站-》安居客
+        2、在安居客网页中点击底部-》工具栏图标按钮
+        3、点击底部工具栏-》点击分享按钮
+        4、点击分享面板-》便签按钮到便签
+        5、断言便签应用中是否存在分享的内容
+        "

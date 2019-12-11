@@ -1,0 +1,140 @@
+{
+  "uid" : "7aa2d60c58fca80e",
+  "name" : "test004LongPressCloseWindowsTab",
+  "fullName" : "browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test004LongPressCloseWindowsTab",
+  "historyId" : "fe706480d011068e7279e8d0fc01b779",
+  "time" : {
+    "start" : 1576032052913,
+    "stop" : 1576032061699,
+    "duration" : 8786
+  },
+  "description" : "\n        1、进入浏览器，点击导航网站-》更多\n        2、点击多窗口按钮\n        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口\n        4、点击多窗口中tab页进入网页浏览\n        5、获取新建的多窗口数量\n        6、长按并且上滑到 “X” 位置后放开，关闭当前窗口\n        7、获取删除多窗口后的数量\n        8、断言多窗口数量是否减少\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入浏览器，点击导航网站-》更多\n    2、点击多窗口按钮\n    3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口\n    4、点击多窗口中tab页进入网页浏览\n    5、获取新建的多窗口数量\n    6、长按并且上滑到 “X” 位置后放开，关闭当前窗口\n    7、获取删除多窗口后的数量\n    8、断言多窗口数量是否减少\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "window_init",
+    "time" : {
+      "start" : 1576032044813,
+      "stop" : 1576032052912,
+      "duration" : 8099
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1576032042813,
+      "stop" : 1576032044813,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1576032042812,
+      "stop" : 1576032042812,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入浏览器，点击导航网站-》更多\n        2、点击多窗口按钮\n        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口\n        4、点击多窗口中tab页进入网页浏览\n        5、获取新建的多窗口数量\n        6、长按并且上滑到 “X” 位置后放开，关闭当前窗口\n        7、获取删除多窗口后的数量\n        8、断言多窗口数量是否减少\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a58017d551844b32",
+      "name" : "log",
+      "source" : "a58017d551844b32.txt",
+      "type" : "text/plain",
+      "size" : 2842
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "window_init::0",
+    "time" : {
+      "start" : 1576032061700,
+      "stop" : 1576032061700,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试长按menu_more按钮，点击“X”关闭多窗口"
+  }, {
+    "name" : "feature",
+    "value" : "魅族浏览器多窗口相关测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_WindowsTabPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWindowsTabPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "27472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_WindowsTabPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7aa2d60c58fca80e.json",
+  "parameterValues" : [ ]
+}

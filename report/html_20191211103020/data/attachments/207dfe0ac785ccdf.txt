@@ -1,0 +1,19 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SetUpPage.py:27 
+INFO     root:test_SetUpPage.py:28 ****开始执行用例****
+INFO     root:base.py:28 stop： com.android.browser
+INFO     root:base.py:28 start： com.android.browser
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： 已保存网页
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:74 点击元素: 浏览器首页more菜单
+INFO     root:base.py:143 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:74 点击元素: 设置
+INFO     root:base.py:143 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:317 点击元素： 魅族头条设置
+INFO     root:base.py:149 未找到元素，元素名称为: 简版显示
+INFO     root:test_SetUpPage.py:35 ****用例执行结束****
+INFO     root:test_SetUpPage.py:36

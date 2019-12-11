@@ -1,0 +1,44 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_WindowsTabPage.py:20 
+INFO     root:test_WindowsTabPage.py:21 ****开始执行用例****
+INFO     root:base.py:28 stop： com.android.browser
+INFO     root:base.py:28 start： com.android.browser
+INFO     root:base.py:149 未找到元素，元素名称为: com.android.browser:id/search_bar_container
+INFO     root:base.py:149 未找到元素，元素名称为: 已保存网页
+INFO     root:base.py:143 查询到元素： com.android.browser:id/backward
+INFO     root:base.py:74 点击元素: 底部工具栏返回上一层按钮
+INFO     root:base.py:143 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： 已保存网页
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:143 查询到元素： 更多
+INFO     root:base.py:74 点击元素: 网址导航-》更多
+INFO     root:base.py:143 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:213 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:143 查询到元素： com.android.browser:id/multi_window
+INFO     root:base.py:74 点击元素: 点击底部工具栏中的多窗口按钮，进入多窗口浏览Tab页面
+INFO     root:base.py:143 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:74 点击元素: 在多窗口浏览Tab页面，点击新建多窗口按钮
+INFO     root:base.py:143 查询到元素： 更多
+INFO     root:base.py:74 点击元素: 网址导航-》更多
+INFO     root:base.py:143 查询到元素： com.android.browser:id/multi_window
+INFO     root:base.py:74 点击元素: 点击底部工具栏中的多窗口按钮，进入多窗口浏览Tab页面
+INFO     root:base.py:74 点击元素: 在多窗口浏览Tab页面，点击新建多窗口按钮
+INFO     root:base.py:143 查询到元素： 更多
+INFO     root:base.py:74 点击元素: 网址导航-》更多
+INFO     root:base.py:143 查询到元素： com.android.browser:id/multi_window
+INFO     root:base.py:74 点击元素: 点击底部工具栏中的多窗口按钮，进入多窗口浏览Tab页面
+INFO     root:base.py:143 查询到元素： com.android.browser:id/text_close_all_tab
+INFO     root:base.py:280 拖动元素: 向左滑动多窗口
+INFO     root:base.py:280 拖动元素: 向左滑动多窗口
+INFO     root:base.py:143 查询到元素： com.android.browser:id/thumbnail_bg
+INFO     root:base.py:74 点击元素: 点击打开多窗口中的浏览Tab页面
+INFO     root:base.py:143 查询到元素： 输入关键词
+INFO     root:base.py:175 已找到元素，断言成功，元素名称为： 输入关键词
+INFO     root:base.py:143 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:213 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:202 元素不相等，断言成功，元素1名称：1 && 元素2名称：3
+INFO     root:test_WindowsTabPage.py:29 ****用例执行结束****
+INFO     root:test_WindowsTabPage.py:30

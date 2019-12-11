@@ -1,0 +1,151 @@
+{
+  "uid" : "14ce39aa1262dd9c",
+  "name" : "test004SetUpPage",
+  "fullName" : "browser.browser_test.test_SetUpPage.TestSetUpPage#test004SetUpPage",
+  "historyId" : "d583ea5f32fbf3369de939277a9258e3",
+  "time" : {
+    "start" : 1576031889535,
+    "stop" : 1576031897945,
+    "duration" : 8410
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 简版显示",
+  "statusTrace" : "self = <browser_test.test_SetUpPage.TestSetUpPage object at 0x0000000004F26A58>\nsetUp_init = None\n\n    @allure.story('测试简版显示是否正常')\n    def test004SetUpPage(self, setUp_init):\n    \n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击设置\n        self.toolbarpanel.clickSetUp()\n        # 点击魅族头条设置\n        self.setup.clickMeizuHeadlinesSettings(2)\n        # 点击简版显示\n>       self.setup.clickSimple()\n\nbrowser\\browser_test\\test_SetUpPage.py:181: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\SetUpPage.py:26: in clickSimple\n    self.assertFalse(SETUP_SIMPLE)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.SetUpPage.SetUpPage object at 0x0000000004F26EF0>\nelement = '简版显示'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 简版显示\n\nbase_function\\base.py:160: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1576031878863,
+      "stop" : 1576031880864,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1576031878863,
+      "stop" : 1576031878863,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp_init",
+    "time" : {
+      "start" : 1576031880864,
+      "stop" : 1576031889534,
+      "duration" : 8670
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 简版显示",
+    "statusTrace" : "self = <browser_test.test_SetUpPage.TestSetUpPage object at 0x0000000004F26A58>\nsetUp_init = None\n\n    @allure.story('测试简版显示是否正常')\n    def test004SetUpPage(self, setUp_init):\n    \n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击设置\n        self.toolbarpanel.clickSetUp()\n        # 点击魅族头条设置\n        self.setup.clickMeizuHeadlinesSettings(2)\n        # 点击简版显示\n>       self.setup.clickSimple()\n\nbrowser\\browser_test\\test_SetUpPage.py:181: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\SetUpPage.py:26: in clickSimple\n    self.assertFalse(SETUP_SIMPLE)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.SetUpPage.SetUpPage object at 0x0000000004F26EF0>\nelement = '简版显示'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 简版显示\n\nbase_function\\base.py:160: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d005735d8643158b",
+      "name" : "失败截图",
+      "source" : "d005735d8643158b.jpg",
+      "type" : "image/jpg",
+      "size" : 94593
+    }, {
+      "uid" : "207dfe0ac785ccdf",
+      "name" : "log",
+      "source" : "207dfe0ac785ccdf.txt",
+      "type" : "text/plain",
+      "size" : 1271
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "setUp_init::0",
+    "time" : {
+      "start" : 1576031898681,
+      "stop" : 1576031898681,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试简版显示是否正常"
+  }, {
+    "name" : "feature",
+    "value" : "测试设置页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SetUpPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSetUpPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "27472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SetUpPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "14ce39aa1262dd9c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,16 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_MorePage.py:24 
+INFO     root:test_MorePage.py:25 ****开始执行用例****
+INFO     root:base.py:28 stop： com.android.browser
+INFO     root:base.py:28 start： com.android.browser
+INFO     root:base.py:143 查询到元素： com.android.browser:id/home
+INFO     root:base.py:74 点击元素: 浏览器首页home菜单
+INFO     root:base.py:149 未找到元素，元素名称为: 已保存网页
+INFO     root:base.py:143 查询到元素： 更多
+INFO     root:base.py:86 点击元素： 导航栏-》更多
+INFO     root:base.py:143 查询到元素： 今日头条
+INFO     root:base.py:74 点击元素: 网址导航-》今日头条
+INFO     root:base.py:143 查询到元素： 头条搜索
+INFO     root:base.py:175 已找到元素，断言成功，元素名称为： 头条搜索
+INFO     root:test_MorePage.py:32 ****用例执行结束****
+INFO     root:test_MorePage.py:33

@@ -1,0 +1,121 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 同城服务",
+      "children" : [ {
+        "name" : "test005MorePage",
+        "uid" : "eac32be989616c0a",
+        "parentUid" : "56466e36fcd5282782c4e141c54773f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031643106,
+          "stop" : 1576031665421,
+          "duration" : 22315
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56466e36fcd5282782c4e141c54773f3"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： Cookies",
+      "children" : [ {
+        "name" : "test001SetUpPage",
+        "uid" : "fe6228fed30db480",
+        "parentUid" : "54f82ab7a766d6af62fc29b1da354b94",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031819961,
+          "stop" : 1576031828556,
+          "duration" : 8595
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "54f82ab7a766d6af62fc29b1da354b94"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 百度",
+      "children" : [ {
+        "name" : "test002SetUpPage",
+        "uid" : "dcba82188f4e0074",
+        "parentUid" : "99bf2fa5ea188387fd490d39fabbb4b7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031839676,
+          "stop" : 1576031848056,
+          "duration" : 8380
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99bf2fa5ea188387fd490d39fabbb4b7"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/mc_item_container",
+      "children" : [ {
+        "name" : "test003SetUpPage",
+        "uid" : "262cef5a8ee2d27c",
+        "parentUid" : "16f78933a12e7fe2f58c1b966aa0401a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031859443,
+          "stop" : 1576031878170,
+          "duration" : 18727
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "16f78933a12e7fe2f58c1b966aa0401a"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 简版显示",
+      "children" : [ {
+        "name" : "test004SetUpPage",
+        "uid" : "14ce39aa1262dd9c",
+        "parentUid" : "92bff7082dc2be8f7320b1fba439997b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031889535,
+          "stop" : 1576031897945,
+          "duration" : 8410
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "92bff7082dc2be8f7320b1fba439997b"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 标题",
+      "children" : [ {
+        "name" : "test001ShareWebPage",
+        "uid" : "255520b93cec240d",
+        "parentUid" : "44558c952ec035fca3cf326ddb91d88a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031908696,
+          "stop" : 1576031920941,
+          "duration" : 12245
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44558c952ec035fca3cf326ddb91d88a"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.notepaper:id/gy",
+      "children" : [ {
+        "name" : "test002ShareNewsPage",
+        "uid" : "e9ec979a994d609",
+        "parentUid" : "930967cf08aaf473628b2650ea100b3b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1576031936145,
+          "stop" : 1576031963396,
+          "duration" : 27251
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "930967cf08aaf473628b2650ea100b3b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
