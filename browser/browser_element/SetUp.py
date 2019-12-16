@@ -50,3 +50,18 @@ GEOGRAPHY = '地理位置权限'
 
 # 点击360 ————LCM
 SETUP_360 = '360'
+
+# 清除浏览数据  ---wmw
+CLEAR_DATA = '清除浏览数据'
+
+# 搜索引擎  ---wmw
+SEARCH_ENGINE = '搜索引擎'
+
+# 广告屏蔽  ---wmw
+BLOCK_ADS_SWITCH = '广告屏蔽'
+
+# 精选内容推送 ---wmw
+SWIPE_LEFT_RIGHT_SWITCH = '精选内容推送'
+
+# 魅族头条设置 ---wmw
+MEIZU_HEAD = '魅族头条设置'

@@ -73,4 +73,24 @@ PERSONAL_CENTER_DELETE = '删除'
 # 删除评论弹框  ---wmw
 PERSONAL_CENTER_DELETE_BOX = '删除评论'
 
+# 设置  ---wmw
+SETTINGS = '设置'
+
+# 设置按钮  ---wmw
+SETTINGS_BUTTON = 'com.sohu.inputmethod.sogou.meizu:id/bt_set_default'
+
+# 语言和时间  ---wmw
+LANGUAGE_AND_TIME = '语言和时间'
+
+# 系统输入法   ---wmw
+INPUT_METHOD = '系统输入法'
+INPUT_METHOD_O = '//*[@resource-id="com.sohu.inputmethod.sogou.meizu:id/set_default_image"]/android.widget.RelativeLayout[1]'
+
+# 搜狗输入法魅族版   ---wmw
+SOUGOU = '搜狗输入法魅族版'
+
+
+# 输入习惯   ---wmw
+INPUT_BABIT = '输入习惯'
+
 

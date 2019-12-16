@@ -25,6 +25,7 @@ class TestSearchPanelPage():
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         self.home.clickHome()
         self.home.clickHomeOnPage(HOME_PAGE)
+        self.pubmethod.mbackToHomeOrNegative()
         yield
         logging.info("****用例执行结束****")
         logging.info("")

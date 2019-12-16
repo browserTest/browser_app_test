@@ -45,7 +45,7 @@ class SearchPanelPage(Base):
     # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCH):
-            self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
+            return self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
         else:
             self.assertFalse(SEARCHPANEL_SEARCH)
 
@@ -150,7 +150,7 @@ class SearchPanelPage(Base):
     # 获取搜索框文本    ---wmw
     def clickSearchText(self):
         if self.base.elementIsExit(SEARCHPANEL_OPEN):
-            self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
+            return self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
         else:
             self.base.assertFalse(CUSTOMIZE_SKIP)
 

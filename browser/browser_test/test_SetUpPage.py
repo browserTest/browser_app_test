@@ -63,7 +63,7 @@ class TestSetUpPage():
         # 点击设置
         self.toolbarpanel.clickSetUp()
         # 点击清除浏览器数据
-        self.setup.clickClearCoolkies(5)
+        self.setup.clickClearCoolkies()
         # 点击Cookies
         self.setup.clickCookies()
         # 点击账号密码
@@ -106,7 +106,7 @@ class TestSetUpPage():
         # 点击设置
         self.toolbarpanel.clickSetUp()
         # 点击搜索引擎
-        self.setup.clickSearchEngine(1)
+        self.setup.clickSearchEngine()
         # 点击百度
         self.setup.clickBaidu()
         # 点击mback
@@ -143,25 +143,25 @@ class TestSetUpPage():
         # 点击设置
         self.toolbarpanel.clickSetUp()
         # 点击广告屏蔽
-        self.setup.clickBlockAds(0)
-        BeforeBlockAdsText = self.setup.obtainBlockAdsSwitch()
+        self.setup.clickBlockAds(BLOCK_ADS_SWITCH)
+        BeforeBlockAdsText = self.setup.obtainBlockAdsSwitch(BLOCK_ADS_SWITCH)
         sleep(4)
         # 点击精选内容推送
-        self.setup.clickSwipeLeftRight(6)
+        self.setup.clickSwipeLeftRight(SWIPE_LEFT_RIGHT_SWITCH)
         sleep(4)
-        BeforeSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch()
+        BeforeSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch(SWIPE_LEFT_RIGHT_SWITCH)
         # 向下滑动到恢复默认设置
         self.base.scrollToElement(SETUP_RESET_TEXT)
         # 点击恢复默认设置
-        self.setup.clickResetToDefault(7)
+        self.setup.clickResetToDefault()
         # 点击恢复
         self.setup.clickReset()
         # 点击主页工具菜单
         self.home.clickMore()
         # 点击设置
         self.toolbarpanel.clickSetUp()
-        AfterBlockAdsText = self.setup.obtainBlockAdsSwitch()
-        AfterSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch()
+        AfterBlockAdsText = self.setup.obtainBlockAdsSwitch(BLOCK_ADS_SWITCH)
+        AfterSwipeLeftRight = self.setup.obtainSwipeLeftRightSwitch(SWIPE_LEFT_RIGHT_SWITCH)
         # 判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
         self.base.assertEqual(BeforeBlockAdsText,AfterBlockAdsText,False)
         self.base.assertEqual(BeforeSwipeLeftRight, AfterSwipeLeftRight, False)
@@ -176,7 +176,7 @@ class TestSetUpPage():
         # 点击设置
         self.toolbarpanel.clickSetUp()
         # 点击魅族头条设置
-        self.setup.clickMeizuHeadlinesSettings(2)
+        self.setup.clickMeizuHeadlinesSettings()
         # 点击简版显示
         self.setup.clickSimple()
         # 点击mback
