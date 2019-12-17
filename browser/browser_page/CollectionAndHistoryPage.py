@@ -1,8 +1,3 @@
-from base_function.base import Base
-from browser.browser_element.CollectionAndHistory import HISTORY_PAGE
-from browser.browser_element.Home import HOME_MORE
-from browser.browser_element.SearchPanel import SEARCHPANEL_WEBSITE
-from browser.browser_page.HomePage import *
 from browser.browser_page.ToolBarPanelPage import *
 from browser.browser_page.PubMethod import *
 from browser.browser_page.SearchPanelPage import *
@@ -27,6 +22,8 @@ class CollectionAndHistoryPage(Base):
             self.home.clickHomeSearch()
             self.base.elementSetText(SEARCHPANEL_WEBSITE, 'm.baidu.com', '搜索框输入"m.baidu.com"')
             self.searchpanel.clickSearchInto()
+            # 监听地理位置弹框，点击“始终允许”
+            self.base.browserWatcher()
             sleep(2)
             # 返回上一层
             self.pubmethod.clickBack()
@@ -37,9 +34,7 @@ class CollectionAndHistoryPage(Base):
     # 获取我的收藏相应记录的标题 —— LJX
     def getCollectionTitle(self, instance=0):
         if self.base.elementIsExit(COLLECTION_ID):
-            strText = self.base.elementText(COLLECTION_ID, '我的收藏记录的标题', instance)
-            strTitle = re.sub('\W+', '', strText)
-            return strTitle
+            return self.base.elementText(COLLECTION_ID, '我的收藏记录的标题', instance)
         else:
             self.assertFalse(COLLECTION_ID)
 
@@ -55,6 +50,7 @@ class CollectionAndHistoryPage(Base):
     def clickCollection(self, element):
         if self.base.elementIsExit(element):
             self.base.clickByElement(element, '我的收藏页面的{}'.format(element))
+            sleep(3)
         else:
             self.assertFalse(element)
 
@@ -65,12 +61,16 @@ class CollectionAndHistoryPage(Base):
         else:
             self.assertFalse(MULTI_CHOICE)
 
-    # 我的收藏页点击发送至桌面按钮 —— LJX
-    def clickCollectAddToDesk(self):
-        if self.base.elementIsExit(MULTI_CHOICE):
-            self.base.clickByElement(COLLECT_ADDTODESK_BUTTON, '“发送至桌面”相对坐标')
+    # 收藏页长按指定条数的记录发送至桌面3次 —— LJX
+    def clickCollectAddToDesk(self, num=1):
+        if self.base.elementIsExit(COLLECTION_ID):
+            for i in range(3):
+                self.longClickCollection(COLLECTION_ID, num)
+                self.base.clickByElement(COLLECT_ADDTODESK_BUTTON, '“发送至桌面”相对坐标')
+                # 等待2秒，"已添加到主页常用"toast提示消失后才能定位到其它元素
+                sleep(2)
         else:
-            self.assertFalse(MULTI_CHOICE)
+            self.assertFalse(COLLECTION_ID)
 
     # 我的收藏页点击发送至桌面按钮 —— LJX
     def clickCollectNewWindowOpen(self):
@@ -82,27 +82,30 @@ class CollectionAndHistoryPage(Base):
     # 在添加收藏页面点击元素 —— LJX
     def clickAddCollectFolder(self, element):
         if self.base.elementIsExit(element):
+            sleep(1)
             self.base.clickByElement(element, '添加收藏页面的{}'.format(element))
         else:
             self.assertFalse(element)
 
     # 新增收藏文件夹输入框填写文本 —— LJX
-    def inputCollectFolderName(self, element):
-        if self.base.elementIsExit(element):
-            self.base.elementSetText(element, "自动化测试", "自动化测试")
+    def inputCollectFolderName(self):
+        if self.base.elementIsExit(NEW_FOLDER_NAME_ID):
+            sleep(1)
+            self.base.elementSetText(NEW_FOLDER_NAME_ID, "自动化测试", "自动化测试")
         else:
-            self.assertFalse(element)
+            self.assertFalse(NEW_FOLDER_NAME_ID)
 
     # 删除“自动化测试”收藏文件夹 —— LJX
     def deleteCollectFolder(self):
         self.home.clickMore()
+        sleep(1)
         self.toolbarpanel.clickToolsPanel(MY_COLLECTION)
         if self.base.elementIsExit(COLLECT_NEW_FOLDER_NAME):
-            self.base.long_clickByElement(COLLECT_NEW_FOLDER_NAME, '"自动化测试"收藏文件夹', 1)
+            self.base.long_clickByElement(COLLECT_NEW_FOLDER_NAME, '"自动化测试"文件夹', 1)
             if self.base.elementIsExit(DELETE_FOLDER):
                 self.base.clickByElement(DELETE_FOLDER, '删除文件夹')
                 if self.base.elementIsExit(CONFIRM_TEXT):
-                    self.base.clickByElement(CONFIRM_TEXT, '确定')
+                    self.base.clickByElement(NEW_FOLDER_CONFIRM, '确认')
                     self.pubmethod.clickBack()
                 else:
                     self.assertFalse(CONFIRM_TEXT)
@@ -114,8 +117,8 @@ class CollectionAndHistoryPage(Base):
     # 设置输入框文本 —— LJX
     def setText(self, element, text):
         if self.base.elementIsExit(element):
-            self.base.elementSetText(element, text, text)
             sleep(1)
+            self.base.elementSetText(element, text, text)
         else:
             self.assertFalse(element)
 
@@ -132,7 +135,7 @@ class CollectionAndHistoryPage(Base):
     def longClickHistory(self, element, nums=1):
         if self.base.elementIsExit(element):
             self.base.long_clickByElementIdAndInstance(element, '历史页面的{}'.format(element), 1)
-            for i in range(2, nums):
+            for i in range(2, nums+1):
                 self.base.clickByElementIdAndInstance(element, '历史页面的{}'.format(element), i)
         else:
             self.assertFalse(element)
@@ -150,6 +153,19 @@ class CollectionAndHistoryPage(Base):
             self.base.clickByElement(NO_MARKING, '无痕按钮')
         else:
             self.assertFalse(NO_MARKING)
+
+    # 连续3次把指定书签发送至桌面 —— LJX
+    def sendToDeskCollect(self):
+        if self.base.elementIsExit(HOME_MORE):
+            for i in range(3):
+                # 添加到桌面
+                self.home.clickMore()
+                sleep(1)
+                self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+                self.base.clickByElement(ADD_TO_DESKTOP, '添加到收藏-》发送到桌面第{}次'.format(i))
+                sleep(1)
+        else:
+            self.assertFalse(HOME_MORE)
 
 
 

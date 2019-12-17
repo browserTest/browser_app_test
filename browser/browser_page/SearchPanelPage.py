@@ -1,3 +1,4 @@
+from time import sleep
 from base_function.base import Base
 from browser.browser_element.SearchPanel import *
 
@@ -11,6 +12,7 @@ class SearchPanelPage(Base):
     def clickSearchHistory(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCHHISTORY):
             self.base.clickByElement(SEARCHPANEL_SEARCHHISTORY, "搜索历史热词")
+            sleep(2)
         else:
             self.assertFalse(SEARCHPANEL_SEARCHHISTORY)
 
@@ -45,7 +47,7 @@ class SearchPanelPage(Base):
     # 获取第一个搜索热词    ---wmw
     def clickHotWords(self):
         if self.base.elementIsExit(SEARCHPANEL_SEARCH):
-            self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
+            return self.base.elementText(SEARCHPANEL_HOTWORDS, "第一个搜索热词")
         else:
             self.assertFalse(SEARCHPANEL_SEARCH)
 

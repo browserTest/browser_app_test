@@ -25,8 +25,20 @@ NEW_FOLDER_NAME_ID = 'com.android.browser:id/name'
 # 新增收藏文件夹弹框的确定按钮 —— LJX
 NEW_FOLDER_CONFIRM = '确定'
 
+# 新增收藏文件夹弹框的确定按钮 —— LJX
+NEW_FOLDER_CONFIRM_POSITION = (0.651, 0.521)
+
+# 删除文件夹的确认按钮ID —— LJX
+DELETE_CONFIRM_ID = 'android:id/button1'
+
 # 新增收藏文件夹的名称 —— LJX
 COLLECT_NEW_FOLDER_NAME = '自动化测试'
+
+# 新增收藏文件夹的ID —— LJX
+COLLECT_NEW_FOLDER_ID = 'com.android.browser:id/check_tv'
+
+# 新增收藏文件夹到相对位置 —— LJX
+COLLECT_NEW_FOLDER_POSITION = (0.134, 0.257)
 
 # 添加收藏确认按钮ID —— LJX
 COLLECT_CONFIRM_ID = 'com.android.browser:id/menu_more'
@@ -81,6 +93,12 @@ MULTI_CHOICE = 'com.android.browser:id/mz_action_multi_choice_select_all_item'
 
 # 历史页长按记录后底部删除按钮相对坐标 —— LJX
 HISTORY_DELETE_BUTTON = (0.734, 0.925)
+
+# 我的收藏页面返回按钮ID —— LJX
+COLLECTION_BACK_ID = 'com.android.browser:id/mz_toolbar_nav_button'
+
+# 删除收藏记录的删除ID —— LJX
+FRAME_DELETE_ID = 'android:id/text1'
 
 
 

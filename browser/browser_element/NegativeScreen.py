@@ -46,6 +46,9 @@ DELETE_FILE = '删除文件夹'
 # 删除文件夹的“确认”按钮 —— LJX
 CONFIRM_TEXT = '确定'
 
+# 添加收藏-编辑-确认按钮ID —— LJX
+CONFIRM_ID = 'com.android.browser:id/title'
+
 # 文件夹 —— LJX
 FILE = '文件夹'
 

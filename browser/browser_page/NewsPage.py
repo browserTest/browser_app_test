@@ -155,6 +155,7 @@ class NewsPage(Base):
     def clickArticleCollectPosition(self):
         if self.base.elementIsExit(ARTICLE_DETAILS_TOP):
             self.base.clickByElement(ARTICLE_COLLECT_POSITION, '资讯详情页收藏按钮相对坐标')
+            sleep(3)  # 收藏文章，等待3秒toast提示消失
         else:
             self.assertFalse(ARTICLE_DETAILS_TOP)
 

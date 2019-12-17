@@ -1,5 +1,3 @@
-from base_function.base import Base, logging
-from browser.browser_element.AddToHome import *
 from browser.browser_element.NegativeScreen import *
 from browser.browser_page.AddToHomePage import *
 from time import sleep

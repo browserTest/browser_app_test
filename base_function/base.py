@@ -321,8 +321,8 @@ class Base():
         '''
         :param element: 元素id
         :param logtext: 打印log的文案
-        :param duration：长按的时长，单位秒
-        :param instance：第几个
+        :param instance：第几位
+        :param duration：长按的时长，单位秒，默认1秒
         :return:
         '''
         self.d(resourceId=element, instance=instance).long_click(duration)
