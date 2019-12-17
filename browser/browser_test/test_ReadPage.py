@@ -40,7 +40,8 @@ class TestReadPage():
         # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
         self.pubmethod.clickPrivacyAgree()
         # 点击权限弹窗“始终允许”按钮，进入浏览器
-        self.pubmethod.clickPermissionAgree()
+        #self.pubmethod.clickPermissionAgree()
+        self.base.browserWatcher()
         sleep(5)
         # 点击主页工具菜单
         self.home.clickMore()
@@ -62,6 +63,8 @@ class TestReadPage():
         self.base.assertTrue(READ_IMG)
         # 点击允许
         self.read.clickOpen()
+        sleep(2)
+        self.read.clickReadButton()
         # 断言是否进入阅读模式
         self.base.assertTrue(READ_IMG,False)
         # 点击地址栏阅读模式按钮，退出阅读模式

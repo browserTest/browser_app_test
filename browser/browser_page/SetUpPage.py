@@ -12,9 +12,9 @@ class SetUpPage(Base):
         self.base = Base(driver)
 
     # 点击魅族头条设置   ---wmw
-    def clickMeizuHeadlinesSettings(self,instance):
+    def clickMeizuHeadlinesSettings(self):
         if self.base.elementIsExit(SETUP_ID):
-            self.base.clickByElementIdAndInstance(SETUP_ID, "魅族头条设置",instance)
+            self.base.clickByElement(MEIZU_HEAD, "魅族头条设置")
         else:
             self.assertFalse(SETUP_ID)
 
@@ -34,11 +34,11 @@ class SetUpPage(Base):
             self.assertFalse(SETUP_MORE)
 
     # 点击清除浏览数据   ---wmw
-    def clickClearCoolkies(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            self.base.clickByElementIdAndInstance(SETUP_ID, "清除浏览数据",instance)
+    def clickClearCoolkies(self):
+        if self.base.elementIsExit(CLEAR_DATA):
+            self.base.clickByElement(CLEAR_DATA, "清除浏览数据")
         else:
-            self.assertFalse(SETUP_ID)
+            self.assertFalse(CLEAR_DATA)
 
     # 点击清除浏览数据--Cookies    ---wmw
     def clickCookies(self):
@@ -76,11 +76,11 @@ class SetUpPage(Base):
             self.assertFalse(SETUP_DONE)
 
     # 点击搜索引擎   ---wmw
-    def clickSearchEngine(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            self.base.clickByElementIdAndInstance(SETUP_ID, "搜索引擎",instance)
+    def clickSearchEngine(self):
+        if self.base.elementIsExit(SEARCH_ENGINE):
+            self.base.clickByElement(SEARCH_ENGINE, "搜索引擎")
         else:
-            self.assertFalse(SETUP_ID)
+            self.assertFalse(SEARCH_ENGINE)
 
     # 点击百度   --wmw
     def clickBaidu(self):
@@ -104,21 +104,21 @@ class SetUpPage(Base):
             self.assertFalse(SEARCHPANEL_TEXT)
 
     # 点击广告屏蔽   ---wmw
-    def clickBlockAds(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            if self.obtainBlockAdsSwitch() == "关闭":
+    def clickBlockAds(self,element):
+        if self.base.elementIsExit(element):
+            if self.obtainBlockAdsSwitch(element) == "关闭":
                 return
             else:
-                self.base.clickByElementIdAndInstance(SETUP_ID, "广告屏蔽", instance)
+                self.base.clickByElementRight(element, SETUP_SWITCH, direction='right')
         else:
-            self.assertFalse(SETUP_ID)
+            self.assertFalse(element)
 
     # 点击恢复默认设置   ---wmw
-    def clickResetToDefault(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            self.base.clickByElementIdAndInstance(SETUP_ID, "恢复默认设置",instance)
+    def clickResetToDefault(self):
+        if self.base.elementIsExit(SETUP_RESET_TEXT):
+            self.base.clickByElement(SETUP_RESET_TEXT, "恢复默认设置")
         else:
-            self.assertFalse(SETUP_ID)
+            self.assertFalse(SETUP_RESET_TEXT)
 
 
     # 点击恢复默认设置---恢复    --wmw
@@ -128,29 +128,44 @@ class SetUpPage(Base):
         else:
             self.assertFalse(SETUP_RESET)
 
+    # # 获取广告屏蔽开关状态    ---wmw
+    # def obtainBlockAdsSwitch(self):
+    #     if self.base.elementIsExit(SETUP_ID):
+    #         return self.base.elementText(SETUP_SWITCH, "开关状态",0)
+    #     else:
+    #         self.assertFalse(SETUP_ID)
+
     # 获取广告屏蔽开关状态    ---wmw
-    def obtainBlockAdsSwitch(self):
+    def obtainBlockAdsSwitch(self, element):
         if self.base.elementIsExit(SETUP_ID):
-            return self.base.elementText(SETUP_SWITCH, "开关状态",0)
+            return self.base.ObtianRightelementText(element, SETUP_SWITCH, direction='right')
         else:
             self.assertFalse(SETUP_ID)
 
     # 获取精选内容推送开关状态    ---wmw
-    def obtainSwipeLeftRightSwitch(self):
+    def obtainSwipeLeftRightSwitch(self, element):
         if self.base.elementIsExit(SETUP_ID):
-            return self.base.elementText(SETUP_SWITCH, "开关状态",3)
+            return self.base.ObtianRightelementText(element, SETUP_SWITCH, direction='right')
         else:
             self.assertFalse(SETUP_ID)
 
+
+    # # 获取精选内容推送开关状态    ---wmw
+    # def obtainSwipeLeftRightSwitch(self):
+    #     if self.base.elementIsExit(SETUP_ID):
+    #         return self.base.elementText(SETUP_SWITCH, "开关状态",3)
+    #     else:
+    #         self.assertFalse(SETUP_ID)
+
     # 点击精选内容推送  ---wmw
-    def clickSwipeLeftRight(self,instance):
-        if self.base.elementIsExit(SETUP_ID):
-            if self.obtainSwipeLeftRightSwitch() == "关闭":
+    def clickSwipeLeftRight(self,element):
+        if self.base.elementIsExit(element):
+            if self.obtainSwipeLeftRightSwitch(element) == "关闭":
                 return
             else:
-                self.base.clickByElementIdAndInstance(SETUP_ID, "精选内容推送",instance)
+                self.base.clickByElementRight(element, SETUP_SWITCH, direction='right')
         else:
-            self.assertFalse(SETUP_ID)
+            self.assertFalse(element)
 
 
     # 点击允许   ---wmw

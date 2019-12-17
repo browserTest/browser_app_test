@@ -73,7 +73,8 @@ class PersonalCenterPage(Base):
     # 输入密码 ---wmw
     def inputPassWord(self):
         if self.base.elementIsExit(PERSONAL_CENTER_PASSWORD):
-            self.base.elementSetText(PERSONAL_CENTER_PASSWORD, "app123456789" ,"输入密码")
+            # 备注：账号必须是测试账号，账号输入框处必须有账号名在里面，否则登录不成功
+            self.base.elementSetText(PERSONAL_CENTER_PASSWORD, "appadmin111" ,"输入密码")
         else:
             self.assertFalse(PERSONAL_CENTER_PASSWORD)
 
@@ -124,7 +125,8 @@ class PersonalCenterPage(Base):
                 if self.base.elementIsExit(PERSONAL_CENTER_OUT_ACCOUNT):
                     self.base.clickByElement(PERSONAL_CENTER_OUT_ACCOUNT, "点击退出账号")
                     if self.base.elementIsExit(PERSONAL_CENTER_PASSWORD_B):
-                        self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "app123456789","输入退出密码")
+                        # 备注：账号必须是测试账号，账号输入框处必须有账号名在里面，否则登录不成功
+                        self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "appadmin111","输入退出密码")
                         if self.base.elementIsExit(PERSONAL_CENTER_DETERMINE):
                             self.base.clickByElement(PERSONAL_CENTER_DETERMINE, "点击确定")
                         else:
@@ -143,7 +145,8 @@ class PersonalCenterPage(Base):
                         if self.base.elementIsExit(PERSONAL_CENTER_OUT_ACCOUNT):
                             self.base.clickByElement(PERSONAL_CENTER_OUT_ACCOUNT, "点击退出账号")
                             if self.base.elementIsExit(PERSONAL_CENTER_PASSWORD_B):
-                                self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "app123456789", "输入退出密码")
+                                # 备注：账号必须是测试账号，账号输入框处必须有账号名在里面，否则登录不成功
+                                self.base.elementSetText(PERSONAL_CENTER_PASSWORD_B, "appadmin111", "输入退出密码")
                                 if self.base.elementIsExit(PERSONAL_CENTER_DETERMINE):
                                     self.base.clickByElement(PERSONAL_CENTER_DETERMINE, "点击确定")
                                 else:
@@ -155,3 +158,33 @@ class PersonalCenterPage(Base):
                 else:
                     self.assertFalse(PERSONAL_CENTER_COMPLETE_BUTTON)
 
+
+    # 点击语言和时间——wmw
+    def clickLanguageAndTime(self):
+        if self.base.elementIsExit(SETTINGS):
+            self.base.clickByElement(LANGUAGE_AND_TIME, "语言和时间")
+        else:
+            self.assertFalse(SETTINGS)
+
+
+    # 点击系统输入法——wmw
+    def clickInputMethod(self):
+        if self.base.elementIsExit(LANGUAGE_AND_TIME):
+            self.base.clickByElement(INPUT_METHOD, "系统输入法")
+        else:
+            self.assertFalse(LANGUAGE_AND_TIME)
+
+
+    # 点击设置按钮——wmw
+    def clickSettingButton(self):
+        if self.base.elementIsExit(SETTINGS_BUTTON):
+            self.base.clickByElement(SETTINGS_BUTTON, "设置按钮")
+        else:
+            self.assertFalse(SETTINGS_BUTTON)
+
+    # 点击搜狗输入法魅族版——wmw
+    def clickSouGou(self):
+        if self.base.elementIsExit(SOUGOU):
+            self.base.clickByElement(SOUGOU, "搜狗输入法魅族版")
+        else:
+            self.assertFalse(SOUGOU)

@@ -33,7 +33,7 @@ class ReadPage(Base):
     # 阅读模式-立即开启  --wmw
     def clickOpen(self):
         if self.base.elementIsExit(READ_OPEN):
-            self.base.clickByElement(READ_OPEN, "立即开启")
+            self.base.clickByElement(READ_OPEN, "我知道了")
         else:
             self.assertFalse(READ_OPEN)
 

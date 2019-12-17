@@ -14,8 +14,8 @@ READ_CHAPTER = (0.159, 0.465)
 #阅读模式弹框--阅读模式按钮图片  ---wmw
 READ_IMG = 'com.android.browser:id/read_mode_webview_read_img'
 
-# 立即开启  --wmw
-READ_OPEN = '立即开启'
+# 我知道了  --wmw
+READ_OPEN = '我知道了'
 
 # 地址栏阅读模式按钮   --wmw
 READ_BUTTON = 'com.android.browser:id/bt_reader'

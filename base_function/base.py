@@ -5,6 +5,8 @@ import re
 from time import sleep
 from browser.browser_element.WindowsTabElement import *
 from aip import AipOcr
+from fuzzywuzzy import process,fuzz
+
 
 class Base():
 
@@ -193,8 +195,11 @@ class Base():
             elif element in element1:
                 assert True
                 logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
+            elif process.extract(element, element1,limit=50):
+                # 从字符串中找出前50与element最相似的句子
+                assert fuzz.ratio(element, element1), "断言元素不匹配，断言失败，元素名称为： {} {}".format(element,element1)
+                logging.info("元素匹配，断言成功，元素名称为： {} {}".format(element, element1))
             else:
-
                 assert False, "元素1名称与元素2名称不相等且不包含，断言失败，元素1名称：{} && 元素2名称：{}".format(element, element1)
                 logging.info("元素包含，断言成功，元素1名称：{} && 元素2名称：{}".format(element, element1))
         else:
@@ -415,6 +420,20 @@ class Base():
              else:
                  self.d(text=elementText).left(text=element).click()
          logging.info("点击{}元素{}方向的{}元素".format(elementText, direction, element))
+
+    # 提取元素右边的元素文本    ---wmw
+    def ObtianRightelementText(self,elementText,element,direction):
+        '''
+        :param elementText: 元素名称
+        :param element: 元素ID
+        :param direction: 方向
+        :return:
+        '''
+        if direction == 'right':
+            if str(element).startswith("com"):
+                text = self.d(text=elementText).right(resourceId=element).get_text()
+                logging.info("提取{}元素{}方向的{}元素文本".format(elementText, direction, element))
+                return text
 
 
     # 重复点击元素N次，每次间隔1秒，若该元素消失则中止偿试并返回bool值 —— LJX

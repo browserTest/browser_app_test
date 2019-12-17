@@ -28,6 +28,7 @@ class TestPersonalCenterPage():
         logging.info("****开始执行用例****")
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.mbackToHomeOrNegative()
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -111,13 +112,16 @@ class TestPersonalCenterPage():
         # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
         self.pubmethod.clickPrivacyAgree()
         # 点击权限弹窗“始终允许”按钮，进入浏览器
-        self.pubmethod.clickPermissionAgree()
+        # self.pubmethod.clickPermissionAgree()
+        self.base.browserWatcher()
         sleep(5)
         self.home.clickInformation()
         # 点击“倒三角”进入频道管理页面
         self.news.clickNewsTriangle()
+        sleep(2)
         # 点击“星座”频道打开，进入资讯流列表
         self.news.clickNewsChannel(NEWS_CHANNEL_CONSTELLATION)
+
         self.news.dropScrollNews()
         self.news.clickOpenNewsArticle()
         self.base.scrollToElement(NEWS_ALL_COMMENTS)
@@ -138,9 +142,25 @@ class TestPersonalCenterPage():
         self.base.assertTrue(NEWS_INPUT_COMMENTS, False)
 
 
+    @allure.story('测试修改输入法')
+    def test006PersonalCenterPage(self, personalCenter_init):
+        '''
+            1、修改输入法
+        '''
+        # 点击mback
+        self.pubmethod.clickBack()
+        self.pubmethod.startApp(MEIZU_SETTINGS)
+        self.base.scrollToElement(LANGUAGE_AND_TIME)
+        sleep(5)
+        self.personalcenter.clickLanguageAndTime()
+        self.personalcenter.clickInputMethod()
+        self.personalcenter.clickSettingButton()
+        self.personalcenter.clickSouGou()
+        self.base.assertTrue(INPUT_BABIT)
+
 
     @allure.story('测试退出账号')
-    def test006PersonalCenterPage(self, personalCenter_init):
+    def test007PersonalCenterPage(self, personalCenter_init):
         '''
             1、退出Flyme账号
         '''

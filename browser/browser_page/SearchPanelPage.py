@@ -152,7 +152,7 @@ class SearchPanelPage(Base):
     # 获取搜索框文本    ---wmw
     def clickSearchText(self):
         if self.base.elementIsExit(SEARCHPANEL_OPEN):
-            self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
+            return self.base.elementText(SEARCHPANEL_TEXT, "获取搜索框文本")
         else:
             self.base.assertFalse(CUSTOMIZE_SKIP)
 
