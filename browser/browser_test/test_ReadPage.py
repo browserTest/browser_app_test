@@ -37,12 +37,12 @@ class TestReadPage():
         3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式
 
         '''
-        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮
+        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
+        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.clickPrivacyAgree()
-        # 点击权限弹窗“始终允许”按钮，进入浏览器
-        #self.pubmethod.clickPermissionAgree()
+        # self.pubmethod.clickPermissionAgree()
+        sleep(4)
         self.base.browserWatcher()
-        sleep(5)
         # 点击主页工具菜单
         self.home.clickMore()
         # 点击电脑版

@@ -30,7 +30,7 @@ PERSONAL_CENTER_PASSWORD = 'com.meizu.account:id/edtPwd'
 PERSONAL_CENTER_COMMENT_DETAILS = '评论详情'
 
 # 评论文章  ---wmw
-PERSONAL_CENTER_COMMENTARY = '//*[@resource-id="com.android.browser:id/sites_container"]/android.widget.LinearLayout[1]'
+PERSONAL_CENTER_COMMENTARY = '//*[@resource-id="comment-detail"]/android.view.View[5]'
 
 # 我的评论页面标题文本  --wmw
 PERSONAL_CENTER_MY_COMMENT_A = '我的评论'

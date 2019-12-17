@@ -99,7 +99,7 @@ class TestNewsPage():
         self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.clickPrivacyAgree()
-        self.pubmethod.clickPermissionAgree()
+        # self.pubmethod.clickPermissionAgree()
         sleep(4)
         self.base.browserWatcher()
         self.home.clickInformation()
@@ -164,7 +164,7 @@ class TestNewsPage():
         self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.clickPrivacyAgree()
-        self.pubmethod.clickPermissionAgree()
+        #self.pubmethod.clickPermissionAgree()
         sleep(4)
         # 点击资讯按钮进入资讯流列表
         self.home.clickInformation()
