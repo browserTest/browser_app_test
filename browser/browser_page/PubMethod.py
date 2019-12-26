@@ -96,10 +96,18 @@ class PubMethod(Base):
     # 返回到首页或负一屏 —— LJX
     def mbackToHomeOrNegative(self):
         # 如果不在首页也不在负一屏，返回上一层，直到返回到首页或负一屏
-        while not self.base.elementIsExit(BACKGROUND_ID) and not self.base.elementIsExit(SAVED_PAGE):
-            if self.base.elementIsExit(WEBSITE_BACKWARD):
-                self.base.clickByElement(WEBSITE_BACKWARD, '不在首页，返回上一层')
-            elif self.base.elementIsExit(NEWS_PAGE_BACK):
-                self.base.clickByElement(NEWS_PAGE_BACK, '不在首页，返回上一层')
-            else:
-                self.clickBack()
+        if self.base.elementIsExit(PRIVACY_AGREE_BUTTUN):
+            self.base.clickByElement(PRIVACY_AGREE_BUTTUN, '隐私弹窗同意按钮')
+            self.base.browserWatcher()
+            self.base.browserWatcher()
+        elif self.base.elementIsExit(PERMISSION_AGREE_BUTTON):
+            self.base.clickByElement(PERMISSION_AGREE_BUTTON, '权限弹窗允许按钮')
+            self.base.browserWatcher()
+        else:
+            while not self.base.elementIsExit(BACKGROUND_ID) and not self.base.elementIsExit(SAVED_PAGE):
+                if self.base.elementIsExit(WEBSITE_BACKWARD):
+                    self.base.clickByElement(WEBSITE_BACKWARD, '不在首页，返回上一层')
+                elif self.base.elementIsExit(NEWS_PAGE_BACK):
+                    self.base.clickByElement(NEWS_PAGE_BACK, '不在首页，返回上一层')
+                else:
+                    self.clickBack()
