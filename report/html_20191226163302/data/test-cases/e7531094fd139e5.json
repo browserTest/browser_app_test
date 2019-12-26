@@ -1,0 +1,154 @@
+{
+  "uid" : "e7531094fd139e5",
+  "name" : "test001RefreshNews",
+  "fullName" : "browser.browser_test.test_NewsPage.TestNewsPage#test001RefreshNews",
+  "historyId" : "76d8857b466588d3a2f08be47fdaff92",
+  "time" : {
+    "start" : 1577351504403,
+    "stop" : 1577351537012,
+    "duration" : 32609
+  },
+  "description" : "\n        1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表\n        2、获取资讯流列表的文章标题\n        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题\n        4、断言刷新前和刷新后的文章标题不一样\n        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容\n        6、断言刷新前和刷新后的文章标题不一样\n        7、上滑刷新，刷新新的资讯文章\n        8、断言刷新前的文章内容标题不存在\n        ",
+  "descriptionHtml" : "<pre><code>    1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表\n    2、获取资讯流列表的文章标题\n    3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题\n    4、断言刷新前和刷新后的文章标题不一样\n    5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容\n    6、断言刷新前和刷新后的文章标题不一样\n    7、上滑刷新，刷新新的资讯文章\n    8、断言刷新前的文章内容标题不存在\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新",
+  "statusTrace" : "self = <browser_test.test_NewsPage.TestNewsPage object at 0x00000000050CAF28>\nnews_init = None\n\n    @allure.story('测试下拉刷新、上滑刷新、点击资讯按钮刷新、点击提示语刷新资讯流列表，更新资讯内容')\n    def test001RefreshNews(self,news_init):\n        '''\n        1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表\n        2、获取资讯流列表的文章标题\n        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题\n        4、断言刷新前和刷新后的文章标题不一样\n        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容\n        6、断言刷新前和刷新后的文章标题不一样\n        7、上滑刷新，刷新新的资讯文章\n        8、断言刷新前的文章内容标题不存在\n        '''\n        self.home.clickHome()\n        self.home.clickHomeOnPage(HOME_PAGE)\n        self.home.clickInformation()\n        beforeArticleTitle = self.news.getNewsArticleTitle()\n        self.news.dropScrollNews()\n        sleep(2)\n        afterArticleTitle = self.news.getNewsArticleTitle()\n        self.base.assertEqual(beforeArticleTitle,afterArticleTitle,False)\n        self.news.scrollUpNewsToElement()\n>       self.news.clickNewsRefreshNotice()\n\nbrowser\\browser_test\\test_NewsPage.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NewsPage.py:40: in clickNewsRefreshNotice\n    self.assertFalse(NEWS_REFRESH_NOTICE_TEXT)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.NewsPage.NewsPage object at 0x0000000006109860>\nelement = '上次看到这里，点击刷新'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351482014,
+      "stop" : 1577351484014,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "news_init",
+    "time" : {
+      "start" : 1577351484014,
+      "stop" : 1577351504402,
+      "duration" : 20388
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351482013,
+      "stop" : 1577351482013,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表\n        2、获取资讯流列表的文章标题\n        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题\n        4、断言刷新前和刷新后的文章标题不一样\n        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容\n        6、断言刷新前和刷新后的文章标题不一样\n        7、上滑刷新，刷新新的资讯文章\n        8、断言刷新前的文章内容标题不存在\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新",
+    "statusTrace" : "self = <browser_test.test_NewsPage.TestNewsPage object at 0x00000000050CAF28>\nnews_init = None\n\n    @allure.story('测试下拉刷新、上滑刷新、点击资讯按钮刷新、点击提示语刷新资讯流列表，更新资讯内容')\n    def test001RefreshNews(self,news_init):\n        '''\n        1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表\n        2、获取资讯流列表的文章标题\n        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题\n        4、断言刷新前和刷新后的文章标题不一样\n        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容\n        6、断言刷新前和刷新后的文章标题不一样\n        7、上滑刷新，刷新新的资讯文章\n        8、断言刷新前的文章内容标题不存在\n        '''\n        self.home.clickHome()\n        self.home.clickHomeOnPage(HOME_PAGE)\n        self.home.clickInformation()\n        beforeArticleTitle = self.news.getNewsArticleTitle()\n        self.news.dropScrollNews()\n        sleep(2)\n        afterArticleTitle = self.news.getNewsArticleTitle()\n        self.base.assertEqual(beforeArticleTitle,afterArticleTitle,False)\n        self.news.scrollUpNewsToElement()\n>       self.news.clickNewsRefreshNotice()\n\nbrowser\\browser_test\\test_NewsPage.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NewsPage.py:40: in clickNewsRefreshNotice\n    self.assertFalse(NEWS_REFRESH_NOTICE_TEXT)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.NewsPage.NewsPage object at 0x0000000006109860>\nelement = '上次看到这里，点击刷新'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "aa956fe5b9a6c18f",
+      "name" : "失败截图",
+      "source" : "aa956fe5b9a6c18f.jpg",
+      "type" : "image/jpg",
+      "size" : 1457048
+    }, {
+      "uid" : "1be77eec74c00fa7",
+      "name" : "log",
+      "source" : "1be77eec74c00fa7.txt",
+      "type" : "text/plain",
+      "size" : 2042
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "news_init::0",
+    "time" : {
+      "start" : 1577351538455,
+      "stop" : 1577351538455,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试下拉刷新、上滑刷新、点击资讯按钮刷新、点击提示语刷新资讯流列表，更新资讯内容"
+  }, {
+    "name" : "feature",
+    "value" : "魅族浏览器资讯流功能测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NewsPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewsPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NewsPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e7531094fd139e5.json",
+  "parameterValues" : [ ]
+}

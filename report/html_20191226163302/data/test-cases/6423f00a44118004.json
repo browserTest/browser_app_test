@@ -1,0 +1,140 @@
+{
+  "uid" : "6423f00a44118004",
+  "name" : "test003PermissionDisagree",
+  "fullName" : "browser.browser_test.test_PubMethod.TestPubMethod#test003PermissionDisagree",
+  "historyId" : "83520cfe157e858771a6b538246a921e",
+  "time" : {
+    "start" : 1577352070005,
+    "stop" : 1577352073465,
+    "duration" : 3460
+  },
+  "description" : "\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“拒绝”按钮\n        ",
+  "descriptionHtml" : "<pre><code>    1、清除数据后首次打开浏览器，弹出隐私政策窗口\n    2、点击“同意”，弹出权限窗口\n    3、点击权限弹窗“拒绝”按钮\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352062459,
+      "stop" : 1577352062459,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "pubMethod_init",
+    "time" : {
+      "start" : 1577352064460,
+      "stop" : 1577352070005,
+      "duration" : 5545
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352062460,
+      "stop" : 1577352064460,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“拒绝”按钮\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "66184f520b1f81f9",
+      "name" : "log",
+      "source" : "66184f520b1f81f9.txt",
+      "type" : "text/plain",
+      "size" : 814
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "pubMethod_init::0",
+    "time" : {
+      "start" : 1577352073466,
+      "stop" : 1577352073466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试权限弹窗拒绝按钮"
+  }, {
+    "name" : "feature",
+    "value" : "测试启动弹框"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_PubMethod"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPubMethod"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_PubMethod"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6423f00a44118004.json",
+  "parameterValues" : [ ]
+}

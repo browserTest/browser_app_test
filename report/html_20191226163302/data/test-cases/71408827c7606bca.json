@@ -1,0 +1,157 @@
+{
+  "uid" : "71408827c7606bca",
+  "name" : "test001ShareWebPage",
+  "fullName" : "browser.browser_test.test_SharePage.TestSharePage#test001ShareWebPage",
+  "historyId" : "ff3ffbf6feb84eddfbed5d44bd6f0562",
+  "time" : {
+    "start" : 1577352653592,
+    "stop" : 1577352667755,
+    "duration" : 14163
+  },
+  "description" : "\n        1、进入浏览器，点击导航网站-》安居客\n        2、在安居客网页中点击底部-》工具栏图标按钮\n        3、点击底部工具栏-》点击分享按钮\n        4、点击分享面板-》便签按钮到便签\n        5、断言便签应用中是否存在分享的内容\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入浏览器，点击导航网站-》安居客\n    2、在安居客网页中点击底部-》工具栏图标按钮\n    3、点击底部工具栏-》点击分享按钮\n    4、点击分享面板-》便签按钮到便签\n    5、断言便签应用中是否存在分享的内容\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： 标题",
+  "statusTrace" : "self = <browser_test.test_SharePage.TestSharePage object at 0x00000000063E3588>\nshare_init = None\n\n    @allure.story('测试分享网页到便签')\n    @pytest.mark.P0\n    def test001ShareWebPage(self, share_init):\n        '''\n        1、进入浏览器，点击导航网站-》安居客\n        2、在安居客网页中点击底部-》工具栏图标按钮\n        3、点击底部工具栏-》点击分享按钮\n        4、点击分享面板-》便签按钮到便签\n        5、断言便签应用中是否存在分享的内容\n        '''\n        self.more.clickDaoHang(HOME_ANJUKE)\n        self.home.clickMore()\n        self.share.clickWebPageShare()\n        self.share.clickNotes()\n>       self.base.assertTrue(SHARE_TEXTTITLE)\n\nbrowser\\browser_test\\test_SharePage.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000004BE23C8>, element = '标题'\nmark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： 标题\n\nbase_function\\base.py:176: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "share_init",
+    "time" : {
+      "start" : 1577352645004,
+      "stop" : 1577352653590,
+      "duration" : 8586
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352643004,
+      "stop" : 1577352645004,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352643003,
+      "stop" : 1577352643004,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入浏览器，点击导航网站-》安居客\n        2、在安居客网页中点击底部-》工具栏图标按钮\n        3、点击底部工具栏-》点击分享按钮\n        4、点击分享面板-》便签按钮到便签\n        5、断言便签应用中是否存在分享的内容\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： 标题",
+    "statusTrace" : "self = <browser_test.test_SharePage.TestSharePage object at 0x00000000063E3588>\nshare_init = None\n\n    @allure.story('测试分享网页到便签')\n    @pytest.mark.P0\n    def test001ShareWebPage(self, share_init):\n        '''\n        1、进入浏览器，点击导航网站-》安居客\n        2、在安居客网页中点击底部-》工具栏图标按钮\n        3、点击底部工具栏-》点击分享按钮\n        4、点击分享面板-》便签按钮到便签\n        5、断言便签应用中是否存在分享的内容\n        '''\n        self.more.clickDaoHang(HOME_ANJUKE)\n        self.home.clickMore()\n        self.share.clickWebPageShare()\n        self.share.clickNotes()\n>       self.base.assertTrue(SHARE_TEXTTITLE)\n\nbrowser\\browser_test\\test_SharePage.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000004BE23C8>, element = '标题'\nmark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： 标题\n\nbase_function\\base.py:176: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c6b1ab501f5228c2",
+      "name" : "失败截图",
+      "source" : "c6b1ab501f5228c2.jpg",
+      "type" : "image/jpg",
+      "size" : 149842
+    }, {
+      "uid" : "970d861f0566765e",
+      "name" : "log",
+      "source" : "970d861f0566765e.txt",
+      "type" : "text/plain",
+      "size" : 1379
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "share_init::0",
+    "time" : {
+      "start" : 1577352668381,
+      "stop" : 1577352668381,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器分享功能测试"
+  }, {
+    "name" : "story",
+    "value" : "测试分享网页到便签"
+  }, {
+    "name" : "tag",
+    "value" : "P0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SharePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSharePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SharePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "P0" ]
+  },
+  "source" : "71408827c7606bca.json",
+  "parameterValues" : [ ]
+}

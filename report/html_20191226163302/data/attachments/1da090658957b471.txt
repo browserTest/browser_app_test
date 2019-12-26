@@ -1,0 +1,20 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SearchPanelPage.py:22 
+INFO     root:test_SearchPanelPage.py:23 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 已保存网页
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/url
+INFO     root:base.py:237 输入文本: 百度网址
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:76 点击元素: 搜索框右侧进入按钮
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/bt_refresh
+INFO     root:test_SearchPanelPage.py:30 ****用例执行结束****
+INFO     root:test_SearchPanelPage.py:31

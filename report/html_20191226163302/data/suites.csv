@@ -1,0 +1,568 @@
+"Status","Name","Duration in ms","Description"
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test010NegativeMultiSelect","35982","
+        1、进入负一屏，添加""网易""书签
+        2、长按“网易”书签，进入""多选""状态，获取屏幕顶部标题
+        3、点击""全选""后，再获取屏幕顶部标题，断言""全选""前后，顶部标题不一样
+        4、点击""取消""后，断言当前页面不存在""取消""元素
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test004LongPressCloseWindowsTab","12262","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口
+        4、点击多窗口中tab页进入网页浏览
+        5、获取新建的多窗口数量
+        6、长按并且上滑到 “X” 位置后放开，关闭当前窗口
+        7、获取删除多窗口后的数量
+        8、断言多窗口数量是否减少
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test005AddBookmark","55450","
+        1、进入负一屏，删除""魅族社区""书签
+        2、进入精选页，添加“魅族社区”书签，返回上一层到负一屏，断言负一屏是否存在“魅族社区”书签，点击进入“魅族社区”网站，断言页面是否存在'魅族社区'元素
+        3、点击进入“网址导航”网站，断言页面是否存在'网址导航'元素
+        "
+"failed","browser.browser_test.test_SharePage.TestSharePage#test001ShareWebPage","14163","
+        1、进入浏览器，点击导航网站-》安居客
+        2、在安居客网页中点击底部-》工具栏图标按钮
+        3、点击底部工具栏-》点击分享按钮
+        4、点击分享面板-》便签按钮到便签
+        5、断言便签应用中是否存在分享的内容
+        "
+"failed","browser.browser_test.test_HomePage.TestHomePage#test002HomePage","16120",""
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test008DeleteHistoryOne","23746","
+        1、进入首页，再进入历史
+        2、长按1条记录，删除，断言被删除记录不存在
+        "
+"failed","browser.browser_test.test_DownLoadPage.TestDownPage#test004DownAppPage","6371","
+        1、点击“搜索框”
+        2、输入“QQ”，点击“搜索”按钮
+        3、点击页面中的“高速下载”
+        4、显示下载弹框
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板
+        7、点击“下载管理”打开下载页面
+        8、断言下载中的状态
+        "
+"passed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test001SearchPanelPage","9783","
+        1、点击首页搜索框
+        2、提取搜索框文本
+        3、点击搜索按钮
+        4、断言页面是否正常跳转到对应的搜索结果页
+        "
+"failed","browser.browser_test.test_NewsPage.TestNewsPage#test003NewsChannelManage","19425","
+        1、打开浏览器，上滑进入资讯流列表
+        2、点击倒三角符号，进入频道管理页面
+        3、在我的频道管理页面，长按“头条”
+        4、删除“视频、军事”频道
+        5、点击“完成”按钮
+        6、再添加“视频、军事”频道
+        7、点击“视频”频道，进入资讯流列表
+        8、断言视频频道列表中的负反馈按钮存在
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test003HistoryAddBookmark","64578","
+        1、进入负一屏，删除“百度一下”书签
+        2、访问""m.baidu.com""
+        3、进入添加到主页-》历史，断言是否存在""百度一下""元素
+        4、添加“百度一下”书签，点击进入“百度一下”网站，断言页面是否存在'百度一下，你就知道'元素
+        5、返回上一层到负一屏，上滑页面1次，断言负一屏是否存在“百度一下”书签
+        "
+"failed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test005RefreshNewsOpenArticle","45134","
+        1、清除浏览器数据,进入军事频道
+        2、点击第一篇文章进入文章详情页，点击评论输入内容
+        3、断言页面是否存在输入内容
+        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在
+        "
+"passed","browser.browser_test.test_SetUpPage.TestSetUpPage#test004SetUpPage","41068",""
+"passed","browser.browser_test.test_MorePage.TestMorePage#test003MorePage","5936","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""京东""
+        3、断言是否跳转到""京东""页面
+
+        "
+"passed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test004SearchPanelPage","25427","
+        1、点击首页搜索框
+        2、点击输入框工具条前缀词“www.”
+        3、长按并选中地址栏中的“www.”
+        4、点击搜索框联想词，并打开网址
+        5、点击地址栏，清空地址，显示搜索历史
+        6.清空搜索历史
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test004MorePage","5940","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""聚划算""
+        3、断言是否跳转到""聚划算""页面
+
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test009DeleteHistoryMore","38226","
+        1、进入首页，再进入历史
+        2、长按3条记录，删除，断言被删除的3条记录不存在
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test002MorePage","6286","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""搜狐""
+        3、断言是否跳转到""搜狐""页面
+
+        "
+"failed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test003PersonalCenterPage","11569","
+        1、点击工具菜单
+        2、点击工具面板--我的图标
+        3、判断账号是否登陆
+        4、点击我的评论
+        5、默认点击第一条消息
+        "
+"passed","browser.browser_test.test_QuitPage.TestQuitPage#test001QuitOpenBrowser","18518","
+        1、进入浏览器，点击导航网站-》安居客
+        2、点击多窗口
+        3、添加多窗口
+        4、点击浏览的窗口tab网页
+        5、点击底部工具栏的 menu_more 按钮
+        6、点击退出按钮
+        7、打开浏览器，点击导航网站-》更多
+        8、断言页面中的搜索框默认词
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test009MorePage","5710","
+        1、在浏览器首页点击导航栏中""安居客""按钮，进入到浏览器网址导航页面
+        2、点击""安居客""
+        3、断言是否跳转到""安居客""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test010MorePage","4327","
+        1、在浏览器首页点击导航栏中""爱淘宝""按钮，进入到浏览器网址导航页面
+        2、点击""爱淘宝""
+        3、断言是否跳转到""爱淘宝""页面
+
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test12NewWindowOpenOne","19695","
+        1、进入收藏夹，长按1条记录，新窗口打开，断言正常打开且新窗口数量增加
+        "
+"failed","browser.browser_test.test_HomePage.TestHomePage#test008HomePage","8799","
+        1、点击""同城""
+        2、断言是否跳转到""同城""页面
+        "
+"broken","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test011NegativeMergeFile","118605","
+        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”
+        2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test001MorePage","6617","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""头条""
+        3、断言是否跳转到""头条""页面
+
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test007MorePage","5454","
+        1、在浏览器首页点击导航栏中""在线商城""按钮，进入到浏览器网址导航页面
+        2、点击""在线商城""
+        3、断言是否跳转到""在线商城""页面
+
+        "
+"broken","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test001PersonalCenterPage","0","
+        1、点击工具菜单
+        2、点击工具面板--我的图标
+        3、未登录时，点击我的图标
+        4、断言页面是否为登录账号页面
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test007DeleteCollectionMore","37669","
+        1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test004DIYAddBookmark","42774","
+        1、进入负一屏，删除“百度搜索”书签
+        2、进入负一屏-》自定义，网址输入框输入'baidu'关键字,点击联想词“百度搜索”，再点击“添加”
+        3、停留2秒，toast消失后，上滑页面1次，断言负一屏是否存在“百度搜索”书签
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test002ClassifyAddBookmark","52310","
+        1、进入负一屏，删除“凤凰网”书签
+        2、进入添加到主页-》分类-》资讯头条，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素
+        3、返回上一层到负一屏，上滑页面1次，断言负一屏是否存在“凤凰网”书签
+        "
+"passed","browser.browser_test.test_NewsPage.TestNewsPage#test002NewsBeautyGrilChannel","18598","
+        1、打开浏览器，在首页向上滑动进入资讯流列表
+        2、点击资讯流列表的三角符号，进入频道管理页面
+        3、点击“美女”，进入“美女”频道列表
+        4、断言“美女图集”存在，则打开美女频道正常
+        5、再点击打开“女神”标签，进入标签列表页中
+        6、断言“女神”标签中“图集详情的内容ID”存在
+        7、点击mback返回美女列表页
+        8、滑动页面，选择美女图片打开进入美女图片详情
+        9、断言图片详情页顶部返回按钮存在
+        "
+"failed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test14NoMarking","14044","
+        1、获取历史第1条记录标题
+        2、打开无痕模式，点击一个热词进行搜索
+        3、返回上一层，获取历史第1条记录标题
+        4、断言历史第1条记录的标题没有改变
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test002CloseAllWindowsTab","12225","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，新建3个多窗口
+        4、关闭所有的多窗口
+        5、断言多窗口数量为：1
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test10AddToDeskOne","26941","
+        1、进入首页，再进入收藏夹
+        2、长按1条记录，发送到桌面3次，断言桌面存在这条记录
+        3、桌面点击这条记录，断言当前页面存在记录标题和工具入口
+        "
+"passed","browser.browser_test.test_QuitPage.TestQuitPage#test002QuitOpenBrowser","16375","
+        1、进入浏览器
+        2、点击导航网站-》安居客
+        3、点击多窗口
+        4、添加多窗口（新增3个多窗口）
+        5、点击浏览的窗口tab网页
+        6、点击底部工具栏的 menu_more 按钮
+        7、点击退出按钮
+        8、打开浏览器
+        9、断言多窗口数量不相等
+        "
+"broken","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test012NegativeDeleteFile","45131","
+        1、进入负一屏，长按删除""自动化测试""文件
+        2、断言当前页面不存在""自动化测试""元素
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test013HomePage","3319","
+        1、点击""今日头条""
+        2、断言是否跳转到""今日头条""页面
+        "
+"passed","browser.browser_test.test_PubMethod.TestPubMethod#test003PermissionDisagree","3460","
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“同意”，弹出权限窗口
+        3、点击权限弹窗“拒绝”按钮
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test005HomePage","3672","
+        1、点击""搜索""
+        2、断言是否跳转到""搜索""页面
+        "
+"failed","browser.browser_test.test_HomePage.TestHomePage#test009HomePage","0","
+        1、点击""京东""
+        2、断言是否跳转到""京东""页面
+        "
+"failed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test006DeleteCollectionOne","15076","
+        1、先进入首页，再进入收藏夹，获取第1条记录的标题
+        2、长按1条记录，删除，断言被删除记录不存在
+        "
+"failed","browser.browser_test.test_HomePage.TestHomePage#test010HomePage","6897","
+        1、点击""招聘""
+        2、断言是否跳转到""招聘""页面
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test003CloseOneWindowsTab","14422","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮，点击打开导航网站-》更多，重复新建3个多窗口
+        4、获取新建的多窗口数量
+        5、上滑关闭2个多窗口
+        6、获取删除多窗口后的数量
+        7、断言多窗口数量是否减少
+        "
+"failed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test011AddToDeskMore","36477","
+        1、进入首页，再进入收藏夹，长按第1、2、3条记录，发送到桌面3次，断言桌面存在这3条记录
+        2、桌面点击第3条记录，断言当前页面存在记录标题和工具入口
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test006MorePage","6114","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""找房子""
+        3、断言是否跳转到""找房子""页面
+
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test006NegativeNewWindowOpen","29447","
+        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”
+        2、进入负一屏，获取当前窗口数量，长按“魅族社区”书签，选择新窗口打开，断言正常打开
+        3、获取当前窗口数量，断言窗口数量+1
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test011HomePage","4037","
+        1、点击""拼多多""
+        2、断言是否跳转到""拼多多""页面
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test004HomePage","3426","
+        1、点击""爱淘宝""
+        2、断言是否跳转到""爱淘宝""页面
+        "
+"passed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test002SearchPanelPage","10504","
+        1、点击首页搜索框
+        2、获取第一个热词文本
+        3、点击历史面板热词(默认第一个)
+        4、断言页面是否打开正确
+        "
+"passed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test003SearchPanelPage","23929","
+        1、点击首页搜索框
+        2、获取第一个搜索热词
+        3、点击换一换
+        4、断言第一个搜索热词是否不存在
+        "
+"passed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test004PersonalCenterPage","5696","
+        1、点击工具栏面板头像图标，进入个人中心
+        2、点击小游戏
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test005CollectWebPage","50288","
+        1、点击搜索框，进入搜索面板，获取第1个热词文本，点击第1个热词，进入搜索结果页
+        2、添加到收藏夹，进入收藏夹获取第1条记录文本，断言是否刚添加收藏夹的热词
+        3、添加到主页常用，进入负一屏，断言当前页面是否存在刚收藏的热词元素
+        4、发送到桌面，退出浏览器，断言桌面是否存在刚发送到桌面到热词元素
+        "
+"failed","browser.browser_test.test_MorePage.TestMorePage#test005MorePage","22570","
+        1、在浏览器首页点击导航栏中""更多""按钮，进入到浏览器网址导航页面
+        2、点击""同城""
+        3、断言是否跳转到""同城""页面
+
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test001ExcellentChoiceAddBookmark","68872","
+        1、进入负一屏，删除“hao123”书签
+        2、进入精选页，添加“hao123”书签，点击进入“hao123”网站，断言页面是否存在'hao123导航-上网从这里开始'元素
+        3、返回上一层到负一屏，上滑页面1次，断言是否存在“hao123”书签
+        "
+"failed","browser.browser_test.test_NewsPage.TestNewsPage#test001RefreshNews","32609","
+        1、打开浏览器，在首页点击“资讯”按钮进入资讯流列表
+        2、获取资讯流列表的文章标题
+        3、下拉刷新资讯流列表内容,再次获取资讯流列表的文章标题
+        4、断言刷新前和刷新后的文章标题不一样
+        5、滑动页面找到'上次看到这里，点击刷新'提示语,点击提示语，刷新资讯流内容
+        6、断言刷新前和刷新后的文章标题不一样
+        7、上滑刷新，刷新新的资讯文章
+        8、断言刷新前的文章内容标题不存在
+        "
+"failed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test005SearchPanelPage","12047","
+        1、点击首页搜索框，输入百度网址
+        2、打开百度首页，滑动页面
+        3、检查顶部地址栏是否展开
+        4、检查搜索历史,长按删除
+        "
+"failed","browser.browser_test.test_SharePage.TestSharePage#test002ShareNewsPage","28509","
+        1、进入浏览器，点击""资讯""按钮
+        2、在资讯流列表点击“倒三角”，进入频道管理页面
+        3、打开“健康”频道
+        4、打开资讯文章详情页
+        5、点击分享按钮
+        6、点击分享面板-》便签按钮到便签
+        7、断言便签应用中是否存在分享的内容
+        8、点击mback返回资讯流列表
+        9、断言资讯流列表“资讯”按钮存在
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test006HomePage","3402","
+        1、点击""聚划算""
+        2、断言是否跳转到""聚划算""页面
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test003HomePage","13246","
+        1、打开首页导航栏的安居客网址
+        2、点击安居客首页的“新房”
+        3、手势后退至安居客首页，再手势前进至“新房”页面
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test013NegativeMoveFile","91170","
+        1、当负一屏不存在“新浪微博”、“手机腾讯”书签，则添加书签，并合并文件夹
+        2、获取""文件夹""坐标，拖拽""文件夹""到指定坐标，再获取""文件夹""坐标，断言坐标有变化
+        "
+"passed","browser.browser_test.test_SetUpPage.TestSetUpPage#test002SetUpPage","12216","
+
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击搜索引擎
+        4、点击百度
+        5、点击mback返回
+        6、点击首页搜索框
+        7、搜索框输入123
+        8、点击搜索
+        9、# 断言页面是否存在百度
+
+        "
+"passed","browser.browser_test.test_SetUpPage.TestSetUpPage#test003SetUpPage","42927","
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击广告屏蔽
+        4、获取未点击前，广告屏蔽，精选内容推送开关状态
+        5、点击精选内容推送
+        6、向下滑动到恢复默认设置
+        7、点击恢复默认设置
+        8、点击恢复
+        9、点击主页工具菜单
+        10、点击设置
+        11、获取点击后，广告屏蔽，精选内容推送开关状态
+        12、判断点击恢复默认设置前，广告屏蔽开关状态和恢复后广告屏蔽开关状态
+        "
+"passed","browser.browser_test.test_WindowsTabPage.TestWindowsTabPage#test001NewWindowsTab","14802","
+        1、进入浏览器，点击导航网站-》更多
+        2、点击多窗口按钮
+        3、点击新建多窗口按钮（新建3个多窗口tab）
+        4、滑动浏览多窗口tab页
+        5、断言首页导航网站-》更多 -》搜索框中的默认关键字：输入关键字
+        6、点击多窗口中tab页进入网页浏览
+        7、断言多窗口数量不相等
+        "
+"failed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test006SearchPanelPage","14289","
+
+        1、点击首页搜索框，输入主题美化地址
+        2、弹出跳转提示，点击允许，跳转至主题美化APP
+        "
+"passed","browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test007SearchPanelPage","7529","
+        1、点击首页搜索框，输入主题美化地址
+        2、弹出跳转提示，点击允许，跳转至主题美化APP
+        "
+"passed","browser.browser_test.test_DownLoadPage.TestDownPage#test003DownWebPage","33967","
+        1、点击“搜索框”，
+        2、点击“搜索”按钮，访问网页，在页面内等待2秒
+        3、长按网页链接，显示弹框，点击“下载链接”按钮，显示下载弹框
+        4、获取下载弹框中的标题名称
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒
+        7、点击“下载管理”打开下载页面
+        7、获取下载管理中下载好的文件名称标题
+        8、断言“下载管理”页面中的下载文件名称与之前下载中的文件名称相等
+        "
+"broken","browser.browser_test.test_PubMethod.TestPubMethod#test004PermissionAgree","21816","
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“同意”，弹出权限窗口
+        3、点击权限弹窗“始终允许”按钮
+        "
+"failed","browser.browser_test.test_PubMethod.TestPubMethod#test002PrivacyDisagree","8897","
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“不同意”，退出
+        "
+"passed","browser.browser_test.test_SetUpPage.TestSetUpPage#test001SetUpPage","15904","
+
+        1、点击主页工具菜单
+        2、点击设置
+        3、点击清除浏览器数据
+        4、点击Cookies
+        5、点击账号密码
+        6、点击地理位置授权
+        7、点击清除数据按钮
+        8、点击完成按钮
+        9、点击mback返回
+        10、点击首页搜索框
+        11、搜索框输入文本
+        12、点击进入
+        13、断言页面是否会重新提示地址位置授权
+
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test004CollectWebToFolder","54817","
+        1、点击搜索框，进入搜索面板，点击搜索，进入搜索结果页
+        2、添加收藏，编辑收藏文件夹，新增一个文件夹，并选择添加到该文件夹下
+        3、进入收藏夹该新增文件夹下，断言是否存在1条记录
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test008MorePage","5876","
+        1、在浏览器首页点击导航栏中""二手市场""按钮，进入到浏览器网址导航页面
+        2、点击""二手市场""
+        3、断言是否跳转到""二手市场""页面
+
+        "
+"failed","browser.browser_test.test_DownLoadPage.TestDownPage#test002DownWebPage","28266","
+        1、点击“搜索框”
+        2、点击“搜索”按钮，访问网页，在页面内等待2秒
+        3、长按网页链接，显示长按菜单弹框
+        4、点击“下载链接”按钮，显示下载弹框
+        5、在下载弹框中点击“下载”按钮
+        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒
+        6、断言工具面板中下载完成后的“小红点”
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test013MorePage","6353","
+        1、在浏览器首页点击导航栏中""招聘""按钮，进入到浏览器网址导航页面
+        2、点击""招聘""
+        3、断言是否跳转到""招聘""页面
+
+        "
+"passed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test007PersonalCenterPage","5027","
+            1、退出Flyme账号
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test012HomePage","3276","
+        1、点击""安居客""
+        2、断言是否跳转到""安居客""页面
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test009NegativeSendToDesk","65394","
+        1、当桌面存在“魅族社区”，则删除“魅族社区”
+        1、进入浏览器，当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”
+        2、进入负一屏，长按“魅族社区”书签，选择发送至桌面，断言桌面存在“魅族社区”书签
+        "
+"failed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test006PersonalCenterPage","51826","
+            1、修改输入法
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test012MorePage","5718","
+        1、在浏览器首页点击导航栏中""拼多多""按钮，进入到浏览器网址导航页面
+        2、点击""拼多多""
+        3、断言是否跳转到""拼多多""页面
+
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test003CollectArticle","38056","
+        1、进入资讯流的健康频道，下拉刷新，获取第1篇文章第标题，并收藏该文章，进入收藏夹获取第1条记录的标题，断言两个标题相等
+        2、在收藏夹点击进入第1条记录详情，取消收藏，返回到收藏夹，获取第1条记录第标题，断言标题不相等
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test002CleanUpHistory","20204","
+        1、先判断是否存在历史数据，不存在则造一条历史数据，存在则不处理
+        2、点击工具栏中more菜单，再点击工具面板的“清空历史”，清空历史的弹框选择确定
+        3、断言存在“暂无历史记录”元素
+        "
+"passed","browser.browser_test.test_HomePage.TestHomePage#test007HomePage","3192","
+        1、点击""天猫""
+        2、断言是否跳转到""天猫""页面
+        "
+"passed","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test007NegativeDelete","49157","
+        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”
+        2、在负一屏，长按“魅族社区”书签，选择删除后，断言不存在“魅族社区”元素
+        "
+"passed","browser.browser_test.test_MorePage.TestMorePage#test011MorePage","5905","
+        1、在浏览器首页点击导航栏中""天猫""按钮，进入到浏览器网址导航页面
+        2、点击""天猫""
+        3、断言是否跳转到""天猫""页面
+
+        "
+"passed","browser.browser_test.test_NewsPage.TestNewsPage#test004NewsChannelManage","3790","
+        1、打开浏览器，上滑进入资讯流列表页面
+        2、获取资讯流列表第一个标题
+        3、点击“X”按钮，显示不感兴趣弹框
+        4、点击“不感兴趣”，删除文章
+        5、断言删除前和删除后的文章标题不相等
+        "
+"failed","browser.browser_test.test_ReadPage.TestReadPage#test001ReadPage","24117","
+
+        1、清空浏览器数据，点击电脑版进入小说网页
+        2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框
+        3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式
+
+        "
+"broken","browser.browser_test.test_HomePage.TestHomePage#test001HomePage","2472","
+        1、点击地址栏more按钮
+        2、点击back
+        3、向下滑动页面进入到资讯流列表页
+        4、向下滑动查找text
+        "
+"broken","browser.browser_test.test_NegativeScreenPage.TestNegativePage#test008NegativeEdit","64238","
+        1、如果负一屏存在“豆瓣”，删除“豆瓣”书签
+        2、添加“魅族社区”书签
+        3、长按“魅族社区”书签，选择编辑，编辑成豆瓣网站
+        4、返回负一屏，断言负一屏存在“豆瓣”书签
+        5、点击打开""豆瓣""，断言是否存在""豆瓣App 记录你的书影音生活""元素
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test13NewWindowOpenMore","21370","
+        1、进入收藏夹，长按多条记录，新窗口打开，断言正常打开且新窗口数量+3
+        "
+"failed","browser.browser_test.test_HomePage.TestHomePage#test014HomePage","10574","
+        1、点击""热门小说""
+        2、断言是否跳转到""小说""页面
+        "
+"failed","browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test002PersonalCenterPage","10788","
+        1、点击工具菜单
+        2、点击工具面板--我的图标
+        3、判断账号是否登陆
+        4、点击我的消息
+        5、默认点击第一条消息
+        "
+"failed","browser.browser_test.test_NewsPage.TestNewsPage#test006NewsAdvertisement","15802","
+        1、点击资讯按钮进入资讯流列表，并刷新资讯
+        2、上滑页面，点击X按钮，删除广告，并断言是否存在
+        "
+"passed","browser.browser_test.test_PubMethod.TestPubMethod#test001PrivacyAgree","2642","
+        1、清除数据后首次打开浏览器，弹出隐私政策窗口
+        2、点击“同意”，弹出权限窗口
+        "
+"broken","browser.browser_test.test_DownLoadPage.TestDownPage#test001DownWebPage","2427","
+        1、打开浏览器，点击底部工具栏菜单menu_more按钮
+        2、点击“设置”进入设置页面
+        3、设置搜索引擎为“360”
+        4、mback返回上一级页面（首页）
+        5、点击“搜索框”，点击“搜索”按钮，访问网页，在页面内等待2秒
+        6、长按网页链接，显示长按菜单弹框
+        7、点击“下载链接”按钮，显示下载弹框
+        8、断言“下载弹框”中的名称
+        9、获取下载弹框中的标题
+        10、点击下载弹框中的“取消”按钮
+        11、断言显示“下载弹框”的元素不存在
+        "
+"passed","browser.browser_test.test_CollectionAndHistory.TestNegativePage#test001CleanUpHistoryCancel","25094","
+        1、先判断是否存在历史数据，不存在则造一条历史数据，存在则不处理
+        2、点击工具栏中more菜单，再点击工具面板的“清空历史”，清空历史的弹框选择取消
+        3、断言不存在“暂无历史记录”元素
+        "

@@ -1,0 +1,143 @@
+{
+  "uid" : "c9a749f121d19dab",
+  "name" : "test007DeleteCollectionMore",
+  "fullName" : "browser.browser_test.test_CollectionAndHistory.TestNegativePage#test007DeleteCollectionMore",
+  "historyId" : "ed06e07271ce85338bdbcd5b9412a474",
+  "time" : {
+    "start" : 1577349575953,
+    "stop" : 1577349613622,
+    "duration" : 37669
+  },
+  "description" : "\n        1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "collectionAndHistory_init",
+    "time" : {
+      "start" : 1577349558014,
+      "stop" : 1577349575952,
+      "duration" : 17938
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577349556013,
+      "stop" : 1577349556013,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577349556013,
+      "stop" : 1577349558014,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入收藏夹，长按3条记录，删除，断言被删除的记录不存在\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b52826e3054429b9",
+      "name" : "log",
+      "source" : "b52826e3054429b9.txt",
+      "type" : "text/plain",
+      "size" : 2729
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "collectionAndHistory_init::0",
+    "time" : {
+      "start" : 1577349613623,
+      "stop" : 1577349613624,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "我的收藏-长按多个-删除，检查是否正常删除 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试收藏/历史相关功能"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_CollectionAndHistory"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_CollectionAndHistory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "c9a749f121d19dab.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,37 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SearchPanelPage.py:22 
+INFO     root:test_SearchPanelPage.py:23 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： www.
+INFO     root:base.py:76 点击元素: 输入框前缀词www.
+INFO     root:base.py:145 查询到元素： com.android.browser:id/keyboard_top_view_seek_bar_fake_progress
+INFO     root:base.py:285 拖动元素: 向左拖动工具条
+INFO     root:base.py:145 查询到元素： com.android.browser:id/url
+INFO     root:base.py:76 点击元素: 搜索框
+INFO     root:base.py:145 查询到元素： Flyme官网
+INFO     root:base.py:76 点击元素: 搜索框联想词
+INFO     root:base.py:145 查询到元素： Flyme官网-首页
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： Flyme官网-首页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/url
+INFO     root:base.py:76 点击元素: 搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/clear
+INFO     root:base.py:76 点击元素: 地址栏清空按钮
+INFO     root:base.py:145 查询到元素： 搜索历史
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 搜索历史
+INFO     root:base.py:145 查询到元素： 清空
+INFO     root:base.py:76 点击元素: 地址栏清空按钮
+INFO     root:base.py:151 未找到元素，元素名称为: 搜索历史
+INFO     root:base.py:180 元素已不存在，断言成功，元素名称为： 搜索历史
+INFO     root:test_SearchPanelPage.py:30 ****用例执行结束****
+INFO     root:test_SearchPanelPage.py:31

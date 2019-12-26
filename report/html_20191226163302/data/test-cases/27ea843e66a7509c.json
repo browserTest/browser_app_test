@@ -1,0 +1,140 @@
+{
+  "uid" : "27ea843e66a7509c",
+  "name" : "test004SearchPanelPage",
+  "fullName" : "browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test004SearchPanelPage",
+  "historyId" : "db33e61f25baab7e722ca10d9b0f6609",
+  "time" : {
+    "start" : 1577352343688,
+    "stop" : 1577352369115,
+    "duration" : 25427
+  },
+  "description" : "\n        1、点击首页搜索框\n        2、点击输入框工具条前缀词“www.”\n        3、长按并选中地址栏中的“www.”\n        4、点击搜索框联想词，并打开网址\n        5、点击地址栏，清空地址，显示搜索历史\n        6.清空搜索历史\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击首页搜索框\n    2、点击输入框工具条前缀词“www.”\n    3、长按并选中地址栏中的“www.”\n    4、点击搜索框联想词，并打开网址\n    5、点击地址栏，清空地址，显示搜索历史\n    6.清空搜索历史\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "search_init",
+    "time" : {
+      "start" : 1577352320831,
+      "stop" : 1577352343687,
+      "duration" : 22856
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352318830,
+      "stop" : 1577352318830,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352318830,
+      "stop" : 1577352320831,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击首页搜索框\n        2、点击输入框工具条前缀词“www.”\n        3、长按并选中地址栏中的“www.”\n        4、点击搜索框联想词，并打开网址\n        5、点击地址栏，清空地址，显示搜索历史\n        6.清空搜索历史\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "853d8145e719c187",
+      "name" : "log",
+      "source" : "853d8145e719c187.txt",
+      "type" : "text/plain",
+      "size" : 2554
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "search_init::0",
+    "time" : {
+      "start" : 1577352369117,
+      "stop" : 1577352369118,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试搜索页面"
+  }, {
+    "name" : "story",
+    "value" : "搜索页顶部地址栏输入，选中文字"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SearchPanelPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearchPanelPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SearchPanelPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27ea843e66a7509c.json",
+  "parameterValues" : [ ]
+}

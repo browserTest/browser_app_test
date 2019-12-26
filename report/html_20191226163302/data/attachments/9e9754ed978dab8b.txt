@@ -1,0 +1,23 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_PersonalCenterPage.py:27 
+INFO     root:test_PersonalCenterPage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/search_bar_container
+INFO     root:base.py:151 未找到元素，元素名称为: 已保存网页
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/backward
+INFO     root:base.py:145 查询到元素： com.android.browser:id/bt_zixun_back
+INFO     root:base.py:76 点击元素: 不在首页，返回上一层
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:30 start： com.android.settings
+INFO     root:base.py:127 滑动查找元素： 语言和时间, 是否找到指定元素：True
+INFO     root:base.py:145 查询到元素： 设置
+INFO     root:base.py:76 点击元素: 语言和时间
+INFO     root:base.py:145 查询到元素： 语言和时间
+INFO     root:base.py:76 点击元素: 系统输入法
+INFO     root:base.py:151 未找到元素，元素名称为: com.sohu.inputmethod.sogou.meizu:id/bt_set_default
+INFO     root:test_PersonalCenterPage.py:33 ****用例执行结束****
+INFO     root:test_PersonalCenterPage.py:34

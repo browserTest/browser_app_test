@@ -1,0 +1,24 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SearchPanelPage.py:22 
+INFO     root:test_SearchPanelPage.py:23 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/suggestion_hot_word_item1
+INFO     root:base.py:76 点击元素: 搜索历史热词
+INFO     root:base.py:145 查询到元素： com.android.browser:id/bt_refresh
+INFO     root:base.py:76 点击元素: 第1次点击com.android.browser:id/bt_refresh按钮
+INFO     root:base.py:76 点击元素: 第2次点击com.android.browser:id/bt_refresh按钮
+INFO     root:base.py:76 点击元素: 第3次点击com.android.browser:id/bt_refresh按钮
+INFO     root:base.py:76 点击元素: 第4次点击com.android.browser:id/bt_refresh按钮
+INFO     root:test_SearchPanelPage.py:30 ****用例执行结束****
+INFO     root:test_SearchPanelPage.py:31

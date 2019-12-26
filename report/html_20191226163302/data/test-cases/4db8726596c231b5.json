@@ -1,0 +1,157 @@
+{
+  "uid" : "4db8726596c231b5",
+  "name" : "test006DeleteCollectionOne",
+  "fullName" : "browser.browser_test.test_CollectionAndHistory.TestNegativePage#test006DeleteCollectionOne",
+  "historyId" : "4454932a3355b1253abff1fb8f330037",
+  "time" : {
+    "start" : 1577349540155,
+    "stop" : 1577349555231,
+    "duration" : 15076
+  },
+  "description" : "\n        1、先进入首页，再进入收藏夹，获取第1条记录的标题\n        2、长按1条记录，删除，断言被删除记录不存在\n        ",
+  "descriptionHtml" : "<pre><code>    1、先进入首页，再进入收藏夹，获取第1条记录的标题\n    2、长按1条记录，删除，断言被删除记录不存在\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1",
+  "statusTrace" : "self = <browser_test.test_CollectionAndHistory.TestNegativePage object at 0x0000000004E6C940>\ncollectionAndHistory_init = None\n\n    @allure.story('我的收藏-长按单个-删除，检查是否正常删除 —— LJX')\n    @pytest.mark.P1\n    def test006DeleteCollectionOne(self, collectionAndHistory_init):\n        '''\n        1、先进入首页，再进入收藏夹，获取第1条记录的标题\n        2、长按1条记录，删除，断言被删除记录不存在\n        '''\n        # 进入首页，再进入收藏夹\n        self.home.clickHomeOnPage(HOME_PAGE)\n        self.home.clickMore()\n        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)\n        # 获取收藏夹第1条记录标题，然后长按删除\n        CollectionTitle = self.collectionandhistory.getCollectionTitle()\n        self.collectionandhistory.longClickCollection(COLLECTION_ID)\n        self.collectionandhistory.clickCollectDelete()\n>       self.collectionandhistory.clickCollection(FRAME_DELETE_ID)\n\nbrowser\\browser_test\\test_CollectionAndHistory.py:215: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\CollectionAndHistoryPage.py:55: in clickCollection\n    self.assertFalse(element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.CollectionAndHistoryPage.CollectionAndHistoryPage object at 0x0000000004C25898>\nelement = 'android:id/text1'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577349518538,
+      "stop" : 1577349520538,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577349518538,
+      "stop" : 1577349518538,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "collectionAndHistory_init",
+    "time" : {
+      "start" : 1577349520538,
+      "stop" : 1577349540153,
+      "duration" : 19615
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、先进入首页，再进入收藏夹，获取第1条记录的标题\n        2、长按1条记录，删除，断言被删除记录不存在\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1",
+    "statusTrace" : "self = <browser_test.test_CollectionAndHistory.TestNegativePage object at 0x0000000004E6C940>\ncollectionAndHistory_init = None\n\n    @allure.story('我的收藏-长按单个-删除，检查是否正常删除 —— LJX')\n    @pytest.mark.P1\n    def test006DeleteCollectionOne(self, collectionAndHistory_init):\n        '''\n        1、先进入首页，再进入收藏夹，获取第1条记录的标题\n        2、长按1条记录，删除，断言被删除记录不存在\n        '''\n        # 进入首页，再进入收藏夹\n        self.home.clickHomeOnPage(HOME_PAGE)\n        self.home.clickMore()\n        self.toolbarpanel.clickToolsPanel(MY_COLLECTION)\n        # 获取收藏夹第1条记录标题，然后长按删除\n        CollectionTitle = self.collectionandhistory.getCollectionTitle()\n        self.collectionandhistory.longClickCollection(COLLECTION_ID)\n        self.collectionandhistory.clickCollectDelete()\n>       self.collectionandhistory.clickCollection(FRAME_DELETE_ID)\n\nbrowser\\browser_test\\test_CollectionAndHistory.py:215: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\CollectionAndHistoryPage.py:55: in clickCollection\n    self.assertFalse(element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.CollectionAndHistoryPage.CollectionAndHistoryPage object at 0x0000000004C25898>\nelement = 'android:id/text1'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9f3095194179d2e1",
+      "name" : "失败截图",
+      "source" : "9f3095194179d2e1.jpg",
+      "type" : "image/jpg",
+      "size" : 148157
+    }, {
+      "uid" : "4b91cc9dd04658fd",
+      "name" : "log",
+      "source" : "4b91cc9dd04658fd.txt",
+      "type" : "text/plain",
+      "size" : 1754
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "collectionAndHistory_init::0",
+    "time" : {
+      "start" : 1577349555994,
+      "stop" : 1577349555995,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "我的收藏-长按单个-删除，检查是否正常删除 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试收藏/历史相关功能"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_CollectionAndHistory"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_CollectionAndHistory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "4db8726596c231b5.json",
+  "parameterValues" : [ ]
+}

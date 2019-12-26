@@ -1,0 +1,154 @@
+{
+  "uid" : "de61a631145ca55c",
+  "name" : "test006PersonalCenterPage",
+  "fullName" : "browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test006PersonalCenterPage",
+  "historyId" : "fd0d9a51d2682c22a5e9291ce8a7b05d",
+  "time" : {
+    "start" : 1577351958766,
+    "stop" : 1577352010592,
+    "duration" : 51826
+  },
+  "description" : "\n            1、修改输入法\n        ",
+  "descriptionHtml" : "<pre><code>        1、修改输入法\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default",
+  "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000063CF7B8>\npersonalCenter_init = None\n\n    @allure.story('测试修改输入法')\n    def test006PersonalCenterPage(self, personalCenter_init):\n        '''\n            1、修改输入法\n        '''\n        # 点击mback\n        self.pubmethod.clickBack()\n        self.pubmethod.startApp(MEIZU_SETTINGS)\n        self.base.scrollToElement(LANGUAGE_AND_TIME)\n        sleep(5)\n        self.personalcenter.clickLanguageAndTime()\n        self.personalcenter.clickInputMethod()\n>       self.personalcenter.clickSettingButton()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:157: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PersonalCenterPage.py:183: in clickSettingButton\n    self.assertFalse(SETTINGS_BUTTON)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.PersonalCenterPage.PersonalCenterPage object at 0x00000000063CF4E0>\nelement = 'com.sohu.inputmethod.sogou.meizu:id/bt_set_default'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351918348,
+      "stop" : 1577351920348,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "personalCenter_init",
+    "time" : {
+      "start" : 1577351920348,
+      "stop" : 1577351958764,
+      "duration" : 38416
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351918347,
+      "stop" : 1577351918347,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n            1、修改输入法\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default",
+    "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000063CF7B8>\npersonalCenter_init = None\n\n    @allure.story('测试修改输入法')\n    def test006PersonalCenterPage(self, personalCenter_init):\n        '''\n            1、修改输入法\n        '''\n        # 点击mback\n        self.pubmethod.clickBack()\n        self.pubmethod.startApp(MEIZU_SETTINGS)\n        self.base.scrollToElement(LANGUAGE_AND_TIME)\n        sleep(5)\n        self.personalcenter.clickLanguageAndTime()\n        self.personalcenter.clickInputMethod()\n>       self.personalcenter.clickSettingButton()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:157: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PersonalCenterPage.py:183: in clickSettingButton\n    self.assertFalse(SETTINGS_BUTTON)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.PersonalCenterPage.PersonalCenterPage object at 0x00000000063CF4E0>\nelement = 'com.sohu.inputmethod.sogou.meizu:id/bt_set_default'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "69c39b128890ba14",
+      "name" : "失败截图",
+      "source" : "69c39b128890ba14.jpg",
+      "type" : "image/jpg",
+      "size" : 138228
+    }, {
+      "uid" : "9e9754ed978dab8b",
+      "name" : "log",
+      "source" : "9e9754ed978dab8b.txt",
+      "type" : "text/plain",
+      "size" : 1702
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "personalCenter_init::0",
+    "time" : {
+      "start" : 1577352011142,
+      "stop" : 1577352011143,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试个人中心页面"
+  }, {
+    "name" : "story",
+    "value" : "测试修改输入法"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_PersonalCenterPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPersonalCenterPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_PersonalCenterPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "de61a631145ca55c.json",
+  "parameterValues" : [ ]
+}

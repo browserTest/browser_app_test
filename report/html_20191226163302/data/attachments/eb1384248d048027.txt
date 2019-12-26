@@ -1,0 +1,29 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NegativeScreenPage.py:24 
+INFO     root:test_NegativeScreenPage.py:25 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:145 查询到元素： 百度搜索
+INFO     root:base.py:254 长按元素: 负一屏"百度搜索"书签
+INFO     root:base.py:145 查询到元素： 删除
+INFO     root:base.py:76 点击元素: 删除按钮
+INFO     root:base.py:127 滑动查找元素： 添加, 是否找到指定元素：True
+INFO     root:base.py:76 点击元素: 负一屏的添加
+INFO     root:base.py:145 查询到元素： 自定义
+INFO     root:base.py:76 点击元素: 添加到主页"自定义"页面
+INFO     root:base.py:145 查询到元素： com.android.browser:id/url
+INFO     root:base.py:76 点击元素: 添加到主页"com.android.browser:id/url"页面
+INFO     root:base.py:237 输入文本: 网址输入框输入"baidu"
+INFO     root:base.py:145 查询到元素： 百度搜索
+INFO     root:base.py:76 点击元素: 添加到主页"百度搜索"页面
+INFO     root:base.py:145 查询到元素： com.android.browser:id/add
+INFO     root:base.py:76 点击元素: 添加到主页"com.android.browser:id/add"页面
+INFO     root:base.py:113 滑动页面： 1次
+INFO     root:base.py:145 查询到元素： 百度搜索
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 百度搜索
+INFO     root:test_NegativeScreenPage.py:29 ****用例执行结束****
+INFO     root:test_NegativeScreenPage.py:30

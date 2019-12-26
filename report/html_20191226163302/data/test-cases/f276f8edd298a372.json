@@ -1,0 +1,154 @@
+{
+  "uid" : "f276f8edd298a372",
+  "name" : "test002PersonalCenterPage",
+  "fullName" : "browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test002PersonalCenterPage",
+  "historyId" : "cd065d0351a89ca78cf8bbc03ea0cf32",
+  "time" : {
+    "start" : 1577351784834,
+    "stop" : 1577351795622,
+    "duration" : 10788
+  },
+  "description" : "\n        1、点击工具菜单\n        2、点击工具面板--我的图标\n        3、判断账号是否登陆\n        4、点击我的消息\n        5、默认点击第一条消息\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击工具菜单\n    2、点击工具面板--我的图标\n    3、判断账号是否登陆\n    4、点击我的消息\n    5、默认点击第一条消息\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 注册",
+  "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000050E7940>\npersonalCenter_init = None\n\n    @allure.story('测试个人中心账号，进入评论详情，检查页面显示是否正常')\n    def test002PersonalCenterPage(self, personalCenter_init):\n        '''\n        1、点击工具菜单\n        2、点击工具面板--我的图标\n        3、判断账号是否登陆\n        4、点击我的消息\n        5、默认点击第一条消息\n        '''\n        self.home.clickMore()\n        self.toolbarpanel.clickFlymeme()\n>       self.personalcenter.elementIsLandFlymeme()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PersonalCenterPage.py:51: in elementIsLandFlymeme\n    self.clickLoggenIn()\nbrowser\\browser_page\\PersonalCenterPage.py:86: in clickLoggenIn\n    self.assertFalse(PERSONAL_CENTER_REGISTER)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.PersonalCenterPage.PersonalCenterPage object at 0x00000000050E7400>\nelement = '注册'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 注册\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351764689,
+      "stop" : 1577351766689,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351764689,
+      "stop" : 1577351764689,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "personalCenter_init",
+    "time" : {
+      "start" : 1577351766689,
+      "stop" : 1577351784832,
+      "duration" : 18143
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击工具菜单\n        2、点击工具面板--我的图标\n        3、判断账号是否登陆\n        4、点击我的消息\n        5、默认点击第一条消息\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 注册",
+    "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000050E7940>\npersonalCenter_init = None\n\n    @allure.story('测试个人中心账号，进入评论详情，检查页面显示是否正常')\n    def test002PersonalCenterPage(self, personalCenter_init):\n        '''\n        1、点击工具菜单\n        2、点击工具面板--我的图标\n        3、判断账号是否登陆\n        4、点击我的消息\n        5、默认点击第一条消息\n        '''\n        self.home.clickMore()\n        self.toolbarpanel.clickFlymeme()\n>       self.personalcenter.elementIsLandFlymeme()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PersonalCenterPage.py:51: in elementIsLandFlymeme\n    self.clickLoggenIn()\nbrowser\\browser_page\\PersonalCenterPage.py:86: in clickLoggenIn\n    self.assertFalse(PERSONAL_CENTER_REGISTER)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.PersonalCenterPage.PersonalCenterPage object at 0x00000000050E7400>\nelement = '注册'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 注册\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cbb2d7cd3cfd39b6",
+      "name" : "失败截图",
+      "source" : "cbb2d7cd3cfd39b6.jpg",
+      "type" : "image/jpg",
+      "size" : 78870
+    }, {
+      "uid" : "191d0ab8f9cd85b0",
+      "name" : "log",
+      "source" : "191d0ab8f9cd85b0.txt",
+      "type" : "text/plain",
+      "size" : 1293
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "personalCenter_init::0",
+    "time" : {
+      "start" : 1577351795799,
+      "stop" : 1577351795799,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试个人中心页面"
+  }, {
+    "name" : "story",
+    "value" : "测试个人中心账号，进入评论详情，检查页面显示是否正常"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_PersonalCenterPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPersonalCenterPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_PersonalCenterPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f276f8edd298a372.json",
+  "parameterValues" : [ ]
+}

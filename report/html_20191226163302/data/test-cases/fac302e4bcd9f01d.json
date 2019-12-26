@@ -1,0 +1,157 @@
+{
+  "uid" : "fac302e4bcd9f01d",
+  "name" : "test011NegativeMergeFile",
+  "fullName" : "browser.browser_test.test_NegativeScreenPage.TestNegativePage#test011NegativeMergeFile",
+  "historyId" : "c41b9f6bb1502bc49e6e030de38cfdb0",
+  "time" : {
+    "start" : 1577351211763,
+    "stop" : 1577351330368,
+    "duration" : 118605
+  },
+  "description" : "\n        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”\n        2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签\n        ",
+  "descriptionHtml" : "<pre><code>    1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”\n    2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+  "statusTrace" : "self = <browser_test.test_NegativeScreenPage.TestNegativePage object at 0x00000000050257F0>\nnegative_init = None\n\n    @allure.story('长按拖拽负一屏图标，可正常合并文件夹、重命名文件夹 —— LJX')\n    @pytest.mark.P1\n    def test011NegativeMergeFile(self, negative_init):\n        '''\n        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”\n        2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签\n        '''\n        # 进入负一屏，添加\"途牛旅游\"、\"百度新闻\"书签\n        self.pubmethod.mbackToHomeOrNegative()\n        self.home.clickHomeOnPage(MYCOLLECTION)\n        # todo:最好能删除所有文件夹\n        self.negativescreen.deleteFolder(AUTOMATION_FILE)\n        self.negativescreen.addBookmarkToNegative(TUNIU)\n        # todo:缺少下滑\n        self.negativescreen.addBookmarkToNegative(BAIDU_NEWS)\n        # 合并书签后，断言当前页面存在\"文件夹\"元素\n        self.base.dragElementToElement(TUNIU, BAIDU_NEWS)\n        self.base.assertTrue(FILE, timeout=3)\n        # 长按\"文件夹\"，重命名为\"自动化测试\"后，断言当前页面存在\"自动化测试\"元素\n        self.negativescreen.longClickNegative(FILE)\n        self.negativescreen.clickNegative(RERAME_FILE)\n        self.negativescreen.setText(RERAME_FILE_ID, AUTOMATION_FILE)\n>       self.negativescreen.clickNegative(CONFIRM_TEXT)\n\nbrowser\\browser_test\\test_NegativeScreenPage.py:317: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NegativeScreenPage.py:15: in clickNegative\n    self.base.clickByElement(element, '负一屏的{}'.format(element))\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x0000000004FAC390>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351204655,
+      "stop" : 1577351204655,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "negative_init",
+    "time" : {
+      "start" : 1577351206657,
+      "stop" : 1577351211763,
+      "duration" : 5106
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351204656,
+      "stop" : 1577351206657,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”\n        2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签\n        ",
+    "status" : "broken",
+    "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+    "statusTrace" : "self = <browser_test.test_NegativeScreenPage.TestNegativePage object at 0x00000000050257F0>\nnegative_init = None\n\n    @allure.story('长按拖拽负一屏图标，可正常合并文件夹、重命名文件夹 —— LJX')\n    @pytest.mark.P1\n    def test011NegativeMergeFile(self, negative_init):\n        '''\n        1、当负一屏不存在“魅族社区”书签，则进入精选页添加“魅族社区”\n        2、进入负一屏，长按“魅族社区”书签，选择删除，断言负一屏不存在“魅族社区”书签\n        '''\n        # 进入负一屏，添加\"途牛旅游\"、\"百度新闻\"书签\n        self.pubmethod.mbackToHomeOrNegative()\n        self.home.clickHomeOnPage(MYCOLLECTION)\n        # todo:最好能删除所有文件夹\n        self.negativescreen.deleteFolder(AUTOMATION_FILE)\n        self.negativescreen.addBookmarkToNegative(TUNIU)\n        # todo:缺少下滑\n        self.negativescreen.addBookmarkToNegative(BAIDU_NEWS)\n        # 合并书签后，断言当前页面存在\"文件夹\"元素\n        self.base.dragElementToElement(TUNIU, BAIDU_NEWS)\n        self.base.assertTrue(FILE, timeout=3)\n        # 长按\"文件夹\"，重命名为\"自动化测试\"后，断言当前页面存在\"自动化测试\"元素\n        self.negativescreen.longClickNegative(FILE)\n        self.negativescreen.clickNegative(RERAME_FILE)\n        self.negativescreen.setText(RERAME_FILE_ID, AUTOMATION_FILE)\n>       self.negativescreen.clickNegative(CONFIRM_TEXT)\n\nbrowser\\browser_test\\test_NegativeScreenPage.py:317: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NegativeScreenPage.py:15: in clickNegative\n    self.base.clickByElement(element, '负一屏的{}'.format(element))\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x0000000004FAC390>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c71187856ba7e106",
+      "name" : "失败截图",
+      "source" : "c71187856ba7e106.jpg",
+      "type" : "image/jpg",
+      "size" : 228327
+    }, {
+      "uid" : "3b195406c2dad816",
+      "name" : "log",
+      "source" : "3b195406c2dad816.txt",
+      "type" : "text/plain",
+      "size" : 2721
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "negative_init::0",
+    "time" : {
+      "start" : 1577351331019,
+      "stop" : 1577351331019,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试负一屏页面"
+  }, {
+    "name" : "story",
+    "value" : "长按拖拽负一屏图标，可正常合并文件夹、重命名文件夹 —— LJX"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NegativeScreenPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NegativeScreenPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "fac302e4bcd9f01d.json",
+  "parameterValues" : [ ]
+}

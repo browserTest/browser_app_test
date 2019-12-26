@@ -1,0 +1,40 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_CollectionAndHistory.py:29 
+INFO     root:test_CollectionAndHistory.py:30 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:218 提取第0位的第一个搜索热词元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/suggestion_hot_word_item1
+INFO     root:base.py:76 点击元素: 搜索历史热词
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 添加收藏
+INFO     root:base.py:76 点击元素: 工具面板-》添加收藏
+INFO     root:base.py:145 查询到元素： com.android.browser:id/add_to_bookmark
+INFO     root:base.py:76 点击元素: 添加收藏页面的com.android.browser:id/add_to_bookmark
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:218 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 我的收藏
+INFO     root:base.py:76 点击元素: 工具面板-》我的收藏
+INFO     root:base.py:145 查询到元素： com.android.browser:id/title
+INFO     root:base.py:334 长按元素: 收藏页面的com.android.browser:id/title
+INFO     root:base.py:322 点击元素： 收藏页面的com.android.browser:id/title
+INFO     root:base.py:322 点击元素： 收藏页面的com.android.browser:id/title
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mz_action_multi_choice_select_all_item
+INFO     root:base.py:76 点击元素: “新窗口打开”相对坐标
+INFO     root:base.py:145 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:218 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:145 查询到元素： 富二代炫富庆圣诞
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 富二代炫富庆圣诞
+INFO     root:base.py:194 元素相等，断言成功，元素1名称：4 && 元素2名称：4
+INFO     root:test_CollectionAndHistory.py:35 ****用例执行结束****
+INFO     root:test_CollectionAndHistory.py:36

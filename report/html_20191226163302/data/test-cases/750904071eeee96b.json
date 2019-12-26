@@ -1,0 +1,140 @@
+{
+  "uid" : "750904071eeee96b",
+  "name" : "test007SearchPanelPage",
+  "fullName" : "browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test007SearchPanelPage",
+  "historyId" : "3f627a3385a65b90f745fd795dc2d306",
+  "time" : {
+    "start" : 1577352474060,
+    "stop" : 1577352481589,
+    "duration" : 7529
+  },
+  "description" : "\n        1、点击首页搜索框，输入主题美化地址\n        2、弹出跳转提示，点击允许，跳转至主题美化APP\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击首页搜索框，输入主题美化地址\n    2、弹出跳转提示，点击允许，跳转至主题美化APP\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "search_init",
+    "time" : {
+      "start" : 1577352451578,
+      "stop" : 1577352474058,
+      "duration" : 22480
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352449577,
+      "stop" : 1577352451578,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352449577,
+      "stop" : 1577352449577,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击首页搜索框，输入主题美化地址\n        2、弹出跳转提示，点击允许，跳转至主题美化APP\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9c50a4d36f45b3b9",
+      "name" : "log",
+      "source" : "9c50a4d36f45b3b9.txt",
+      "type" : "text/plain",
+      "size" : 1787
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "search_init::0",
+    "time" : {
+      "start" : 1577352481590,
+      "stop" : 1577352481591,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "地址栏多次点击刷新网页，进度条和页面加载正常 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试搜索页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SearchPanelPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearchPanelPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SearchPanelPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "750904071eeee96b.json",
+  "parameterValues" : [ ]
+}

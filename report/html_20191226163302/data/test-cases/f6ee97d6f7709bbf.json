@@ -1,0 +1,154 @@
+{
+  "uid" : "f6ee97d6f7709bbf",
+  "name" : "test010HomePage",
+  "fullName" : "browser.browser_test.test_HomePage.TestHomePage#test010HomePage",
+  "historyId" : "7817619689f7069a31781b20c9212033",
+  "time" : {
+    "start" : 1577350271419,
+    "stop" : 1577350278316,
+    "duration" : 6897
+  },
+  "description" : "\n        1、点击\"招聘\"\n        2、断言是否跳转到\"招聘\"页面\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击&quot;招聘&quot;\n    2、断言是否跳转到&quot;招聘&quot;页面\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 招聘",
+  "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000005019C50>\nhome_init = None\n\n    @allure.story('测试招聘能否正常打开')\n    def test010HomePage(self, home_init):\n        '''\n        1、点击\"招聘\"\n        2、断言是否跳转到\"招聘\"页面\n        '''\n        # 点击网址导航-》招聘\n>       self.more.clickDaoHang(ZHAOPIN)\n\nbrowser\\browser_test\\test_HomePage.py:156: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\MorePage.py:21: in clickDaoHang\n    self.base.assertFalse(element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000005019978>, element = '招聘'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 招聘\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350260218,
+      "stop" : 1577350262218,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1577350262218,
+      "stop" : 1577350271417,
+      "duration" : 9199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350260218,
+      "stop" : 1577350260218,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击\"招聘\"\n        2、断言是否跳转到\"招聘\"页面\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 招聘",
+    "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000005019C50>\nhome_init = None\n\n    @allure.story('测试招聘能否正常打开')\n    def test010HomePage(self, home_init):\n        '''\n        1、点击\"招聘\"\n        2、断言是否跳转到\"招聘\"页面\n        '''\n        # 点击网址导航-》招聘\n>       self.more.clickDaoHang(ZHAOPIN)\n\nbrowser\\browser_test\\test_HomePage.py:156: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\MorePage.py:21: in clickDaoHang\n    self.base.assertFalse(element)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000005019978>, element = '招聘'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 招聘\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1e5f966e04ec3554",
+      "name" : "失败截图",
+      "source" : "1e5f966e04ec3554.jpg",
+      "type" : "image/jpg",
+      "size" : 916822
+    }, {
+      "uid" : "877027541093cd9b",
+      "name" : "log",
+      "source" : "877027541093cd9b.txt",
+      "type" : "text/plain",
+      "size" : 849
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1577350279659,
+      "stop" : 1577350279660,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试招聘能否正常打开"
+  }, {
+    "name" : "feature",
+    "value" : "测试资讯流页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_HomePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHomePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_HomePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f6ee97d6f7709bbf.json",
+  "parameterValues" : [ ]
+}

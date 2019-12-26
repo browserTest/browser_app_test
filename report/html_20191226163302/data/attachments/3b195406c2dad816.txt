@@ -1,0 +1,37 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NegativeScreenPage.py:24 
+INFO     root:test_NegativeScreenPage.py:25 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:151 未找到元素，元素名称为: 自动化测试
+INFO     root:base.py:127 滑动查找元素： 自动化测试, 是否找到指定元素：False
+INFO     root:base.py:151 未找到元素，元素名称为: 途牛旅游
+INFO     root:base.py:127 滑动查找元素： 途牛旅游, 是否找到指定元素：False
+INFO     root:base.py:76 点击元素: 添加按钮
+INFO     root:base.py:127 滑动查找元素： 途牛旅游, 是否找到指定元素：True
+INFO     root:base.py:422 点击途牛旅游元素right方向的com.android.browser:id/add_frame元素
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:113 滑动页面： 1次
+INFO     root:base.py:151 未找到元素，元素名称为: 百度新闻
+INFO     root:base.py:127 滑动查找元素： 百度新闻, 是否找到指定元素：False
+INFO     root:base.py:76 点击元素: 添加按钮
+INFO     root:base.py:127 滑动查找元素： 百度新闻, 是否找到指定元素：True
+INFO     root:base.py:422 点击百度新闻元素right方向的com.android.browser:id/add_frame元素
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:113 滑动页面： 1次
+INFO     root:base.py:311 把'途牛旅游'元素拖拽到 '百度新闻' 元素
+INFO     root:base.py:145 查询到元素： 文件夹
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 文件夹
+INFO     root:base.py:145 查询到元素： 文件夹
+INFO     root:base.py:254 长按元素: 负一屏的文件夹
+INFO     root:base.py:145 查询到元素： 重命名
+INFO     root:base.py:76 点击元素: 负一屏的重命名
+INFO     root:base.py:145 查询到元素： com.android.browser:id/name
+INFO     root:base.py:237 输入文本: 自动化测试
+INFO     root:base.py:145 查询到元素： 确定
+INFO     root:test_NegativeScreenPage.py:29 ****用例执行结束****
+INFO     root:test_NegativeScreenPage.py:30

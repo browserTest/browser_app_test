@@ -1,0 +1,489 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1",
+      "children" : [ {
+        "name" : "test006DeleteCollectionOne",
+        "uid" : "4db8726596c231b5",
+        "parentUid" : "64ca432bb14db8c334b8a85386fc14ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349540155,
+          "stop" : 1577349555231,
+          "duration" : 15076
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "64ca432bb14db8c334b8a85386fc14ec"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 新建文件夹",
+      "children" : [ {
+        "name" : "test011AddToDeskMore",
+        "uid" : "2a95a95ec894a543",
+        "parentUid" : "7f30644ba9f13bc86418f28f759f7579",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349784530,
+          "stop" : 1577349821007,
+          "duration" : 36477
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7f30644ba9f13bc86418f28f759f7579"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式",
+      "children" : [ {
+        "name" : "test14NoMarking",
+        "uid" : "91f3fd3a89ee1e1c",
+        "parentUid" : "2440d8a2a198cf9910d79afd043a2d21",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349950965,
+          "stop" : 1577349965009,
+          "duration" : 14044
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2440d8a2a198cf9910d79afd043a2d21"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip",
+      "children" : [ {
+        "name" : "test002DownWebPage",
+        "uid" : "5dfa857cb47633e1",
+        "parentUid" : "5955bb24533e4366a1ae62d7baedaeaf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349991962,
+          "stop" : 1577350020228,
+          "duration" : 28266
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5955bb24533e4366a1ae62d7baedaeaf"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container",
+      "children" : [ {
+        "name" : "test004DownAppPage",
+        "uid" : "1389907f903c9eb0",
+        "parentUid" : "dbe34c3dc00a8c77c3886418eb01d1ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350080741,
+          "stop" : 1577350087112,
+          "duration" : 6371
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dbe34c3dc00a8c77c3886418eb01d1ab"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]",
+      "children" : [ {
+        "name" : "test002HomePage",
+        "uid" : "3b0191d0aca283db",
+        "parentUid" : "8dc9d6d40948694e403ae462085bbd75",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350113849,
+          "stop" : 1577350129969,
+          "duration" : 16120
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8dc9d6d40948694e403ae462085bbd75"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 同城服务",
+      "children" : [ {
+        "name" : "test008HomePage",
+        "uid" : "16ee97f808b1bb83",
+        "parentUid" : "56466e36fcd5282782c4e141c54773f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350238226,
+          "stop" : 1577350247025,
+          "duration" : 8799
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test005MorePage",
+        "uid" : "96d0ff8eb6124c2a",
+        "parentUid" : "56466e36fcd5282782c4e141c54773f3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350439038,
+          "stop" : 1577350461608,
+          "duration" : 22570
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56466e36fcd5282782c4e141c54773f3"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/home",
+      "children" : [ {
+        "name" : "test009HomePage",
+        "uid" : "b20497f3cd438d45",
+        "parentUid" : "d4bb453882d674c2068623e05294a26c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350247687,
+          "stop" : 1577350247687,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d4bb453882d674c2068623e05294a26c"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 招聘",
+      "children" : [ {
+        "name" : "test010HomePage",
+        "uid" : "f6ee97d6f7709bbf",
+        "parentUid" : "78d09b5595da45095d879ebcef80f11c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350271419,
+          "stop" : 1577350278316,
+          "duration" : 6897
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "78d09b5595da45095d879ebcef80f11c"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 书架",
+      "children" : [ {
+        "name" : "test014HomePage",
+        "uid" : "ef50fdd81d310214",
+        "parentUid" : "b6b7b874f99a5746f3bfb09e8d277349",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350338408,
+          "stop" : 1577350348982,
+          "duration" : 10574
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6b7b874f99a5746f3bfb09e8d277349"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新",
+      "children" : [ {
+        "name" : "test001RefreshNews",
+        "uid" : "e7531094fd139e5",
+        "parentUid" : "cf336b7e0385792d324cfb9ee118fa90",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351504403,
+          "stop" : 1577351537012,
+          "duration" : 32609
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cf336b7e0385792d324cfb9ee118fa90"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/expend_view",
+      "children" : [ {
+        "name" : "test003NewsChannelManage",
+        "uid" : "9203cc74114b5227",
+        "parentUid" : "32b490e5efe2d953a1e4b0b885913fa9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351597005,
+          "stop" : 1577351616430,
+          "duration" : 19425
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "32b490e5efe2d953a1e4b0b885913fa9"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/refresh",
+      "children" : [ {
+        "name" : "test006NewsAdvertisement",
+        "uid" : "4643ccdbfc55080d",
+        "parentUid" : "99cf5690d033821739e54986479a3793",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351713790,
+          "stop" : 1577351729592,
+          "duration" : 15802
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99cf5690d033821739e54986479a3793"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 注册",
+      "children" : [ {
+        "name" : "test002PersonalCenterPage",
+        "uid" : "f276f8edd298a372",
+        "parentUid" : "b650db1e6c643ac493658156aa0d58a0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351784834,
+          "stop" : 1577351795622,
+          "duration" : 10788
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test003PersonalCenterPage",
+        "uid" : "e0a16cad7d533aec",
+        "parentUid" : "b650db1e6c643ac493658156aa0d58a0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351815533,
+          "stop" : 1577351827102,
+          "duration" : 11569
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b650db1e6c643ac493658156aa0d58a0"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu",
+      "children" : [ {
+        "name" : "test005RefreshNewsOpenArticle",
+        "uid" : "9f72f4438b64dd2b",
+        "parentUid" : "bce924cbe50c1e7ea41b0f3db8361f1c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351872436,
+          "stop" : 1577351917570,
+          "duration" : 45134
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bce924cbe50c1e7ea41b0f3db8361f1c"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default",
+      "children" : [ {
+        "name" : "test006PersonalCenterPage",
+        "uid" : "de61a631145ca55c",
+        "parentUid" : "bf448187ab9c2f6f829a082da50bbae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351958766,
+          "stop" : 1577352010592,
+          "duration" : 51826
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf448187ab9c2f6f829a082da50bbae8"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.flyme.launcher:id/app_icon",
+      "children" : [ {
+        "name" : "test002PrivacyDisagree",
+        "uid" : "1adfc9a89f8f4d7e",
+        "parentUid" : "7fc32f1d335dd6e165ec6c4ba2ff599a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352052942,
+          "stop" : 1577352061839,
+          "duration" : 8897
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fc32f1d335dd6e165ec6c4ba2ff599a"
+    }, {
+      "name" : "AssertionError: 未找到元素，断言失败，元素名称为： 13001s",
+      "children" : [ {
+        "name" : "test001ReadPage",
+        "uid" : "ea369ab106e3a654",
+        "parentUid" : "085d84358b096b5455aefb79ca041c99",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352172389,
+          "stop" : 1577352196506,
+          "duration" : 24117
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "085d84358b096b5455aefb79ca041c99"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh",
+      "children" : [ {
+        "name" : "test005SearchPanelPage",
+        "uid" : "f238de8ac8897541",
+        "parentUid" : "0e41e645b00217e6207111142bf8f7a2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352397514,
+          "stop" : 1577352409561,
+          "duration" : 12047
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0e41e645b00217e6207111142bf8f7a2"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.customizecenter:id/mc_search_edit",
+      "children" : [ {
+        "name" : "test006SearchPanelPage",
+        "uid" : "af0c3df7549187ef",
+        "parentUid" : "e72005957427a2355278edfc38353dbd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352434530,
+          "stop" : 1577352448819,
+          "duration" : 14289
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e72005957427a2355278edfc38353dbd"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： 标题",
+      "children" : [ {
+        "name" : "test001ShareWebPage",
+        "uid" : "71408827c7606bca",
+        "parentUid" : "44558c952ec035fca3cf326ddb91d88a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352653592,
+          "stop" : 1577352667755,
+          "duration" : 14163
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44558c952ec035fca3cf326ddb91d88a"
+    }, {
+      "name" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.notepaper:id/gy",
+      "children" : [ {
+        "name" : "test002ShareNewsPage",
+        "uid" : "36769a2b1c380c48",
+        "parentUid" : "930967cf08aaf473628b2650ea100b3b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352683207,
+          "stop" : 1577352711716,
+          "duration" : 28509
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "930967cf08aaf473628b2650ea100b3b"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: clickSearchEngine() takes 1 positional argument but 2 were given",
+      "children" : [ {
+        "name" : "test001DownWebPage",
+        "uid" : "f81a343edb8ddc0f",
+        "parentUid" : "0fc952588647dfee996713188f928a32",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577349977395,
+          "stop" : 1577349979822,
+          "duration" : 2427
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0fc952588647dfee996713188f928a32"
+    }, {
+      "name" : "AttributeError: 'PubMethod' object has no attribute 'scrollPage'",
+      "children" : [ {
+        "name" : "test001HomePage",
+        "uid" : "a4141556753de3b3",
+        "parentUid" : "64f105ccaf18b77f4b9817593bb8276d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577350099524,
+          "stop" : 1577350101996,
+          "duration" : 2472
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "64f105ccaf18b77f4b9817593bb8276d"
+    }, {
+      "name" : "uiautomator2.exceptions.UiObjectNotFoundError: -32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[RESOURCE_ID=com.android.browser:id/title], method: objInfo",
+      "children" : [ {
+        "name" : "test008NegativeEdit",
+        "uid" : "47c08438c594c5b5",
+        "parentUid" : "4b77c025603debadb8e1885a98f8428d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351024137,
+          "stop" : 1577351088375,
+          "duration" : 64238
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4b77c025603debadb8e1885a98f8428d"
+    }, {
+      "name" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+      "children" : [ {
+        "name" : "test011NegativeMergeFile",
+        "uid" : "fac302e4bcd9f01d",
+        "parentUid" : "93831f5786f9a8f9fd364320ecc33d05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351211763,
+          "stop" : 1577351330368,
+          "duration" : 118605
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test012NegativeDeleteFile",
+        "uid" : "b16c145b6b04a010",
+        "parentUid" : "93831f5786f9a8f9fd364320ecc33d05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351338100,
+          "stop" : 1577351383231,
+          "duration" : 45131
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test001PersonalCenterPage",
+        "uid" : "82b3ec65ef885a97",
+        "parentUid" : "93831f5786f9a8f9fd364320ecc33d05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351730289,
+          "stop" : 1577351730289,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test004PermissionAgree",
+        "uid" : "ff8493a611a96891",
+        "parentUid" : "93831f5786f9a8f9fd364320ecc33d05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577352080810,
+          "stop" : 1577352102626,
+          "duration" : 21816
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "93831f5786f9a8f9fd364320ecc33d05"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

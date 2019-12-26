@@ -1,0 +1,157 @@
+{
+  "uid" : "b16c145b6b04a010",
+  "name" : "test012NegativeDeleteFile",
+  "fullName" : "browser.browser_test.test_NegativeScreenPage.TestNegativePage#test012NegativeDeleteFile",
+  "historyId" : "d403036665b8aaddd2a579e90f6c28df",
+  "time" : {
+    "start" : 1577351338100,
+    "stop" : 1577351383231,
+    "duration" : 45131
+  },
+  "description" : "\n        1、进入负一屏，长按删除\"自动化测试\"文件\n        2、断言当前页面不存在\"自动化测试\"元素\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入负一屏，长按删除&quot;自动化测试&quot;文件\n    2、断言当前页面不存在&quot;自动化测试&quot;元素\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+  "statusTrace" : "self = <browser_test.test_NegativeScreenPage.TestNegativePage object at 0x0000000005089E10>\nnegative_init = None\n\n    @allure.story('长按文件夹，删除文件夹功能正常 —— LJX')\n    @pytest.mark.P1\n    def test012NegativeDeleteFile(self, negative_init):\n        '''\n        1、进入负一屏，长按删除\"自动化测试\"文件\n        2、断言当前页面不存在\"自动化测试\"元素\n        '''\n        # todo:最好先保证\"自动化测试\"文件夹存在，不然没有删除\"自动化测试\"文件夹，该用例也能跑通过\n        self.pubmethod.mbackToHomeOrNegative()\n        self.home.clickHomeOnPage(MYCOLLECTION)\n>       self.negativescreen.deleteFolder(AUTOMATION_FILE)\n\nbrowser\\browser_test\\test_NegativeScreenPage.py:330: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NegativeScreenPage.py:122: in deleteFolder\n    self.base.clickByElement(CONFIRM_TEXT, '确定')\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x0000000006156CF8>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351331039,
+      "stop" : 1577351331039,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351331039,
+      "stop" : 1577351333040,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "negative_init",
+    "time" : {
+      "start" : 1577351333040,
+      "stop" : 1577351338099,
+      "duration" : 5059
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入负一屏，长按删除\"自动化测试\"文件\n        2、断言当前页面不存在\"自动化测试\"元素\n        ",
+    "status" : "broken",
+    "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+    "statusTrace" : "self = <browser_test.test_NegativeScreenPage.TestNegativePage object at 0x0000000005089E10>\nnegative_init = None\n\n    @allure.story('长按文件夹，删除文件夹功能正常 —— LJX')\n    @pytest.mark.P1\n    def test012NegativeDeleteFile(self, negative_init):\n        '''\n        1、进入负一屏，长按删除\"自动化测试\"文件\n        2、断言当前页面不存在\"自动化测试\"元素\n        '''\n        # todo:最好先保证\"自动化测试\"文件夹存在，不然没有删除\"自动化测试\"文件夹，该用例也能跑通过\n        self.pubmethod.mbackToHomeOrNegative()\n        self.home.clickHomeOnPage(MYCOLLECTION)\n>       self.negativescreen.deleteFolder(AUTOMATION_FILE)\n\nbrowser\\browser_test\\test_NegativeScreenPage.py:330: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NegativeScreenPage.py:122: in deleteFolder\n    self.base.clickByElement(CONFIRM_TEXT, '确定')\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x0000000006156CF8>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f1f89756e14a606c",
+      "name" : "失败截图",
+      "source" : "f1f89756e14a606c.jpg",
+      "type" : "image/jpg",
+      "size" : 217790
+    }, {
+      "uid" : "ac1153ee72373033",
+      "name" : "log",
+      "source" : "ac1153ee72373033.txt",
+      "type" : "text/plain",
+      "size" : 1138
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "negative_init::0",
+    "time" : {
+      "start" : 1577351383918,
+      "stop" : 1577351383918,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "长按文件夹，删除文件夹功能正常 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试负一屏页面"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NegativeScreenPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NegativeScreenPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "b16c145b6b04a010.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,154 @@
+{
+  "uid" : "ea369ab106e3a654",
+  "name" : "test001ReadPage",
+  "fullName" : "browser.browser_test.test_ReadPage.TestReadPage#test001ReadPage",
+  "historyId" : "3c3b4a4ac51a421aedd7fea8e8bf7a24",
+  "time" : {
+    "start" : 1577352172389,
+    "stop" : 1577352196506,
+    "duration" : 24117
+  },
+  "description" : "\n\n        1、清空浏览器数据，点击电脑版进入小说网页\n        2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框\n        3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、清空浏览器数据，点击电脑版进入小说网页\n    2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框\n    3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 13001s",
+  "statusTrace" : "self = <browser_test.test_ReadPage.TestReadPage object at 0x00000000050ADFD0>\nreadPage_init = None\n\n    @allure.story('测试阅读模式')\n    def test001ReadPage(self, readPage_init):\n        '''\n    \n        1、清空浏览器数据，点击电脑版进入小说网页\n        2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框\n        3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式\n    \n        '''\n        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.clickPrivacyAgree()\n        # self.pubmethod.clickPermissionAgree()\n        sleep(4)\n        self.base.browserWatcher()\n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击电脑版\n        self.read.clickComputerButton()\n        # 点击首页搜索框\n        self.home.clickHomeSearch()\n        # 搜索框输入m.80txt.la\n        self.searchpanel.inputNumber()\n        # 点击搜索\n        self.searchpanel.clickSearchInto()\n        # 点击小说封面\n>       self.read.clickBook()\n\nbrowser\\browser_test\\test_ReadPage.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\ReadPage.py:17: in clickBook\n    self.assertFalse(READ_BOOK)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.ReadPage.ReadPage object at 0x00000000050B7898>\nelement = '13001s'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 13001s\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "readPage_init",
+    "time" : {
+      "start" : 1577352167040,
+      "stop" : 1577352172389,
+      "duration" : 5349
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352165040,
+      "stop" : 1577352167040,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352165039,
+      "stop" : 1577352165040,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\n        1、清空浏览器数据，点击电脑版进入小说网页\n        2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框\n        3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式\n\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 13001s",
+    "statusTrace" : "self = <browser_test.test_ReadPage.TestReadPage object at 0x00000000050ADFD0>\nreadPage_init = None\n\n    @allure.story('测试阅读模式')\n    def test001ReadPage(self, readPage_init):\n        '''\n    \n        1、清空浏览器数据，点击电脑版进入小说网页\n        2、点击小说封面，开始阅读，进入章节，判断是否首次弹出阅读模式弹框\n        3、点击地址栏的阅读模式按钮，判断是否正常进入/退出阅读模式\n    \n        '''\n        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.clickPrivacyAgree()\n        # self.pubmethod.clickPermissionAgree()\n        sleep(4)\n        self.base.browserWatcher()\n        # 点击主页工具菜单\n        self.home.clickMore()\n        # 点击电脑版\n        self.read.clickComputerButton()\n        # 点击首页搜索框\n        self.home.clickHomeSearch()\n        # 搜索框输入m.80txt.la\n        self.searchpanel.inputNumber()\n        # 点击搜索\n        self.searchpanel.clickSearchInto()\n        # 点击小说封面\n>       self.read.clickBook()\n\nbrowser\\browser_test\\test_ReadPage.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\ReadPage.py:17: in clickBook\n    self.assertFalse(READ_BOOK)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.ReadPage.ReadPage object at 0x00000000050B7898>\nelement = '13001s'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 13001s\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f6a37122e2505f52",
+      "name" : "失败截图",
+      "source" : "f6a37122e2505f52.jpg",
+      "type" : "image/jpg",
+      "size" : 38790
+    }, {
+      "uid" : "3aa92c1bf99e4beb",
+      "name" : "log",
+      "source" : "3aa92c1bf99e4beb.txt",
+      "type" : "text/plain",
+      "size" : 1439
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "readPage_init::0",
+    "time" : {
+      "start" : 1577352196982,
+      "stop" : 1577352196982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试阅读模式"
+  }, {
+    "name" : "story",
+    "value" : "测试阅读模式"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_ReadPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestReadPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_ReadPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ea369ab106e3a654.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,154 @@
+{
+  "uid" : "1389907f903c9eb0",
+  "name" : "test004DownAppPage",
+  "fullName" : "browser.browser_test.test_DownLoadPage.TestDownPage#test004DownAppPage",
+  "historyId" : "41e5ec7349dcd855fdd399480529f236",
+  "time" : {
+    "start" : 1577350080741,
+    "stop" : 1577350087112,
+    "duration" : 6371
+  },
+  "description" : "\n        1、点击“搜索框”\n        2、输入“QQ”，点击“搜索”按钮\n        3、点击页面中的“高速下载”\n        4、显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板\n        7、点击“下载管理”打开下载页面\n        8、断言下载中的状态\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击“搜索框”\n    2、输入“QQ”，点击“搜索”按钮\n    3、点击页面中的“高速下载”\n    4、显示下载弹框\n    5、在下载弹框中点击“下载”按钮\n    6、点击底部工具栏菜单menu_more按钮，显示工具面板\n    7、点击“下载管理”打开下载页面\n    8、断言下载中的状态\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container",
+  "statusTrace" : "self = <browser_test.test_DownLoadPage.TestDownPage object at 0x0000000004FDE630>\ndown_init = None\n\n    @allure.story('测试应用下载')\n    def test004DownAppPage(self, down_init):\n        '''\n        1、点击“搜索框”\n        2、输入“QQ”，点击“搜索”按钮\n        3、点击页面中的“高速下载”\n        4、显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板\n        7、点击“下载管理”打开下载页面\n        8、断言下载中的状态\n        '''\n>       self.home.clickHomeSearch()\n\nbrowser\\browser_test\\test_DownLoadPage.py:136: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\HomePage.py:51: in clickHomeSearch\n    self.assertFalse(HOME_SEARCH)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.HomePage.HomePage object at 0x00000000050333C8>\nelement = 'com.android.browser:id/search_bar_url_container'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350066471,
+      "stop" : 1577350066472,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350066472,
+      "stop" : 1577350068474,
+      "duration" : 2002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "down_init",
+    "time" : {
+      "start" : 1577350068474,
+      "stop" : 1577350080739,
+      "duration" : 12265
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击“搜索框”\n        2、输入“QQ”，点击“搜索”按钮\n        3、点击页面中的“高速下载”\n        4、显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板\n        7、点击“下载管理”打开下载页面\n        8、断言下载中的状态\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container",
+    "statusTrace" : "self = <browser_test.test_DownLoadPage.TestDownPage object at 0x0000000004FDE630>\ndown_init = None\n\n    @allure.story('测试应用下载')\n    def test004DownAppPage(self, down_init):\n        '''\n        1、点击“搜索框”\n        2、输入“QQ”，点击“搜索”按钮\n        3、点击页面中的“高速下载”\n        4、显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板\n        7、点击“下载管理”打开下载页面\n        8、断言下载中的状态\n        '''\n>       self.home.clickHomeSearch()\n\nbrowser\\browser_test\\test_DownLoadPage.py:136: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\HomePage.py:51: in clickHomeSearch\n    self.assertFalse(HOME_SEARCH)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.HomePage.HomePage object at 0x00000000050333C8>\nelement = 'com.android.browser:id/search_bar_url_container'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "195cf420ba7b1eb2",
+      "name" : "失败截图",
+      "source" : "195cf420ba7b1eb2.jpg",
+      "type" : "image/jpg",
+      "size" : 337112
+    }, {
+      "uid" : "f42f7cf200739c73",
+      "name" : "log",
+      "source" : "f42f7cf200739c73.txt",
+      "type" : "text/plain",
+      "size" : 784
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "down_init::0",
+    "time" : {
+      "start" : 1577350088071,
+      "stop" : 1577350088071,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试应用下载"
+  }, {
+    "name" : "feature",
+    "value" : "魅族浏览器下载功能测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_DownLoadPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDownPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_DownLoadPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1389907f903c9eb0.json",
+  "parameterValues" : [ ]
+}

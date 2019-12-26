@@ -1,0 +1,154 @@
+{
+  "uid" : "a4141556753de3b3",
+  "name" : "test001HomePage",
+  "fullName" : "browser.browser_test.test_HomePage.TestHomePage#test001HomePage",
+  "historyId" : "cc3df0b98d81f05b2d6a755ea1338699",
+  "time" : {
+    "start" : 1577350099524,
+    "stop" : 1577350101996,
+    "duration" : 2472
+  },
+  "description" : "\n        1、点击地址栏more按钮\n        2、点击back\n        3、向下滑动页面进入到资讯流列表页\n        4、向下滑动查找text\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击地址栏more按钮\n    2、点击back\n    3、向下滑动页面进入到资讯流列表页\n    4、向下滑动查找text\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'PubMethod' object has no attribute 'scrollPage'",
+  "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000004B0F208>\nhome_init = None\n\n    @allure.story('测试资讯流页面存在相应text')\n    def test001HomePage(self, home_init):\n        '''\n        1、点击地址栏more按钮\n        2、点击back\n        3、向下滑动页面进入到资讯流列表页\n        4、向下滑动查找text\n        '''\n        self.home.clickMore()\n        # sleep(2)\n        self.pubmethod.clickBack()\n>       self.pubmethod.scrollPage(2)\nE       AttributeError: 'PubMethod' object has no attribute 'scrollPage'\n\nbrowser\\browser_test\\test_HomePage.py:49: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350088081,
+      "stop" : 1577350090082,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1577350090082,
+      "stop" : 1577350099522,
+      "duration" : 9440
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350088081,
+      "stop" : 1577350088081,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击地址栏more按钮\n        2、点击back\n        3、向下滑动页面进入到资讯流列表页\n        4、向下滑动查找text\n        ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'PubMethod' object has no attribute 'scrollPage'",
+    "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000004B0F208>\nhome_init = None\n\n    @allure.story('测试资讯流页面存在相应text')\n    def test001HomePage(self, home_init):\n        '''\n        1、点击地址栏more按钮\n        2、点击back\n        3、向下滑动页面进入到资讯流列表页\n        4、向下滑动查找text\n        '''\n        self.home.clickMore()\n        # sleep(2)\n        self.pubmethod.clickBack()\n>       self.pubmethod.scrollPage(2)\nE       AttributeError: 'PubMethod' object has no attribute 'scrollPage'\n\nbrowser\\browser_test\\test_HomePage.py:49: AttributeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9b9517eef4246f9f",
+      "name" : "失败截图",
+      "source" : "9b9517eef4246f9f.jpg",
+      "type" : "image/jpg",
+      "size" : 717877
+    }, {
+      "uid" : "4075e5583be86791",
+      "name" : "log",
+      "source" : "4075e5583be86791.txt",
+      "type" : "text/plain",
+      "size" : 997
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1577350103115,
+      "stop" : 1577350103116,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试资讯流页面存在相应text"
+  }, {
+    "name" : "feature",
+    "value" : "测试资讯流页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_HomePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHomePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_HomePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a4141556753de3b3.json",
+  "parameterValues" : [ ]
+}

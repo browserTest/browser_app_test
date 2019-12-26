@@ -1,0 +1,10 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_PubMethod.py:24 
+INFO     root:test_PubMethod.py:25 ****开始执行用例****
+INFO     root:base.py:30 clear： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： 同意
+INFO     root:base.py:76 点击元素: 隐私弹窗同意按钮
+INFO     root:base.py:145 查询到元素： 始终允许
+INFO     root:test_PubMethod.py:29 ****用例执行结束****
+INFO     root:test_PubMethod.py:30

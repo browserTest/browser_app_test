@@ -1,0 +1,16 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NegativeScreenPage.py:24 
+INFO     root:test_NegativeScreenPage.py:25 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:145 查询到元素： 自动化测试
+INFO     root:base.py:254 长按元素: 负一屏的自动化测试文件夹
+INFO     root:base.py:145 查询到元素： 删除文件夹
+INFO     root:base.py:76 点击元素: 删除文件夹
+INFO     root:base.py:145 查询到元素： 确定
+INFO     root:test_NegativeScreenPage.py:29 ****用例执行结束****
+INFO     root:test_NegativeScreenPage.py:30

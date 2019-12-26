@@ -1,0 +1,140 @@
+{
+  "uid" : "58f2148f5f83f52",
+  "name" : "test004NewsChannelManage",
+  "fullName" : "browser.browser_test.test_NewsPage.TestNewsPage#test004NewsChannelManage",
+  "historyId" : "36b64edbe136b052afed2a880b7b0b1b",
+  "time" : {
+    "start" : 1577351637412,
+    "stop" : 1577351641202,
+    "duration" : 3790
+  },
+  "description" : "\n        1、打开浏览器，上滑进入资讯流列表页面\n        2、获取资讯流列表第一个标题\n        3、点击“X”按钮，显示不感兴趣弹框\n        4、点击“不感兴趣”，删除文章\n        5、断言删除前和删除后的文章标题不相等\n        ",
+  "descriptionHtml" : "<pre><code>    1、打开浏览器，上滑进入资讯流列表页面\n    2、获取资讯流列表第一个标题\n    3、点击“X”按钮，显示不感兴趣弹框\n    4、点击“不感兴趣”，删除文章\n    5、断言删除前和删除后的文章标题不相等\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "news_init",
+    "time" : {
+      "start" : 1577351619667,
+      "stop" : 1577351637411,
+      "duration" : 17744
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351617667,
+      "stop" : 1577351617667,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351617667,
+      "stop" : 1577351619667,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、打开浏览器，上滑进入资讯流列表页面\n        2、获取资讯流列表第一个标题\n        3、点击“X”按钮，显示不感兴趣弹框\n        4、点击“不感兴趣”，删除文章\n        5、断言删除前和删除后的文章标题不相等\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f547c290ab7d09dc",
+      "name" : "log",
+      "source" : "f547c290ab7d09dc.txt",
+      "type" : "text/plain",
+      "size" : 1784
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "news_init::0",
+    "time" : {
+      "start" : 1577351641203,
+      "stop" : 1577351641203,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器资讯流功能测试"
+  }, {
+    "name" : "story",
+    "value" : "测试资讯流列表中的不感兴趣功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NewsPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNewsPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NewsPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "58f2148f5f83f52.json",
+  "parameterValues" : [ ]
+}

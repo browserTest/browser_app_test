@@ -1,0 +1,143 @@
+{
+  "uid" : "402bf5c1b84b7f5",
+  "name" : "test004MorePage",
+  "fullName" : "browser.browser_test.test_MorePage.TestMorePage#test004MorePage",
+  "historyId" : "05f534e537ba930b838c4c60941e4b56",
+  "time" : {
+    "start" : 1577350417867,
+    "stop" : 1577350423807,
+    "duration" : 5940
+  },
+  "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、在浏览器首页点击导航栏中&quot;更多&quot;按钮，进入到浏览器网址导航页面\n    2、点击&quot;聚划算&quot;\n    3、断言是否跳转到&quot;聚划算&quot;页面\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350406554,
+      "stop" : 1577350408556,
+      "duration" : 2002
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "more_init",
+    "time" : {
+      "start" : 1577350408556,
+      "stop" : 1577350417866,
+      "duration" : 9310
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350406554,
+      "stop" : 1577350406554,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、在浏览器首页点击导航栏中\"更多\"按钮，进入到浏览器网址导航页面\n        2、点击\"聚划算\"\n        3、断言是否跳转到\"聚划算\"页面\n\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6ae4ffbab4d17756",
+      "name" : "log",
+      "source" : "6ae4ffbab4d17756.txt",
+      "type" : "text/plain",
+      "size" : 1163
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "more_init::0",
+    "time" : {
+      "start" : 1577350423809,
+      "stop" : 1577350423810,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试网址导航页面11-聚划算跳转"
+  }, {
+    "name" : "feature",
+    "value" : "魅族浏览器网址导航页面测试"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_MorePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMorePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_MorePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "402bf5c1b84b7f5.json",
+  "parameterValues" : [ ]
+}

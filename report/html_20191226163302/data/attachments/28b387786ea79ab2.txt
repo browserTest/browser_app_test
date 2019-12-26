@@ -1,0 +1,24 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SearchPanelPage.py:22 
+INFO     root:test_SearchPanelPage.py:23 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:218 提取第0位的第一个搜索热词元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/suggestion_hot_word_item1
+INFO     root:base.py:76 点击元素: 搜索历史热词
+INFO     root:base.py:145 查询到元素： com.android.browser:id/security_icon
+INFO     root:base.py:369 截图后进行图片识别:D:\browser_dwliuc\screenshot\20191226163302图片识别.jpg
+INFO     root:base.py:197 元素包含，断言成功，元素1名称：Ella发搞怪视频 && 元素2名称：1724令53Ella发搞怪视频ella怀二胎了发搞怪视频手舞足蹈庆圣诞一个动作引网友猜测如此搞怪绝对是Ella本人没错了当然仅仅做一个圣诞树的造型可远远不够视频后半段只见Ela穿着易有料1天前ella发搞怪视频的14条网友热议1一点资讯网友1一点资讯网友带个好快来了如果是真的恭喜恭喜4个赞1天前0个赞1
+INFO     root:test_SearchPanelPage.py:30 ****用例执行结束****
+INFO     root:test_SearchPanelPage.py:31

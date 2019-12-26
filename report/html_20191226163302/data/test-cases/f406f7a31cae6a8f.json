@@ -1,0 +1,140 @@
+{
+  "uid" : "f406f7a31cae6a8f",
+  "name" : "test002QuitOpenBrowser",
+  "fullName" : "browser.browser_test.test_QuitPage.TestQuitPage#test002QuitOpenBrowser",
+  "historyId" : "44e8083aa23261122d2dbf292881286f",
+  "time" : {
+    "start" : 1577352148640,
+    "stop" : 1577352165015,
+    "duration" : 16375
+  },
+  "description" : "\n        1、进入浏览器\n        2、点击导航网站-》安居客\n        3、点击多窗口\n        4、添加多窗口（新增3个多窗口）\n        5、点击浏览的窗口tab网页\n        6、点击底部工具栏的 menu_more 按钮\n        7、点击退出按钮\n        8、打开浏览器\n        9、断言多窗口数量不相等\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入浏览器\n    2、点击导航网站-》安居客\n    3、点击多窗口\n    4、添加多窗口（新增3个多窗口）\n    5、点击浏览的窗口tab网页\n    6、点击底部工具栏的 menu_more 按钮\n    7、点击退出按钮\n    8、打开浏览器\n    9、断言多窗口数量不相等\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "quit_init",
+    "time" : {
+      "start" : 1577352135420,
+      "stop" : 1577352148640,
+      "duration" : 13220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352133420,
+      "stop" : 1577352135420,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352133420,
+      "stop" : 1577352133420,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入浏览器\n        2、点击导航网站-》安居客\n        3、点击多窗口\n        4、添加多窗口（新增3个多窗口）\n        5、点击浏览的窗口tab网页\n        6、点击底部工具栏的 menu_more 按钮\n        7、点击退出按钮\n        8、打开浏览器\n        9、断言多窗口数量不相等\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e8cb338175d0309b",
+      "name" : "log",
+      "source" : "e8cb338175d0309b.txt",
+      "type" : "text/plain",
+      "size" : 2747
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "quit_init::0",
+    "time" : {
+      "start" : 1577352165016,
+      "stop" : 1577352165016,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试点击底部工具栏，点击退出按钮，再打开浏览器，查看多窗口只有一个"
+  }, {
+    "name" : "feature",
+    "value" : "魅族浏览器测试退出功能"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_QuitPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestQuitPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_QuitPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f406f7a31cae6a8f.json",
+  "parameterValues" : [ ]
+}

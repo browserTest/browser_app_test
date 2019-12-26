@@ -1,0 +1,151 @@
+{
+  "uid" : "3b0191d0aca283db",
+  "name" : "test002HomePage",
+  "fullName" : "browser.browser_test.test_HomePage.TestHomePage#test002HomePage",
+  "historyId" : "485ba75b4360188b152b150b5425a8b3",
+  "time" : {
+    "start" : 1577350113849,
+    "stop" : 1577350129969,
+    "duration" : 16120
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]",
+  "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000004F7CCF8>\nhome_init = None\n\n    @allure.story('测试资讯流广告')\n    def test002HomePage(self, home_init):\n    \n        #点击资讯\n        self.home.clickInformation()\n    \n        self.home.clickInformation()\n        sleep(5)\n        self.base.scrollToElement('广告')\n        #self.base.clickByElement('广告')\n>       self.home.clickAdvertisement()\n\nbrowser\\browser_test\\test_HomePage.py:71: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\HomePage.py:65: in clickAdvertisement\n    self.assertFalse(HOME_ADVERTISEMENT)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.HomePage.HomePage object at 0x0000000004FC22E8>\nelement = '//*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350103132,
+      "stop" : 1577350105133,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "home_init",
+    "time" : {
+      "start" : 1577350105133,
+      "stop" : 1577350113847,
+      "duration" : 8714
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350103131,
+      "stop" : 1577350103131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]",
+    "statusTrace" : "self = <browser_test.test_HomePage.TestHomePage object at 0x0000000004F7CCF8>\nhome_init = None\n\n    @allure.story('测试资讯流广告')\n    def test002HomePage(self, home_init):\n    \n        #点击资讯\n        self.home.clickInformation()\n    \n        self.home.clickInformation()\n        sleep(5)\n        self.base.scrollToElement('广告')\n        #self.base.clickByElement('广告')\n>       self.home.clickAdvertisement()\n\nbrowser\\browser_test\\test_HomePage.py:71: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\HomePage.py:65: in clickAdvertisement\n    self.assertFalse(HOME_ADVERTISEMENT)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.HomePage.HomePage object at 0x0000000004FC22E8>\nelement = '//*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cd84dae1677187cf",
+      "name" : "失败截图",
+      "source" : "cd84dae1677187cf.jpg",
+      "type" : "image/jpg",
+      "size" : 843307
+    }, {
+      "uid" : "3df2010cf639dbe6",
+      "name" : "log",
+      "source" : "3df2010cf639dbe6.txt",
+      "type" : "text/plain",
+      "size" : 1269
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "home_init::0",
+    "time" : {
+      "start" : 1577350131815,
+      "stop" : 1577350131815,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试资讯流广告"
+  }, {
+    "name" : "feature",
+    "value" : "测试资讯流页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_HomePage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHomePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_HomePage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3b0191d0aca283db.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,154 @@
+{
+  "uid" : "5dfa857cb47633e1",
+  "name" : "test002DownWebPage",
+  "fullName" : "browser.browser_test.test_DownLoadPage.TestDownPage#test002DownWebPage",
+  "historyId" : "c7ee53d3f9cbf779c9645260b1ce3f1e",
+  "time" : {
+    "start" : 1577349991962,
+    "stop" : 1577350020228,
+    "duration" : 28266
+  },
+  "description" : "\n        1、点击“搜索框”\n        2、点击“搜索”按钮，访问网页，在页面内等待2秒\n        3、长按网页链接，显示长按菜单弹框\n        4、点击“下载链接”按钮，显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒\n        6、断言工具面板中下载完成后的“小红点”\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击“搜索框”\n    2、点击“搜索”按钮，访问网页，在页面内等待2秒\n    3、长按网页链接，显示长按菜单弹框\n    4、点击“下载链接”按钮，显示下载弹框\n    5、在下载弹框中点击“下载”按钮\n    6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒\n    6、断言工具面板中下载完成后的“小红点”\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip",
+  "statusTrace" : "self = <browser_test.test_DownLoadPage.TestDownPage object at 0x0000000004F7C6A0>\ndown_init = None\n\n    @allure.story('测试长按网页链接下载，断言下载完成后的小红点')\n    def test002DownWebPage(self,down_init):\n        '''\n        1、点击“搜索框”\n        2、点击“搜索”按钮，访问网页，在页面内等待2秒\n        3、长按网页链接，显示长按菜单弹框\n        4、点击“下载链接”按钮，显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒\n        6、断言工具面板中下载完成后的“小红点”\n        '''\n        self.home.clickHomeSearch()\n        self.search.clickSearchInto()\n        sleep(2)\n        self.down.longLink()\n        self.down.clickDownLink()\n        self.down.clickDownButton()\n        self.home.clickMore()\n        sleep(5)\n>       self.base.assertTrue(HOME_MORE_TIP)\n\nbrowser\\browser_test\\test_DownLoadPage.py:89: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000004F7C400>\nelement = 'com.android.browser:id/tip', mark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip\n\nbase_function\\base.py:176: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577349980932,
+      "stop" : 1577349982932,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "down_init",
+    "time" : {
+      "start" : 1577349982932,
+      "stop" : 1577349991962,
+      "duration" : 9030
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577349980932,
+      "stop" : 1577349980932,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击“搜索框”\n        2、点击“搜索”按钮，访问网页，在页面内等待2秒\n        3、长按网页链接，显示长按菜单弹框\n        4、点击“下载链接”按钮，显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒\n        6、断言工具面板中下载完成后的“小红点”\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip",
+    "statusTrace" : "self = <browser_test.test_DownLoadPage.TestDownPage object at 0x0000000004F7C6A0>\ndown_init = None\n\n    @allure.story('测试长按网页链接下载，断言下载完成后的小红点')\n    def test002DownWebPage(self,down_init):\n        '''\n        1、点击“搜索框”\n        2、点击“搜索”按钮，访问网页，在页面内等待2秒\n        3、长按网页链接，显示长按菜单弹框\n        4、点击“下载链接”按钮，显示下载弹框\n        5、在下载弹框中点击“下载”按钮\n        6、点击底部工具栏菜单menu_more按钮，显示工具面板，等待5秒\n        6、断言工具面板中下载完成后的“小红点”\n        '''\n        self.home.clickHomeSearch()\n        self.search.clickSearchInto()\n        sleep(2)\n        self.down.longLink()\n        self.down.clickDownLink()\n        self.down.clickDownButton()\n        self.home.clickMore()\n        sleep(5)\n>       self.base.assertTrue(HOME_MORE_TIP)\n\nbrowser\\browser_test\\test_DownLoadPage.py:89: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000004F7C400>\nelement = 'com.android.browser:id/tip', mark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip\n\nbase_function\\base.py:176: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c0b5f4a6ec69ef19",
+      "name" : "失败截图",
+      "source" : "c0b5f4a6ec69ef19.jpg",
+      "type" : "image/jpg",
+      "size" : 487385
+    }, {
+      "uid" : "48927acd88f13058",
+      "name" : "log",
+      "source" : "48927acd88f13058.txt",
+      "type" : "text/plain",
+      "size" : 1810
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "down_init::0",
+    "time" : {
+      "start" : 1577350021380,
+      "stop" : 1577350021381,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "魅族浏览器下载功能测试"
+  }, {
+    "name" : "story",
+    "value" : "测试长按网页链接下载，断言下载完成后的小红点"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_DownLoadPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDownPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_DownLoadPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5dfa857cb47633e1.json",
+  "parameterValues" : [ ]
+}

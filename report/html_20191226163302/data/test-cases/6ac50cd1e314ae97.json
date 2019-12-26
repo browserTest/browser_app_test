@@ -1,0 +1,143 @@
+{
+  "uid" : "6ac50cd1e314ae97",
+  "name" : "test010NegativeMultiSelect",
+  "fullName" : "browser.browser_test.test_NegativeScreenPage.TestNegativePage#test010NegativeMultiSelect",
+  "historyId" : "f76ee121f2725f536b6512eae9db7524",
+  "time" : {
+    "start" : 1577351168636,
+    "stop" : 1577351204618,
+    "duration" : 35982
+  },
+  "description" : "\n        1、进入负一屏，添加\"网易\"书签\n        2、长按“网易”书签，进入\"多选\"状态，获取屏幕顶部标题\n        3、点击\"全选\"后，再获取屏幕顶部标题，断言\"全选\"前后，顶部标题不一样\n        4、点击\"取消\"后，断言当前页面不存在\"取消\"元素\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入负一屏，添加&quot;网易&quot;书签\n    2、长按“网易”书签，进入&quot;多选&quot;状态，获取屏幕顶部标题\n    3、点击&quot;全选&quot;后，再获取屏幕顶部标题，断言&quot;全选&quot;前后，顶部标题不一样\n    4、点击&quot;取消&quot;后，断言当前页面不存在&quot;取消&quot;元素\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351161587,
+      "stop" : 1577351161587,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "negative_init",
+    "time" : {
+      "start" : 1577351163588,
+      "stop" : 1577351168635,
+      "duration" : 5047
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351161587,
+      "stop" : 1577351163588,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入负一屏，添加\"网易\"书签\n        2、长按“网易”书签，进入\"多选\"状态，获取屏幕顶部标题\n        3、点击\"全选\"后，再获取屏幕顶部标题，断言\"全选\"前后，顶部标题不一样\n        4、点击\"取消\"后，断言当前页面不存在\"取消\"元素\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "221be9a7bbdf1ceb",
+      "name" : "log",
+      "source" : "221be9a7bbdf1ceb.txt",
+      "type" : "text/plain",
+      "size" : 2222
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "negative_init::0",
+    "time" : {
+      "start" : 1577351204619,
+      "stop" : 1577351204620,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "长按负一屏图标：多选功能正常 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试负一屏页面"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NegativeScreenPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NegativeScreenPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "6ac50cd1e314ae97.json",
+  "parameterValues" : [ ]
+}

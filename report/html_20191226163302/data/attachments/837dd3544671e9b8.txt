@@ -1,0 +1,15 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_HomePage.py:27 
+INFO     root:test_HomePage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 热门小说
+INFO     root:base.py:76 点击元素: 网址导航-》热门小说
+INFO     root:base.py:151 未找到元素，元素名称为: 书架
+INFO     root:test_HomePage.py:34 ****用例执行结束****
+INFO     root:test_HomePage.py:35

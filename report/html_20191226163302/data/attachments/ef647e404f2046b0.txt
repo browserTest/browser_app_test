@@ -1,0 +1,19 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_PersonalCenterPage.py:27 
+INFO     root:test_PersonalCenterPage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:76 点击元素: 我的图标
+INFO     root:base.py:145 查询到元素： 未登录
+INFO     root:base.py:76 点击元素: 我的账号图标
+INFO     root:base.py:145 查询到元素： com.meizu.account:id/edtPwd
+INFO     root:base.py:237 输入文本: 输入密码
+INFO     root:base.py:151 未找到元素，元素名称为: 注册
+INFO     root:test_PersonalCenterPage.py:33 ****用例执行结束****
+INFO     root:test_PersonalCenterPage.py:34

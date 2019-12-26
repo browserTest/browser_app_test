@@ -1,0 +1,154 @@
+{
+  "uid" : "f238de8ac8897541",
+  "name" : "test005SearchPanelPage",
+  "fullName" : "browser.browser_test.test_SearchPanelPage.TestSearchPanelPage#test005SearchPanelPage",
+  "historyId" : "29bdf085cbfd387d3ab9ceaaedc69d25",
+  "time" : {
+    "start" : 1577352397514,
+    "stop" : 1577352409561,
+    "duration" : 12047
+  },
+  "description" : "\n        1、点击首页搜索框，输入百度网址\n        2、打开百度首页，滑动页面\n        3、检查顶部地址栏是否展开\n        4、检查搜索历史,长按删除\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击首页搜索框，输入百度网址\n    2、打开百度首页，滑动页面\n    3、检查顶部地址栏是否展开\n    4、检查搜索历史,长按删除\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh",
+  "statusTrace" : "self = <browser_test.test_SearchPanelPage.TestSearchPanelPage object at 0x00000000063EAA58>\nsearch_init = None\n\n    @allure.story('打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史')\n    def test005SearchPanelPage(self, search_init):\n        '''\n        1、点击首页搜索框，输入百度网址\n        2、打开百度首页，滑动页面\n        3、检查顶部地址栏是否展开\n        4、检查搜索历史,长按删除\n        '''\n        # 点击首页搜索框\n        self.home.clickHomeSearch()\n        # 输入百度地址,进入百度首页\n        self.searchpanel.inputBaidu()\n        self.searchpanel.clickSearchInto()\n        # 监听地理位置弹框，点击“始终允许”\n        self.base.browserWatcher()\n        # 判断顶部地址栏是否展开\n>       self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )\n\nbrowser\\browser_test\\test_SearchPanelPage.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000005094B70>\nelement = 'com.android.browser:id/bt_refresh', mark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh\n\nbase_function\\base.py:176: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352369146,
+      "stop" : 1577352369147,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352369147,
+      "stop" : 1577352371148,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "search_init",
+    "time" : {
+      "start" : 1577352371148,
+      "stop" : 1577352397513,
+      "duration" : 26365
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、点击首页搜索框，输入百度网址\n        2、打开百度首页，滑动页面\n        3、检查顶部地址栏是否展开\n        4、检查搜索历史,长按删除\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh",
+    "statusTrace" : "self = <browser_test.test_SearchPanelPage.TestSearchPanelPage object at 0x00000000063EAA58>\nsearch_init = None\n\n    @allure.story('打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史')\n    def test005SearchPanelPage(self, search_init):\n        '''\n        1、点击首页搜索框，输入百度网址\n        2、打开百度首页，滑动页面\n        3、检查顶部地址栏是否展开\n        4、检查搜索历史,长按删除\n        '''\n        # 点击首页搜索框\n        self.home.clickHomeSearch()\n        # 输入百度地址,进入百度首页\n        self.searchpanel.inputBaidu()\n        self.searchpanel.clickSearchInto()\n        # 监听地理位置弹框，点击“始终允许”\n        self.base.browserWatcher()\n        # 判断顶部地址栏是否展开\n>       self.base.assertTrue(ADDRESS_CONTAINER_REFRESH )\n\nbrowser\\browser_test\\test_SearchPanelPage.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <base_function.base.Base object at 0x0000000005094B70>\nelement = 'com.android.browser:id/bt_refresh', mark = True, timeout = 5\n\n    def assertTrue(self, element, mark = True, timeout = 5):\n        '''\n        :param element: 元素名称\n        :param timeout: 超时时间\n        :param mark: 判断元素是否存在，默认为True，如判断元素不存在，则必须传False\n        :return:\n        '''\n        sleep(2)\n        if mark:\n>           assert self.elementIsExit(element, timeout) == True, \"断言元素存在失败，元素名称为： {}\".format(element)\nE           AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh\n\nbase_function\\base.py:176: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ba0ce2e1f34e4294",
+      "name" : "失败截图",
+      "source" : "ba0ce2e1f34e4294.jpg",
+      "type" : "image/jpg",
+      "size" : 161918
+    }, {
+      "uid" : "1da090658957b471",
+      "name" : "log",
+      "source" : "1da090658957b471.txt",
+      "type" : "text/plain",
+      "size" : 1436
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "search_init::0",
+    "time" : {
+      "start" : 1577352410232,
+      "stop" : 1577352410233,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史"
+  }, {
+    "name" : "feature",
+    "value" : "测试搜索页面"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SearchPanelPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearchPanelPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SearchPanelPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f238de8ac8897541.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,143 @@
+{
+  "uid" : "4feeba5695ac5adf",
+  "name" : "test002ClassifyAddBookmark",
+  "fullName" : "browser.browser_test.test_NegativeScreenPage.TestNegativePage#test002ClassifyAddBookmark",
+  "historyId" : "075392870e65053ed8cb7934476ad8e8",
+  "time" : {
+    "start" : 1577350687747,
+    "stop" : 1577350740057,
+    "duration" : 52310
+  },
+  "description" : "\n        1、进入负一屏，删除“凤凰网”书签\n        2、进入添加到主页-》分类-》资讯头条，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素\n        3、返回上一层到负一屏，上滑页面1次，断言负一屏是否存在“凤凰网”书签\n        ",
+  "descriptionHtml" : "<pre><code>    1、进入负一屏，删除“凤凰网”书签\n    2、进入添加到主页-》分类-》资讯头条，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素\n    3、返回上一层到负一屏，上滑页面1次，断言负一屏是否存在“凤凰网”书签\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577350680820,
+      "stop" : 1577350682820,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "negative_init",
+    "time" : {
+      "start" : 1577350682820,
+      "stop" : 1577350687747,
+      "duration" : 4927
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577350680819,
+      "stop" : 1577350680819,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、进入负一屏，删除“凤凰网”书签\n        2、进入添加到主页-》分类-》资讯头条，添加“凤凰网”书签，点击进入“凤凰网”网站，断言页面是否存在'手机鳳凰網'元素\n        3、返回上一层到负一屏，上滑页面1次，断言负一屏是否存在“凤凰网”书签\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "95ac291f8ff844b1",
+      "name" : "log",
+      "source" : "95ac291f8ff844b1.txt",
+      "type" : "text/plain",
+      "size" : 2157
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "negative_init::0",
+    "time" : {
+      "start" : 1577350740058,
+      "stop" : 1577350740059,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试负一屏-》分类页添加书签、打开网站 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试负一屏页面"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NegativeScreenPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NegativeScreenPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "4feeba5695ac5adf.json",
+  "parameterValues" : [ ]
+}

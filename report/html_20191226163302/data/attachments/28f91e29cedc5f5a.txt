@@ -1,0 +1,29 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NewsPage.py:21 
+INFO     root:test_NewsPage.py:22 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/refresh
+INFO     root:base.py:76 点击元素: 资讯
+INFO     root:base.py:145 查询到元素： com.android.browser:id/expend_view
+INFO     root:base.py:76 点击元素: 资讯流列表点击“倒三角”符号，进入频道管理页面
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_channel_grid_view_added
+INFO     root:base.py:76 点击元素: 我的频道管理页面，选择点击“频道”，进入资讯流列表
+INFO     root:base.py:145 查询到元素： 美女图集
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 美女图集
+INFO     root:base.py:145 查询到元素： 美女
+INFO     root:base.py:76 点击元素: 在美女频道列表中，点击标签，进入标签详情页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_sdk_recycle_view
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： com.android.browser:id/news_sdk_recycle_view
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： 资讯
+INFO     root:base.py:113 滑动页面： 1次
+INFO     root:base.py:145 查询到元素： 美女
+INFO     root:base.py:76 点击元素: 在美女频道列表中，点击图片，进入图片详情页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mz_toolbar_nav_button
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： com.android.browser:id/mz_toolbar_nav_button
+INFO     root:test_NewsPage.py:28 ****用例执行结束****
+INFO     root:test_NewsPage.py:29

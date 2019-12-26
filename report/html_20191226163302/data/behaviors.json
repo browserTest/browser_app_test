@@ -1,0 +1,1561 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试收藏/历史相关功能",
+    "children" : [ {
+      "name" : "测试取消清空历史功能 —— LJX",
+      "children" : [ {
+        "name" : "test001CleanUpHistoryCancel",
+        "uid" : "54955a8a21e6599e",
+        "parentUid" : "a6fb1d5724b324dffd1c3155dd63e51d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349217894,
+          "stop" : 1577349242988,
+          "duration" : 25094
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a6fb1d5724b324dffd1c3155dd63e51d"
+    }, {
+      "name" : "测试确认清空历史功能 —— LJX",
+      "children" : [ {
+        "name" : "test002CleanUpHistory",
+        "uid" : "8facd470de6ba3aa",
+        "parentUid" : "8173e4b640fa3c16f5656c0c70587b54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349264852,
+          "stop" : 1577349285056,
+          "duration" : 20204
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8173e4b640fa3c16f5656c0c70587b54"
+    }, {
+      "name" : "收藏一篇文章，收藏夹下显示该文章；取消收藏后，收藏夹下不显示该文章 —— LJX",
+      "children" : [ {
+        "name" : "test003CollectArticle",
+        "uid" : "4ff3c6a58d2d08cf",
+        "parentUid" : "c5501cb619630a6d130327a71206cbf3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349306987,
+          "stop" : 1577349345043,
+          "duration" : 38056
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5501cb619630a6d130327a71206cbf3"
+    }, {
+      "name" : "打开网页-添加收藏-编辑-新建收藏文件夹-收藏进去-能改的都改一遍-收藏夹打开该收藏正常 —— LJX",
+      "children" : [ {
+        "name" : "test004CollectWebToFolder",
+        "uid" : "3e6a50d6137e5b9",
+        "parentUid" : "574d7f951262baa9fa0f6fb581a3641d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349364967,
+          "stop" : 1577349419784,
+          "duration" : 54817
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "574d7f951262baa9fa0f6fb581a3641d"
+    }, {
+      "name" : "添加一个网页到收藏/主页常用/桌面，查看是否添加到对应目录下并且点击能正常打开 —— LJX",
+      "children" : [ {
+        "name" : "test005CollectWebPage",
+        "uid" : "ea676d34d3234ae7",
+        "parentUid" : "6711f048ea549f2e36dcad00615f947a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349468224,
+          "stop" : 1577349518512,
+          "duration" : 50288
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6711f048ea549f2e36dcad00615f947a"
+    }, {
+      "name" : "我的收藏-长按单个-删除，检查是否正常删除 —— LJX",
+      "children" : [ {
+        "name" : "test006DeleteCollectionOne",
+        "uid" : "4db8726596c231b5",
+        "parentUid" : "b2cfd517cdfffcee2d0dd0bad80877c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349540155,
+          "stop" : 1577349555231,
+          "duration" : 15076
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2cfd517cdfffcee2d0dd0bad80877c6"
+    }, {
+      "name" : "我的收藏-长按多个-删除，检查是否正常删除 —— LJX",
+      "children" : [ {
+        "name" : "test007DeleteCollectionMore",
+        "uid" : "c9a749f121d19dab",
+        "parentUid" : "2e86826457422414f706bb40990edd46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349575953,
+          "stop" : 1577349613622,
+          "duration" : 37669
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2e86826457422414f706bb40990edd46"
+    }, {
+      "name" : "历史-长按1个-删除，检查是否正常删除 —— LJX",
+      "children" : [ {
+        "name" : "test008DeleteHistoryOne",
+        "uid" : "270abbf1c8df6ca8",
+        "parentUid" : "d95f196c4e5b03653006cbce6232c3c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349634443,
+          "stop" : 1577349658189,
+          "duration" : 23746
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d95f196c4e5b03653006cbce6232c3c6"
+    }, {
+      "name" : "历史-长按多个-删除，检查是否正常删除 —— LJX",
+      "children" : [ {
+        "name" : "test009DeleteHistoryMore",
+        "uid" : "487c824d2988d8a5",
+        "parentUid" : "2e9f48a0493ef4f4c0c9067f86419c6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349678673,
+          "stop" : 1577349716899,
+          "duration" : 38226
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2e9f48a0493ef4f4c0c9067f86419c6d"
+    }, {
+      "name" : "我的收藏-长按单个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX",
+      "children" : [ {
+        "name" : "test10AddToDeskOne",
+        "uid" : "2ffe4c450ad1cb62",
+        "parentUid" : "9284ce9cd8e3b3858fe90a58e55cd814",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349737052,
+          "stop" : 1577349763993,
+          "duration" : 26941
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9284ce9cd8e3b3858fe90a58e55cd814"
+    }, {
+      "name" : "我的收藏-长按多个-发送至桌面，检查是否成功添加至桌面且正常打开 —— LJX",
+      "children" : [ {
+        "name" : "test011AddToDeskMore",
+        "uid" : "2a95a95ec894a543",
+        "parentUid" : "958ba7238b32fd2eabe0ad53ccd12d15",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349784530,
+          "stop" : 1577349821007,
+          "duration" : 36477
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "958ba7238b32fd2eabe0ad53ccd12d15"
+    }, {
+      "name" : "我的收藏-长按1条记录-新窗口打开，检查是否正常打开且多窗口数量+1 —— LJX",
+      "children" : [ {
+        "name" : "test12NewWindowOpenOne",
+        "uid" : "ff0fd9c832a7e1b7",
+        "parentUid" : "c3d1bc8fd96ece9b69edf345f55b90bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349842316,
+          "stop" : 1577349862011,
+          "duration" : 19695
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3d1bc8fd96ece9b69edf345f55b90bb"
+    }, {
+      "name" : "我的收藏-长按3条记录-新窗口打开，检查是否正常打开且多窗口数量+3 —— LJX",
+      "children" : [ {
+        "name" : "test13NewWindowOpenMore",
+        "uid" : "abfbef7aa8c5f70c",
+        "parentUid" : "02a41ea55f2b6d1edbdaf695fbefd7e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577349882039,
+          "stop" : 1577349903409,
+          "duration" : 21370
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "02a41ea55f2b6d1edbdaf695fbefd7e1"
+    }, {
+      "name" : "开启无痕模式，访问网站，不会生成历史记录 —— LJX",
+      "children" : [ {
+        "name" : "test14NoMarking",
+        "uid" : "91f3fd3a89ee1e1c",
+        "parentUid" : "7a3b609817818c9981ee3db9fd5208a6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349950965,
+          "stop" : 1577349965009,
+          "duration" : 14044
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7a3b609817818c9981ee3db9fd5208a6"
+    } ],
+    "uid" : "42b954648a4d7e98a4db3e645a75dd21"
+  }, {
+    "name" : "魅族浏览器下载功能测试",
+    "children" : [ {
+      "name" : "测试长按网页链接，点击“下载链接”，显示下载弹框，点击取消",
+      "children" : [ {
+        "name" : "test001DownWebPage",
+        "uid" : "f81a343edb8ddc0f",
+        "parentUid" : "6fa91200244d3f176b2befa4299f5124",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577349977395,
+          "stop" : 1577349979822,
+          "duration" : 2427
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6fa91200244d3f176b2befa4299f5124"
+    }, {
+      "name" : "测试长按网页链接下载，断言下载完成后的小红点",
+      "children" : [ {
+        "name" : "test002DownWebPage",
+        "uid" : "5dfa857cb47633e1",
+        "parentUid" : "14b9240a76962f2ca783c1b7e5f8e7dc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577349991962,
+          "stop" : 1577350020228,
+          "duration" : 28266
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "14b9240a76962f2ca783c1b7e5f8e7dc"
+    }, {
+      "name" : "测试长按网页链接下载，下载完成后，断言下载管理中下载的文件存在",
+      "children" : [ {
+        "name" : "test003DownWebPage",
+        "uid" : "28534954152bce24",
+        "parentUid" : "55607f9735df6bc3e9c645c21996ca06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350032468,
+          "stop" : 1577350066435,
+          "duration" : 33967
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "55607f9735df6bc3e9c645c21996ca06"
+    }, {
+      "name" : "测试应用下载",
+      "children" : [ {
+        "name" : "test004DownAppPage",
+        "uid" : "1389907f903c9eb0",
+        "parentUid" : "b2c9ac5b754e029a50c1f8f664257e59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350080741,
+          "stop" : 1577350087112,
+          "duration" : 6371
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2c9ac5b754e029a50c1f8f664257e59"
+    } ],
+    "uid" : "273c8b6283d6b5522887d8074f3ad85a"
+  }, {
+    "name" : "测试资讯流页面",
+    "children" : [ {
+      "name" : "测试资讯流页面存在相应text",
+      "children" : [ {
+        "name" : "test001HomePage",
+        "uid" : "a4141556753de3b3",
+        "parentUid" : "ed3839943eef09734e6a7e90333c4fec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577350099524,
+          "stop" : 1577350101996,
+          "duration" : 2472
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ed3839943eef09734e6a7e90333c4fec"
+    }, {
+      "name" : "测试资讯流广告",
+      "children" : [ {
+        "name" : "test002HomePage",
+        "uid" : "3b0191d0aca283db",
+        "parentUid" : "6c8a8b71ea061545d0520cef3312174c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350113849,
+          "stop" : 1577350129969,
+          "duration" : 16120
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c8a8b71ea061545d0520cef3312174c"
+    }, {
+      "name" : "测试前进后退",
+      "children" : [ {
+        "name" : "test003HomePage",
+        "uid" : "31f47e73f1d693f3",
+        "parentUid" : "11e893b54b661e6655901b83c17c1d87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350142973,
+          "stop" : 1577350156219,
+          "duration" : 13246
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "11e893b54b661e6655901b83c17c1d87"
+    }, {
+      "name" : "测试爱淘宝能否正常打开",
+      "children" : [ {
+        "name" : "test004HomePage",
+        "uid" : "7c8b1e2147000776",
+        "parentUid" : "9f88d444ea4d615dc4f7595542daf13f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350167743,
+          "stop" : 1577350171169,
+          "duration" : 3426
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f88d444ea4d615dc4f7595542daf13f"
+    }, {
+      "name" : "测试搜索能否正常打开",
+      "children" : [ {
+        "name" : "test005HomePage",
+        "uid" : "201f3aac5d1f4e02",
+        "parentUid" : "c8332106688745b224e03375b08bd884",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350186456,
+          "stop" : 1577350190128,
+          "duration" : 3672
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c8332106688745b224e03375b08bd884"
+    }, {
+      "name" : "测试聚划算能否正常打开",
+      "children" : [ {
+        "name" : "test006HomePage",
+        "uid" : "844cab81a7cd5f6",
+        "parentUid" : "45828e5b229bb5454866ecc0e89aefc5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350201386,
+          "stop" : 1577350204788,
+          "duration" : 3402
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "45828e5b229bb5454866ecc0e89aefc5"
+    }, {
+      "name" : "测试天猫能否正常打开",
+      "children" : [ {
+        "name" : "test007HomePage",
+        "uid" : "f4f2aca810591c0d",
+        "parentUid" : "8fdc0da9ce6e6bfb183eaaa0c25a02ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350219905,
+          "stop" : 1577350223097,
+          "duration" : 3192
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8fdc0da9ce6e6bfb183eaaa0c25a02ca"
+    }, {
+      "name" : "测试同城能否正常打开",
+      "children" : [ {
+        "name" : "test008HomePage",
+        "uid" : "16ee97f808b1bb83",
+        "parentUid" : "49bcaed5ee2342a6898a6b389f3bb169",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350238226,
+          "stop" : 1577350247025,
+          "duration" : 8799
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49bcaed5ee2342a6898a6b389f3bb169"
+    }, {
+      "name" : "测试京东能否正常打开",
+      "children" : [ {
+        "name" : "test009HomePage",
+        "uid" : "b20497f3cd438d45",
+        "parentUid" : "c9f287277fe8c1c8fce3efa526ac3a45",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350247687,
+          "stop" : 1577350247687,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c9f287277fe8c1c8fce3efa526ac3a45"
+    }, {
+      "name" : "测试招聘能否正常打开",
+      "children" : [ {
+        "name" : "test010HomePage",
+        "uid" : "f6ee97d6f7709bbf",
+        "parentUid" : "3de5d37619730d9f46e98bcfd31042b3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350271419,
+          "stop" : 1577350278316,
+          "duration" : 6897
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3de5d37619730d9f46e98bcfd31042b3"
+    }, {
+      "name" : "测试拼多多能否正常打开",
+      "children" : [ {
+        "name" : "test011HomePage",
+        "uid" : "e49fab35fa9f94a4",
+        "parentUid" : "930cb79d9717ef375b2dee1f9c3fd979",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350290570,
+          "stop" : 1577350294607,
+          "duration" : 4037
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "930cb79d9717ef375b2dee1f9c3fd979"
+    }, {
+      "name" : "测试安居客能否正常打开",
+      "children" : [ {
+        "name" : "test012HomePage",
+        "uid" : "baa3d16aa3b7629d",
+        "parentUid" : "559fad4592ffc4551af3ea50f1fc5193",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350305732,
+          "stop" : 1577350309008,
+          "duration" : 3276
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "559fad4592ffc4551af3ea50f1fc5193"
+    }, {
+      "name" : "测试今日头条能否正常打开",
+      "children" : [ {
+        "name" : "test013HomePage",
+        "uid" : "8c7e59b522eacc14",
+        "parentUid" : "30e7a7900bfebfdabad933dd985b0872",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350323695,
+          "stop" : 1577350327014,
+          "duration" : 3319
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30e7a7900bfebfdabad933dd985b0872"
+    }, {
+      "name" : "测试小说能否正常打开",
+      "children" : [ {
+        "name" : "test014HomePage",
+        "uid" : "ef50fdd81d310214",
+        "parentUid" : "5b304d0066dd8879b2dcf8cc03f00ac9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350338408,
+          "stop" : 1577350348982,
+          "duration" : 10574
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5b304d0066dd8879b2dcf8cc03f00ac9"
+    } ],
+    "uid" : "394c972b525035c7c8d550e5c052048d"
+  }, {
+    "name" : "魅族浏览器网址导航页面测试",
+    "children" : [ {
+      "name" : "测试网址导航页面1-头条跳转",
+      "children" : [ {
+        "name" : "test001MorePage",
+        "uid" : "e1608241f0665c83",
+        "parentUid" : "06b0586542538db904411c2a2a753faa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350361617,
+          "stop" : 1577350368234,
+          "duration" : 6617
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "06b0586542538db904411c2a2a753faa"
+    }, {
+      "name" : "测试网址导航页面搜狐跳转",
+      "children" : [ {
+        "name" : "test002MorePage",
+        "uid" : "5692d11aad454e2a",
+        "parentUid" : "7fd8861618072d178593b000b0965506",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350379404,
+          "stop" : 1577350385690,
+          "duration" : 6286
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fd8861618072d178593b000b0965506"
+    }, {
+      "name" : "测试网址导航页面8-京东跳转",
+      "children" : [ {
+        "name" : "test003MorePage",
+        "uid" : "a0a6a3a942ed8a45",
+        "parentUid" : "bba510dc2baaab74b365db4f17a5ac1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350400610,
+          "stop" : 1577350406546,
+          "duration" : 5936
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bba510dc2baaab74b365db4f17a5ac1f"
+    }, {
+      "name" : "测试网址导航页面11-聚划算跳转",
+      "children" : [ {
+        "name" : "test004MorePage",
+        "uid" : "402bf5c1b84b7f5",
+        "parentUid" : "99de2270d24abc5d8dc8d19cb7e4d81f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350417867,
+          "stop" : 1577350423807,
+          "duration" : 5940
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99de2270d24abc5d8dc8d19cb7e4d81f"
+    }, {
+      "name" : "测试网址导航页面4-同城跳转",
+      "children" : [ {
+        "name" : "test005MorePage",
+        "uid" : "96d0ff8eb6124c2a",
+        "parentUid" : "1738369d6445679a93a2a4ff945ab5a7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577350439038,
+          "stop" : 1577350461608,
+          "duration" : 22570
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1738369d6445679a93a2a4ff945ab5a7"
+    }, {
+      "name" : "测试网址导航页面6-找房子跳转",
+      "children" : [ {
+        "name" : "test006MorePage",
+        "uid" : "c8345a3b2faef18a",
+        "parentUid" : "856d954491beb0f461511878d7c811ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350473787,
+          "stop" : 1577350479901,
+          "duration" : 6114
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "856d954491beb0f461511878d7c811ca"
+    }, {
+      "name" : "测试网址导航页面2-在线商城跳转",
+      "children" : [ {
+        "name" : "test007MorePage",
+        "uid" : "5bc73429dcacc883",
+        "parentUid" : "6d0512bd229573adb4a308d30426e963",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350490599,
+          "stop" : 1577350496053,
+          "duration" : 5454
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d0512bd229573adb4a308d30426e963"
+    }, {
+      "name" : "测试网址导航页面3-二手市场跳转",
+      "children" : [ {
+        "name" : "test008MorePage",
+        "uid" : "539608ad7113922",
+        "parentUid" : "35c9321ad57e2040e3db42cd6efce40f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350507041,
+          "stop" : 1577350512917,
+          "duration" : 5876
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35c9321ad57e2040e3db42cd6efce40f"
+    }, {
+      "name" : "测试网址导航页面5-安居客跳转",
+      "children" : [ {
+        "name" : "test009MorePage",
+        "uid" : "cc166cf93d057a46",
+        "parentUid" : "af63f08c460711659624cacb967faaaa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350524091,
+          "stop" : 1577350529801,
+          "duration" : 5710
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af63f08c460711659624cacb967faaaa"
+    }, {
+      "name" : "测试网址导航页面7-爱淘宝跳转",
+      "children" : [ {
+        "name" : "test010MorePage",
+        "uid" : "1e1a556b1d58375d",
+        "parentUid" : "3f84968528d8ad619e2f3ebc35168e78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350544781,
+          "stop" : 1577350549108,
+          "duration" : 4327
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f84968528d8ad619e2f3ebc35168e78"
+    }, {
+      "name" : "测试网址导航页面9-天猫跳转",
+      "children" : [ {
+        "name" : "test011MorePage",
+        "uid" : "9d4c2d52cb71a0c0",
+        "parentUid" : "6690bc8bf6d7bce69aaf347bd0161aca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350560164,
+          "stop" : 1577350566069,
+          "duration" : 5905
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6690bc8bf6d7bce69aaf347bd0161aca"
+    }, {
+      "name" : "测试网址导航页面10-拼多多跳转",
+      "children" : [ {
+        "name" : "test012MorePage",
+        "uid" : "5963cebd11dd2bcf",
+        "parentUid" : "bea572789b1cf017b1cce4131f1aee38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350581302,
+          "stop" : 1577350587020,
+          "duration" : 5718
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bea572789b1cf017b1cce4131f1aee38"
+    }, {
+      "name" : "测试网址导航页面12-招聘跳转",
+      "children" : [ {
+        "name" : "test013MorePage",
+        "uid" : "a751ca110a83921d",
+        "parentUid" : "6d5e1a3559bfe66e06cc31a5a2b5e1dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350598425,
+          "stop" : 1577350604778,
+          "duration" : 6353
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d5e1a3559bfe66e06cc31a5a2b5e1dc"
+    } ],
+    "uid" : "6d2b2be7d34cef424020a406a0787f0f"
+  }, {
+    "name" : "测试负一屏页面",
+    "children" : [ {
+      "name" : "测试负一屏-》精选页添加书签、打开网站 —— LJX",
+      "children" : [ {
+        "name" : "test001ExcellentChoiceAddBookmark",
+        "uid" : "9adcba424348476b",
+        "parentUid" : "cd7aa9d5cf330c41515587d6a103c3a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350611925,
+          "stop" : 1577350680797,
+          "duration" : 68872
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd7aa9d5cf330c41515587d6a103c3a1"
+    }, {
+      "name" : "测试负一屏-》分类页添加书签、打开网站 —— LJX",
+      "children" : [ {
+        "name" : "test002ClassifyAddBookmark",
+        "uid" : "4feeba5695ac5adf",
+        "parentUid" : "ff261bfcdfc00dd1da5099b2f419c2c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350687747,
+          "stop" : 1577350740057,
+          "duration" : 52310
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ff261bfcdfc00dd1da5099b2f419c2c8"
+    }, {
+      "name" : "测试负一屏-》历史页添加书签、打开网站 —— LJX",
+      "children" : [ {
+        "name" : "test003HistoryAddBookmark",
+        "uid" : "ee626fee5b233f34",
+        "parentUid" : "0992d5c0c509121a90c2e226dacfc80c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350747085,
+          "stop" : 1577350811663,
+          "duration" : 64578
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0992d5c0c509121a90c2e226dacfc80c"
+    }, {
+      "name" : "测试负一屏-》自定义页添加书签 —— LJX",
+      "children" : [ {
+        "name" : "test004DIYAddBookmark",
+        "uid" : "6727157bfe6e48c5",
+        "parentUid" : "cf1c3975d9b6f24c98872be40e0a3a1d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350818651,
+          "stop" : 1577350861425,
+          "duration" : 42774
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cf1c3975d9b6f24c98872be40e0a3a1d"
+    }, {
+      "name" : "添加书签后，在负一屏点击默认图标和任一手动添加图标，正常跳转 —— LJX",
+      "children" : [ {
+        "name" : "test005AddBookmark",
+        "uid" : "c68564a924e82596",
+        "parentUid" : "e71b0d178cc78c81296899b5aadbea0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350868483,
+          "stop" : 1577350923933,
+          "duration" : 55450
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e71b0d178cc78c81296899b5aadbea0b"
+    }, {
+      "name" : "长按负一屏图标：新窗口打开功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test006NegativeNewWindowOpen",
+        "uid" : "b705c24f2a4e4d6f",
+        "parentUid" : "29a698a6bfbdccf17c4234bc6c2a4730",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350931197,
+          "stop" : 1577350960644,
+          "duration" : 29447
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "29a698a6bfbdccf17c4234bc6c2a4730"
+    }, {
+      "name" : "长按负一屏图标：删除功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test007NegativeDelete",
+        "uid" : "dc85006df696006f",
+        "parentUid" : "dde5f95e6c5f5dc1590151a7d86b58ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577350967859,
+          "stop" : 1577351017016,
+          "duration" : 49157
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dde5f95e6c5f5dc1590151a7d86b58ed"
+    }, {
+      "name" : "长按负一屏图标：编辑功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test008NegativeEdit",
+        "uid" : "47c08438c594c5b5",
+        "parentUid" : "e6c1a34968753ac3d65ca58fce55d9a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351024137,
+          "stop" : 1577351088375,
+          "duration" : 64238
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e6c1a34968753ac3d65ca58fce55d9a8"
+    }, {
+      "name" : "长按负一屏图标：发送至桌面功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test009NegativeSendToDesk",
+        "uid" : "24c06caa22ace04e",
+        "parentUid" : "da54f169f05ae2085102e22f527f357f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351096165,
+          "stop" : 1577351161559,
+          "duration" : 65394
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da54f169f05ae2085102e22f527f357f"
+    }, {
+      "name" : "长按负一屏图标：多选功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test010NegativeMultiSelect",
+        "uid" : "6ac50cd1e314ae97",
+        "parentUid" : "899c454b571d3e3f20bf93a5c062ee80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351168636,
+          "stop" : 1577351204618,
+          "duration" : 35982
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "899c454b571d3e3f20bf93a5c062ee80"
+    }, {
+      "name" : "长按拖拽负一屏图标，可正常合并文件夹、重命名文件夹 —— LJX",
+      "children" : [ {
+        "name" : "test011NegativeMergeFile",
+        "uid" : "fac302e4bcd9f01d",
+        "parentUid" : "70fdcf04fe827650210ae05e15e9a184",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351211763,
+          "stop" : 1577351330368,
+          "duration" : 118605
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70fdcf04fe827650210ae05e15e9a184"
+    }, {
+      "name" : "长按文件夹，删除文件夹功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test012NegativeDeleteFile",
+        "uid" : "b16c145b6b04a010",
+        "parentUid" : "c4ccdd25c20b57539c06953e27d8c877",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351338100,
+          "stop" : 1577351383231,
+          "duration" : 45131
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4ccdd25c20b57539c06953e27d8c877"
+    }, {
+      "name" : "长按文件夹，移动文件夹功能正常 —— LJX",
+      "children" : [ {
+        "name" : "test013NegativeMoveFile",
+        "uid" : "b640f0b68e45dc4e",
+        "parentUid" : "c67f7365186f06c2f9908e465f798556",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351390826,
+          "stop" : 1577351481996,
+          "duration" : 91170
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c67f7365186f06c2f9908e465f798556"
+    } ],
+    "uid" : "ca72667872650c3692abe8f9984f1bde"
+  }, {
+    "name" : "魅族浏览器资讯流功能测试",
+    "children" : [ {
+      "name" : "测试下拉刷新、上滑刷新、点击资讯按钮刷新、点击提示语刷新资讯流列表，更新资讯内容",
+      "children" : [ {
+        "name" : "test001RefreshNews",
+        "uid" : "e7531094fd139e5",
+        "parentUid" : "01840d896eb9d8eda79639f3cf6f47d4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351504403,
+          "stop" : 1577351537012,
+          "duration" : 32609
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "01840d896eb9d8eda79639f3cf6f47d4"
+    }, {
+      "name" : "测试美女频道，打开标签列表、打开图片详情",
+      "children" : [ {
+        "name" : "test002NewsBeautyGrilChannel",
+        "uid" : "51e97d2d1357ac0c",
+        "parentUid" : "5238016b617f404f4e2173efd5628b46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351558568,
+          "stop" : 1577351577166,
+          "duration" : 18598
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5238016b617f404f4e2173efd5628b46"
+    }, {
+      "name" : "测试频道管理页面，新增、删除、长按、点击打开频道跳转正常等操作",
+      "children" : [ {
+        "name" : "test003NewsChannelManage",
+        "uid" : "9203cc74114b5227",
+        "parentUid" : "6d71db8118742fd33d8b65c2b8a19eb4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351597005,
+          "stop" : 1577351616430,
+          "duration" : 19425
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d71db8118742fd33d8b65c2b8a19eb4"
+    }, {
+      "name" : "测试资讯流列表中的不感兴趣功能",
+      "children" : [ {
+        "name" : "test004NewsChannelManage",
+        "uid" : "58f2148f5f83f52",
+        "parentUid" : "d73b1e54d2b10f057b53fcc08968e525",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351637412,
+          "stop" : 1577351641202,
+          "duration" : 3790
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d73b1e54d2b10f057b53fcc08968e525"
+    }, {
+      "name" : "测试资讯广告",
+      "children" : [ {
+        "name" : "test006NewsAdvertisement",
+        "uid" : "4643ccdbfc55080d",
+        "parentUid" : "2e92716a51f04cf4a6d652e808e51a77",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351713790,
+          "stop" : 1577351729592,
+          "duration" : 15802
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2e92716a51f04cf4a6d652e808e51a77"
+    } ],
+    "uid" : "ee5ff86e2fd121d61401cd6df3074a75"
+  }, {
+    "name" : "测试个人中心页面",
+    "children" : [ {
+      "name" : "测试个人中心账号登录页",
+      "children" : [ {
+        "name" : "test001PersonalCenterPage",
+        "uid" : "82b3ec65ef885a97",
+        "parentUid" : "df23202be31b1f0a0cc89c6a3640aa41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577351730289,
+          "stop" : 1577351730289,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df23202be31b1f0a0cc89c6a3640aa41"
+    }, {
+      "name" : "测试个人中心账号，进入评论详情，检查页面显示是否正常",
+      "children" : [ {
+        "name" : "test002PersonalCenterPage",
+        "uid" : "f276f8edd298a372",
+        "parentUid" : "0d5da22edb74fcef2daa4e0e03ab9d9d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351784834,
+          "stop" : 1577351795622,
+          "duration" : 10788
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test003PersonalCenterPage",
+        "uid" : "e0a16cad7d533aec",
+        "parentUid" : "0d5da22edb74fcef2daa4e0e03ab9d9d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351815533,
+          "stop" : 1577351827102,
+          "duration" : 11569
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0d5da22edb74fcef2daa4e0e03ab9d9d"
+    }, {
+      "name" : "测试小游戏是否正常打开",
+      "children" : [ {
+        "name" : "test004PersonalCenterPage",
+        "uid" : "a68c750f9c6db458",
+        "parentUid" : "8a161d0e2a733dd5476d880b007bd84b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577351847079,
+          "stop" : 1577351852775,
+          "duration" : 5696
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8a161d0e2a733dd5476d880b007bd84b"
+    }, {
+      "name" : "测试资讯文章评论是否提交正常",
+      "children" : [ {
+        "name" : "test005RefreshNewsOpenArticle",
+        "uid" : "9f72f4438b64dd2b",
+        "parentUid" : "2adf3a4c9eeff3ee14aa9ca750725c6c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351872436,
+          "stop" : 1577351917570,
+          "duration" : 45134
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2adf3a4c9eeff3ee14aa9ca750725c6c"
+    }, {
+      "name" : "测试修改输入法",
+      "children" : [ {
+        "name" : "test006PersonalCenterPage",
+        "uid" : "de61a631145ca55c",
+        "parentUid" : "daf1576a3b71fe5a4b3e1b889651c974",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577351958766,
+          "stop" : 1577352010592,
+          "duration" : 51826
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "daf1576a3b71fe5a4b3e1b889651c974"
+    }, {
+      "name" : "测试退出账号",
+      "children" : [ {
+        "name" : "test007PersonalCenterPage",
+        "uid" : "ba3b3d8e1d2efe18",
+        "parentUid" : "1fbe845f1aa8baeacd06f46d2d101fd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352030578,
+          "stop" : 1577352035605,
+          "duration" : 5027
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1fbe845f1aa8baeacd06f46d2d101fd0"
+    } ],
+    "uid" : "e21dcc81474bfb1a6b2a8820440c546f"
+  }, {
+    "name" : "测试启动弹框",
+    "children" : [ {
+      "name" : "测试隐私弹窗同意按钮",
+      "children" : [ {
+        "name" : "test001PrivacyAgree",
+        "uid" : "efb35bf431f1260a",
+        "parentUid" : "9dabe75053a66531dc8b874e130b9aab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352042898,
+          "stop" : 1577352045540,
+          "duration" : 2642
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9dabe75053a66531dc8b874e130b9aab"
+    }, {
+      "name" : "测试隐私弹窗不同意按钮",
+      "children" : [ {
+        "name" : "test002PrivacyDisagree",
+        "uid" : "1adfc9a89f8f4d7e",
+        "parentUid" : "6ec3d9fabf1abc1fa21a42ec52bace3b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352052942,
+          "stop" : 1577352061839,
+          "duration" : 8897
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ec3d9fabf1abc1fa21a42ec52bace3b"
+    }, {
+      "name" : "测试权限弹窗拒绝按钮",
+      "children" : [ {
+        "name" : "test003PermissionDisagree",
+        "uid" : "6423f00a44118004",
+        "parentUid" : "461dee42a50f0b84b6ec0390298f5bcf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352070005,
+          "stop" : 1577352073465,
+          "duration" : 3460
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "461dee42a50f0b84b6ec0390298f5bcf"
+    }, {
+      "name" : "测试权限弹窗允许按钮",
+      "children" : [ {
+        "name" : "test004PermissionAgree",
+        "uid" : "ff8493a611a96891",
+        "parentUid" : "a6a1a160fe279d1e1aaf5fb3d12122b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1577352080810,
+          "stop" : 1577352102626,
+          "duration" : 21816
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a6a1a160fe279d1e1aaf5fb3d12122b6"
+    } ],
+    "uid" : "940f76f8f012bd9e158786a1808226a2"
+  }, {
+    "name" : "魅族浏览器测试退出功能",
+    "children" : [ {
+      "name" : "测试点击底部工具栏，点击退出按钮，再打开浏览器访问网页正常",
+      "children" : [ {
+        "name" : "test001QuitOpenBrowser",
+        "uid" : "6696be8ee57f4f6b",
+        "parentUid" : "cd36690154dad28e9fbbdf2e5770e0c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352114882,
+          "stop" : 1577352133400,
+          "duration" : 18518
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd36690154dad28e9fbbdf2e5770e0c7"
+    }, {
+      "name" : "测试点击底部工具栏，点击退出按钮，再打开浏览器，查看多窗口只有一个",
+      "children" : [ {
+        "name" : "test002QuitOpenBrowser",
+        "uid" : "f406f7a31cae6a8f",
+        "parentUid" : "186d6e22242a20428a6e799f5598bdcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352148640,
+          "stop" : 1577352165015,
+          "duration" : 16375
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "186d6e22242a20428a6e799f5598bdcb"
+    } ],
+    "uid" : "d4af20f3927c70410f731928907e1765"
+  }, {
+    "name" : "测试阅读模式",
+    "children" : [ {
+      "name" : "测试阅读模式",
+      "children" : [ {
+        "name" : "test001ReadPage",
+        "uid" : "ea369ab106e3a654",
+        "parentUid" : "d18c65205b2b7b1bfba3b076df3e70ed",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352172389,
+          "stop" : 1577352196506,
+          "duration" : 24117
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d18c65205b2b7b1bfba3b076df3e70ed"
+    } ],
+    "uid" : "460d172857e4d9c1da3973129e40c97a"
+  }, {
+    "name" : "测试搜索页面",
+    "children" : [ {
+      "name" : "测试搜索框",
+      "children" : [ {
+        "name" : "test001SearchPanelPage",
+        "uid" : "bdea78ba7464de0b",
+        "parentUid" : "0cf360f84a891dc68882cf198d7642ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352221455,
+          "stop" : 1577352231238,
+          "duration" : 9783
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0cf360f84a891dc68882cf198d7642ee"
+    }, {
+      "name" : "测试历史面板热词是否正常跳转",
+      "children" : [ {
+        "name" : "test002SearchPanelPage",
+        "uid" : "7d4cdecaf49f126b",
+        "parentUid" : "aea1751f7bd5a87e8e9d57e091bb246e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352256106,
+          "stop" : 1577352266610,
+          "duration" : 10504
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aea1751f7bd5a87e8e9d57e091bb246e"
+    }, {
+      "name" : "测试换一换",
+      "children" : [ {
+        "name" : "test003SearchPanelPage",
+        "uid" : "59759052d848fd8c",
+        "parentUid" : "a87797b112e930fcead05a3f7cda3530",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352294881,
+          "stop" : 1577352318810,
+          "duration" : 23929
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a87797b112e930fcead05a3f7cda3530"
+    }, {
+      "name" : "搜索页顶部地址栏输入，选中文字",
+      "children" : [ {
+        "name" : "test004SearchPanelPage",
+        "uid" : "27ea843e66a7509c",
+        "parentUid" : "d538bbb0853df8aa23a13a7ade28f74c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352343688,
+          "stop" : 1577352369115,
+          "duration" : 25427
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d538bbb0853df8aa23a13a7ade28f74c"
+    }, {
+      "name" : "打开百度首页，滑动页面检查顶部地址栏是否高亮，点击搜索历史",
+      "children" : [ {
+        "name" : "test005SearchPanelPage",
+        "uid" : "f238de8ac8897541",
+        "parentUid" : "03803223bb9bbccf39c766a866f377f1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352397514,
+          "stop" : 1577352409561,
+          "duration" : 12047
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "03803223bb9bbccf39c766a866f377f1"
+    }, {
+      "name" : "搜索框输入主题美化地址，检查外部应用跳转是否正常",
+      "children" : [ {
+        "name" : "test006SearchPanelPage",
+        "uid" : "af0c3df7549187ef",
+        "parentUid" : "f2714dfe58e89f1b62011857ae19c96a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352434530,
+          "stop" : 1577352448819,
+          "duration" : 14289
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f2714dfe58e89f1b62011857ae19c96a"
+    }, {
+      "name" : "地址栏多次点击刷新网页，进度条和页面加载正常 —— LJX",
+      "children" : [ {
+        "name" : "test007SearchPanelPage",
+        "uid" : "750904071eeee96b",
+        "parentUid" : "e089b4c6bb6c6e26e0c7b4b626166f17",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352474060,
+          "stop" : 1577352481589,
+          "duration" : 7529
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e089b4c6bb6c6e26e0c7b4b626166f17"
+    } ],
+    "uid" : "10e2e6fdc09579e6272604512524c99c"
+  }, {
+    "name" : "测试设置页面",
+    "children" : [ {
+      "name" : "测试设置清除浏览器",
+      "children" : [ {
+        "name" : "test001SetUpPage",
+        "uid" : "a10fd2b99ecb0cdb",
+        "parentUid" : "569792fb3ac198da1f6d1c8e54010fd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352493140,
+          "stop" : 1577352509044,
+          "duration" : 15904
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "569792fb3ac198da1f6d1c8e54010fd6"
+    }, {
+      "name" : "测试切换搜索引擎",
+      "children" : [ {
+        "name" : "test002SetUpPage",
+        "uid" : "7f29513f05516eca",
+        "parentUid" : "7291a981de02b954d41c7c014d892230",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352525287,
+          "stop" : 1577352537503,
+          "duration" : 12216
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7291a981de02b954d41c7c014d892230"
+    }, {
+      "name" : "测试恢复默认设置",
+      "children" : [ {
+        "name" : "test003SetUpPage",
+        "uid" : "cef945c47b9d27e4",
+        "parentUid" : "5addd4a759c780dedc4918aa38e8cb84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352548624,
+          "stop" : 1577352591551,
+          "duration" : 42927
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5addd4a759c780dedc4918aa38e8cb84"
+    }, {
+      "name" : "测试简版显示是否正常",
+      "children" : [ {
+        "name" : "test004SetUpPage",
+        "uid" : "3248f4bd8c86a859",
+        "parentUid" : "7049796d8b7f606a00cd80c6a5570035",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352601924,
+          "stop" : 1577352642992,
+          "duration" : 41068
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7049796d8b7f606a00cd80c6a5570035"
+    } ],
+    "uid" : "bd3476e5a0a0194e9f015fa84085bfb6"
+  }, {
+    "name" : "魅族浏览器分享功能测试",
+    "children" : [ {
+      "name" : "测试分享网页到便签",
+      "children" : [ {
+        "name" : "test001ShareWebPage",
+        "uid" : "71408827c7606bca",
+        "parentUid" : "3e2ab57d75a6e48b6028289a24bf0c16",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352653592,
+          "stop" : 1577352667755,
+          "duration" : 14163
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e2ab57d75a6e48b6028289a24bf0c16"
+    }, {
+      "name" : "测试分享资讯文章到便签",
+      "children" : [ {
+        "name" : "test002ShareNewsPage",
+        "uid" : "36769a2b1c380c48",
+        "parentUid" : "3fdbe6c01d33cc4e6d74356a2260a328",
+        "status" : "failed",
+        "time" : {
+          "start" : 1577352683207,
+          "stop" : 1577352711716,
+          "duration" : 28509
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3fdbe6c01d33cc4e6d74356a2260a328"
+    } ],
+    "uid" : "706f158ee98b3f24dfca3a3da33a87a0"
+  }, {
+    "name" : "魅族浏览器多窗口相关测试",
+    "children" : [ {
+      "name" : "测试新建多窗口且浏览多窗口内容",
+      "children" : [ {
+        "name" : "test001NewWindowsTab",
+        "uid" : "4c56d8e09cf9ce7d",
+        "parentUid" : "c0a2b6affa18325016db5fec5ce522d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352749996,
+          "stop" : 1577352764798,
+          "duration" : 14802
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c0a2b6affa18325016db5fec5ce522d1"
+    }, {
+      "name" : "测试多窗口浏览tab页关闭所有的多窗口",
+      "children" : [ {
+        "name" : "test002CloseAllWindowsTab",
+        "uid" : "ca3d557d83a15c53",
+        "parentUid" : "b9e98d76f580014c76abe7a615f5474f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352788794,
+          "stop" : 1577352801019,
+          "duration" : 12225
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b9e98d76f580014c76abe7a615f5474f"
+    }, {
+      "name" : "测试多窗口浏览tab页上滑关闭一个多窗口",
+      "children" : [ {
+        "name" : "test003CloseOneWindowsTab",
+        "uid" : "4b5cd1aedfe41592",
+        "parentUid" : "66c7c946288b8f25401a2edcd9ab9f70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352824931,
+          "stop" : 1577352839353,
+          "duration" : 14422
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66c7c946288b8f25401a2edcd9ab9f70"
+    }, {
+      "name" : "测试长按menu_more按钮，点击“X”关闭多窗口",
+      "children" : [ {
+        "name" : "test004LongPressCloseWindowsTab",
+        "uid" : "8af2083c8afe462",
+        "parentUid" : "b732b2f44031cd1509e6ce4af6e233f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1577352862942,
+          "stop" : 1577352875204,
+          "duration" : 12262
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b732b2f44031cd1509e6ce4af6e233f4"
+    } ],
+    "uid" : "bd477089c769a5eccbbe1da2b7b4ef2f"
+  } ]
+}

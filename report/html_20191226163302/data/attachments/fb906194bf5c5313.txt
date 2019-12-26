@@ -1,0 +1,28 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_CollectionAndHistory.py:29 
+INFO     root:test_CollectionAndHistory.py:30 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 历史
+INFO     root:base.py:76 点击元素: 工具面板-》历史
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/content_panel
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 清空历史
+INFO     root:base.py:76 点击元素: 工具面板-》清空历史
+INFO     root:base.py:145 查询到元素： 清空
+INFO     root:base.py:76 点击元素: 工具面板-》清空
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 历史
+INFO     root:base.py:76 点击元素: 工具面板-》历史
+INFO     root:base.py:145 查询到元素： com.android.browser:id/content_panel
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： com.android.browser:id/content_panel
+INFO     root:test_CollectionAndHistory.py:35 ****用例执行结束****
+INFO     root:test_CollectionAndHistory.py:36

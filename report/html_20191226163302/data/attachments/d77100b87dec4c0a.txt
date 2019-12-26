@@ -1,0 +1,23 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NegativeScreenPage.py:24 
+INFO     root:test_NegativeScreenPage.py:25 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:145 查询到元素： 魅族社区
+INFO     root:base.py:145 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:218 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:145 查询到元素： 魅族社区
+INFO     root:base.py:254 长按元素: 负一屏的魅族社区
+INFO     root:base.py:145 查询到元素： 新窗口打开
+INFO     root:base.py:76 点击元素: 负一屏的新窗口打开
+INFO     root:base.py:145 查询到元素： com.android.browser:id/text_view
+INFO     root:base.py:218 提取第0位的获取多窗口数量元素文本
+INFO     root:base.py:145 查询到元素： 热帖
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 热帖
+INFO     root:base.py:194 元素相等，断言成功，元素1名称：2 && 元素2名称：2
+INFO     root:test_NegativeScreenPage.py:29 ****用例执行结束****
+INFO     root:test_NegativeScreenPage.py:30

@@ -1,0 +1,163 @@
+{
+  "uid" : "9f72f4438b64dd2b",
+  "name" : "test005RefreshNewsOpenArticle",
+  "fullName" : "browser.browser_test.test_PersonalCenterPage.TestPersonalCenterPage#test005RefreshNewsOpenArticle",
+  "historyId" : "32a2065c4ebe9a997c037d483248348c",
+  "time" : {
+    "start" : 1577351872436,
+    "stop" : 1577351917570,
+    "duration" : 45134
+  },
+  "description" : "\n        1、清除浏览器数据,进入军事频道\n        2、点击第一篇文章进入文章详情页，点击评论输入内容\n        3、断言页面是否存在输入内容\n        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在\n        ",
+  "descriptionHtml" : "<pre><code>    1、清除浏览器数据,进入军事频道\n    2、点击第一篇文章进入文章详情页，点击评论输入内容\n    3、断言页面是否存在输入内容\n    4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu",
+  "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000063BA4A8>\npersonalCenter_init = None\n\n    @allure.story('测试资讯文章评论是否提交正常')\n    def test005RefreshNewsOpenArticle(self,personalCenter_init):\n        '''\n        1、清除浏览器数据,进入军事频道\n        2、点击第一篇文章进入文章详情页，点击评论输入内容\n        3、断言页面是否存在输入内容\n        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在\n        '''\n        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)\n        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮\n        self.pubmethod.clickPrivacyAgree()\n        # 点击权限弹窗“始终允许”按钮，进入浏览器\n        # self.pubmethod.clickPermissionAgree()\n        self.base.browserWatcher()\n        sleep(5)\n        self.home.clickInformation()\n        # 点击“倒三角”进入频道管理页面\n        self.news.clickNewsTriangle()\n        sleep(2)\n        # 点击“星座”频道打开，进入资讯流列表\n        self.news.clickNewsChannel(NEWS_CHANNEL_CONSTELLATION)\n    \n        self.news.dropScrollNews()\n        self.news.clickOpenNewsArticle()\n        self.base.scrollToElement(NEWS_ALL_COMMENTS)\n        self.news.clickCommentBox()\n>       self.news.inputFocalPositionText()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:129: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NewsPage.py:174: in inputFocalPositionText\n    self.assertFalse(NEWS_PAGE_MOREMENU)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.NewsPage.NewsPage object at 0x0000000006176908>\nelement = 'com.android.browser:id/moremenu'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351852813,
+      "stop" : 1577351852813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "personalCenter_init",
+    "time" : {
+      "start" : 1577351854814,
+      "stop" : 1577351872435,
+      "duration" : 17621
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351852813,
+      "stop" : 1577351854814,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、清除浏览器数据,进入军事频道\n        2、点击第一篇文章进入文章详情页，点击评论输入内容\n        3、断言页面是否存在输入内容\n        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu",
+    "statusTrace" : "self = <browser_test.test_PersonalCenterPage.TestPersonalCenterPage object at 0x00000000063BA4A8>\npersonalCenter_init = None\n\n    @allure.story('测试资讯文章评论是否提交正常')\n    def test005RefreshNewsOpenArticle(self,personalCenter_init):\n        '''\n        1、清除浏览器数据,进入军事频道\n        2、点击第一篇文章进入文章详情页，点击评论输入内容\n        3、断言页面是否存在输入内容\n        4、在个人中心评论页面删除之前输入的测试评论内容，断言测试评论不存在\n        '''\n        self.pubmethod.clearApp(BROWSER_PACKAGE_NAME)\n        self.pubmethod.startApp(BROWSER_PACKAGE_NAME)\n        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮\n        self.pubmethod.clickPrivacyAgree()\n        # 点击权限弹窗“始终允许”按钮，进入浏览器\n        # self.pubmethod.clickPermissionAgree()\n        self.base.browserWatcher()\n        sleep(5)\n        self.home.clickInformation()\n        # 点击“倒三角”进入频道管理页面\n        self.news.clickNewsTriangle()\n        sleep(2)\n        # 点击“星座”频道打开，进入资讯流列表\n        self.news.clickNewsChannel(NEWS_CHANNEL_CONSTELLATION)\n    \n        self.news.dropScrollNews()\n        self.news.clickOpenNewsArticle()\n        self.base.scrollToElement(NEWS_ALL_COMMENTS)\n        self.news.clickCommentBox()\n>       self.news.inputFocalPositionText()\n\nbrowser\\browser_test\\test_PersonalCenterPage.py:129: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\NewsPage.py:174: in inputFocalPositionText\n    self.assertFalse(NEWS_PAGE_MOREMENU)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.NewsPage.NewsPage object at 0x0000000006176908>\nelement = 'com.android.browser:id/moremenu'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b5372a1b05aeede7",
+      "name" : "失败截图",
+      "source" : "b5372a1b05aeede7.jpg",
+      "type" : "image/jpg",
+      "size" : 58748
+    }, {
+      "uid" : "5895907a152a85e4",
+      "name" : "log",
+      "source" : "5895907a152a85e4.txt",
+      "type" : "text/plain",
+      "size" : 2138
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "personalCenter_init::0",
+    "time" : {
+      "start" : 1577351918329,
+      "stop" : 1577351918329,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试个人中心页面"
+  }, {
+    "name" : "story",
+    "value" : "测试资讯文章评论是否提交正常"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_PersonalCenterPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPersonalCenterPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_PersonalCenterPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d825b16467937d32",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu",
+      "time" : {
+        "start" : 1577351661316,
+        "stop" : 1577351692932,
+        "duration" : 31616
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9f72f4438b64dd2b.json",
+  "parameterValues" : [ ]
+}

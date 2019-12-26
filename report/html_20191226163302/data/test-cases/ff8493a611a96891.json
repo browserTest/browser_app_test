@@ -1,0 +1,154 @@
+{
+  "uid" : "ff8493a611a96891",
+  "name" : "test004PermissionAgree",
+  "fullName" : "browser.browser_test.test_PubMethod.TestPubMethod#test004PermissionAgree",
+  "historyId" : "9b0ef08ca711dda21d4aeace9b471138",
+  "time" : {
+    "start" : 1577352080810,
+    "stop" : 1577352102626,
+    "duration" : 21816
+  },
+  "description" : "\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“始终允许”按钮\n        ",
+  "descriptionHtml" : "<pre><code>    1、清除数据后首次打开浏览器，弹出隐私政策窗口\n    2、点击“同意”，弹出权限窗口\n    3、点击权限弹窗“始终允许”按钮\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+  "statusTrace" : "self = <browser_test.test_PubMethod.TestPubMethod object at 0x00000000063E35C0>\npubMethod_init = None\n\n    @allure.story('测试权限弹窗允许按钮')\n    def test004PermissionAgree(self, pubMethod_init):\n        '''\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“始终允许”按钮\n        '''\n    \n        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮\n        self.pubmethod.clickPrivacyAgree()\n        # 点击权限弹窗“始终允许”按钮，进入浏览器\n>       self.pubmethod.clickPermissionAgree()\n\nbrowser\\browser_test\\test_PubMethod.py:80: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PubMethod.py:69: in clickPermissionAgree\n    self.base.clickByElement(PERMISSION_AGREE_BUTTON, '权限弹窗允许按钮')\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x00000000060F9978>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352073487,
+      "stop" : 1577352075487,
+      "duration" : 2000
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352073487,
+      "stop" : 1577352073487,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "pubMethod_init",
+    "time" : {
+      "start" : 1577352075487,
+      "stop" : 1577352080810,
+      "duration" : 5323
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“始终允许”按钮\n        ",
+    "status" : "broken",
+    "statusMessage" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+    "statusTrace" : "self = <browser_test.test_PubMethod.TestPubMethod object at 0x00000000063E35C0>\npubMethod_init = None\n\n    @allure.story('测试权限弹窗允许按钮')\n    def test004PermissionAgree(self, pubMethod_init):\n        '''\n        1、清除数据后首次打开浏览器，弹出隐私政策窗口\n        2、点击“同意”，弹出权限窗口\n        3、点击权限弹窗“始终允许”按钮\n        '''\n    \n        # 清除数据后首次进入浏览器，点击隐私弹窗同意按钮\n        self.pubmethod.clickPrivacyAgree()\n        # 点击权限弹窗“始终允许”按钮，进入浏览器\n>       self.pubmethod.clickPermissionAgree()\n\nbrowser\\browser_test\\test_PubMethod.py:80: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\PubMethod.py:69: in clickPermissionAgree\n    self.base.clickByElement(PERMISSION_AGREE_BUTTON, '权限弹窗允许按钮')\nbase_function\\base.py:75: in clickByElement\n    self.d(text=element).click()\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:38: in _inner\n    return fn(self, *args, **kwargs)\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:788: in click\n    self.must_wait(timeout=timeout)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <uiautomator2.session.UiObject object at 0x00000000060F9978>\nexists = True, timeout = None\n\n    def must_wait(self, exists=True, timeout=None):\n        \"\"\" wait and if not found raise UiObjectNotFoundError \"\"\"\n        if not self.wait(exists, timeout):\n>           raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})\nE           uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None\n\nC:\\Users\\liudawei.MEIZU\\AppData\\Roaming\\Python\\Python37\\site-packages\\uiautomator2\\session.py:983: UiObjectNotFoundError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9d267bc79a5f1f5c",
+      "name" : "失败截图",
+      "source" : "9d267bc79a5f1f5c.jpg",
+      "type" : "image/jpg",
+      "size" : 881270
+    }, {
+      "uid" : "1b17fded767664ee",
+      "name" : "log",
+      "source" : "1b17fded767664ee.txt",
+      "type" : "text/plain",
+      "size" : 623
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "pubMethod_init::0",
+    "time" : {
+      "start" : 1577352103965,
+      "stop" : 1577352103965,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试启动弹框"
+  }, {
+    "name" : "story",
+    "value" : "测试权限弹窗允许按钮"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_PubMethod"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPubMethod"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_PubMethod"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ff8493a611a96891.json",
+  "parameterValues" : [ ]
+}

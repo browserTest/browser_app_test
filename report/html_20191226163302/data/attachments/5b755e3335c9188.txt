@@ -1,0 +1,22 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_HomePage.py:27 
+INFO     root:test_HomePage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 安居客
+INFO     root:base.py:76 点击元素: 点击浏览器首页安居客网站
+INFO     root:base.py:145 查询到元素： 新房
+INFO     root:base.py:76 点击元素: 安居客首页新房入口
+INFO     root:base.py:285 拖动元素: 屏幕边缘右滑
+INFO     root:base.py:145 查询到元素： 挑好房，上安居客
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 挑好房，上安居客
+INFO     root:base.py:285 拖动元素: 屏幕边缘左滑
+INFO     root:base.py:145 查询到元素： 请输入楼盘名称或地址
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 请输入楼盘名称或地址
+INFO     root:test_HomePage.py:34 ****用例执行结束****
+INFO     root:test_HomePage.py:35

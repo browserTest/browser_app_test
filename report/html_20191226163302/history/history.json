@@ -1,0 +1,1819 @@
+{
+  "e174f91d49cee30470cd0166a54a6fd6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a68c750f9c6db458",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351847079,
+        "stop" : 1577351852775,
+        "duration" : 5696
+      }
+    } ]
+  },
+  "4454932a3355b1253abff1fb8f330037" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4db8726596c231b5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： android:id/text1",
+      "time" : {
+        "start" : 1577349540155,
+        "stop" : 1577349555231,
+        "duration" : 15076
+      }
+    } ]
+  },
+  "2df2b45675bcdf7694c66dc3c6d9bb16" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "16ee97f808b1bb83",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 同城服务",
+      "time" : {
+        "start" : 1577350238226,
+        "stop" : 1577350247025,
+        "duration" : 8799
+      }
+    } ]
+  },
+  "7d061998eeb032d516a11278dde3f46f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bdea78ba7464de0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352221455,
+        "stop" : 1577352231238,
+        "duration" : 9783
+      }
+    } ]
+  },
+  "05fb9c9d7d7d10698ffef72981434aee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47c08438c594c5b5",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.UiObjectNotFoundError: -32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[RESOURCE_ID=com.android.browser:id/title], method: objInfo",
+      "time" : {
+        "start" : 1577351024137,
+        "stop" : 1577351088375,
+        "duration" : 64238
+      }
+    } ]
+  },
+  "ff3ffbf6feb84eddfbed5d44bd6f0562" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71408827c7606bca",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 标题",
+      "time" : {
+        "start" : 1577352653592,
+        "stop" : 1577352667755,
+        "duration" : 14163
+      }
+    } ]
+  },
+  "f76ee121f2725f536b6512eae9db7524" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ac50cd1e314ae97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351168636,
+        "stop" : 1577351204618,
+        "duration" : 35982
+      }
+    } ]
+  },
+  "3339c38347ad1bc86b0083c4c4e53d10" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4c56d8e09cf9ce7d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352749996,
+        "stop" : 1577352764798,
+        "duration" : 14802
+      }
+    } ]
+  },
+  "3f627a3385a65b90f745fd795dc2d306" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "750904071eeee96b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352474060,
+        "stop" : 1577352481589,
+        "duration" : 7529
+      }
+    } ]
+  },
+  "773fb12a382a449596d24512b9ba5626" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c7e59b522eacc14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350323695,
+        "stop" : 1577350327014,
+        "duration" : 3319
+      }
+    } ]
+  },
+  "18004639ddb8c65df6380a7b6e16646e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ca3d557d83a15c53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352788794,
+        "stop" : 1577352801019,
+        "duration" : 12225
+      }
+    } ]
+  },
+  "e0efbce0a42696e02004fbdc081e00aa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f81a343edb8ddc0f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: clickSearchEngine() takes 1 positional argument but 2 were given",
+      "time" : {
+        "start" : 1577349977395,
+        "stop" : 1577349979822,
+        "duration" : 2427
+      }
+    } ]
+  },
+  "870dd8ec841c46a9aa26fb99199d2b5c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9d4c2d52cb71a0c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350560164,
+        "stop" : 1577350566069,
+        "duration" : 5905
+      }
+    } ]
+  },
+  "146d144c33996be03e7bfe910c8d899f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c68564a924e82596",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350868483,
+        "stop" : 1577350923933,
+        "duration" : 55450
+      }
+    } ]
+  },
+  "ead04e77d1d5cbd8854332dd5794e7d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ffe4c450ad1cb62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349737052,
+        "stop" : 1577349763993,
+        "duration" : 26941
+      }
+    } ]
+  },
+  "0bed89aeea4f2499de7c2beb5116138d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "270abbf1c8df6ca8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349634443,
+        "stop" : 1577349658189,
+        "duration" : 23746
+      }
+    } ]
+  },
+  "491d0f7733f5cb4b5bf0fae7ae417662" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5963cebd11dd2bcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350581302,
+        "stop" : 1577350587020,
+        "duration" : 5718
+      }
+    } ]
+  },
+  "059d9b825e21304963cbbbaf0e893b07" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5692d11aad454e2a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350379404,
+        "stop" : 1577350385690,
+        "duration" : 6286
+      }
+    } ]
+  },
+  "76d8857b466588d3a2f08be47fdaff92" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e7531094fd139e5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 上次看到这里，点击刷新",
+      "time" : {
+        "start" : 1577351504403,
+        "stop" : 1577351537012,
+        "duration" : 32609
+      }
+    } ]
+  },
+  "cd065d0351a89ca78cf8bbc03ea0cf32" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f276f8edd298a372",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 注册",
+      "time" : {
+        "start" : 1577351784834,
+        "stop" : 1577351795622,
+        "duration" : 10788
+      }
+    } ]
+  },
+  "c41b9f6bb1502bc49e6e030de38cfdb0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fac302e4bcd9f01d",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+      "time" : {
+        "start" : 1577351211763,
+        "stop" : 1577351330368,
+        "duration" : 118605
+      }
+    } ]
+  },
+  "2638f5821b0cac923426e9a10655025f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c8b1e2147000776",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350167743,
+        "stop" : 1577350171169,
+        "duration" : 3426
+      }
+    } ]
+  },
+  "b7772b3a0249fa0ecdbbf8f7d9b4c792" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "96d0ff8eb6124c2a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 同城服务",
+      "time" : {
+        "start" : 1577350439038,
+        "stop" : 1577350461608,
+        "duration" : 22570
+      }
+    } ]
+  },
+  "fe706480d011068e7279e8d0fc01b779" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8af2083c8afe462",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352862942,
+        "stop" : 1577352875204,
+        "duration" : 12262
+      }
+    } ]
+  },
+  "83520cfe157e858771a6b538246a921e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6423f00a44118004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352070005,
+        "stop" : 1577352073465,
+        "duration" : 3460
+      }
+    } ]
+  },
+  "2c833bfffd09614c75bc8dae8cbeaf14" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e0a16cad7d533aec",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 注册",
+      "time" : {
+        "start" : 1577351815533,
+        "stop" : 1577351827102,
+        "duration" : 11569
+      }
+    } ]
+  },
+  "869cc869e639588b28cc40326e7acb91" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4b5cd1aedfe41592",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352824931,
+        "stop" : 1577352839353,
+        "duration" : 14422
+      }
+    } ]
+  },
+  "32a2065c4ebe9a997c037d483248348c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9f72f4438b64dd2b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/moremenu",
+      "time" : {
+        "start" : 1577351872436,
+        "stop" : 1577351917570,
+        "duration" : 45134
+      }
+    } ]
+  },
+  "8a8fa58dab4536f5b598c462a1404858" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e49fab35fa9f94a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350290570,
+        "stop" : 1577350294607,
+        "duration" : 4037
+      }
+    } ]
+  },
+  "36b64edbe136b052afed2a880b7b0b1b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58f2148f5f83f52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351637412,
+        "stop" : 1577351641202,
+        "duration" : 3790
+      }
+    } ]
+  },
+  "9b0ef08ca711dda21d4aeace9b471138" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff8493a611a96891",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+      "time" : {
+        "start" : 1577352080810,
+        "stop" : 1577352102626,
+        "duration" : 21816
+      }
+    } ]
+  },
+  "61af39c341ca5a5f411bf4e5b6359f53" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee626fee5b233f34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350747085,
+        "stop" : 1577350811663,
+        "duration" : 64578
+      }
+    } ]
+  },
+  "485ba75b4360188b152b150b5425a8b3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3b0191d0aca283db",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： //*[@resource-id=\"com.android.browser:id/news_sdk_recycle_view\"]/android.widget.FrameLayout[1]",
+      "time" : {
+        "start" : 1577350113849,
+        "stop" : 1577350129969,
+        "duration" : 16120
+      }
+    } ]
+  },
+  "aa58e4ce337880ec30ae892b7ece06ce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f4f2aca810591c0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350219905,
+        "stop" : 1577350223097,
+        "duration" : 3192
+      }
+    } ]
+  },
+  "a6bb7fce87aabe71f4f438bf0d9449d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea676d34d3234ae7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349468224,
+        "stop" : 1577349518512,
+        "duration" : 50288
+      }
+    } ]
+  },
+  "323cec5b73a3f6ff1c0f169d033ef5ed" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "51e97d2d1357ac0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351558568,
+        "stop" : 1577351577166,
+        "duration" : 18598
+      }
+    } ]
+  },
+  "05ff3f01a2f7f7d639404ad5b1bb4972" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4643ccdbfc55080d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/refresh",
+      "time" : {
+        "start" : 1577351713790,
+        "stop" : 1577351729592,
+        "duration" : 15802
+      }
+    } ]
+  },
+  "c7ee53d3f9cbf779c9645260b1ce3f1e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5dfa857cb47633e1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/tip",
+      "time" : {
+        "start" : 1577349991962,
+        "stop" : 1577350020228,
+        "duration" : 28266
+      }
+    } ]
+  },
+  "cb79cabc0266ffad5fda8124282e9fda" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "af0c3df7549187ef",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.customizecenter:id/mc_search_edit",
+      "time" : {
+        "start" : 1577352434530,
+        "stop" : 1577352448819,
+        "duration" : 14289
+      }
+    } ]
+  },
+  "7ff8d58a562c197a0134ef1534db36b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d4cdecaf49f126b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352256106,
+        "stop" : 1577352266610,
+        "duration" : 10504
+      }
+    } ]
+  },
+  "72d96efbdeabd91dcc20a62f1bc13f38" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "54955a8a21e6599e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349217894,
+        "stop" : 1577349242988,
+        "duration" : 25094
+      }
+    } ]
+  },
+  "0f48a2e329bf3644cdacc8326c3c705d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b640f0b68e45dc4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351390826,
+        "stop" : 1577351481996,
+        "duration" : 91170
+      }
+    } ]
+  },
+  "db33e61f25baab7e722ca10d9b0f6609" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27ea843e66a7509c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352343688,
+        "stop" : 1577352369115,
+        "duration" : 25427
+      }
+    } ]
+  },
+  "5c3e339f276a65e0875e614b56787ebe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8facd470de6ba3aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349264852,
+        "stop" : 1577349285056,
+        "duration" : 20204
+      }
+    } ]
+  },
+  "c2d6fe22f52bb4fc0688175459d01c5d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1adfc9a89f8f4d7e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.flyme.launcher:id/app_icon",
+      "time" : {
+        "start" : 1577352052942,
+        "stop" : 1577352061839,
+        "duration" : 8897
+      }
+    } ]
+  },
+  "d403036665b8aaddd2a579e90f6c28df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b16c145b6b04a010",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+      "time" : {
+        "start" : 1577351338100,
+        "stop" : 1577351383231,
+        "duration" : 45131
+      }
+    } ]
+  },
+  "2700cdf7f935574d293dfba615e686d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6696be8ee57f4f6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352114882,
+        "stop" : 1577352133400,
+        "duration" : 18518
+      }
+    } ]
+  },
+  "937a4b9b9b2a4460a4602a8bfc233617" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e6a50d6137e5b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349364967,
+        "stop" : 1577349419784,
+        "duration" : 54817
+      }
+    } ]
+  },
+  "41e5ec7349dcd855fdd399480529f236" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1389907f903c9eb0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/search_bar_url_container",
+      "time" : {
+        "start" : 1577350080741,
+        "stop" : 1577350087112,
+        "duration" : 6371
+      }
+    } ]
+  },
+  "8c5998ca654be5c867957b139df6ba15" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7f29513f05516eca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352525287,
+        "stop" : 1577352537503,
+        "duration" : 12216
+      }
+    } ]
+  },
+  "9347f73df920b68f4a34bea7fbc4e751" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a0a6a3a942ed8a45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350400610,
+        "stop" : 1577350406546,
+        "duration" : 5936
+      }
+    } ]
+  },
+  "f994bd058bd6dbcc2a161113e0506603" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc85006df696006f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350967859,
+        "stop" : 1577351017016,
+        "duration" : 49157
+      }
+    } ]
+  },
+  "7817619689f7069a31781b20c9212033" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f6ee97d6f7709bbf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 招聘",
+      "time" : {
+        "start" : 1577350271419,
+        "stop" : 1577350278316,
+        "duration" : 6897
+      }
+    } ]
+  },
+  "15283d240880ac9f50790c2e59d38092" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abfbef7aa8c5f70c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349882039,
+        "stop" : 1577349903409,
+        "duration" : 21370
+      }
+    } ]
+  },
+  "5f0720568cb0a4c311f2c915dea694dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8345a3b2faef18a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350473787,
+        "stop" : 1577350479901,
+        "duration" : 6114
+      }
+    } ]
+  },
+  "83cf470973ca38b01fb68d399ecfec7e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "91f3fd3a89ee1e1c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式",
+      "time" : {
+        "start" : 1577349950965,
+        "stop" : 1577349965009,
+        "duration" : 14044
+      }
+    } ]
+  },
+  "068a6c8d8ca3ea2a7cbf21f0ea0178d7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6727157bfe6e48c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350818651,
+        "stop" : 1577350861425,
+        "duration" : 42774
+      }
+    } ]
+  },
+  "343400fb74efbd7f5a745a2c47cbb51c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4ff3c6a58d2d08cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349306987,
+        "stop" : 1577349345043,
+        "duration" : 38056
+      }
+    } ]
+  },
+  "dd15f34bea83e4d1019452d9928dd508" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "31f47e73f1d693f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350142973,
+        "stop" : 1577350156219,
+        "duration" : 13246
+      }
+    } ]
+  },
+  "bad1d22c6004d13c413338d1fe71fba7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e1a556b1d58375d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350544781,
+        "stop" : 1577350549108,
+        "duration" : 4327
+      }
+    } ]
+  },
+  "cc3df0b98d81f05b2d6a755ea1338699" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a4141556753de3b3",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'PubMethod' object has no attribute 'scrollPage'",
+      "time" : {
+        "start" : 1577350099524,
+        "stop" : 1577350101996,
+        "duration" : 2472
+      }
+    } ]
+  },
+  "29bdf085cbfd387d3ab9ceaaedc69d25" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f238de8ac8897541",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.android.browser:id/bt_refresh",
+      "time" : {
+        "start" : 1577352397514,
+        "stop" : 1577352409561,
+        "duration" : 12047
+      }
+    } ]
+  },
+  "9097bf7ef2a4ed2aee3eb6a9ba449c04" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef50fdd81d310214",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 书架",
+      "time" : {
+        "start" : 1577350338408,
+        "stop" : 1577350348982,
+        "duration" : 10574
+      }
+    } ]
+  },
+  "fd0d9a51d2682c22a5e9291ce8a7b05d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "de61a631145ca55c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.sohu.inputmethod.sogou.meizu:id/bt_set_default",
+      "time" : {
+        "start" : 1577351958766,
+        "stop" : 1577352010592,
+        "duration" : 51826
+      }
+    } ]
+  },
+  "0e5a66594f6e8bf443e4e5bb759dbfe9" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "36769a2b1c380c48",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： com.meizu.notepaper:id/gy",
+      "time" : {
+        "start" : 1577352683207,
+        "stop" : 1577352711716,
+        "duration" : 28509
+      }
+    } ]
+  },
+  "cfb05e8c06b107226601e53f19954e3e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "201f3aac5d1f4e02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350186456,
+        "stop" : 1577350190128,
+        "duration" : 3672
+      }
+    } ]
+  },
+  "e1132c22588876b3ac527b3ccf02aafd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9203cc74114b5227",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/expend_view",
+      "time" : {
+        "start" : 1577351597005,
+        "stop" : 1577351616430,
+        "duration" : 19425
+      }
+    } ]
+  },
+  "6792c2c35c895c6b7251dda08a97aafb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9adcba424348476b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350611925,
+        "stop" : 1577350680797,
+        "duration" : 68872
+      }
+    } ]
+  },
+  "1c9d055050c1f4154e5aa9f4b66ffa1d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a95a95ec894a543",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 断言元素存在失败，元素名称为： 新建文件夹",
+      "time" : {
+        "start" : 1577349784530,
+        "stop" : 1577349821007,
+        "duration" : 36477
+      }
+    } ]
+  },
+  "63d354d2ba11bec34a32b52ebb03804c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a10fd2b99ecb0cdb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352493140,
+        "stop" : 1577352509044,
+        "duration" : 15904
+      }
+    } ]
+  },
+  "6887e64e74fc8f7d7c01812d3ebe910d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1608241f0665c83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350361617,
+        "stop" : 1577350368234,
+        "duration" : 6617
+      }
+    } ]
+  },
+  "f1479a7404ceba1e360b6c728096c3c4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a751ca110a83921d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350598425,
+        "stop" : 1577350604778,
+        "duration" : 6353
+      }
+    } ]
+  },
+  "05f534e537ba930b838c4c60941e4b56" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "402bf5c1b84b7f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350417867,
+        "stop" : 1577350423807,
+        "duration" : 5940
+      }
+    } ]
+  },
+  "c0d541ee9db6c8d9c7d75de27f849a2c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b20497f3cd438d45",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： com.android.browser:id/home",
+      "time" : {
+        "start" : 1577350247687,
+        "stop" : 1577350247687,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dcab8fefe0f52e26a22c1aaa201f7957" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5bc73429dcacc883",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350490599,
+        "stop" : 1577350496053,
+        "duration" : 5454
+      }
+    } ]
+  },
+  "d583ea5f32fbf3369de939277a9258e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3248f4bd8c86a859",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352601924,
+        "stop" : 1577352642992,
+        "duration" : 41068
+      }
+    } ]
+  },
+  "075392870e65053ed8cb7934476ad8e8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4feeba5695ac5adf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350687747,
+        "stop" : 1577350740057,
+        "duration" : 52310
+      }
+    } ]
+  },
+  "f4fc106679466fcf8dc69c99189362d5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff0fd9c832a7e1b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349842316,
+        "stop" : 1577349862011,
+        "duration" : 19695
+      }
+    } ]
+  },
+  "52bfc8a4d72e489b5d75efb2126d4d3c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "28534954152bce24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350032468,
+        "stop" : 1577350066435,
+        "duration" : 33967
+      }
+    } ]
+  },
+  "9d4a7a38096745bfdff22ad723eb65ae" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "59759052d848fd8c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352294881,
+        "stop" : 1577352318810,
+        "duration" : 23929
+      }
+    } ]
+  },
+  "44e8083aa23261122d2dbf292881286f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f406f7a31cae6a8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352148640,
+        "stop" : 1577352165015,
+        "duration" : 16375
+      }
+    } ]
+  },
+  "eb03e8d136f73506f7720c3feaff4322" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "efb35bf431f1260a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352042898,
+        "stop" : 1577352045540,
+        "duration" : 2642
+      }
+    } ]
+  },
+  "2032e86f251546d9713dc64140edbb7c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "844cab81a7cd5f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350201386,
+        "stop" : 1577350204788,
+        "duration" : 3402
+      }
+    } ]
+  },
+  "3c3b4a4ac51a421aedd7fea8e8bf7a24" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea369ab106e3a654",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 未找到元素，断言失败，元素名称为： 13001s",
+      "time" : {
+        "start" : 1577352172389,
+        "stop" : 1577352196506,
+        "duration" : 24117
+      }
+    } ]
+  },
+  "ed06e07271ce85338bdbcd5b9412a474" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9a749f121d19dab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349575953,
+        "stop" : 1577349613622,
+        "duration" : 37669
+      }
+    } ]
+  },
+  "b97d422f49b60d92e8029e874bf05724" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cef945c47b9d27e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352548624,
+        "stop" : 1577352591551,
+        "duration" : 42927
+      }
+    } ]
+  },
+  "c48b58b5267401519d00a1ef9d412760" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "baa3d16aa3b7629d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350305732,
+        "stop" : 1577350309008,
+        "duration" : 3276
+      }
+    } ]
+  },
+  "929d6189dd009f2d23c2102fc9830290" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24c06caa22ace04e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577351096165,
+        "stop" : 1577351161559,
+        "duration" : 65394
+      }
+    } ]
+  },
+  "0c6f68c835261f3451f8f6634f2899e0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "487c824d2988d8a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577349678673,
+        "stop" : 1577349716899,
+        "duration" : 38226
+      }
+    } ]
+  },
+  "d4a31b433c144077a6dbb74c087327c6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "539608ad7113922",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350507041,
+        "stop" : 1577350512917,
+        "duration" : 5876
+      }
+    } ]
+  },
+  "5c7c1e0d06d54681f1c1f4e631639343" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba3b3d8e1d2efe18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577352030578,
+        "stop" : 1577352035605,
+        "duration" : 5027
+      }
+    } ]
+  },
+  "6b9abb2512677791e2941d9b1295482f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b705c24f2a4e4d6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350931197,
+        "stop" : 1577350960644,
+        "duration" : 29447
+      }
+    } ]
+  },
+  "eab51f7bd77d927633e0100d2ee25a61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc166cf93d057a46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1577350524091,
+        "stop" : 1577350529801,
+        "duration" : 5710
+      }
+    } ]
+  },
+  "5ba1b41660ff14e6cbbdfbdd2e696d58" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "82b3ec65ef885a97",
+      "status" : "broken",
+      "statusDetails" : "uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None",
+      "time" : {
+        "start" : 1577351730289,
+        "stop" : 1577351730289,
+        "duration" : 0
+      }
+    } ]
+  }
+}

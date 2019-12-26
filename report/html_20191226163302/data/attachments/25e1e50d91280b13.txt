@@ -1,0 +1,44 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SetUpPage.py:27 
+INFO     root:test_SetUpPage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:76 点击元素: 设置
+INFO     root:base.py:145 查询到元素： 广告屏蔽
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:435 提取广告屏蔽元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:422 点击广告屏蔽元素right方向的com.android.browser:id/switch_button元素
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:435 提取广告屏蔽元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:145 查询到元素： 精选内容推送
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:435 提取精选内容推送元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:422 点击精选内容推送元素right方向的com.android.browser:id/switch_button元素
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:435 提取精选内容推送元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:127 滑动查找元素： 恢复默认设置, 是否找到指定元素：True
+INFO     root:base.py:145 查询到元素： 恢复默认设置
+INFO     root:base.py:76 点击元素: 恢复默认设置
+INFO     root:base.py:145 查询到元素： 恢复
+INFO     root:base.py:76 点击元素: 恢复
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:76 点击元素: 设置
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+WARNING  root:api.py:40 -32001 Jsonrpc error: <android.support.test.uiautomator.UiObjectNotFoundException> data: UiSelector[TEXT=广告屏蔽], method: objInfo, retrying in 0.5 seconds...
+INFO     root:base.py:435 提取广告屏蔽元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:435 提取精选内容推送元素right方向的com.android.browser:id/switch_button元素文本
+INFO     root:base.py:207 元素不相等，断言成功，元素1名称：关闭 && 元素2名称：开启
+INFO     root:base.py:207 元素不相等，断言成功，元素1名称：关闭 && 元素2名称：开启
+INFO     root:test_SetUpPage.py:35 ****用例执行结束****
+INFO     root:test_SetUpPage.py:36

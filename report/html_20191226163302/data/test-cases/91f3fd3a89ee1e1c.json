@@ -1,0 +1,157 @@
+{
+  "uid" : "91f3fd3a89ee1e1c",
+  "name" : "test14NoMarking",
+  "fullName" : "browser.browser_test.test_CollectionAndHistory.TestNegativePage#test14NoMarking",
+  "historyId" : "83cf470973ca38b01fb68d399ecfec7e",
+  "time" : {
+    "start" : 1577349950965,
+    "stop" : 1577349965009,
+    "duration" : 14044
+  },
+  "description" : "\n        1、获取历史第1条记录标题\n        2、打开无痕模式，点击一个热词进行搜索\n        3、返回上一层，获取历史第1条记录标题\n        4、断言历史第1条记录的标题没有改变\n        ",
+  "descriptionHtml" : "<pre><code>    1、获取历史第1条记录标题\n    2、打开无痕模式，点击一个热词进行搜索\n    3、返回上一层，获取历史第1条记录标题\n    4、断言历史第1条记录的标题没有改变\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式",
+  "statusTrace" : "self = <browser_test.test_CollectionAndHistory.TestNegativePage object at 0x0000000004FDEBE0>\ncollectionAndHistory_init = None\n\n    @allure.story('开启无痕模式，访问网站，不会生成历史记录 —— LJX')\n    @pytest.mark.P1\n    def test14NoMarking(self, collectionAndHistory_init):\n        '''\n        1、获取历史第1条记录标题\n        2、打开无痕模式，点击一个热词进行搜索\n        3、返回上一层，获取历史第1条记录标题\n        4、断言历史第1条记录的标题没有改变\n        '''\n        self.home.clickMore()\n        self.toolbarpanel.clickToolsPanel(HISTORY)\n        historyTitleBefore = self.collectionandhistory.getHistoryTitle()\n        # 返回上一层\n        self.pubmethod.clickBack()\n        self.home.clickMore()\n>       self.collectionandhistory.openNoMarking()\n\nbrowser\\browser_test\\test_CollectionAndHistory.py:394: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\CollectionAndHistoryPage.py:163: in openNoMarking\n    self.assertFalse(NO_MARKING)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.CollectionAndHistoryPage.CollectionAndHistoryPage object at 0x0000000004FD45F8>\nelement = '无痕模式'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式\n\nbase_function\\base.py:162: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577349903428,
+      "stop" : 1577349905429,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577349903428,
+      "stop" : 1577349903428,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "collectionAndHistory_init",
+    "time" : {
+      "start" : 1577349905430,
+      "stop" : 1577349950964,
+      "duration" : 45534
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、获取历史第1条记录标题\n        2、打开无痕模式，点击一个热词进行搜索\n        3、返回上一层，获取历史第1条记录标题\n        4、断言历史第1条记录的标题没有改变\n        ",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式",
+    "statusTrace" : "self = <browser_test.test_CollectionAndHistory.TestNegativePage object at 0x0000000004FDEBE0>\ncollectionAndHistory_init = None\n\n    @allure.story('开启无痕模式，访问网站，不会生成历史记录 —— LJX')\n    @pytest.mark.P1\n    def test14NoMarking(self, collectionAndHistory_init):\n        '''\n        1、获取历史第1条记录标题\n        2、打开无痕模式，点击一个热词进行搜索\n        3、返回上一层，获取历史第1条记录标题\n        4、断言历史第1条记录的标题没有改变\n        '''\n        self.home.clickMore()\n        self.toolbarpanel.clickToolsPanel(HISTORY)\n        historyTitleBefore = self.collectionandhistory.getHistoryTitle()\n        # 返回上一层\n        self.pubmethod.clickBack()\n        self.home.clickMore()\n>       self.collectionandhistory.openNoMarking()\n\nbrowser\\browser_test\\test_CollectionAndHistory.py:394: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbrowser\\browser_page\\CollectionAndHistoryPage.py:163: in openNoMarking\n    self.assertFalse(NO_MARKING)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <browser.browser_page.CollectionAndHistoryPage.CollectionAndHistoryPage object at 0x0000000004FD45F8>\nelement = '无痕模式'\n\n    def assertFalse(self, element):\n        '''\n        :param element: 元素名称\n        :return:\n        '''\n>       assert False , '未找到元素，断言失败，元素名称为： {}'.format(element)\nE       AssertionError: 未找到元素，断言失败，元素名称为： 无痕模式\n\nbase_function\\base.py:162: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9a970597b4525892",
+      "name" : "失败截图",
+      "source" : "9a970597b4525892.jpg",
+      "type" : "image/jpg",
+      "size" : 688788
+    }, {
+      "uid" : "134ff98ac89acf72",
+      "name" : "log",
+      "source" : "134ff98ac89acf72.txt",
+      "type" : "text/plain",
+      "size" : 2084
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "collectionAndHistory_init::0",
+    "time" : {
+      "start" : 1577349966317,
+      "stop" : 1577349966317,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试收藏/历史相关功能"
+  }, {
+    "name" : "story",
+    "value" : "开启无痕模式，访问网站，不会生成历史记录 —— LJX"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_CollectionAndHistory"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_CollectionAndHistory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "91f3fd3a89ee1e1c.json",
+  "parameterValues" : [ ]
+}

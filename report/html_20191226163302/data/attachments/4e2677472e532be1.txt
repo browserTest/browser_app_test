@@ -1,0 +1,25 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SharePage.py:24 
+INFO     root:test_SharePage.py:25 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/refresh
+INFO     root:base.py:76 点击元素: 资讯
+INFO     root:base.py:145 查询到元素： com.android.browser:id/expend_view
+INFO     root:base.py:76 点击元素: 资讯流列表点击“倒三角”符号，进入频道管理页面
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_channel_grid_view_added
+INFO     root:base.py:76 点击元素: 我的频道管理页面，选择点击“频道”，进入资讯流列表
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:76 点击元素: 在资讯流列表点击资讯文章进入详情页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/moremenu
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： com.android.browser:id/moremenu
+INFO     root:base.py:145 查询到元素： com.android.browser:id/bt_zixun_back
+INFO     root:base.py:76 点击元素: 点击资讯文章详情页总的分享按钮
+INFO     root:base.py:145 查询到元素： 便签
+INFO     root:base.py:76 点击元素: 点击分享到便签
+INFO     root:base.py:151 未找到元素，元素名称为: com.meizu.notepaper:id/gy
+INFO     root:test_SharePage.py:32 ****用例执行结束****
+INFO     root:test_SharePage.py:33

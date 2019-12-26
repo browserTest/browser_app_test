@@ -1,0 +1,143 @@
+{
+  "uid" : "b640f0b68e45dc4e",
+  "name" : "test013NegativeMoveFile",
+  "fullName" : "browser.browser_test.test_NegativeScreenPage.TestNegativePage#test013NegativeMoveFile",
+  "historyId" : "0f48a2e329bf3644cdacc8326c3c705d",
+  "time" : {
+    "start" : 1577351390826,
+    "stop" : 1577351481996,
+    "duration" : 91170
+  },
+  "description" : "\n        1、当负一屏不存在“新浪微博”、“手机腾讯”书签，则添加书签，并合并文件夹\n        2、获取\"文件夹\"坐标，拖拽\"文件夹\"到指定坐标，再获取\"文件夹\"坐标，断言坐标有变化\n        ",
+  "descriptionHtml" : "<pre><code>    1、当负一屏不存在“新浪微博”、“手机腾讯”书签，则添加书签，并合并文件夹\n    2、获取&quot;文件夹&quot;坐标，拖拽&quot;文件夹&quot;到指定坐标，再获取&quot;文件夹&quot;坐标，断言坐标有变化\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "negative_init",
+    "time" : {
+      "start" : 1577351385933,
+      "stop" : 1577351390824,
+      "duration" : 4891
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577351383932,
+      "stop" : 1577351383932,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577351383932,
+      "stop" : 1577351385933,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        1、当负一屏不存在“新浪微博”、“手机腾讯”书签，则添加书签，并合并文件夹\n        2、获取\"文件夹\"坐标，拖拽\"文件夹\"到指定坐标，再获取\"文件夹\"坐标，断言坐标有变化\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "35147edfad2659f1",
+      "name" : "log",
+      "source" : "35147edfad2659f1.txt",
+      "type" : "text/plain",
+      "size" : 2576
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "negative_init::0",
+    "time" : {
+      "start" : 1577351481997,
+      "stop" : 1577351481997,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "长按文件夹，移动文件夹功能正常 —— LJX"
+  }, {
+    "name" : "feature",
+    "value" : "测试负一屏页面"
+  }, {
+    "name" : "tag",
+    "value" : "P1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_NegativeScreenPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNegativePage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_NegativeScreenPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "P1" ]
+  },
+  "source" : "b640f0b68e45dc4e.json",
+  "parameterValues" : [ ]
+}

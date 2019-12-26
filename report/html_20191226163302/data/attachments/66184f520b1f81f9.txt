@@ -1,0 +1,13 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_PubMethod.py:24 
+INFO     root:test_PubMethod.py:25 ****开始执行用例****
+INFO     root:base.py:30 clear： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： 同意
+INFO     root:base.py:76 点击元素: 隐私弹窗同意按钮
+INFO     root:base.py:145 查询到元素： 拒绝
+INFO     root:base.py:76 点击元素: 权限弹窗拒绝按钮
+INFO     root:base.py:145 查询到元素： home
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： home
+INFO     root:test_PubMethod.py:29 ****用例执行结束****
+INFO     root:test_PubMethod.py:30

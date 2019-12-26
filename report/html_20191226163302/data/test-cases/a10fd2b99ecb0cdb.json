@@ -1,0 +1,140 @@
+{
+  "uid" : "a10fd2b99ecb0cdb",
+  "name" : "test001SetUpPage",
+  "fullName" : "browser.browser_test.test_SetUpPage.TestSetUpPage#test001SetUpPage",
+  "historyId" : "63d354d2ba11bec34a32b52ebb03804c",
+  "time" : {
+    "start" : 1577352493140,
+    "stop" : 1577352509044,
+    "duration" : 15904
+  },
+  "description" : "\n\n        1、点击主页工具菜单\n        2、点击设置\n        3、点击清除浏览器数据\n        4、点击Cookies\n        5、点击账号密码\n        6、点击地理位置授权\n        7、点击清除数据按钮\n        8、点击完成按钮\n        9、点击mback返回\n        10、点击首页搜索框\n        11、搜索框输入文本\n        12、点击进入\n        13、断言页面是否会重新提示地址位置授权\n\n        ",
+  "descriptionHtml" : "<pre><code>    1、点击主页工具菜单\n    2、点击设置\n    3、点击清除浏览器数据\n    4、点击Cookies\n    5、点击账号密码\n    6、点击地理位置授权\n    7、点击清除数据按钮\n    8、点击完成按钮\n    9、点击mback返回\n    10、点击首页搜索框\n    11、搜索框输入文本\n    12、点击进入\n    13、断言页面是否会重新提示地址位置授权\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp_init",
+    "time" : {
+      "start" : 1577352483619,
+      "stop" : 1577352493138,
+      "duration" : 9519
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "cmdopt",
+    "time" : {
+      "start" : 1577352481618,
+      "stop" : 1577352481618,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver_setup",
+    "time" : {
+      "start" : 1577352481618,
+      "stop" : 1577352483619,
+      "duration" : 2001
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n\n        1、点击主页工具菜单\n        2、点击设置\n        3、点击清除浏览器数据\n        4、点击Cookies\n        5、点击账号密码\n        6、点击地理位置授权\n        7、点击清除数据按钮\n        8、点击完成按钮\n        9、点击mback返回\n        10、点击首页搜索框\n        11、搜索框输入文本\n        12、点击进入\n        13、断言页面是否会重新提示地址位置授权\n\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4dca233de9dfe0ed",
+      "name" : "log",
+      "source" : "4dca233de9dfe0ed.txt",
+      "type" : "text/plain",
+      "size" : 2413
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "setUp_init::0",
+    "time" : {
+      "start" : 1577352509045,
+      "stop" : 1577352509046,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试设置页面"
+  }, {
+    "name" : "story",
+    "value" : "测试设置清除浏览器"
+  }, {
+    "name" : "parentSuite",
+    "value" : "browser.browser_test"
+  }, {
+    "name" : "suite",
+    "value" : "test_SetUpPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSetUpPage"
+  }, {
+    "name" : "host",
+    "value" : "EF-LIUDAWEI2"
+  }, {
+    "name" : "thread",
+    "value" : "5648-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "browser.browser_test.test_SetUpPage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a10fd2b99ecb0cdb.json",
+  "parameterValues" : [ ]
+}

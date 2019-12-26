@@ -1,0 +1,55 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_CollectionAndHistory.py:29 
+INFO     root:test_CollectionAndHistory.py:30 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 我的收藏
+INFO     root:base.py:76 点击元素: 工具面板-》我的收藏
+INFO     root:base.py:151 未找到元素，元素名称为: 自动化测试
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:76 点击元素: 搜索框右侧进入按钮
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 添加收藏
+INFO     root:base.py:76 点击元素: 工具面板-》添加收藏
+INFO     root:base.py:145 查询到元素： com.android.browser:id/edit
+INFO     root:base.py:76 点击元素: 添加收藏页面的com.android.browser:id/edit
+INFO     root:base.py:145 查询到元素： com.android.browser:id/folder
+INFO     root:base.py:76 点击元素: 添加收藏页面的com.android.browser:id/folder
+INFO     root:base.py:145 查询到元素： com.android.browser:id/new_folder
+INFO     root:base.py:76 点击元素: 添加收藏页面的com.android.browser:id/new_folder
+INFO     root:base.py:145 查询到元素： com.android.browser:id/name
+INFO     root:base.py:237 输入文本: 自动化测试
+INFO     root:base.py:145 查询到元素： 确定
+INFO     root:base.py:76 点击元素: 添加收藏页面的确定
+INFO     root:test_CollectionAndHistory.py:132 明明就点击了
+INFO     root:base.py:145 查询到元素： 位置
+INFO     root:base.py:76 点击元素: 添加收藏页面的(0.134, 0.257)
+INFO     root:base.py:145 查询到元素： com.android.browser:id/title
+INFO     root:base.py:237 输入文本: 百度一下
+INFO     root:base.py:145 查询到元素： com.android.browser:id/address
+INFO     root:base.py:237 输入文本: m.baidu.com
+INFO     root:base.py:145 查询到元素： 确定
+INFO     root:base.py:76 点击元素: 添加收藏页面的确定
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： 我的收藏
+INFO     root:base.py:76 点击元素: 工具面板-》我的收藏
+INFO     root:base.py:145 查询到元素： 自动化测试
+INFO     root:base.py:76 点击元素: 我的收藏页面的自动化测试
+INFO     root:base.py:145 查询到元素： 百度一下
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 百度一下
+INFO     root:base.py:145 查询到元素： 百度一下
+INFO     root:base.py:76 点击元素: 我的收藏页面的百度一下
+INFO     root:base.py:145 查询到元素： 百度一下,你就知道
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 百度一下,你就知道
+INFO     root:test_CollectionAndHistory.py:35 ****用例执行结束****
+INFO     root:test_CollectionAndHistory.py:36

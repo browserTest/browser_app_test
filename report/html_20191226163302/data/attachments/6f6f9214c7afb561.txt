@@ -1,0 +1,40 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SetUpPage.py:27 
+INFO     root:test_SetUpPage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:76 点击元素: 设置
+INFO     root:base.py:145 查询到元素： com.android.browser:id/mc_item_container
+INFO     root:base.py:76 点击元素: 魅族头条设置
+INFO     root:base.py:145 查询到元素： 简版显示
+INFO     root:base.py:76 点击元素: 简版显示
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： //*[@text="魅族头条"]
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： //*[@text="魅族头条"]
+INFO     root:base.py:145 查询到元素： com.android.browser:id/textView_zixun_card_title_more
+INFO     root:base.py:76 点击元素: 简版显示--更多
+INFO     root:base.py:145 查询到元素： com.android.browser:id/expend_view
+INFO     root:base.py:76 点击元素: 资讯流列表点击“倒三角”符号，进入频道管理页面
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_channel_grid_view_added
+INFO     root:base.py:76 点击元素: 我的频道管理页面，选择点击“频道”，进入资讯流列表
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:218 提取第0位的获取资讯流列表的文章标题内容元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/refresh
+INFO     root:base.py:76 点击元素: 资讯
+INFO     root:base.py:151 未找到元素，元素名称为: 备好麻袋请装钱的3属相12月底天赐吉兆正财难挡
+INFO     root:base.py:180 元素已不存在，断言成功，元素名称为： 备好麻袋请装钱的3属相12月底天赐吉兆正财难挡
+INFO     root:base.py:145 查询到元素： com.android.browser:id/news_sdk_recycle_item_text_title
+INFO     root:base.py:76 点击元素: 在资讯流列表点击资讯文章进入详情页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/moremenu
+INFO     root:base.py:369 截图后进行图片识别:D:\browser_dwliuc\screenshot\20191226163302图片识别.jpg
+INFO     root:base.py:201 元素匹配，断言成功，元素名称为： 备好麻袋请装钱的3属相12月底天赐吉兆正财难挡 1730令5112月心随情动试试新的工具面板跟旧爱牵手不分怕拥再发遍生活记录篇1216155831白羊座白羊座气急败坏之下敢于放弃自己的感情他们不思量那结果就是自己难过当白羊座清醒过来他们就后悔自己所做的一切了再加上白羊座不爱隐忍他们有爱就说有爱就做不隐藏自己的爱白羊座想要找回对方他们可是分手后回头最快的添加评论山
+INFO     root:test_SetUpPage.py:35 ****用例执行结束****
+INFO     root:test_SetUpPage.py:36

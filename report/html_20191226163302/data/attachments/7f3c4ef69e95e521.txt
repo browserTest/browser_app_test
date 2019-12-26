@@ -1,0 +1,15 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_NewsPage.py:21 
+INFO     root:test_NewsPage.py:22 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:30 clear： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： 同意
+INFO     root:base.py:76 点击元素: 隐私弹窗同意按钮
+INFO     root:base.py:151 未找到元素，元素名称为: com.android.browser:id/refresh
+INFO     root:test_NewsPage.py:28 ****用例执行结束****
+INFO     root:test_NewsPage.py:29

@@ -1,0 +1,37 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SetUpPage.py:27 
+INFO     root:test_SetUpPage.py:28 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/menu_more
+INFO     root:base.py:76 点击元素: 浏览器首页more菜单
+INFO     root:base.py:145 查询到元素： com.android.browser:id/setting
+INFO     root:base.py:76 点击元素: 设置
+INFO     root:base.py:145 查询到元素： 清除浏览数据
+INFO     root:base.py:76 点击元素: 清除浏览数据
+INFO     root:base.py:145 查询到元素： Cookies
+INFO     root:base.py:76 点击元素: Cookies
+INFO     root:base.py:145 查询到元素： 帐号密码
+INFO     root:base.py:76 点击元素: 账号密码
+INFO     root:base.py:145 查询到元素： 地理位置授权
+INFO     root:base.py:76 点击元素: 地理位置授权
+INFO     root:base.py:145 查询到元素： com.android.browser:id/clear_button
+INFO     root:base.py:76 点击元素: 清除数据按钮
+INFO     root:base.py:145 查询到元素： 完成
+INFO     root:base.py:76 点击元素: 完成按钮
+INFO     root:base.py:43 对设备进行操作，操作动作为： back
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/url
+INFO     root:base.py:237 输入文本: 搜索框输入百度
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:76 点击元素: 搜索框右侧进入按钮
+INFO     root:base.py:145 查询到元素： 地理位置权限
+INFO     root:base.py:177 已找到元素，断言成功，元素名称为： 地理位置权限
+INFO     root:test_SetUpPage.py:35 ****用例执行结束****
+INFO     root:test_SetUpPage.py:36

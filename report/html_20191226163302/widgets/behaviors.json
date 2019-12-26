@@ -1,0 +1,114 @@
+{
+  "total" : 14,
+  "items" : [ {
+    "uid" : "394c972b525035c7c8d550e5c052048d",
+    "name" : "测试资讯流页面",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "e21dcc81474bfb1a6b2a8820440c546f",
+    "name" : "测试个人中心页面",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "42b954648a4d7e98a4db3e645a75dd21",
+    "name" : "测试收藏/历史相关功能",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "ee5ff86e2fd121d61401cd6df3074a75",
+    "name" : "魅族浏览器资讯流功能测试",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "273c8b6283d6b5522887d8074f3ad85a",
+    "name" : "魅族浏览器下载功能测试",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "10e2e6fdc09579e6272604512524c99c",
+    "name" : "测试搜索页面",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "706f158ee98b3f24dfca3a3da33a87a0",
+    "name" : "魅族浏览器分享功能测试",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "940f76f8f012bd9e158786a1808226a2",
+    "name" : "测试启动弹框",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "6d2b2be7d34cef424020a406a0787f0f",
+    "name" : "魅族浏览器网址导航页面测试",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 13
+    }
+  }, {
+    "uid" : "460d172857e4d9c1da3973129e40c97a",
+    "name" : "测试阅读模式",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

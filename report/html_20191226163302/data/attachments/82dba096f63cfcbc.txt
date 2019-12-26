@@ -1,0 +1,24 @@
+INFO     root:conftest.py:25 ————————————开始执行自动化测试——————————————————
+INFO     root:test_SearchPanelPage.py:22 
+INFO     root:test_SearchPanelPage.py:23 ****开始执行用例****
+INFO     root:base.py:30 stop： com.android.browser
+INFO     root:base.py:30 start： com.android.browser
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:145 查询到元素： 已保存网页
+INFO     root:base.py:145 查询到元素： com.android.browser:id/home
+INFO     root:base.py:76 点击元素: 浏览器首页home菜单
+INFO     root:base.py:151 未找到元素，元素名称为: 同意
+INFO     root:base.py:151 未找到元素，元素名称为: 始终允许
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_container
+INFO     root:base.py:145 查询到元素： com.android.browser:id/search_bar_url_container
+INFO     root:base.py:76 点击元素: 首页搜索框
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:218 提取第0位的获取搜索框文本元素文本
+INFO     root:base.py:145 查询到元素： com.android.browser:id/right_txt_blue
+INFO     root:base.py:76 点击元素: 搜索框右侧进入按钮
+INFO     root:base.py:145 查询到元素： com.android.browser:id/security_icon
+INFO     root:base.py:369 截图后进行图片识别:D:\browser_dwliuc\screenshot\20191226163302图片识别.jpg
+INFO     root:base.py:197 元素包含，断言成功，元素1名称：林心如为霍建华庆生 && 元素2名称：1723令53林心如为霍建华庆生林心如为霍建华庆生喊老公为亲爱的送祝福二人对视满脸幸福笑容林心如为霍建华庆生12月26日霍建华40岁生日林心如一如往年般为老公庆生中午时分林心如发文写开心一刻吧1小时前林心如为霍建华庆生的73条网友热纲易网易网友易网易网友终于知道林志颖不娶林心袁弘处理的很不错还很如的原因了心赞118个赞10小时前114个赞10小日
+INFO     root:test_SearchPanelPage.py:30 ****用例执行结束****
+INFO     root:test_SearchPanelPage.py:31
