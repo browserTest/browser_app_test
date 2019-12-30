@@ -36,5 +36,5 @@ MY_COLLECTION = '我的收藏'
 NO_MARKING_ID = 'com.android.browser:id/title'
 
 # 无痕模式文案 —— LJX
-NO_MARKING = '无痕模式'
+NO_MARKING = '无痕'
 

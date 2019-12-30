@@ -399,6 +399,12 @@ class Base():
 
     # 点击元素某个方向上的元素 —— LJX
     def clickByElementRight(self, elementText, element, direction):
+         '''
+         :param elementText: 元素文本
+         :param element: 元素名称，仅可根据id、text进行点击
+         :param direction: 方向
+         :return:
+         '''
          if direction == 'up':
              if str(element).startswith("com"):
                 self.d(text=elementText).up(resourceId=element).click()
@@ -436,20 +442,6 @@ class Base():
                 return text
 
 
-    # 重复点击元素N次，每次间隔1秒，若该元素消失则中止偿试并返回bool值 —— LJX
-    def clickGoneByElementAndTimes(self, element, times=3):
-        '''
-        :param element: 元素名称，可根据resourceId、Xpath及Text进行点击
-        :param times:点击元素次数
-        :return: bool值
-        '''
-        if str(element).startswith("com"):
-            self.d(resourceId=element).click_gone(maxretry=times, interval=1)
-        elif re.findall("//", str(element)):
-            self.d.xpath(element).click_gone(maxretry=times, interval=1)
-        else:
-            self.d(text=element).click_gone(maxretry=times, interval=1)
-        logging.info("重复点击{}元素{}次".format(element, times))
 
 
 

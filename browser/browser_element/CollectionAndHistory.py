@@ -15,6 +15,9 @@ HISTORY_ID = 'com.android.browser:id/title'
 
 # 添加收藏-》编辑-》编辑文件夹入口ID —— LJX
 COLLECT_FOLDER_ID = 'com.android.browser:id/folder'
+# COLLECT_FOLDER_ID = "//android.widget.TextView[@text='编辑']"
+# 添加收藏-》编辑-》编辑文件夹入口POSITION —— LJX
+COLLECT_FOLDER_POSITION = (0.925, 0.731)
 
 # 添加收藏-》编辑-》位置ID —— LJX
 NEW_FOLDER_ID = 'com.android.browser:id/new_folder'
@@ -23,7 +26,8 @@ NEW_FOLDER_ID = 'com.android.browser:id/new_folder'
 NEW_FOLDER_NAME_ID = 'com.android.browser:id/name'
 
 # 新增收藏文件夹弹框的确定按钮 —— LJX
-NEW_FOLDER_CONFIRM = '确定'
+# NEW_FOLDER_CONFIRM = '确定'
+NEW_FOLDER_CONFIRM = 'android:id/button1'
 
 # 新增收藏文件夹弹框的确定按钮 —— LJX
 NEW_FOLDER_CONFIRM_POSITION = (0.651, 0.521)
@@ -99,6 +103,9 @@ COLLECTION_BACK_ID = 'com.android.browser:id/mz_toolbar_nav_button'
 
 # 删除收藏记录的删除ID —— LJX
 FRAME_DELETE_ID = 'android:id/text1'
+
+# 搜索文本 —— LJX
+SEARCH_WORD = '安卓自动化测试'
 
 
 

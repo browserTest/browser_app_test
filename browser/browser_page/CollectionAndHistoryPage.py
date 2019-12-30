@@ -11,25 +11,42 @@ class CollectionAndHistoryPage(Base):
         self.searchpanel = SearchPanelPage(driver)
         self.base = Base(driver)
 
-    # 判断历史是否有数据，没有则造一条“百度一下”数据 —— LJX
-    def makeHistory(self):
-        self.home.clickMore()
-        self.toolbarpanel.clickToolsPanel(HISTORY)
-        if self.base.elementIsExit(HISTORY_PAGE):
-            # 返回上一层
-            self.pubmethod.clickBack()
-            # 点击搜索框,搜索'm.baidu.com'
+    # 造指定条数的历史数据 —— LJX
+    def makeHistory(self, nums):
+        for i in range(nums):
+            # 点击搜索框，搜索内容
             self.home.clickHomeSearch()
-            self.base.elementSetText(SEARCHPANEL_WEBSITE, 'm.baidu.com', '搜索框输入"m.baidu.com"')
+            if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+                self.base.elementSetText(SEARCHPANEL_WEBSITE, SEARCH_WORD + str(i), '搜索框输入"安卓自动化测试"')
+            else:
+                self.assertFalse(SEARCHPANEL_WEBSITE)
             self.searchpanel.clickSearchInto()
-            # 监听地理位置弹框，点击“始终允许”
+            # 监听地理位置弹框
             self.base.browserWatcher()
             sleep(2)
             # 返回上一层
             self.pubmethod.clickBack()
-        else:
+
+    # 造指定条数的收藏数据 —— LJX
+    def makeCollection(self, nums):
+        for i in range(nums):
+            # 点击搜索框，搜索内容并添加收藏
+            self.home.clickHomeSearch()
+            if self.base.elementIsExit(SEARCHPANEL_WEBSITE):
+                self.base.elementSetText(SEARCHPANEL_WEBSITE, SEARCH_WORD + str(i), '搜索框输入"安卓自动化测试"')
+            else:
+                self.assertFalse(SEARCHPANEL_WEBSITE)
+            self.searchpanel.clickSearchInto()
+            # 监听地理位置弹框
+            self.base.browserWatcher()
+            sleep(2)
+            self.home.clickMore()
+            sleep(1)
+            self.toolbarpanel.clickToolsPanel(ADD_COLLECTION)
+            self.clickAddCollectFolder(ADD_TO_COLLECTION)
             # 返回上一层
             self.pubmethod.clickBack()
+
 
     # 获取我的收藏相应记录的标题 —— LJX
     def getCollectionTitle(self, instance=0):
@@ -106,6 +123,7 @@ class CollectionAndHistoryPage(Base):
                 self.base.clickByElement(DELETE_FOLDER, '删除文件夹')
                 if self.base.elementIsExit(CONFIRM_TEXT):
                     self.base.clickByElement(NEW_FOLDER_CONFIRM, '确认')
+                    sleep(1)
                     self.pubmethod.clickBack()
                 else:
                     self.assertFalse(CONFIRM_TEXT)
