@@ -53,7 +53,7 @@ class TestDownPage():
         '''
         self.home.clickMore()
         self.tool.clickToolsPanel(SET_UP)
-        self.set.clickSearchEngine(2)
+        self.set.clickSearchEngine()
         self.set.click360()
         self.pubmethod.clickBack()
         self.home.clickHomeSearch()
@@ -142,14 +142,6 @@ class TestDownPage():
         self.home.clickMore()
         self.tool.clickToolsPanel(DOWNLOAD_MANAGER)
         self.base.assertTrue(DOWN_LOAD_PROGRESS)
-
-
-
-
-
-
-
-
 
 
 
