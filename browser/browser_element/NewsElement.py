@@ -20,7 +20,7 @@ NEWS_REFRESH_POSITION = (0.629, 0.774)
 NEWS_REFRESH_NOTICE_TEXT = '上次看到这里，点击刷新'
 
 # 资讯文章详情页的返回按钮
-NEWS_PAGE_BACK = 'com.android.browser:id/bt_zixun_back'
+NEWS_PAGE_BACK = 'com.android.browser:id/bt_search_back'
 
 # 文章右上角菜单按钮
 NEWS_PAGE_MOREMENU = 'com.android.browser:id/moremenu'

@@ -26,8 +26,7 @@ class TestSharePage():
         self.base.unlock()
         self.pubmethod.stopApp(BROWSER_PACKAGE_NAME)
         self.pubmethod.startApp(BROWSER_PACKAGE_NAME)
-        self.home.clickHome()
-        self.home.clickHomeOnPage(HOME_PAGE)
+        self.pubmethod.mbackToHomeOrNegative()
         yield
         logging.info("****用例执行结束****")
         logging.info("")
@@ -71,3 +70,4 @@ class TestSharePage():
         self.share.clickNewsArticleShare()
         self.share.clickNotes()
         self.base.assertTrue(SHARE_TEXT)
+

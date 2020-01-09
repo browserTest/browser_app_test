@@ -39,7 +39,6 @@ class SharePage(Base):
     # 在资讯文章中点击分享按钮————LCM
     def clickNewsArticleShare(self):
         if self.base.elementIsExit(NEWS_PAGE_BACK):
-
             sleep(4)
             self.base.clickByElement(NEWS_SHARE_PAGR, '点击资讯文章详情页总的分享按钮')
         else:
